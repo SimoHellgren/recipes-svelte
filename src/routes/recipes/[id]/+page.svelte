@@ -71,6 +71,13 @@
 		text-decoration: None;
 	}
 
+	main {
+		width: 70%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
 	.done {
 		color: #aaaaaa;
 		text-decoration: line-through;
