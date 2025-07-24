@@ -35,7 +35,8 @@
     ],
     "notes": [
       "Jauhoon voi sekoittaa mukaan 20% ryynej\u00e4 tai hiivaleip\u00e4jauhoja tms."
-    ]
+    ],
+    "id": "aamus\u00e4mpyl\u00e4t"
   },
   {
     "name": "Ankkaragu",
@@ -106,7 +107,8 @@
       "Tehtiin Ankkaconfit-purkin ankasta, oli sangen hyv\u00e4!",
       "Kastike saattaa kaivata lis\u00e4\u00e4 tomaattisuutta ja makeutta - esim. ketsupilla saa buustattua!",
       "Nakattiin sekaan taannoin talteenotettua lammasmakkaran paistorasvaa - eritt\u00e4in jeba"
-    ]
+    ],
+    "id": "ankkaragu"
   },
   {
     "name": "Beurre blanc",
@@ -138,7 +140,8 @@
       "Miedolla l\u00e4mm\u00f6ll\u00e4, vispaa mukaan muutama voikuutio kerrallaan emulgoiden. Seoksen kuuluisi pysy\u00e4 noin k\u00e4denl\u00e4mp\u00f6isen\u00e4.",
       "Suolaa maun mukaan",
       "Tarjoile heti, sill\u00e4 kastike ei kest\u00e4 pitk\u00e4\u00e4 s\u00e4ilytyst\u00e4"
-    ]
+    ],
+    "id": "beurre-blanc"
   },
   {
     "name": "Ciabatta juurella",
@@ -181,7 +184,8 @@
       "Siirr\u00e4 leiv\u00e4t leivinpaperin p\u00e4\u00e4lle uunipellille, saumapuoli alasp\u00e4in. Venyt\u00e4 haluttuun pituuteen.",
       "Siirr\u00e4 pelti uuniin. Lis\u00e4\u00e4 uuniin my\u00f6s vesiastia h\u00f6yryn aikaansaamiseksi",
       "Paista 20-25min, k\u00e4\u00e4nt\u00e4en v\u00e4liss\u00e4 tarvittaessa"
-    ]
+    ],
+    "id": "ciabatta-juurella"
   },
   {
     "name": "Cr\u00eapes suzette",
@@ -253,7 +257,8 @@
       "Taittele letut nelj\u00e4nnesympyr\u00f6iksi ja nosta pannulle",
       "Nostele soosia lettujen p\u00e4\u00e4lle, jotta ne maustuvat tasaisesti",
       "Tarjoile veriappelsiinilohkojen ja j\u00e4\u00e4tel\u00f6n kera"
-    ]
+    ],
+    "id": "crepes-suzette"
   },
   {
     "name": "\u30ab\u30ec\u30fc\u7c89",
@@ -328,7 +333,8 @@
       "Jauha jauhettavat mausteet",
       "Halutessasi paahda mausteita hetki kuivalla pannulla",
       "Sekoita ja s\u00e4ilyt\u00e4 ilmatiiviiss\u00e4 astiassa"
-    ]
+    ],
+    "id": "curryjauhe"
   },
   {
     "name": "Japanilainen BBQ-kastike",
@@ -385,7 +391,8 @@
     "notes": [
       "Toimii hyvin esim. possun ja riisin kastikkeena",
       "T\u00e4h\u00e4n k\u00e4y hyvin kaveriksi esim. paahdetut seesaminsiemenet ja kev\u00e4tsipuli"
-    ]
+    ],
+    "id": "japanilainen-bbq-kastike"
   },
   {
     "name": "Kaalilaatikko kasarissa",
@@ -465,7 +472,8 @@
       "Lis\u00e4\u00e4 kaali ja sipuli, paistele hetki",
       "Lis\u00e4\u00e4 riisi, mausteet, siirappi, liemikuutio, vesi ja kerma",
       "Sekoita tasaiseksi, laske l\u00e4mp\u00f6 ja anna hautua kannen alla 10-15min tai kunnes riisi on kyps\u00e4\u00e4"
-    ]
+    ],
+    "id": "kaalilaatikko-kasarissa"
   },
   {
     "name": "\u30ab\u30ec\u30fc\u30e9\u30a4\u30b9",
@@ -564,7 +572,8 @@
       "Lis\u00e4\u00e4 loput ainekset ja hauduta.",
       "Lis\u00e4\u00e4 suolaa maun mukaan.",
       "Tarjoile riisin ja esim. Paistetun tofun tai friteeratun kanan kera."
-    ]
+    ],
+    "id": "kareeraisu"
   },
   {
     "name": "Korealaiset aamuslaiderit",
@@ -657,7 +666,8 @@
       "(Paahda halutessasi s\u00e4mpyl\u00e4t)",
       "Levit\u00e4 s\u00e4mpyl\u00e4n puolikkaalle inkiv\u00e4\u00e4rimajoneesia ja toiselle puolikkaalle gochujangmajoneesia",
       "Laita s\u00e4mpyl\u00e4in v\u00e4liin munakokkelia, kurkkua ja kev\u00e4tsipulia"
-    ]
+    ],
+    "id": "korealaiset-aamuslaiderit"
   },
   {
     "name": "Korealaiset tacot",
@@ -744,7 +754,8 @@
     ],
     "notes": [
       "T\u00e4h\u00e4n k\u00e4y hyvin kaveriksi my\u00f6s esim. mangosalsa!"
-    ]
+    ],
+    "id": "korealaisettacot"
   },
   {
     "name": "Kukkakaali-parsakaalikeitto",
@@ -779,7 +790,8 @@
       "Keit\u00e4 kunnes on pehme\u00e4\u00e4",
       "Lis\u00e4\u00e4 sulatejuusto ja soseuta",
       "Mausta suolalla ja pippurilla"
-    ]
+    ],
+    "id": "kukkakaaliparsakaalikeitto"
   },
   {
     "name": "Kukkakaali-parsakaaliriisi",
@@ -801,7 +813,8 @@
       "Pieni kaalit ja surauta tehosekoittimella pienehk\u00f6ksi muruksi",
       "Paista pannulla \u00f6ljyss\u00e4 haluttuun kypsyyteen",
       "Suolaa maun mukaan"
-    ]
+    ],
+    "id": "kukkakaaliparsakaaliriisi"
   },
   {
     "name": "Kukkakaalitacot ja cashewtahna",
@@ -883,7 +896,8 @@
       "Murenna feta kulhoon",
       "L\u00e4mmit\u00e4 tortillat (esim. uunin j\u00e4lkil\u00e4mm\u00f6ss\u00e4, pannulla tai mikrossa)",
       "Levita\u0308 cashewtahnaa tortillalle ja lado kuumia kukkakaalinuppuja pa\u0308a\u0308lle. Murustele feta pinnalle ja viimeistele korianterilla."
-    ]
+    ],
+    "id": "kukkakaalitacot"
   },
   {
     "name": "Limoncello",
@@ -914,7 +928,8 @@
       "Kuumenna vett\u00e4 ja liuota sokeri siihen. Viilenn\u00e4.",
       "Sekoita viina ja sokerivesi",
       "Pullota ja anna tekeyty\u00e4 j\u00e4\u00e4kaapissa viel\u00e4 noin viikko"
-    ]
+    ],
+    "id": "limoncello"
   },
   {
     "name": "Maap\u00e4hkin\u00e4-papupata",
@@ -997,7 +1012,8 @@
       "Kuumenna ja keit\u00e4 muutama minuutti",
       "Mausta limemehulla ja suolalla",
       "Tarjoile suolap\u00e4hkin\u00f6iden ja korianterin kanssa"
-    ]
+    ],
+    "id": "maap\u00e4hkin\u00e4papupata"
   },
   {
     "name": "Mangosalsa",
@@ -1032,7 +1048,8 @@
       "Nypi ja pieni korianterin lehti\u00e4",
       "Sekoita",
       "Mausta tarvittaessa suolalla ja mustapippurilla"
-    ]
+    ],
+    "id": "mangosalsa"
   },
   {
     "name": "Marinoitu kaalisalaatti",
@@ -1083,7 +1100,8 @@
       "Poista jalapenoista siemenet ja laita malto tehosekoittimeen. Lis\u00e4\u00e4 joukkoon limettien raastettu kuori ja mehu.",
       "Lis\u00e4\u00e4 persilja ja \u00f6ljy ja k\u00e4yt\u00e4 konetta noin minuutin ajan.",
       "Sekoita kastike salaattiin."
-    ]
+    ],
+    "id": "marinoitu-kaalisalaatti"
   },
   {
     "name": "Minestrone",
@@ -1165,7 +1183,8 @@
     "notes": [
       "Jos meinaa j\u00e4\u00e4d\u00e4 turhan tiiviiksi, lis\u00e4\u00e4 vett\u00e4 sek\u00e4 tomaattipyrett\u00e4.",
       "Yrttimausteseos voi olla esim. herbes de Provence, tai itse sekoiteltu versio kaapista l\u00f6ytyvist\u00e4 yrttimausteista."
-    ]
+    ],
+    "id": "minestrone"
   },
   {
     "name": "Mustikkamuffini",
@@ -1246,7 +1265,8 @@
       "Lusikoi kuorrute p\u00e4\u00e4lle ja painele se kevyesti kiinni muffineihin",
       "Paista 5min 220\u00b0C ja laske sitten l\u00e4mp\u00f6 180\u00b0C ja paista viel\u00e4 15-20min",
       "Anna j\u00e4\u00e4hty\u00e4 5min vuuissa, sitten siirr\u00e4 ritil\u00e4lle j\u00e4\u00e4htym\u00e4\u00e4n"
-    ]
+    ],
+    "id": "mustikkamuffini"
   },
   {
     "name": "M\u00e4tidippi",
@@ -1280,7 +1300,8 @@
       "Mausta suolalla ja mustapippurilla",
       "Koristele isoilla m\u00e4tikeoilla ja hienon hienoksi silputulla ruohosipulilla",
       "Nauti sipsien kanssa"
-    ]
+    ],
+    "id": "m\u00e4tidippi"
   },
   {
     "name": "Nyht\u00f6kaura-rendang",
@@ -1363,7 +1384,8 @@
       "Paista tahnaa pannulla pari minuuttia",
       "Lis\u00e4\u00e4 muut curryn ainekset ja anna muhia miedolla l\u00e4mm\u00f6ll\u00e4 30min",
       "Tarjoile keitetyn riisin, limelohkojen ja korianterin kanssa"
-    ]
+    ],
+    "id": "nyht\u00f6kaura-rendang"
   },
   {
     "name": "Ottolenghi's tandoori chickpeas",
@@ -1468,7 +1490,8 @@
     "notes": [
       "Pita kannattaa ostaa Lidlin paistopisteelt\u00e4!",
       "Riippuen sy\u00f6jist\u00e4, riitto voi olla l\u00e4hemp\u00e4n\u00e4 2\u00bd kuin 3 annosta"
-    ]
+    ],
+    "id": "ottolenghi-tandoori-chickpeas"
   },
   {
     "name": "Ottolenghimix",
@@ -1506,7 +1529,8 @@
     "method": [
       "Sekoita.",
       "K\u00e4yt\u00e4 <a href=\"ottolenghi-tandoori-chickpeas.html\">t\u00e4\u00e4ll\u00e4</a>"
-    ]
+    ],
+    "id": "ottolenghimix"
   },
   {
     "name": "Paahdettu gnocchi parsakaalilla ja sienill\u00e4",
@@ -1561,7 +1585,8 @@
       "Levit\u00e4 parsakaalit uunipellille ja ripottele p\u00e4\u00e4lle timjami sek\u00e4 hieman lis\u00e4\u00e4 suolaa ja pippuria",
       "Paahda uunissa 15-20 minuuttia tai kunnes gnocchit ja parsakaalit ovat saaneet v\u00e4ri\u00e4",
       "Tarjoile esim. parmesaaniraasteen kera"
-    ]
+    ],
+    "id": "paahdettu-gnocchi-parsakaali-sieni"
   },
   {
     "name": "Palsternakka-juurisellerikeitto",
@@ -1606,7 +1631,8 @@
     ],
     "notes": [
       "Alkuper\u00e4isess\u00e4 reseptiss\u00e4 on 50% enempi vett\u00e4 - tulee meir\u00e4m mielest\u00e4 liian vetist\u00e4."
-    ]
+    ],
+    "id": "palsternakka-juurisellerikeitto"
   },
   {
     "name": "Parmesaanimajoneesi",
@@ -1641,7 +1667,8 @@
     "method": [
       "Sauvasekoittimella kaikki sekaisin",
       "Jos on liian l\u00f6ys\u00e4\u00e4, lis\u00e4\u00e4 \u00f6ljy\u00e4"
-    ]
+    ],
+    "id": "parmesaanimajoneesi"
   },
   {
     "name": "Parsa-piparjuurignocchit",
@@ -1676,7 +1703,8 @@
       "Lis\u00e4\u00e4 pannulle gnocchit ja parsat. Py\u00f6r\u00e4yt\u00e4.",
       "Lis\u00e4\u00e4 parmesaani sek\u00e4 hiukan keitinvett\u00e4.",
       "Sekoita ja mausta mustapippurilla."
-    ]
+    ],
+    "id": "parsa-piparjuurignocchi"
   },
   {
     "name": "Pasi Lohi -pasta",
@@ -1727,7 +1755,8 @@
       "Suikaloi kala ja lis\u00e4\u00e4 kastikkeeseen juuri ennen tarjoilua",
       "(Hienonna tilli ja lis\u00e4\u00e4 sit\u00e4 kastikkeeseen halutessasi)",
       "Tarjoile pastan kanssa"
-    ]
+    ],
+    "id": "pasilohipasta"
   },
   {
     "name": "Peltivihis",
@@ -1826,7 +1855,8 @@
       "Cajunmausteen voi my\u00f6s korvata esim. tacomausteella",
       "Taikinan voi my\u00f6s tehd\u00e4 yleiskoneessa",
       "Ketsuppi ja chili\u00f6ljy on uskomattoman b\u00e4ngerit tillbeh\u00f6rit!"
-    ]
+    ],
+    "id": "peltivihis"
   },
   {
     "name": "Perunapurjokeitto",
@@ -1871,7 +1901,8 @@
       "Keit\u00e4, kunnes on kyps\u00e4\u00e4",
       "Poista laakerinlehti ja soseuta",
       "Lis\u00e4\u00e4 creme fraiche ja muskottip\u00e4hkin\u00e4"
-    ]
+    ],
+    "id": "perunapurjokeitto"
   },
   {
     "name": "Piim\u00e4limppu",
@@ -1913,7 +1944,8 @@
       "Kohota niit\u00e4 liinan alla n. puoli tuntia",
       "Paista 175 asteessa n. 45 min",
       "(Jos leipiin haluaa kiilt\u00e4v\u00e4n pinnan, sekoita v\u00e4h\u00e4n siirappia veteen ja valele t\u00e4ll\u00e4 liuoksella leipi\u00e4 pari kertaa paiston aikana ja viimeksi kun olet ottanut kyps\u00e4t leiv\u00e4t uunista.)"
-    ]
+    ],
+    "id": "piim\u00e4limppu"
   },
   {
     "name": "Pikkel\u00f6ity punasipuli",
@@ -1943,7 +1975,8 @@
       "Siirr\u00e4 sipulit litran vetoiseen purkkiin",
       "Kiehauta vesi ja etikka, liuota suola mukaan",
       "Kaada liemi purkkiin"
-    ]
+    ],
+    "id": "pikkel\u00f6ity-punasipuli"
   },
   {
     "name": "Poromousse",
@@ -1981,7 +2014,8 @@
     ],
     "notes": [
       "Resepti toimii my\u00f6s ilman liivatetta, joskin konsistenssi on ymm\u00e4rrett\u00e4v\u00e4sti silloin l\u00f6ysempi."
-    ]
+    ],
+    "id": "poromousse"
   },
   {
     "name": "\u30e9\u30fc\u30e1\u30f3",
@@ -2089,7 +2123,8 @@
       "Mausta suolalla ja valkopippurilla maun mukaan (huom. keitto maistuu v\u00e4hemm\u00e4n suolaiselta nuudeleiden lis\u00e4\u00e4misen j\u00e4lkeen)",
       "Puolita munat",
       "Kokoa nuudelit, paksoi, liemi ja munat kulhoihin, koristele kev\u00e4tsipulin vihreill\u00e4 osilla"
-    ]
+    ],
+    "id": "ramen"
   },
   {
     "name": "\u30e9\u30fc\u6cb9",
@@ -2136,7 +2171,8 @@
     "notes": [
       "Rypsi\u00f6ljy\u00e4 voi laittaa my\u00f6s lis\u00e4\u00e4 (esim. yhteens\u00e4 180ml) jos haluaa enemm\u00e4n, mutta toki tulee hieman laimeampaa",
       "Laittamalla enemm\u00e4 ichimi\u00e4 suhteessa gochugaruun tulee stydimp\u00e4\u00e4"
-    ]
+    ],
+    "id": "rayu"
   },
   {
     "name": "Satsumarisotto",
@@ -2196,7 +2232,8 @@
     ],
     "notes": [
       "Satsuman maku voi olla hieman hento - sitruunamehulla saa v\u00e4h\u00e4n pontta ilman ett\u00e4 alkaa varsinaisesti maistua sitruunalta."
-    ]
+    ],
+    "id": "satsumarisotto"
   },
   {
     "name": "Savuinen hernepasta",
@@ -2236,7 +2273,8 @@
       "Murustele joukkoon liemikuutio ja sekoita tasaiseksi",
       "Lis\u00e4\u00e4 herneet ja kuumenna",
       "Mausta suolalla ja mustapippurilla, l\u00f6ysyt\u00e4 pastan keitinvedell\u00e4 tarvittaessa"
-    ]
+    ],
+    "id": "savuinen-hernepasta"
   },
   {
     "name": "Savuinen linssikeitto",
@@ -2293,7 +2331,8 @@
     ],
     "notes": [
       "Alkuper\u00e4isess\u00e4 reseptiss\u00e4 paistetaan ensin 140g pekonikuutioita rapeiksi, noukitaan pois ja lis\u00e4t\u00e4\u00e4n sitten lopuksi sekaan ja p\u00e4\u00e4lle. Toimii hyvin ilmankin!"
-    ]
+    ],
+    "id": "savuinen-linssikeitto"
   },
   {
     "name": "Shakshuka",
@@ -2359,7 +2398,8 @@
       "Kun alkaa olla sopivan kyps\u00e4\u00e4, tee pienet kolot munille ja laita munat koloihin (kuoretonna)",
       "Laita kansi p\u00e4\u00e4lle kunnes munat kypsi\u00e4",
       "Tarjoile imukykyisen leiv\u00e4n ja tuoreen korianterin kera"
-    ]
+    ],
+    "id": "shakshuka"
   },
   {
     "name": "\u98df\u30d1\u30f3",
@@ -2444,7 +2484,8 @@
       "Kuumenna uuni 175 asteeseen",
       "Voitele leip\u00e4 kananmunalla",
       "Paista uunin keskitasolla 20 minuuttia"
-    ]
+    ],
+    "id": "shokupan"
   },
   {
     "name": "Siemenn\u00e4kk\u00e4ri",
@@ -2494,7 +2535,8 @@
       "Sirottele halutessasi sormisuolaa pinnalle",
       "Paista uunissa noin 30min tai kunnes n\u00e4kk\u00e4ri on saanut v\u00e4ri\u00e4 ja rapeutunut",
       "Anna j\u00e4\u00e4hty\u00e4"
-    ]
+    ],
+    "id": "siemenn\u00e4kk\u00e4ri"
   },
   {
     "name": "Simbon chipotle-tomaatti-linssikeitto",
@@ -2556,7 +2598,8 @@
       "Keittele 10-15 minuuttia",
       "Surauta sauvasekoittimella tasaiseksi, mausta ja lis\u00e4\u00e4 tarvittaessa vett\u00e4",
       "(Tarjoile esim. paahdetun leiv\u00e4n kanssa)"
-    ]
+    ],
+    "id": "simbon-chipotle-tomaatti-linssikeitto"
   },
   {
     "name": "Sipulikeitto",
@@ -2613,7 +2656,8 @@
       "Poista timjaminoksat ja t\u00e4htianikset",
       "Mausta tarvittaessa suolalla ja mustapippurilla",
       "Paahda juustoraasteella kuorrutetut leiv\u00e4t uunissa"
-    ]
+    ],
+    "id": "sipulikeitto"
   },
   {
     "name": "Soijakurkut",
@@ -2648,7 +2692,8 @@
       "Sekoita kulhossa soija, sokeri, seesami\u00f6ljy ja gochugaru",
       "Kuivattele kurkut, lis\u00e4\u00e4 ne marinadin kanssa minigrip-pussiin ja sekoita hyvin",
       "Anna maustua j\u00e4\u00e4kaapissa y\u00f6n yli"
-    ]
+    ],
+    "id": "soijakurkut"
   },
   {
     "name": "Sokerilohi",
@@ -2700,7 +2745,8 @@
       "Kalan kypsyess\u00e4 raasta sitruunankuori ja purista puolikkaasta mehu",
       "Nosta pelti uunista ja laita sitruunankuori ja -mehu kalojen p\u00e4\u00e4lle",
       "Tarjoile valitsemiesi lisukkeiden (esim. riisi) kera"
-    ]
+    ],
+    "id": "sokerilohi"
   },
   {
     "name": "S\u00e4mpyl\u00e4t",
@@ -2747,7 +2793,8 @@
       "Leikkaa taikina 12 osaan ja muotoile haluamallasi tavalla",
       "Nosta s\u00e4mpyl\u00e4t pellille ja paista pelti kerrallaan noin 20min. Ensimm\u00e4inen pelti vaatii yleens\u00e4 pari minuuttia pidemm\u00e4n kypsytyksen kuin j\u00e4lkimm\u00e4inen.",
       "Anna s\u00e4mpyl\u00f6iden j\u00e4\u00e4hty\u00e4 peitteitt\u00e4 jotta kuori rapeutuu"
-    ]
+    ],
+    "id": "s\u00e4mpyl\u00e4t"
   },
   {
     "name": "Tofu-kaalivokki",
@@ -2808,7 +2855,8 @@
       "Sekoita mukaan p\u00e4hkin\u00e4t",
       "Tarjoile siivutetun chilin, limemehun ja seesaninsiemenien kanssa",
       "Lis\u00e4\u00e4 soijaa ja/tai kalakastiketta maun mukaan"
-    ]
+    ],
+    "id": "tofu-kaalivokki"
   },
   {
     "name": "Tofukorma",
@@ -2863,7 +2911,8 @@
       "Kypsenn\u00e4 miedolla teholla noin 10 minuuttia",
       "Lis\u00e4\u00e4 suolaa maun mukaan",
       "Tarjoile esim. riisin kera"
-    ]
+    ],
+    "id": "tofukorma"
   },
   {
     "name": "Tuulihatut",
@@ -2944,7 +2993,8 @@
     "notes": [
       "\u00c4l\u00e4 k\u00e4yt\u00e4 tyllaa pursotinpussissa, sill\u00e4 taikina on sille liian paksua",
       "Kun teet t\u00e4ytett\u00e4, laita levy heti melko kovalle. Vaikka maito on l\u00e4mmitetty, t\u00e4ytteen sakeutumisessa voi menn\u00e4 muuten todella kauan (jopa 15 min!)"
-    ]
+    ],
+    "id": "tuulihatut"
   },
   {
     "name": "Uuniriisi",
@@ -3023,7 +3073,8 @@
     "notes": [
       "Herkkusienet voi hyvin korvata esim. suppilovahveroilla",
       "Riisi voi hyvin olla vaikka pitk\u00e4jyv\u00e4ist\u00e4"
-    ]
+    ],
+    "id": "uuniriisi"
   },
   {
     "name": "Varsijousi eli Rosan raskausmocktail",
@@ -3046,7 +3097,8 @@
     "method": [
       "Valmista appelsiinirosmariinisiirappi, j\u00e4\u00e4hdyt\u00e4.",
       "Sekoita juoma."
-    ]
+    ],
+    "id": "varsijousi"
   },
   {
     "name": "Veriappelsiinirisotto",
@@ -3096,6 +3148,7 @@
       "Purista veriappelsiinin mehu",
       "Kun riisi on hieman vaille al dente, sekoita mukaan veriappelsiinin kuori ja mehu, parmesaani ja voi",
       "Tarjoile esim. silputun ruoho- tai kev\u00e4tsipulin kera"
-    ]
+    ],
+    "id": "veriappelsiinirisotto"
   }
 ]
