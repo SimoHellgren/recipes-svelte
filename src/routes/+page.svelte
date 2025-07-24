@@ -2,6 +2,7 @@
 	let { data } = $props();
 	let { recipes } = data;
 
+	//filters
 	let searchString = $state('');
 
 	let tags = [...new Set(recipes.map((r) => r.tags).flat())].toSorted();
@@ -13,7 +14,17 @@
 			.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
 			.filter((recipe) => recipe.name.toLowerCase().includes(searchString))
 	);
+
+	//function for jumping to the search box with ctrl+f
+	function jumpToSearch(event) {
+		if (event.ctrlKey && event.key === 'f') {
+			event.preventDefault();
+			document.getElementById('search').focus();
+		}
+	}
 </script>
+
+<svelte:window on:keydown={jumpToSearch} />
 
 <div>
 	{#each tagStates as tag}
