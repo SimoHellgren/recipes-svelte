@@ -48,9 +48,13 @@
 	<input id="search" type="text" placeholder="Haku" bind:value={searchString} />
 </div>
 
-{#each selectedRecipes as recipe}
-	<p>{recipe.name}</p>
-{/each}
+<ul>
+	{#each selectedRecipes as recipe}
+		<li data-mvp={recipe.tags.includes('mvp') ? '' : undefined}>
+			<a href="/recipes/{recipe.id}">{recipe.name}</a>
+		</li>
+	{/each}
+</ul>
 
 <style>
 	label {
@@ -68,5 +72,25 @@
 	input[type='checkbox'] {
 		margin: 0;
 		vertical-align: middle;
+	}
+
+	li {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		font-size: 1.5rem;
+	}
+
+	li > * {
+		color: black;
+	}
+
+	li[data-mvp]::marker {
+		content: '★ ';
+		color: #ffc107;
+		text-shadow:
+			-1px 0 black,
+			0 1px black,
+			1px 0 black,
+			0 -1px black;
 	}
 </style>
