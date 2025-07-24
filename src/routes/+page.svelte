@@ -3,25 +3,37 @@
 	let { recipes } = data;
 
 	let tags = [...new Set(recipes.map((r) => r.tags).flat())].toSorted();
+	let tagStates = $state(tags.map((t) => ({ name: t, checked: true })));
+	let selectedTags = $derived(tagStates.filter((t) => t.checked).map((t) => t.name));
+
+	let selectedRecipes = $derived(
+		recipes.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
+	);
 </script>
 
 <div>
-	{#each tags as tag}
+	{#each tagStates as tag}
 		<label>
-			<input type="checkbox" checked />
-			{tag}
+			<input type="checkbox" bind:checked={tag.checked} />
+			{tag.name}
 		</label>
 	{/each}
 
-	<button type="button">Kaikki</button>
-	<button type="button">Ei mitään</button>
+	<button
+		type="button"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</button
+	>
+	<button
+		type="button"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</button
+	>
 </div>
 
 <div>
 	<input id="search" type="text" placeholder="Haku" />
 </div>
 
-{#each recipes as recipe}
+{#each selectedRecipes as recipe}
 	<p>{recipe.name}</p>
 {/each}
 
