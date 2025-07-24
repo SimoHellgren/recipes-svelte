@@ -2,12 +2,16 @@
 	let { data } = $props();
 	let { recipes } = data;
 
+	let searchString = $state('');
+
 	let tags = [...new Set(recipes.map((r) => r.tags).flat())].toSorted();
 	let tagStates = $state(tags.map((t) => ({ name: t, checked: true })));
 	let selectedTags = $derived(tagStates.filter((t) => t.checked).map((t) => t.name));
 
 	let selectedRecipes = $derived(
-		recipes.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
+		recipes
+			.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
+			.filter((recipe) => recipe.name.toLowerCase().includes(searchString))
 	);
 </script>
 
@@ -30,7 +34,7 @@
 </div>
 
 <div>
-	<input id="search" type="text" placeholder="Haku" />
+	<input id="search" type="text" placeholder="Haku" bind:value={searchString} />
 </div>
 
 {#each selectedRecipes as recipe}
