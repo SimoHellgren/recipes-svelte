@@ -1,6 +1,8 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
+	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
+	import Label from '$lib/components/ui/label/label.svelte';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -28,12 +30,12 @@
 
 <svelte:window on:keydown={jumpToSearch} />
 
-<div>
+<div class="flex flex-wrap">
 	{#each tagStates as tag}
-		<label>
-			<input type="checkbox" bind:checked={tag.checked} />
+		<Label class="m-1 rounded-md border-1 border-neutral-900 p-1">
+			<Checkbox bind:checked={tag.checked} class="bg-neutral-50" />
 			{tag.name}
-		</label>
+		</Label>
 	{/each}
 
 	<Button
