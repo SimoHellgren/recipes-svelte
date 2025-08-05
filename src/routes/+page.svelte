@@ -1,4 +1,5 @@
 <script>
+	import Button from '$lib/components/ui/button/button.svelte';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -34,13 +35,13 @@
 		</label>
 	{/each}
 
-	<button
-		type="button"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</button
+	<Button
+		variant="outline"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</Button
 	>
-	<button
-		type="button"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</button
+	<Button
+		variant="outline"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</Button
 	>
 </div>
 
