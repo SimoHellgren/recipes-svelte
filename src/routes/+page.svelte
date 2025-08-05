@@ -59,7 +59,7 @@
 	<Table.Body>
 		{#each selectedRecipes as recipe}
 			<Table.Row>
-				<Table.Cell class="text-2xl text-amber-400 text-shadow-black text-shadow-xs">
+				<Table.Cell class="w-1 text-2xl text-amber-400 text-shadow-black text-shadow-xs">
 					{recipe.tags.includes('mvp') ? '★' : null}
 				</Table.Cell>
 				<Table.Cell>
