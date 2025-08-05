@@ -10,42 +10,42 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Jauho",
         "quantity": "195 g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Leivinjauhe",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Suola",
         "quantity": "max 0,5 tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Siemeni\u00e4",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Hunaja",
         "quantity": "1,5 rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Vesi",
         "quantity": "150 g"
       }
@@ -74,91 +74,91 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Ankankoipi",
         "quantity": "2-3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kaneli",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Punaviini",
         "quantity": "1.5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Purkkitomaatti",
         "quantity": "1purkki"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Kanaliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Tuore timjami",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Laakerinlehti",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Sokeri",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Maito",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Pasta",
         "quantity": "200g"
       }
@@ -197,28 +197,28 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Salottisipuli",
         "quantity": "4kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkoviini",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkoviinietikka",
         "quantity": "3rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Voi",
         "quantity": "200g"
       }
@@ -247,35 +247,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Her\u00e4telty hapanjuuri",
         "quantity": "150g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "420g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Vesi",
         "quantity": "340g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "30ml"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "12g"
       }
@@ -311,77 +311,77 @@
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "2\u00bddl"
       },
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kananmuna",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "T\u00e4ysmaito",
         "quantity": "3dl"
       },
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Sokeri",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "ripaus"
       },
       {
         "section_position": 1,
         "section": "Letut",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Voi",
         "quantity": "50g"
       },
       {
         "section_position": 2,
         "section": "Soosi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Voi",
         "quantity": "50g"
       },
       {
         "section_position": 2,
         "section": "Soosi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sokeri",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 2,
         "section": "Soosi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Veriappelsiini",
         "quantity": "1kpl"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Veriappelsiini",
         "quantity": "2kpl"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vaniljaj\u00e4\u00e4tel\u00f6",
         "quantity": "sopivasti"
       }
@@ -415,140 +415,140 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kurkuma",
         "quantity": "20g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Jeera",
         "quantity": "14g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Korianteri",
         "quantity": "12g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kuivattu appelsiininkuori",
         "quantity": "10g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Sarviapila",
         "quantity": "5g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Fenkolinsiemen",
         "quantity": "5g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Kaneli",
         "quantity": "4g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Cayenne",
         "quantity": "4g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Valkosipulijauhe",
         "quantity": "3g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Inkiv\u00e4\u00e4rijauhe",
         "quantity": "3g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Tilli (jauhe)",
         "quantity": "3g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Maustepippuri",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Kardemumma",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 14,
+        "ingredient_position": 14,
         "ingredient": "Neilikka",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 15,
+        "ingredient_position": 15,
         "ingredient": "T\u00e4htianis",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 16,
+        "ingredient_position": 16,
         "ingredient": "Salvia",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 17,
+        "ingredient_position": 17,
         "ingredient": "Timjami",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 18,
+        "ingredient_position": 18,
         "ingredient": "Muskottip\u00e4hkin\u00e4",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 19,
+        "ingredient_position": 19,
         "ingredient": "Mustapippuri",
         "quantity": "2g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 20,
+        "ingredient_position": 20,
         "ingredient": "Laakerinlehti",
         "quantity": "2g"
       }
@@ -572,84 +572,84 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Granny Smith -omena",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sipuli",
         "quantity": "1kpl (iso)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "4cm"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Soija",
         "quantity": "1\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Mirin",
         "quantity": "1\u00bd5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Valkoviini",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Vesi",
         "quantity": "1\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Miso",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Siirappi",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Sessami\u00f6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Sitruuna",
         "quantity": "\u00bdkpl"
       }
@@ -678,119 +678,119 @@
       {
         "section_position": 1,
         "section": "H\u00f6lskytetyt kurkut",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Avomaankurkku",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": "H\u00f6lskytetyt kurkut",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Hunaja",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": "H\u00f6lskytetyt kurkut",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "V\u00e4kiviinaetikka",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": "H\u00f6lskytetyt kurkut",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Suikaloitu varhaiskaali",
         "quantity": "2l"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Rypsi\u00f6ljy",
         "quantity": "2-3rkl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Soijarouhe",
         "quantity": "2dl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Soijakastike",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Pitk\u00e4jyv\u00e4inen riisi",
         "quantity": "2dl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Meirami",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Valkopippuri",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Siirappi",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Vesi",
         "quantity": "2dl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Laatikko",
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Kasviskerma",
         "quantity": "2dl"
       }
@@ -820,140 +820,140 @@
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vesi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kombu",
         "quantity": "15g"
       },
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Katsuobushi",
         "quantity": "15g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Valkosipuli",
         "quantity": "20g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "30g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sipuli",
         "quantity": "600g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Porkkanaraaste",
         "quantity": "70g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Ruokasooda",
         "quantity": "0.125tl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Curryjauhe",
         "quantity": "3rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Cayennejauhe",
         "quantity": "0.5tl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Kyps\u00e4 banaani",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Laakerinlehti",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "T\u00e4htianis",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Soija",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Chuno",
         "quantity": "1rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 14,
+        "ingredient_position": 14,
         "ingredient": "Tomaattipyre",
         "quantity": "1rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 15,
+        "ingredient_position": 15,
         "ingredient": "Kaakaojauhe",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 16,
+        "ingredient_position": 16,
         "ingredient": "Peruna",
         "quantity": "400g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 17,
+        "ingredient_position": 17,
         "ingredient": "Porkkana",
         "quantity": "300g"
       }
@@ -992,112 +992,112 @@
       {
         "section_position": 1,
         "section": "Marinoidut kurkut",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kurkku",
         "quantity": "\u00bdkpl"
       },
       {
         "section_position": 1,
         "section": "Marinoidut kurkut",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sinapinsiemen",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": "Marinoidut kurkut",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Riisiviinietikka",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": "Marinoidut kurkut",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 1,
         "section": "Marinoidut kurkut",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Hunaja",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Gochujangmajoneesi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Majoneesi",
         "quantity": "1dl"
       },
       {
         "section_position": 2,
         "section": "Gochujangmajoneesi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Gochujang",
         "quantity": "1rkl"
       },
       {
         "section_position": 3,
         "section": "Inkiv\u00e4\u00e4rimajoneesi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Majoneesi",
         "quantity": "1dl"
       },
       {
         "section_position": 3,
         "section": "Inkiv\u00e4\u00e4rimajoneesi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Raastettu inkiv\u00e4\u00e4ri",
         "quantity": "2tl"
       },
       {
         "section_position": 4,
         "section": "Munakokkeli",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kananmuna",
         "quantity": "4kpl"
       },
       {
         "section_position": 4,
         "section": "Munakokkeli",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kerma",
         "quantity": "1dl"
       },
       {
         "section_position": 4,
         "section": "Munakokkeli",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 4,
         "section": "Munakokkeli",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Voi",
         "quantity": "1rkl"
       },
       {
         "section_position": 4,
         "section": "Munakokkeli",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Paahdettu seesam\u00f6ljy",
         "quantity": "2tl"
       },
       {
         "section_position": 5,
         "section": "Muu",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Briossis\u00e4mpyl\u00e4",
         "quantity": "4kpl"
       },
       {
         "section_position": 5,
         "section": "Muu",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kev\u00e4tsipuli",
         "quantity": "2kpl"
       }
@@ -1133,105 +1133,105 @@
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Maustamaton tofu",
         "quantity": "250g"
       },
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Raastettu inkiv\u00e4\u00e4ri",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Ruokosokeri",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Seesami\u00f6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": "Nyht\u00f6tofu",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Soijakastike",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Gochujang-majoneesi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Majoneesi",
         "quantity": "1dl"
       },
       {
         "section_position": 2,
         "section": "Gochujang-majoneesi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Gochujang",
         "quantity": "1\u00bdrkl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kev\u00e4tsipuli",
         "quantity": "2kpl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Punakaali",
         "quantity": "200g"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Chili",
         "quantity": "1kpl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Sinimailasen ituja",
         "quantity": "1pkt"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Seesaminsiemieni\u00e4",
         "quantity": "1rkl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Minitortilla",
         "quantity": "8kpl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Lime",
         "quantity": "1kpl"
       }
@@ -1265,35 +1265,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Purjo",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Parsakaali",
         "quantity": "300g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kukkakaali",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Sulatejuusto",
         "quantity": "100g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Kasvisliemi",
         "quantity": "1l"
       }
@@ -1321,14 +1321,14 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kukkakaali",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Parsakaali",
         "quantity": "300g"
       }
@@ -1351,105 +1351,105 @@
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Cashewp\u00e4hkin\u00e4",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Lime",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Jalapeno",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Korianteri",
         "quantity": "\u00bdruukku"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "\u00d6ljy",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 1,
         "section": "Cashewtahna",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Vesi",
         "quantity": "n. \u00bddl"
       },
       {
         "section_position": 2,
         "section": "Paahdettu kukkakaali",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kukkakaali",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Paahdettu kukkakaali",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Paahdettu kukkakaali",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "\u00d6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Paahdettu kukkakaali",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Savupaprikajauhe",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Paahdettu kukkakaali",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Maissitortilla",
         "quantity": "8kpl"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Feta",
         "quantity": "150g"
       },
       {
         "section_position": 3,
         "section": "Lis\u00e4ksi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Korianteri",
         "quantity": "\u00bdruukku"
       }
@@ -1483,28 +1483,28 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "80% viina",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sitruuna",
         "quantity": "10kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sokeri",
         "quantity": "600g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Vesi",
         "quantity": "1l"
       }
@@ -1531,133 +1531,133 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Tuore inkiv\u00e4\u00e4ri",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Bataatti",
         "quantity": "250g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Lehtikaali tai pinaatti",
         "quantity": "50g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Papuja",
         "quantity": "230g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Rypsi\u00f6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Jauhettu korianteri",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Jeera",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Chilirouhe",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Jauhettu muskottip\u00e4hkin\u00e4",
         "quantity": "1/4 tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Paseerattu tomaatti",
         "quantity": "500g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Vesi",
         "quantity": "2.5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 14,
+        "ingredient_position": 14,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 15,
+        "ingredient_position": 15,
         "ingredient": "Maap\u00e4hkin\u00e4voi",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 16,
+        "ingredient_position": 16,
         "ingredient": "Limemehu",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 17,
+        "ingredient_position": 17,
         "ingredient": "Suola",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 18,
+        "ingredient_position": 18,
         "ingredient": "Suolap\u00e4hkin\u00e4",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 19,
+        "ingredient_position": 19,
         "ingredient": "Korianteri",
         "quantity": "1ruukku"
       }
@@ -1691,35 +1691,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Mango",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Punasipuli",
         "quantity": "1kpl (pieni)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Jalopeno",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Korianteri",
         "quantity": "\u00bdruukku"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Lime",
         "quantity": "1kpl"
       }
@@ -1746,70 +1746,70 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kikherne",
         "quantity": "purkillinen"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Parsakaali",
         "quantity": "2 kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkokaali",
         "quantity": "600 g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "2-3 tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Kev\u00e4tsipuli",
         "quantity": "3 kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Jalapeno",
         "quantity": "1-2 kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Lime",
         "quantity": "2 kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Persilja",
         "quantity": "1 ruukku"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Rapsi\u00f6ljy",
         "quantity": "1 dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Paprikajauhe",
         "quantity": "Maun mukaan"
       }
@@ -1840,119 +1840,119 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Porkkana",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sellerinvarsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Lehtikaali",
         "quantity": "150g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Vihre\u00e4 papu",
         "quantity": "200g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Valkopapu",
         "quantity": "1prk"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Tomaattipyre",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Laakerinlehti",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Yrttimausteseos",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Chilirouhe",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Mustapippuri",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 14,
+        "ingredient_position": 14,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 15,
+        "ingredient_position": 15,
         "ingredient": "Vesi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 16,
+        "ingredient_position": 16,
         "ingredient": "Pienikuvioinen pasta",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 17,
+        "ingredient_position": 17,
         "ingredient": "(Basilikaa)",
         "quantity": "viimeistelyyn"
       }
@@ -1990,105 +1990,105 @@
       {
         "section_position": 1,
         "section": "Sokerikuorrute",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Ruskea sokeri",
         "quantity": "100g"
       },
       {
         "section_position": 1,
         "section": "Sokerikuorrute",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Saksanp\u00e4hkin\u00e4 tai pekaanip\u00e4hkin\u00e4",
         "quantity": "67g"
       },
       {
         "section_position": 1,
         "section": "Sokerikuorrute",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kaneli",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Voi",
         "quantity": "113g"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "219g"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Ruokasooda",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Leivinjauhe",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Sokeri",
         "quantity": "100g"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Ruskea sokeri",
         "quantity": "50g"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Kananmuna",
         "quantity": "2kpl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Ranskankerma tai maustamaton jogurtti",
         "quantity": "120g"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Vaniljauute",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Maito",
         "quantity": "60ml"
       },
       {
         "section_position": 2,
         "section": "Taikina",
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Mustikka",
         "quantity": "210g"
       }
@@ -2123,35 +2123,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Creme fraiche",
         "quantity": "1prk"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Punasipuli",
         "quantity": "\u00bd-1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Limetti",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kirjolohen m\u00e4ti",
         "quantity": "100g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Ruohosipuli",
         "quantity": "maun mukaan"
       }
@@ -2179,119 +2179,119 @@
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Iso salottisipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "4kpl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Punainen chili",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "3cm"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Sitruunaruoho",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Kurkuma",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "\u00d6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": "Currytahna",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Mustapippuri",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kookosmaito",
         "quantity": "4dl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Soijakastike",
         "quantity": "1rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Nyht\u00f6kaura",
         "quantity": "250g"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kaffirlimetin lehti",
         "quantity": "3kpl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "(Kookos-)sokeri",
         "quantity": "2rkl"
       },
       {
         "section_position": 2,
         "section": "Curry",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 3,
         "section": "Tarjoiluun",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Riisi\u00e4",
         "quantity": "3\u00bddl"
       },
       {
         "section_position": 3,
         "section": "Tarjoiluun",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Korianteria",
         "quantity": "\u00bdruukku"
       },
       {
         "section_position": 3,
         "section": "Tarjoiluun",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Lime",
         "quantity": "2kpl"
       }
@@ -2319,147 +2319,147 @@
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kikherne",
         "quantity": "2 purkkia"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kirsikkatomaatti",
         "quantity": "300g"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipuli",
         "quantity": "10 kyntt\u00e4"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "30g"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Chili",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Tomaattipyre",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": "Herneet",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "1.5dl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Jeera",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Jauhettu korianteri",
         "quantity": "2tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kurkuma",
         "quantity": "0.5tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Chilihiutale",
         "quantity": "0.5tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Chilijauhe",
         "quantity": "0.5tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Paprikajauhe",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Sokeri",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "Mausteseos",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 3,
         "section": "Kastike",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Minttu",
         "quantity": "0.5 ruukku"
       },
       {
         "section_position": 3,
         "section": "Kastike",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Korianteri",
         "quantity": "0.5 ruukku"
       },
       {
         "section_position": 3,
         "section": "Kastike",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kreikkalainen jogurtti",
         "quantity": "200g"
       },
       {
         "section_position": 3,
         "section": "Kastike",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Lime",
         "quantity": "1kpl"
       },
       {
         "section_position": 3,
         "section": "Kastike",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Suola",
         "quantity": "0.5tl"
       },
       {
         "section_position": 4,
         "section": "Muu",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Pitaleip\u00e4",
         "quantity": "2kpl"
       }
@@ -2495,56 +2495,56 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Jeera",
         "quantity": "20g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Jauhettu korianteri",
         "quantity": "18g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kurkuma",
         "quantity": "5g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Chilihiutale",
         "quantity": "3g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Chilijauhe",
         "quantity": "4g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Paprikajauhe",
         "quantity": "10g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Sokeri",
         "quantity": "20g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Suola",
         "quantity": "24g"
       }
@@ -2569,70 +2569,70 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Salottisipuli (pienehk\u00f6)",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "5kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Parsakaali",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Herkkusieni",
         "quantity": "200g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Voi",
         "quantity": "3rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Gnocchi",
         "quantity": "500g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Mustapippuri",
         "quantity": "\u00bctl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Tuore timjami",
         "quantity": "1rkl"
       }
@@ -2666,56 +2666,56 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Palsternakka",
         "quantity": "200g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Juuriselleri",
         "quantity": "200g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkoisia papuja",
         "quantity": "1tlk"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Kasvisliemi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "(Kasvi)kerma",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Suola",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Valkopippuri",
         "quantity": "\u00bdtl"
       }
@@ -2743,49 +2743,49 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Raastettu parmesaani",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Muna",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkoviinietikka",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Sinappi (esim. dijon, Colman's)",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Rypsi\u00f6ljy",
         "quantity": "1\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "(Mirin)",
         "quantity": "1-2tl"
       }
@@ -2808,35 +2808,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Parsa",
         "quantity": "500g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Gnocchi",
         "quantity": "500g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Raastettu piparjuuri",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Raastettu parmesaani",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Voi",
         "quantity": "75g"
       }
@@ -2865,70 +2865,70 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Nauhamakaroni",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Voi",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Vesi",
         "quantity": "3dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Kalaliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Sinappi (esim. Colman's)",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Kuohukerma",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Sitruunamehua",
         "quantity": "\u00bdrkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Savustettua kirjolohta",
         "quantity": "200g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "(Tilli\u00e4)",
         "quantity": "maun mukaan"
       }
@@ -2956,112 +2956,112 @@
       {
         "section_position": 1,
         "section": "Ohrat\u00e4yte",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Ohrahelmi",
         "quantity": "1\u00bddl"
       },
       {
         "section_position": 1,
         "section": "Ohrat\u00e4yte",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Sipuli",
         "quantity": "2kpl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Porkkana",
         "quantity": "2kpl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Paprikajauhe",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Cajunmauste",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Jeera",
         "quantity": "1tl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 2,
         "section": "H\u00e4rkist\u00e4yte",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "H\u00e4rkis",
         "quantity": "250g"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "(Vegaaninen) voi",
         "quantity": "250g"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "4dl"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kaurajauho",
         "quantity": "2dl"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Leivinjauhe",
         "quantity": "1tl"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "(Vegaaninen) creme fraiche",
         "quantity": "200g"
       },
       {
         "section_position": 3,
         "section": "Kuori",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "\u00bdtl"
       }
@@ -3108,56 +3108,56 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Voi",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Purjo",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kanaliemi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Peruna",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Laakerinlehti",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Creme fraiche",
         "quantity": "150g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Muskottip\u00e4hkin\u00e4",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Ruoho- tai kev\u00e4tsipulia",
         "quantity": "koristeeksi"
       }
@@ -3187,42 +3187,42 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Piim\u00e4",
         "quantity": "5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Hiivaleip\u00e4jauho",
         "quantity": "~1,2l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kuivahiiva",
         "quantity": "2ps"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Siirappi",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Anis",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "1tl"
       }
@@ -3253,28 +3253,28 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Punasipuli",
         "quantity": "1l (siivuina)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vesi",
         "quantity": "2\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Etikka",
         "quantity": "2\u00bddl (50-50 v\u00e4kiviinaetikka ja esim. riisiviinietikka)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "1tl"
       }
@@ -3299,42 +3299,42 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Pororouhe (kylm\u00e4savustettu)",
         "quantity": "150g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kuohukerma",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Ranskankerma",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Liivatelehti",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Sitruunamehu",
         "quantity": "1rkl / maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Mustapippuri",
         "quantity": "maun mukaan"
       }
@@ -3364,133 +3364,133 @@
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kombu",
         "quantity": "1pala"
       },
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kuivattu siitake",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": "Dashi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Vesi",
         "quantity": "0.25l"
       },
       {
         "section_position": 2,
         "section": "Soijamunat",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kananmuna",
         "quantity": "4kpl"
       },
       {
         "section_position": 2,
         "section": "Soijamunat",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Soija",
         "quantity": "2rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Paahdettu sesaminsiemen",
         "quantity": "2rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "2.5cm"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kev\u00e4tsipuli",
         "quantity": "2kpl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Paahdettu seesami\u00f6ljy",
         "quantity": "1rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Doubanjiang",
         "quantity": "1.5rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Miso",
         "quantity": "1.5rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Sake",
         "quantity": "1rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Soijakastike",
         "quantity": "1.5rkl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Makeuttamaton soijamaito",
         "quantity": "0.5l"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Suola",
         "quantity": "0.5tl"
       },
       {
         "section_position": 3,
         "section": "Ramen",
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Valkopippuri",
         "quantity": "ripaus"
       },
       {
         "section_position": 4,
         "section": "Muut",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Nuudeli",
         "quantity": "1pkt / sy\u00f6j\u00e4"
       },
       {
         "section_position": 4,
         "section": "Muut",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Paksoi",
         "quantity": "0.5pkt"
       }
@@ -3531,56 +3531,56 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Rypsi\u00f6ljy",
         "quantity": "120ml"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Inkiv\u00e4\u00e4ri",
         "quantity": "2siivua"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kev\u00e4tsipulin varsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Sichuanin pippuri",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Gochugaru",
         "quantity": "15g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Ichimi",
         "quantity": "15g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Seesami\u00f6ljy",
         "quantity": "60ml"
       }
@@ -3611,77 +3611,77 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vesi",
         "quantity": "1l (ish)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Satsuma",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Salottisipuli",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Risottoriisi",
         "quantity": "3\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Raastettu parmesaani",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Voi",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Hienonnettu ruohosipuli",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "(Sitruunamehu, valkoviini tms. happo)",
         "quantity": "maun mukaan tarvittaessa"
       }
@@ -3718,42 +3718,42 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Nauhapasta",
         "quantity": "nelj\u00e4lle"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Savupaprika",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kaurakerma",
         "quantity": "4dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Pakasteherne",
         "quantity": "400g"
       }
@@ -3782,70 +3782,70 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Tomaatti",
         "quantity": "4kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Tomaattipyr\u00e9",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "(Gochujang)",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Kypsi\u00e4 linssej\u00e4",
         "quantity": "2prk (\u00e0 380g)"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Kanaliemikuutio",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Vesi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Savupaprikajauhe",
         "quantity": "1\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "(Kasvi)kerma",
         "quantity": "2dl"
       }
@@ -3879,98 +3879,98 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Iso sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Tomaatti",
         "quantity": "5kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Chili",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Jeera",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Jauhettu korianteri",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Mustapippuri",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Harissa",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Tomaattipyr\u00e9",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Olut (tai vesi)",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Korianteri",
         "quantity": "1ruukku"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 13,
+        "ingredient_position": 13,
         "ingredient": "Muna",
         "quantity": "4kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 14,
+        "ingredient_position": 14,
         "ingredient": "Imukykyist\u00e4 leip\u00e4\u00e4",
         "quantity": "sopivasti"
       }
@@ -4004,91 +4004,91 @@
       {
         "section_position": 1,
         "section": "Tangzhong",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "20g"
       },
       {
         "section_position": 1,
         "section": "Tangzhong",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vesi",
         "quantity": "27g"
       },
       {
         "section_position": 1,
         "section": "Tangzhong",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Maito",
         "quantity": "60g"
       },
       {
         "section_position": 2,
         "section": "Hiivasetti",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kuivahiiva",
         "quantity": "10g"
       },
       {
         "section_position": 2,
         "section": "Hiivasetti",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Vesi",
         "quantity": "20g"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "380g"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sokeri",
         "quantity": "60g"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Suola",
         "quantity": "3g"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Maito",
         "quantity": "130g"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Muna",
         "quantity": "1kpl"
       },
       {
         "section_position": 3,
         "section": "Loput",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Voi",
         "quantity": "45g"
       },
       {
         "section_position": 4,
         "section": "Voiteluun",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Voi",
         "quantity": "vuoan voiteluun"
       },
       {
         "section_position": 4,
         "section": "Voiteluun",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Muna",
         "quantity": "leiv\u00e4n voiteluun"
       }
@@ -4126,63 +4126,63 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Auringonkukansiemen",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Seesaminsiemen",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Pellavansiemen",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kurpitsansiemen",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Chiansiemen",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Kiehuva vesi",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "\u00d6ljy",
         "quantity": "\u00bddl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Sormisuola",
         "quantity": "koristeeksi"
       }
@@ -4213,77 +4213,77 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Porkkana",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sellerinvarsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Iso sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Tomaatti",
         "quantity": "5-6kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Chipotle-chili adobokastikkeessa",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Savuviskietikka",
         "quantity": "1\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Vesi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Punaisia linssej\u00e4",
         "quantity": "1prk"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "(Paahtoleip\u00e4\u00e4)",
         "quantity": "sy\u00f6t\u00e4v\u00e4ksi"
       }
@@ -4318,84 +4318,84 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Salottisipuli",
         "quantity": "6kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Keltasipuli",
         "quantity": "6kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Voi",
         "quantity": "100g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "T\u00e4htianis",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Mustapippuri",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Kuiva valkoviini",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Liha-, kana- tai kasvislient\u00e4",
         "quantity": "1\u00bdl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Timjaminoksa",
         "quantity": "5kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Leip\u00e4\u00e4",
         "quantity": "4kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 12,
+        "ingredient_position": 12,
         "ingredient": "Raastettua juustoa (esim. gruy\u00e9re)",
         "quantity": "120g"
       }
@@ -4427,35 +4427,35 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kurkku",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Soija",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sokeri",
         "quantity": "\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Seesami\u00f6ljy",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Gochugaru",
         "quantity": "1tl"
       }
@@ -4480,56 +4480,56 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Makaroni",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Soijarouhe",
         "quantity": "3dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Soijakastike",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Muna",
         "quantity": "3kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Maito",
         "quantity": "5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Suola",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Mustapippuri",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Voi",
         "quantity": "1rkl"
       }
@@ -4558,63 +4558,63 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Lohi",
         "quantity": "800g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Dijonsinappi",
         "quantity": "2-3rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Fariinisokeri",
         "quantity": "3rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Mustapippuri",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Voi",
         "quantity": "30g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Persilja",
         "quantity": "1ruukku"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Pankojauho",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Sitruuna",
         "quantity": "1kpl"
       }
@@ -4648,42 +4648,42 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Vesi",
         "quantity": "5dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Maito",
         "quantity": "1dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kuivahiiva",
         "quantity": "1pussi"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Suola",
         "quantity": "2tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Hunaja",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Vehn\u00e4jauho",
         "quantity": "12\u00bddl"
       }
@@ -4721,77 +4721,77 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Tofu",
         "quantity": "1pkt"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Kaali",
         "quantity": "250g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Soijakastike",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Kalakastike",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Nuudeli",
         "quantity": "2pkt"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Seesaminsiemen",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Chili",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Limemehu",
         "quantity": "maun mukaan"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 11,
+        "ingredient_position": 11,
         "ingredient": "Suolap\u00e4hkin\u00e4",
         "quantity": "\u00bddl"
       }
@@ -4827,70 +4827,70 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Tofu",
         "quantity": "1pkt"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sipuli",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Valkosipuli",
         "quantity": "2 kyntt\u00e4"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Raastettu inkiv\u00e4\u00e4ri",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Currymauste",
         "quantity": "2rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Chilihiutale",
         "quantity": "1tl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Sokeri",
         "quantity": "1\u00bdtl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Kookoskerma",
         "quantity": "250ml"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "Paseerattu tomaatti",
         "quantity": "400g"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 10,
+        "ingredient_position": 10,
         "ingredient": "Suola",
         "quantity": "maun mukaan"
       }
@@ -4922,84 +4922,84 @@
       {
         "section_position": 1,
         "section": "Taikina",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kananmuna",
         "quantity": "2 kpl"
       },
       {
         "section_position": 1,
         "section": "Taikina",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Voi",
         "quantity": "42 g"
       },
       {
         "section_position": 1,
         "section": "Taikina",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Sokeri",
         "quantity": "2 tl"
       },
       {
         "section_position": 1,
         "section": "Taikina",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Vesi",
         "quantity": "120 g"
       },
       {
         "section_position": 1,
         "section": "Taikina",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Jauho",
         "quantity": "75 g"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Keltuainen",
         "quantity": "3 kpl"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Sokeri",
         "quantity": "105 g"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Jauho (siivil\u00f6ity)",
         "quantity": "2 tl"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Maito",
         "quantity": "240 g"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Voi (sula)",
         "quantity": "14 g"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "(Matcha-jauhe)",
         "quantity": "1 tl"
       },
       {
         "section_position": 2,
         "section": "T\u00e4yte",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "(Vesi)",
         "quantity": "2 tl"
       }
@@ -5045,84 +5045,84 @@
       {
         "section_position": 1,
         "section": "Soosi",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "\u00bedl"
       },
       {
         "section_position": 1,
         "section": "Soosi",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Soija",
         "quantity": "1\u00bdrkl"
       },
       {
         "section_position": 1,
         "section": "Soosi",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Riisiviinietikka",
         "quantity": "1rkl"
       },
       {
         "section_position": 1,
         "section": "Soosi",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Valkosipulinkynsi",
         "quantity": "5kpl"
       },
       {
         "section_position": 1,
         "section": "Soosi",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Persilja",
         "quantity": "1dl"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Kirsikkatomaatti",
         "quantity": "250g"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Herkkusieni",
         "quantity": "100g"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Vesi",
         "quantity": "6dl"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Kasvisliemikuutio",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Riisi",
         "quantity": "3dl"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Tofu (maustettu, jos haluat)",
         "quantity": "1kpl"
       },
       {
         "section_position": 2,
         "section": "Loput",
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Teriyakikastike",
         "quantity": "2rkl"
       }
@@ -5163,21 +5163,21 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Appelsiinirosmariinisiirappi",
         "quantity": "3 cl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Karpalomehu",
         "quantity": "1 dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kivenn\u00e4isvesi",
         "quantity": "2 dl"
       }
@@ -5199,63 +5199,63 @@
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 1,
+        "ingredient_position": 1,
         "ingredient": "Salottisipuli",
         "quantity": "2kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 2,
+        "ingredient_position": 2,
         "ingredient": "Oliivi\u00f6ljy",
         "quantity": "4rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 3,
+        "ingredient_position": 3,
         "ingredient": "Kana- tai kasvisliemi",
         "quantity": "1l"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 4,
+        "ingredient_position": 4,
         "ingredient": "Risottoriisi",
         "quantity": "3dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 5,
+        "ingredient_position": 5,
         "ingredient": "Valkoviini\u00e4",
         "quantity": "2dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 6,
+        "ingredient_position": 6,
         "ingredient": "Luomuveriappelsiini (iso)",
         "quantity": "1kpl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 7,
+        "ingredient_position": 7,
         "ingredient": "Raastettu parmesaani",
         "quantity": "1 dl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 8,
+        "ingredient_position": 8,
         "ingredient": "Voi",
         "quantity": "2 rkl"
       },
       {
         "section_position": 1,
         "section": null,
-        "ingredient_index": 9,
+        "ingredient_position": 9,
         "ingredient": "(Ruoho- tai kev\u00e4tsipulia)",
         "quantity": "koristeeksi"
       }

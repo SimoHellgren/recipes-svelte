@@ -1,5 +1,10 @@
 <script>
 	let { data } = $props();
+
+	let ingredientSections = Object.groupBy(
+		data.ingredients.toSorted((x) => [x.section_position, x.ingredient_position]),
+		(x) => [x.section]
+	);
 </script>
 
 <header>
@@ -30,7 +35,19 @@
 <main class="flex">
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Ainehet</h2>
-		<p>TODO: parsing sections etc.</p>
+		<ul>
+			{#each Object.entries(ingredientSections) as [section, ingredients]}
+				{#if section}
+					<div class="font-bold">{section}</div>
+				{/if}
+				{#each ingredients as ingredient}
+					<li>
+						{ingredient.ingredient}
+						{ingredient.quantity}
+					</li>
+				{/each}
+			{/each}
+		</ul>
 	</section>
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Tee näin</h2>
