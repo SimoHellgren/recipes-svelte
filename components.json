@@ -4,7 +4,6 @@
 		"css": "src\\app.css",
 		"baseColor": "neutral"
 	},
-	"typescript": false,
 	"aliases": {
 		"components": "$lib/components",
 		"utils": "$lib/utils",

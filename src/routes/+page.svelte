@@ -1,9 +1,9 @@
 <script>
+	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
-	import RecipeTable from '$lib/components/custom/recipe-table.svelte';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -27,21 +27,6 @@
 			document.getElementById('search').focus();
 		}
 	}
-
-	//column definitions for the table
-	const coldef = [
-		{
-			accessorKey: 'mvp',
-			header: () => null,
-			cell: ({ row }) => (row.original.tags.includes('mvp') ? '★' : null)
-		},
-		{ accessorKey: 'name', header: 'Nimi' },
-		{
-			accessorKey: 'tags',
-			header: 'Tagit',
-			cell: ({ row }) => row.original.tags.join(', ')
-		}
-	];
 </script>
 
 <svelte:window on:keydown={jumpToSearch} />
@@ -68,4 +53,14 @@
 	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<RecipeTable data={selectedRecipes} columns={coldef} />
+<ul>
+	{#each selectedRecipes as recipe}
+		<li>
+			<a href="/recipes/{recipe.id}">{recipe.name}</a>
+
+			{#each recipe.tags as tag}
+				<Badge variant="secondary">{tag}</Badge>
+			{/each}
+		</li>
+	{/each}
+</ul>
