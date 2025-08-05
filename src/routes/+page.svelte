@@ -3,6 +3,7 @@
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
+	import RecipeTable from '$lib/components/custom/recipe-table.svelte';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -26,6 +27,21 @@
 			document.getElementById('search').focus();
 		}
 	}
+
+	//column definitions for the table
+	const coldef = [
+		{
+			accessorKey: 'mvp',
+			header: () => null,
+			cell: ({ row }) => (row.original.tags.includes('mvp') ? '★' : null)
+		},
+		{ accessorKey: 'name', header: 'Nimi' },
+		{
+			accessorKey: 'tags',
+			header: 'Tagit',
+			cell: ({ row }) => row.original.tags.join(', ')
+		}
+	];
 </script>
 
 <svelte:window on:keydown={jumpToSearch} />
@@ -52,49 +68,4 @@
 	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<ul>
-	{#each selectedRecipes as recipe}
-		<li data-mvp={recipe.tags.includes('mvp') ? '' : undefined}>
-			<a href="/recipes/{recipe.id}">{recipe.name}</a>
-		</li>
-	{/each}
-</ul>
-
-<style>
-	label {
-		border: 2px solid #ccc;
-		border-radius: 4px;
-		background-color: #f9f9f9;
-		margin: 0.1em;
-		display: inline-flex;
-		align-items: center;
-		gap: 0.1em;
-		padding-left: 0.1em;
-		padding-right: 0.1em;
-	}
-
-	input[type='checkbox'] {
-		margin: 0;
-		vertical-align: middle;
-	}
-
-	li {
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
-		font-size: 1.5rem;
-	}
-
-	li > * {
-		color: black;
-	}
-
-	li[data-mvp]::marker {
-		content: '★ ';
-		color: #ffc107;
-		text-shadow:
-			-1px 0 black,
-			0 1px black,
-			1px 0 black,
-			0 -1px black;
-	}
-</style>
+<RecipeTable data={selectedRecipes} columns={coldef} />
