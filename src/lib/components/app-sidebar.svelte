@@ -2,12 +2,14 @@
 	import CalendarIcon from '@lucide/svelte/icons/calendar';
 	import CookingPotIcon from '@lucide/svelte/icons/cooking-pot';
 	import PlusIcon from '@lucide/svelte/icons/file-plus-2';
+	import ShoppingBasketIcon from '@lucide/svelte/icons/shopping-basket';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 
 	const items = [
-		{ title: 'Recipes', url: '/', icon: CookingPotIcon },
-		{ title: 'New recipe', url: '/', icon: PlusIcon },
-		{ title: 'Meal planning', url: '/recipes/ankkaragu', icon: CalendarIcon }
+		{ title: 'Reseptit', url: '/', icon: CookingPotIcon },
+		{ title: 'Uusi', url: '/', icon: PlusIcon },
+		{ title: 'Suunnittelu', url: '/', icon: CalendarIcon },
+		{ title: 'Ostoskori', url: '/', icon: ShoppingBasketIcon }
 	];
 </script>
 
