@@ -1,5 +1,6 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
+	import Input from '$lib/components/ui/input/input.svelte';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -46,7 +47,7 @@
 </div>
 
 <div>
-	<input id="search" type="text" placeholder="Haku" bind:value={searchString} />
+	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
 <ul>
