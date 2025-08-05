@@ -4,6 +4,8 @@
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
+	import { Body } from '$lib/components/ui/table/index.js';
+	import * as Table from '$lib/components/ui/table';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -53,14 +55,22 @@
 	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<ul>
-	{#each selectedRecipes as recipe}
-		<li>
-			<a href="/recipes/{recipe.id}">{recipe.name}</a>
-
-			{#each recipe.tags as tag}
-				<Badge variant="secondary">{tag}</Badge>
-			{/each}
-		</li>
-	{/each}
-</ul>
+<Table.Root>
+	<Table.Body>
+		{#each selectedRecipes as recipe}
+			<Table.Row>
+				<Table.Cell class="text-2xl text-amber-400 text-shadow-black text-shadow-xs">
+					{recipe.tags.includes('mvp') ? '★' : null}
+				</Table.Cell>
+				<Table.Cell>
+					<a href="/recipes/{recipe.id}">{recipe.name}</a>
+				</Table.Cell>
+				<Table.Cell>
+					{#each recipe.tags as tag}
+						<Badge variant="secondary">{tag}</Badge>
+					{/each}
+				</Table.Cell>
+			</Table.Row>
+		{/each}
+	</Table.Body>
+</Table.Root>
