@@ -1,4 +1,6 @@
 <script>
+	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
+	import AppSidebar from '$lib/components/app-sidebar.svelte';
 	import '../app.css';
 
 	let { children } = $props();
@@ -6,4 +8,10 @@
 
 <title>Keitot kirja</title>
 
-{@render children()}
+<Sidebar.Provider>
+	<AppSidebar />
+	<main>
+		<Sidebar.Trigger />
+		{@render children?.()}
+	</main>
+</Sidebar.Provider>
