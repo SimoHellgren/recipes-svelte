@@ -1402,13 +1402,13 @@
             "Kikherne": "2 purkkia"
           },
           {
+            "Kirsikkatomaatti": "300g"
+          },
+          {
             "Valkosipuli": "10 kyntt\u00e4"
           },
           {
             "Inkiv\u00e4\u00e4ri": "30g"
-          },
-          {
-            "Kirsikkatomaatti": "300g"
           },
           {
             "Chili": "3kpl"
@@ -1417,7 +1417,7 @@
             "Tomaattipyre": "2rkl"
           },
           {
-            "Oliivi\u00f6ljy": "1\u00bddl"
+            "Oliivi\u00f6ljy": "1.5dl"
           }
         ]
       },
@@ -1452,37 +1452,40 @@
       {
         "Kastike": [
           {
-            "Minttu": "1 ruukku"
+            "Minttu": "0.5 ruukku"
           },
           {
-            "Korianteri": "1 ruukku"
+            "Korianteri": "0.5 ruukku"
           },
           {
-            "Kreikkalainen jogurtti": "180g"
+            "Kreikkalainen jogurtti": "200g"
           },
           {
             "Lime": "1kpl"
           },
           {
-            "Suola": "\u00bdtl"
+            "Suola": "0.5tl"
           }
         ]
       },
       {
         "Muu": [
           {
-            "Pitaleip\u00e4": "4kpl"
+            "Pitaleip\u00e4": "2kpl"
           }
         ]
       }
     ],
     "method": [
       "Kuumenna uuni 170 asteeseen",
+      "Huuhtele kikherneet ja tomaatit",
       "Kuori valkosipulinkynnet",
-      "Paloittele inkiv\u00e4\u00e4ri (esim. julienne)",
+      "Paloittele inkiv\u00e4\u00e4ri",
       "Halkaise chilit, poista halutessasi siemenet",
-      "Laita uunivuokaan:\n kikherneet\n valkosipulit\n inkiv\u00e4\u00e4ri\n kirsikkatomaatit\n chilit\n tomaattipyre\n jeera\n jauhettu korianteri\n kurkuma\n chilijauhe ja -hiutaleet\n paprikajauhe\n sokeri\n oliivi\u00f6ljy\n suola\n",
-      "Sekoita ja paahda uunissa 75 minuuttia, sekoittaen puoliv\u00e4liss\u00e4",
+      "Yhdist\u00e4 edell\u00e4 mainitut vuoassa",
+      "Lis\u00e4\u00e4 mukaan tomaattipyre ja \u00f6ljy",
+      "Lis\u00e4\u00e4 vuokaan 26g valmiiksi sekoitettua <a href=\"ottolenghimix.html\">mausteseosta</a> tai yll\u00e4 olevan ohjeen mukaiset mausteet.",
+      "Sekoita ja paahda uunissa 70 minuuttia sekoittaen puoliv\u00e4liss\u00e4",
       "Hienonna mintun ja korianterin lehdet",
       "Sekoita jogurttiin minttu, korianteri ja limen mehu",
       "Suolaa kastike maun mukaan"
@@ -1495,40 +1498,43 @@
   },
   {
     "name": "Ottolenghimix",
-    "servings": "???",
+    "servings": "104g",
     "tags": [
-      "mvp"
+      "vegaani"
     ],
     "source": "-",
     "ingredients": [
       {
-        "Jeera": "2tl"
+        "Jeera": "20g"
       },
       {
-        "Jauhettu korianteri": "2tl"
+        "Jauhettu korianteri": "18g"
       },
       {
-        "Kurkuma": "0.5tl"
+        "Kurkuma": "5g"
       },
       {
-        "Chilihiutale": "0.5tl"
+        "Chilihiutale": "3g"
       },
       {
-        "Chilijauhe": "0.5tl"
+        "Chilijauhe": "4g"
       },
       {
-        "Paprikajauhe": "1tl"
+        "Paprikajauhe": "10g"
       },
       {
-        "Sokeri": "1tl"
+        "Sokeri": "20g"
       },
       {
-        "Suola": "1tl"
+        "Suola": "24g"
       }
     ],
     "method": [
-      "Sekoita.",
-      "K\u00e4yt\u00e4 <a href=\"ottolenghi-tandoori-chickpeas.html\">t\u00e4\u00e4ll\u00e4</a>"
+      "Sekoita."
+    ],
+    "notes": [
+      "K\u00e4ytet\u00e4\u00e4n <a href=\"ottolenghi-tandoori-chickpeas.html\">t\u00e4\u00e4ll\u00e4</a>",
+      "T\u00e4m\u00e4 m\u00e4\u00e4r\u00e4 riitt\u00e4\u00e4 n. 4 satsiin em. resepti\u00e4."
     ],
     "id": "ottolenghimix"
   },
@@ -2317,7 +2323,7 @@
       }
     ],
     "method": [
-      "Kuumenna vesi kiehuvaksi",
+      "Kuumenna vesi kiehuvaksi vedenkeittimess\u00e4",
       "Pilko sipuli ja valkosipulinkynnet",
       "Lohko tomaatit",
       "Paista sipulia ja valkosipulia (\u00f6ljyss\u00e4) kattilassa",
@@ -2694,6 +2700,52 @@
       "Anna maustua j\u00e4\u00e4kaapissa y\u00f6n yli"
     ],
     "id": "soijakurkut"
+  },
+  {
+    "name": "Soijamakaronilaatikko",
+    "servings": 4,
+    "tags": [
+      "soija"
+    ],
+    "source": "Simbo :)",
+    "ingredients": [
+      {
+        "Makaroni": "400g"
+      },
+      {
+        "Soijarouhe": "3dl"
+      },
+      {
+        "Soijakastike": "2rkl"
+      },
+      {
+        "Muna": "3kpl"
+      },
+      {
+        "Maito": "5dl"
+      },
+      {
+        "Suola": "1tl"
+      },
+      {
+        "Mustapippuri": "maun mukaan"
+      },
+      {
+        "Voi": "1rkl"
+      }
+    ],
+    "method": [
+      "L\u00e4mmit\u00e4 uuni 180\u00b0C",
+      "Keit\u00e4 makaronit",
+      "Sekoita soijarouhe ja -kastike, sek\u00e4 hieman vett\u00e4 jotta on sopivan kosteaa",
+      "Sekoita munat, maito, suola ja mustapippuri",
+      "Voitele vuoka",
+      "Sekoita kolme nelj\u00e4sosaa makaroneista ja soijaruohe vuoassa",
+      "Lis\u00e4\u00e4 p\u00e4\u00e4lle loput makaronit",
+      "Kaada munamaito p\u00e4\u00e4lle",
+      "Paista uunissa 60min"
+    ],
+    "id": "soijamakaronilaatikko"
   },
   {
     "name": "Sokerilohi",
