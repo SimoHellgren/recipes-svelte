@@ -1,6 +1,7 @@
 <script>
 	import Textarea from '$lib/components/ui/textarea/textarea.svelte';
 	import * as Tabs from '$lib/components/ui/tabs/index.js';
+	import { marked } from 'marked';
 
 	let { ref = $bindable(null), value = $bindable(''), class: className, ...restProps } = $props();
 </script>
@@ -13,5 +14,7 @@
 	<Tabs.Content value="input">
 		<Textarea bind:this={ref} bind:value class {...restProps} />
 	</Tabs.Content>
-	<Tabs.Content value="preview">Kontsa tulee tähän</Tabs.Content>
+	<Tabs.Content value="preview">
+		{@html marked(value)}
+	</Tabs.Content>
 </Tabs.Root>

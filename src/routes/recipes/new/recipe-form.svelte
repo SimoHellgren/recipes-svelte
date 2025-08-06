@@ -51,8 +51,19 @@
 		<Form.Control>
 			{#snippet children({ props })}
 				<Form.Label>Method</Form.Label>
-				<Form.Description>What to do?</Form.Description>
+				<Form.Description>One step per row. Supports markdown!</Form.Description>
 				<MarkdownInput {...props} bind:value={$formData.method} />
+			{/snippet}
+		</Form.Control>
+		<Form.FieldErrors />
+	</Form.Field>
+
+	<Form.Field {form} name="notes">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Notes</Form.Label>
+				<Form.Description>One note per row. Supports markdown!</Form.Description>
+				<MarkdownInput {...props} bind:value={$formData.notes} />
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
