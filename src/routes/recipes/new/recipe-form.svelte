@@ -1,4 +1,5 @@
 <script>
+	import MarkdownInput from '$lib/components/markdown-input.svelte';
 	import * as Form from '$lib/components/ui/form/index.js';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import { formSchema } from './schema';
@@ -45,5 +46,17 @@
 		<Form.Description>How plenty is the thing?</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
+
+	<Form.Field {form} name="method">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Method</Form.Label>
+				<Form.Description>What to do?</Form.Description>
+				<MarkdownInput {...props} bind:value={$formData.method} />
+			{/snippet}
+		</Form.Control>
+		<Form.FieldErrors />
+	</Form.Field>
+
 	<Form.Button>Submit</Form.Button>
 </form>
