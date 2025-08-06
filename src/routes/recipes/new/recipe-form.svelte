@@ -1,5 +1,6 @@
 <script>
 	import MarkdownInput from '$lib/components/markdown-input.svelte';
+	import TagsInput from '$lib/components/tags-input.svelte';
 	import * as Form from '$lib/components/ui/form/index.js';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import { formSchema } from './schema';
@@ -8,7 +9,8 @@
 	let { data } = $props();
 
 	const form = superForm(data.form, {
-		validators: zodClient(formSchema)
+		validators: zodClient(formSchema),
+		dataType: 'json'
 	});
 
 	const { form: formData, enhance } = form;
@@ -23,6 +25,16 @@
 			{/snippet}
 		</Form.Control>
 		<Form.Description>Name of the recipe</Form.Description>
+		<Form.FieldErrors />
+	</Form.Field>
+	<Form.Field {form} name="tags">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Tags</Form.Label>
+				<Form.Description>Tagges</Form.Description>
+				<TagsInput {...props} bind:value={$formData.tags} />
+			{/snippet}
+		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Field {form} name="source">

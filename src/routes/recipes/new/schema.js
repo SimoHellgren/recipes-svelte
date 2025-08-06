@@ -7,6 +7,6 @@ export const formSchema = z.object({
     source: z.string(),
     method: z.string(),
     notes: z.string(),
-    tags: z.string(),
+    tags: z.array(z.string()),
     sections: z.string()
 })
