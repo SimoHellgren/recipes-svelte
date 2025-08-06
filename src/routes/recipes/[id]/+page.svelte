@@ -1,4 +1,7 @@
 <script>
+	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
+	import Label from '$lib/components/ui/label/label.svelte';
+
 	let { data } = $props();
 
 	let ingredientSections = Object.groupBy(
@@ -35,15 +38,20 @@
 <main class="flex">
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Ainehet</h2>
-		<ul>
+		<ul class="space-y-2.5">
 			{#each Object.entries(ingredientSections) as [section, ingredients]}
 				{#if section}
 					<div class="font-bold">{section}</div>
 				{/if}
 				{#each ingredients as ingredient}
 					<li>
-						{ingredient.ingredient}
-						{ingredient.quantity}
+						<Label
+							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
+						>
+							<Checkbox />
+							{ingredient.ingredient}
+							{ingredient.quantity}
+						</Label>
 					</li>
 				{/each}
 			{/each}
@@ -51,10 +59,16 @@
 	</section>
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Tee näin</h2>
-		<ol>
+		<ol class="space-y-2.5">
 			{#each data.method as step}
-				<!-- TODO: implement strikethrough -->
-				<li>{step}</li>
+				<li>
+					<Label
+						class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
+					>
+						<Checkbox />
+						{step}
+					</Label>
+				</li>
 			{/each}
 		</ol>
 	</section>
