@@ -14,14 +14,35 @@
 </script>
 
 <form method="POST" use:enhance>
-	<Form.Field {form} name="username">
+	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Username</Form.Label>
-				<Input {...props} bind:value={$formData.username} />
+				<Form.Label>Recipe name</Form.Label>
+				<Input {...props} bind:value={$formData.name} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>This is your public display name.</Form.Description>
+		<Form.Description>Name of the recipe</Form.Description>
+		<Form.FieldErrors />
+	</Form.Field>
+	<Form.Field {form} name="source">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Source</Form.Label>
+				<Input {...props} bind:value={$formData.source} />
+			{/snippet}
+		</Form.Control>
+		<Form.Description>Source of the recipe</Form.Description>
+		<Form.FieldErrors />
+	</Form.Field>
+
+	<Form.Field {form} name="servings">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Servings</Form.Label>
+				<Input {...props} bind:value={$formData.servings} />
+			{/snippet}
+		</Form.Control>
+		<Form.Description>How plenty is the thing?</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Button>Submit</Form.Button>
