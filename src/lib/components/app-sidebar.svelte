@@ -25,7 +25,7 @@
 					<Sidebar.MenuItem>
 						<Sidebar.MenuButton>
 							{#snippet child({ props })}
-								<a href={item.url} {...props} onclick={closeBar}>
+								<a href={item.url} {...props} onclick={closeBar} ontouch={closeBar}>
 									<item.icon />
 									<span>{item.title}</span>
 								</a>
