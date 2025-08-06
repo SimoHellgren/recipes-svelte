@@ -3,11 +3,6 @@
 	import Label from '$lib/components/ui/label/label.svelte';
 
 	let { data } = $props();
-
-	let ingredientSections = Object.groupBy(
-		data.ingredients.toSorted((x) => [x.section_position, x.ingredient_position]),
-		(x) => [x.section]
-	);
 </script>
 
 <header>
@@ -39,17 +34,17 @@
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Ainehet</h2>
 		<ul class="space-y-2.5">
-			{#each Object.entries(ingredientSections) as [section, ingredients]}
-				{#if section}
-					<div class="font-bold">{section}</div>
+			{#each data.sections as section}
+				{#if section.name}
+					<div class="font-bold">{section.name}</div>
 				{/if}
-				{#each ingredients as ingredient}
+				{#each section.ingredients as ingredient}
 					<li>
 						<Label
 							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
 						>
 							<Checkbox />
-							{ingredient.ingredient}
+							{ingredient.name}
 							{ingredient.quantity}
 						</Label>
 					</li>
