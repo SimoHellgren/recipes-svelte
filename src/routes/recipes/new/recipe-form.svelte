@@ -1,4 +1,5 @@
 <script>
+	import IngredientInput from '$lib/components/ingredient-input.svelte';
 	import MarkdownInput from '$lib/components/markdown-input.svelte';
 	import TagsInput from '$lib/components/tags-input.svelte';
 	import * as Form from '$lib/components/ui/form/index.js';
@@ -15,6 +16,8 @@
 
 	const { form: formData, enhance } = form;
 </script>
+
+<IngredientInput />
 
 <form method="POST" use:enhance>
 	<Form.Field {form} name="name">
