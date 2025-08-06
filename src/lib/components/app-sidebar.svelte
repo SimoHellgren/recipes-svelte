@@ -11,7 +11,7 @@
 
 	const items = [
 		{ title: 'Reseptit', url: '/', icon: CookingPotIcon },
-		{ title: 'Uusi', url: '#new', icon: PlusIcon },
+		{ title: 'Uusi', url: '/recipes/new/', icon: PlusIcon },
 		{ title: 'Suunnittelu', url: '#plan', icon: CalendarIcon },
 		{ title: 'Ostoskori', url: '#basket', icon: ShoppingBasketIcon }
 	];

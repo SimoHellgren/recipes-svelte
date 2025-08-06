@@ -8,7 +8,7 @@
 
 <title>Keitot kirja</title>
 
-<Sidebar.Provider>
+<Sidebar.Provider open={false}>
 	<AppSidebar />
 	<main>
 		<Sidebar.Trigger />
