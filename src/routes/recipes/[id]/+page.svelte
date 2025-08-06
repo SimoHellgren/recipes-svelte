@@ -1,4 +1,5 @@
 <script>
+	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 
@@ -8,6 +9,11 @@
 <header>
 	<h1 class="text-2xl font-bold">{data.name}</h1>
 	<a href="/">🏠↩️</a>
+	{#each data.tags as tag}
+		<Badge variant="secondary">
+			{tag}
+		</Badge>
+	{/each}
 </header>
 
 <p>
