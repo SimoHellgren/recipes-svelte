@@ -31,6 +31,7 @@
 
 	useSortable(() => sortable, {
 		animation: 150,
+		handle: '.draghandle',
 		onEnd: (evt) => {
 			rows = reorder(rows, evt);
 		}
@@ -40,9 +41,11 @@
 <div class="border-radius-10 border-2 p-3">
 	<ul bind:this={sortable}>
 		{#each rows as row, i (row)}
-			<li>
+			<li class="flex">
+				<button type="button" class="draghandle cursor-grab active:cursor-grabbing" tabindex="-1"
+					>⠿</button
+				>
 				<div class="flex max-w-lg border-2 p-3">
-					<div class="text-center">⠿</div>
 					<Input bind:value={rows[i].name} placeholder="aines" />
 					<Input bind:value={rows[i].quantity} placeholder="määrä" class="w-2xs" />
 					<Input
