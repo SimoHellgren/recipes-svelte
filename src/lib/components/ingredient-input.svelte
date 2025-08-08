@@ -12,6 +12,10 @@
 
 	let rows = $state([{ ...newRow }]);
 
+	//test data
+	rows = [...Array(4).keys()].map((i) => ({ ...newRow, name: `Item ${i + 1}` }));
+
+	$inspect(rows);
 	const appendRow = () => {
 		rows = [...rows, { ...newRow }];
 	};
@@ -41,15 +45,15 @@
 <div class="border-radius-10 border-2 p-3">
 	<ul bind:this={sortable}>
 		{#each rows as row, i (row)}
-			<li class="flex">
+			<li class="flex gap-0">
 				<button type="button" class="draghandle cursor-grab active:cursor-grabbing" tabindex="-1"
 					>⠿</button
 				>
-				<div class="flex max-w-lg border-2 p-3">
-					<Input bind:value={rows[i].name} placeholder="aines" />
-					<Input bind:value={rows[i].quantity} placeholder="määrä" class="w-2xs" />
+				<div class="flex max-w-lg gap-0.5 p-1">
+					<Input bind:value={row.name} placeholder="aines" />
+					<Input bind:value={row.quantity} placeholder="määrä" class="w-2xs" />
 					<Input
-						bind:value={rows[i].unit}
+						bind:value={row.unit}
 						placeholder="yksikkö"
 						class="w-2xs"
 						onkeydown={i == rows.length - 1 ? autoNewRow : null}
