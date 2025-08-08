@@ -6,15 +6,32 @@
 	// 4. comment & optionals (context menu or some other thing)
 
 	import IngredientRow from './ingredient-row.svelte';
+	import IngredientSectionHeader from './ingredient-section-header.svelte';
 
 	const newRow = { name: '', quantity: '', unit: '' };
 
 	let rows = $state([{ ...newRow }]);
 
-	//test data
-	rows = [...Array(4).keys()].map((i) => ({ ...newRow, name: `Item ${i + 1}` }));
+	let testdata = $state([
+		{
+			section: 'Osio 1',
+			ingredients: [
+				{ ...newRow, name: 'Item 1' },
+				{ ...newRow, name: 'Item 2' }
+			]
+		},
+		{
+			section: 'Osio 2',
+			ingredients: [
+				{ ...newRow, name: 'Item 3' },
+				{ ...newRow, name: 'Item 4' }
+			]
+		}
+	]);
 
+	rows = testdata;
 	$inspect(rows);
+
 	const appendRow = () => {
 		rows = [...rows, { ...newRow }];
 	};
@@ -28,27 +45,15 @@
 			appendRow();
 		}
 	};
-
-	import { reorder, useSortable } from '$lib/use-sortable.svelte';
-	let sortable = null;
-
-	useSortable(() => sortable, {
-		animation: 150,
-		handle: '.draghandle',
-		onEnd: (evt) => {
-			rows = reorder(rows, evt);
-		}
-	});
 </script>
 
 <div class="border-radius-10 border-2 p-3">
-	<ul bind:this={sortable}>
-		{#each rows as row, i (row)}
-			<IngredientRow
-				bind:value={rows[i]}
-				removefunc={() => removeRow(i)}
-				autoadd={i == rows.length - 1 ? autoNewRow : null}
-			/>
+	<ul>
+		{#each rows as { section, ingredients }, i}
+			<IngredientSectionHeader bind:value={rows[i].section} />
+			{#each ingredients as row, j}
+				<IngredientRow bind:value={ingredients[j]} removefunc={() => removeRow(j)} />
+			{/each}
 		{/each}
 	</ul>
 	<!-- for debugging -->

@@ -13,7 +13,7 @@
 		<Input bind:value={value.quantity} placeholder="määrä" class="w-2xs" />
 		<Input bind:value={value.unit} placeholder="yksikkö" class="w-2xs" onkeydown={autoadd} />
 		<button tabindex="-1" type="button" onclick={removefunc}
-			><CrossIcon class="hover:text-red-400" /></button
+			><CrossIcon class="size-4 hover:text-red-400" /></button
 		>
 	</div>
 </li>
