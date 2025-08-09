@@ -4,6 +4,8 @@
 	//    - not sure if this would be nicer with focus or something
 	// 2. sections (data structure could be same as before)
 	// 4. comment & optionals (context menu or some other thing)
+	import recipe from './data.json';
+	console.log(recipe);
 
 	import IngredientRow from './ingredient.svelte';
 	import IngredientSectionHeader from './section-header.svelte';
@@ -12,24 +14,8 @@
 
 	let rows = $state([{ ...newRow }]);
 
-	let testdata = $state([
-		{
-			section: 'Osio 1',
-			ingredients: [
-				{ ...newRow, name: 'Item 1' },
-				{ ...newRow, name: 'Item 2' }
-			]
-		},
-		{
-			section: 'Osio 2',
-			ingredients: [
-				{ ...newRow, name: 'Item 3' },
-				{ ...newRow, name: 'Item 4' }
-			]
-		}
-	]);
+	rows = recipe.sections;
 
-	rows = testdata;
 	$inspect(rows);
 
 	const appendRow = () => {
@@ -49,8 +35,8 @@
 
 <div class="border-radius-10 border-2 p-3">
 	<ul>
-		{#each rows as { section, ingredients }, i}
-			<IngredientSectionHeader bind:value={rows[i].section} />
+		{#each rows as { ingredients }, i}
+			<IngredientSectionHeader bind:value={rows[i].name} />
 			{#each ingredients as row, j}
 				<IngredientRow bind:value={ingredients[j]} removefunc={() => removeRow(j)} />
 			{/each}
