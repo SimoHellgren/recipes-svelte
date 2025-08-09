@@ -1,8 +1,7 @@
 <script>
-	import Separator from './ui/separator/separator.svelte';
 	import CrossIcon from '@lucide/svelte/icons/x';
-	import Input from './ui/input/input.svelte';
-	let { value = $bindable(), removefunc = () => null } = $props();
+	import Input from '$lib/components/ui/input/input.svelte';
+	let { children } = $props();
 </script>
 
 <li>
@@ -10,10 +9,9 @@
 		<button type="button" class="draghandle cursor-grab active:cursor-grabbing" tabindex="-1"
 			>⠿</button
 		>
-		<Input bind:value class="border-transparent bg-transparent p-3 font-bold shadow-none" />
+		{@render children?.()}
 		<button tabindex="-1" type="button" onclick={removefunc}
 			><CrossIcon class="size-4 hover:text-red-400" /></button
 		>
 	</div>
-	<Separator />
 </li>

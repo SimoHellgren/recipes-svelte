@@ -5,8 +5,8 @@
 	// 2. sections (data structure could be same as before)
 	// 4. comment & optionals (context menu or some other thing)
 
-	import IngredientRow from './ingredient-row.svelte';
-	import IngredientSectionHeader from './ingredient-section-header.svelte';
+	import IngredientRow from './ingredient.svelte';
+	import IngredientSectionHeader from './section-header.svelte';
 
 	const newRow = { name: '', quantity: '', unit: '' };
 

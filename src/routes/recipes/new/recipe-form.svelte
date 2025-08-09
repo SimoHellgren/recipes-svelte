@@ -1,5 +1,5 @@
 <script>
-	import IngredientInput from '$lib/components/ingredient-input.svelte';
+	import IngredientInput from '$lib/components/ingredient-input/ingredient-input.svelte';
 	import MarkdownInput from '$lib/components/markdown-input.svelte';
 	import TagsInput from '$lib/components/tags-input.svelte';
 	import * as Form from '$lib/components/ui/form/index.js';
