@@ -6,6 +6,10 @@
 </script>
 
 <Row>
-	<Input bind:value class="border-transparent bg-transparent p-3 font-bold shadow-none" />
+	<Input
+		bind:value
+		class="border-transparent bg-transparent p-3 font-bold shadow-none"
+		placeholder="(nimetön osio)"
+	/>
 </Row>
 <Separator />
