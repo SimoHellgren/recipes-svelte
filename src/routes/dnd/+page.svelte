@@ -10,20 +10,28 @@
 	import TasksContainer from './tasks-container.svelte';
 	import TaskItem from './task-item.svelte';
 
-	import { sections } from './data.json';
+	import { sections as recipeSections } from './data.json';
+
+	// TODO:
+	// 1. make positions update when stuff moves
+	// 2. make drag overlays and/or ghost elements nicer
+	// 3. implement autoadding rows for each section
+	// 4. refactor, rename, cleanup
 
 	// generate unique ids for the elements
 	let nextId = 1;
-	sections.forEach((section) => {
+	recipeSections.forEach((section) => {
 		section.id = `section-${nextId++}`;
 		section.ingredients.forEach((ingredient) => {
 			ingredient.id = `ingredient-${nextId++}`;
 		});
 	});
 
-	let items = $state(sections);
+	let items = $state(recipeSections);
 	let activeItem = $state(null);
 	let activeType = $state(null); // container or item
+
+	$inspect(items);
 
 	const isContainerItem = (item) => item !== null && 'ingredients' in item;
 	const isNestedItem = (item) => item !== null && !('ingredients' in item);
@@ -126,13 +134,19 @@
 >
 	<SortableContext items={items.map((item) => item.id)}>
 		<Droppable id="container" data={{ accepts: ['container'] }}>
-			<div class="grid gap-3 md:grid-cols-2">
-				{#each items as section (section.id)}
-					{@render tasksContainer(section, section.ingredients)}
+			<div class="flex-col">
+				{#each items as section, i (section.id)}
+					<TasksContainer bind:data={items[i]} type="container" accepts={['item']}>
+						<SortableContext items={section.ingredients.map((item) => item.id)}>
+							{#each section.ingredients as ingredient, j (ingredient.id)}
+								<TaskItem bind:data={section.ingredients[j]} type="item" />
+							{:else}
+								<p class="text-(sm center #9E9E9E) fw-medium pt">No ingredients</p>
+							{/each}
+						</SortableContext>
+					</TasksContainer>
 				{/each}
 			</div>
-
-			<p class="text-(sm center #9E9E9E) fw-medium pt-3">Drag and drop to reorder</p>
 		</Droppable>
 	</SortableContext>
 
@@ -140,19 +154,12 @@
 		{#if isNestedItem(activeItem)}
 			<TaskItem data={activeItem} type="item" />
 		{:else if isContainerItem(activeItem)}
-			{@render tasksContainer(activeItem, activeItem.ingredients, 'shadow-(gray-2 xl)')}
+			<TasksContainer data={activeItem}>
+				<!-- TODO: could "fold" the ingredients here for a nicer visual -->
+				{#each activeItem.ingredients as ingredient}
+					<TaskItem data={ingredient} />
+				{/each}
+			</TasksContainer>
 		{/if}
 	</DragOverlay>
 </DndContext>
-
-{#snippet tasksContainer(data, nesteds, className)}
-	<TasksContainer {data} type="container" accepts={['item']} class={className}>
-		<SortableContext items={nesteds.map((item) => item.id)}>
-			{#each nesteds as nested (nested.id)}
-				<TaskItem data={nested} type="item" />
-			{:else}
-				<p class="text-(sm center #9E9E9E) fw-medium pt">No tasks</p>
-			{/each}
-		</SortableContext>
-	</TasksContainer>
-{/snippet}

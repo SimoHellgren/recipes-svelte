@@ -1,8 +1,10 @@
 <script>
 	import { CSS, styleObjectToString } from '@dnd-kit-svelte/utilities';
 	import { useSortable } from '@dnd-kit-svelte/sortable';
+	import CrossIcon from '@lucide/svelte/icons/x';
+	import Input from '$lib/components/ui/input/input.svelte';
 
-	let { data, children, type, accepts = [], class: className } = $props();
+	let { data = $bindable(), children, type, accepts = [], class: className } = $props();
 
 	const {
 		attributes,
@@ -29,29 +31,28 @@
 
 <div class="relative" bind:this={node.current} {style}>
 	<!-- Original element - becomes invisible during drag but maintains dimensions -->
-	<div class={['bg-#F9F9F9 rd-3xl p-5 pt-6', className, { invisible: isDragging.current }]}>
-		<div class="flex-s-between text-#9E9E9E">
-			<div class="pl-5.5">
-				<p class="text-(lg dark) fw-bold flex-s-start relative">
-					<span class="s-10px bg-orange rd-full abs left--20px"></span>
-					{data.name}
-				</p>
-				<p class="fw-medium text-sm">{data.description}</p>
-			</div>
 
-			<div
-				class="i-lucide-grip-vertical cursor-pointer"
-				bind:this={activatorNode.current}
-				{...attributes.current}
-				{...listeners.current}
-			>
-				T
-			</div>
-		</div>
+	<div class={['flex max-w-lg gap-0.5 p-1', className, { invisible: isDragging.current }]}>
+		<button
+			class="i-lucide-grip-vertical cursor-grab active:cursor-grabbing"
+			bind:this={activatorNode.current}
+			{...attributes.current}
+			{...listeners.current}
+		>
+			⠿
+		</button>
+		<Input
+			bind:value={data.name}
+			class="border-transparent bg-transparent p-3 font-bold shadow-none"
+			placeholder="(nimetön osio)"
+		/>
+		<button tabindex="-1" type="button" onclick={removefunc}
+			><CrossIcon class="size-4 hover:text-red-400" /></button
+		>
+	</div>
 
-		<div class="mt-3 grid gap-2">
-			{@render children(isDragging.current)}
-		</div>
+	<div class="mt-3 grid gap-2">
+		{@render children(isDragging.current)}
 	</div>
 
 	{#if isDragging.current}

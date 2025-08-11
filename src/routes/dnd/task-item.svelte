@@ -1,8 +1,10 @@
 <script>
 	import { CSS, styleObjectToString } from '@dnd-kit-svelte/utilities';
 	import { useSortable } from '@dnd-kit-svelte/sortable';
+	import CrossIcon from '@lucide/svelte/icons/x';
+	import Input from '$lib/components/ui/input/input.svelte';
 
-	let { data, type } = $props();
+	let { data = $bindable(), type } = $props();
 
 	const {
 		attributes,
@@ -32,23 +34,24 @@
 	<!-- Original element - becomes invisible during drag but maintains dimensions -->
 	<div
 		class={[
-			'rd-2xl flex-s-between bg-white p-3',
+			'flex max-w-lg gap-0.5 p-1',
 			{ invisible: isDragging.current, 'bg-orange/5!': isOver.current }
 		]}
 	>
-		<div class="">
-			<p class="text-lg font-bold">{data.name}</p>
-			<p class="text-sm text-gray-500">{data.description}</p>
-		</div>
-
-		<div
-			class="i-lucide-grip-vertical cursor-pointer text-gray-500"
+		<button
+			class="i-lucide-grip-vertical cursor-grab active:cursor-grabbing"
 			bind:this={activatorNode.current}
 			{...attributes.current}
 			{...listeners.current}
 		>
-			T
-		</div>
+			⠿
+		</button>
+		<Input bind:value={data.name} placeholder="aines" />
+		<Input bind:value={data.quantity} placeholder="määrä" class="w-2xs" />
+		<Input bind:value={data.unit} placeholder="yksikkö" class="w-2xs" />
+		<button tabindex="-1" type="button" onclick={removefunc}
+			><CrossIcon class="size-4 hover:text-red-400" /></button
+		>
 	</div>
 
 	<!-- Drag placeholder -->
