@@ -193,14 +193,16 @@
 </DndContext>
 <Button
 	onclick={() => {
-		items = [
+		items = updatePositions([
 			...items,
 			{
-				id: nextId++,
-				position: 10,
+				position: null,
 				name: null,
-				ingredients: [{ id: nextId++, name: null, quantity: null, unit: null, position: null }]
+				ingredients: [
+					{ id: `ingredient-${nextId++}`, name: null, quantity: null, unit: null, position: 1 }
+				],
+				id: `section-${nextId++}`
 			}
-		];
+		]);
 	}}>New section</Button
 >
