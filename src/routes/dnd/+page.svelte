@@ -79,7 +79,7 @@
 		if (activeType === 'container' && (overType === 'container' || acceptsContainer)) {
 			const oldIndex = items.findIndex((item) => item.id === active.id);
 			const newIndex = items.findIndex((item) => item.id === over.id);
-			items = arrayMove(items, oldIndex, newIndex);
+			items = updatePositions(arrayMove(items, oldIndex, newIndex));
 			return;
 		}
 
@@ -94,16 +94,19 @@
 				// Same container reorder
 				const oldIndex = activeContainer.ingredients.findIndex((item) => item.id === active.id);
 				const newIndex = activeContainer.ingredients.findIndex((item) => item.id === over.id);
-				activeContainer.ingredients = arrayMove(activeContainer.ingredients, oldIndex, newIndex);
+				activeContainer.ingredients = updatePositions(
+					arrayMove(activeContainer.ingredients, oldIndex, newIndex)
+				);
 			} else {
 				// Move between containers
 				const item = activeContainer.ingredients.find((item) => item.id === active.id);
-				activeContainer.ingredients = activeContainer.ingredients.filter(
-					(nested) => nested.id !== active.id
+				activeContainer.ingredients = updatePositions(
+					activeContainer.ingredients.filter((nested) => nested.id !== active.id)
 				);
 
 				const insertIndex = overContainer.ingredients.findIndex((nested) => nested.id === over.id);
 				overContainer.ingredients.splice(insertIndex, 0, item);
+				overContainer.ingredients = updatePositions(overContainer.ingredients);
 			}
 		}
 	};
