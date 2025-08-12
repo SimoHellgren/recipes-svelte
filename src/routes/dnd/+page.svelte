@@ -157,7 +157,10 @@
 		if (!ingredient) return;
 
 		activeSection.ingredients = activeSection.ingredients.filter((ing) => ing.id !== active.id);
-		overSection.ingredients.push(ingredient);
+		//using .unshift instead of .push to avoid adding empty ingredient rows when
+		// ingredient is dragged to another section (.push places the element to the
+		// end of the array, triggering the $effect)
+		overSection.ingredients.unshift(ingredient);
 	};
 
 	const removeItem = (item) => {
