@@ -60,7 +60,7 @@
 		<div
 			class=" inset-0 flex items-center justify-center rounded-xl border-1 border-dashed border-orange-500 bg-orange-100"
 		>
-			<span class="text-orange-500">Moving: {data.name}</span>
+			<span class="text-orange-500"></span>
 		</div>
 	{/if}
 </div>

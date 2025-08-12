@@ -1,23 +1,15 @@
 <script>
 	import { DndContext, DragOverlay } from '@dnd-kit-svelte/core';
-
 	import { SortableContext, arrayMove } from '@dnd-kit-svelte/sortable';
-
 	import { dropAnimation, sensors } from './utils';
-	import { crossfade } from 'svelte/transition';
 	import Droppable from './droppable.svelte';
 
-	import TasksContainer from './tasks-container.svelte';
-	import TaskItem from './task-item.svelte';
+	import Section from './section.svelte';
+	import Ingredient from './ingredient.svelte';
 
-	import { sections as recipeSections } from './data.json';
 	import Button from '$lib/components/ui/button/button.svelte';
 
-	// TODO:
-	// 1. make positions update when stuff moves
-	// 2. make drag overlays and/or ghost elements nicer
-	// 3. implement autoadding rows for each section
-	// 4. refactor, rename, cleanup
+	import { sections as recipeSections } from './data.json';
 
 	// generate unique ids for the elements
 	let nextId = 1;
@@ -47,13 +39,13 @@
 		};
 	};
 
-	let items = $state(recipeSections);
+	let sections = $state(recipeSections);
 
 	// autoadd ingredient rows
 	// using $effect for manipulating state is a bit against Svelte's
 	// best practices, but oh well
 	$effect(() => {
-		items.forEach((section) => {
+		sections.forEach((section) => {
 			const last = section.ingredients[section.ingredients.length - 1];
 			if (last.name && last.quantity && last.unit) {
 				section.ingredients = [...section.ingredients, newIngredient(last.position + 1)];
@@ -62,7 +54,7 @@
 	});
 
 	let activeItem = $state(null);
-	let activeType = $state(null); // container or item
+	let activeType = $state(null); // section or ingredient
 
 	const updatePositions = (arr) => {
 		return arr.map((x, i) => ({ ...x, position: i + 1 }));
@@ -71,72 +63,75 @@
 	const isContainerItem = (item) => item !== null && 'ingredients' in item;
 	const isNestedItem = (item) => item !== null && !('ingredients' in item);
 
-	const findContainer = (id) => {
-		//given a container id OR an item id, returns corresponding container
+	const findSection = (id) => {
+		//given a section id OR an ingredient id, returns corresponding section
 
-		const containerIndex = items.findIndex(
+		const sectionIndex = sections.findIndex(
 			(section) => section.id === id || section.ingredients.some((i) => i.id === id)
 		);
 
-		return containerIndex !== -1 ? items[containerIndex] : null;
+		return sectionIndex !== -1 ? sections[sectionIndex] : null;
 	};
 
 	const getTypeAndAccepts = (active, over) => {
 		const activeType = active.data?.type;
 		const overType = over.data?.type;
-		const acceptsItem = over?.data?.accepts?.includes('item') ?? false;
-		const acceptsContainer = over?.data?.accepts?.includes('container') ?? false;
+		const acceptsIngredient = over?.data?.accepts?.includes('ingdredient') ?? false;
+		const acceptsSection = over?.data?.accepts?.includes('section') ?? false;
 
-		return { activeType, overType, acceptsItem, acceptsContainer };
+		return { activeType, overType, acceptsIngredient, acceptsSection };
 	};
 
 	const handleDragStart = ({ active }) => {
-		const container = findContainer(active.id);
+		const section = findSection(active.id);
 		activeType = active.data?.type;
 
 		//set activeItem
-		active.data?.type === 'container'
-			? (activeItem = container ?? null)
-			: (activeItem = container.ingredients.find((i) => i.id === active.id) ?? null);
+		active.data?.type === 'section'
+			? (activeItem = section ?? null)
+			: (activeItem = section.ingredients.find((i) => i.id === active.id) ?? null);
 	};
 
 	const handleDragEnd = ({ active, over }) => {
 		if (!over) return;
 
-		const { activeType, overType, acceptsItem, acceptsContainer } = getTypeAndAccepts(active, over);
+		const { activeType, overType, acceptsIngredient, acceptsSection } = getTypeAndAccepts(
+			active,
+			over
+		);
 
 		// if moving a container to a place where containers can be moved, do that
-		if (activeType === 'container' && (overType === 'container' || acceptsContainer)) {
-			const oldIndex = items.findIndex((item) => item.id === active.id);
-			const newIndex = items.findIndex((item) => item.id === over.id);
-			items = updatePositions(arrayMove(items, oldIndex, newIndex));
+		if (activeType === 'section' && (overType === 'section' || acceptsSection)) {
+			const oldIndex = sections.findIndex((item) => item.id === active.id);
+			const newIndex = sections.findIndex((item) => item.id === over.id);
+			sections = updatePositions(arrayMove(sections, oldIndex, newIndex));
 			return;
 		}
 
 		// move items
-		if (activeType === 'item' && (overType === 'item' || acceptsItem)) {
-			const activeContainer = findContainer(active.id);
-			const overContainer = findContainer(over.id);
+		if (activeType === 'ingredient' && (overType === 'ingredient' || acceptsIngredient)) {
+			const activeSection = findSection(active.id);
+			const overSection = findSection(over.id);
 
-			if (!activeContainer || !overContainer) return;
+			if (!activeSection || !overSection) return;
 
-			if (activeContainer === overContainer) {
+			if (activeSection === overSection) {
 				// Same container reorder
-				const oldIndex = activeContainer.ingredients.findIndex((item) => item.id === active.id);
-				const newIndex = activeContainer.ingredients.findIndex((item) => item.id === over.id);
-				activeContainer.ingredients = updatePositions(
-					arrayMove(activeContainer.ingredients, oldIndex, newIndex)
+				const oldIndex = activeSection.ingredients.findIndex((item) => item.id === active.id);
+				const newIndex = activeSection.ingredients.findIndex((item) => item.id === over.id);
+				activeSection.ingredients = updatePositions(
+					arrayMove(activeSection.ingredients, oldIndex, newIndex)
 				);
 			} else {
 				// Move between containers
-				const item = activeContainer.ingredients.find((item) => item.id === active.id);
-				activeContainer.ingredients = updatePositions(
-					activeContainer.ingredients.filter((nested) => nested.id !== active.id)
+				const ingredient = activeSection.ingredients.find((item) => item.id === active.id);
+				activeSection.ingredients = updatePositions(
+					activeSection.ingredients.filter((nested) => nested.id !== active.id)
 				);
 
-				const insertIndex = overContainer.ingredients.findIndex((nested) => nested.id === over.id);
-				overContainer.ingredients.splice(insertIndex, 0, item);
-				overContainer.ingredients = updatePositions(overContainer.ingredients);
+				const insertIndex = overSection.ingredients.findIndex((nested) => nested.id === over.id);
+				overSection.ingredients.splice(insertIndex, 0, ingredient);
+				overSection.ingredients = updatePositions(overSection.ingredients);
 			}
 		}
 	};
@@ -144,30 +139,32 @@
 	const handleDragOver = ({ active, over }) => {
 		if (!over) return;
 
-		const { activeType: _activeType, overType, acceptsItem } = getTypeAndAccepts(active, over);
+		const {
+			activeType: _activeType,
+			overType,
+			acceptsIngredient
+		} = getTypeAndAccepts(active, over);
 		activeType = _activeType;
 
-		if (activeType !== 'item' || (!overType && !acceptsItem)) return;
+		if (activeType !== 'ingredient' || (!overType && !acceptsIngredient)) return;
 
-		const activeContainer = findContainer(active.id);
-		const overContainer = findContainer(over.id);
+		const activeSection = findSection(active.id);
+		const overSection = findSection(over.id);
 
-		if (!activeContainer || !overContainer || activeContainer === overContainer) return;
+		if (!activeSection || !overSection || activeSection === overSection) return;
 
-		const item = activeContainer.ingredients.find((item) => item.id === active.id);
-		if (!item) return;
+		const ingredient = activeSection.ingredients.find((ing) => ing.id === active.id);
+		if (!ingredient) return;
 
-		activeContainer.ingredients = activeContainer.ingredients.filter(
-			(nested) => nested.id !== active.id
-		);
-		overContainer.ingredients.push(item);
+		activeSection.ingredients = activeSection.ingredients.filter((ing) => ing.id !== active.id);
+		overSection.ingredients.push(ingredient);
 	};
 
 	const removeItem = (item) => {
 		if (isContainerItem(item)) {
-			items = updatePositions(items.filter((it) => it.id !== item.id));
+			sections = updatePositions(sections.filter((it) => it.id !== item.id));
 		} else {
-			const container = findContainer(item.id);
+			const container = findSection(item.id);
 			container.ingredients = updatePositions(
 				container.ingredients.filter((ing) => ing.id !== item.id)
 			);
@@ -181,28 +178,28 @@
 	onDragEnd={handleDragEnd}
 	onDragOver={handleDragOver}
 >
-	<SortableContext items={items.map((item) => item.id)}>
-		<Droppable id="container" data={{ accepts: ['container'] }}>
+	<SortableContext items={sections.map((item) => item.id)}>
+		<Droppable id="section" data={{ accepts: ['section'] }}>
 			<div class="flex-col space-y-2">
-				{#each items as section, i (section.id)}
-					<TasksContainer
-						bind:data={items[i]}
-						type="container"
-						accepts={['item']}
+				{#each sections as section, i (section.id)}
+					<Section
+						bind:data={sections[i]}
+						type="section"
+						accepts={['ingredient']}
 						removefunc={() => removeItem(section)}
 					>
 						<SortableContext items={section.ingredients.map((item) => item.id)}>
 							{#each section.ingredients as ingredient, j (ingredient.id)}
-								<TaskItem
+								<Ingredient
 									bind:data={section.ingredients[j]}
-									type="item"
+									type="ingredient"
 									removefunc={() => removeItem(ingredient)}
 								/>
 							{:else}
 								<p class="text-(sm center #9E9E9E) fw-medium pt">No ingredients</p>
 							{/each}
 						</SortableContext>
-					</TasksContainer>
+					</Section>
 				{/each}
 			</div>
 		</Droppable>
@@ -210,19 +207,19 @@
 
 	<DragOverlay>
 		{#if isNestedItem(activeItem)}
-			<TaskItem data={activeItem} type="item" />
+			<Ingredient data={activeItem} type="ingredient" />
 		{:else if isContainerItem(activeItem)}
-			<TasksContainer data={activeItem}>
+			<Section data={activeItem}>
 				<!-- TODO: could "fold" the ingredients here for a nicer visual -->
 				{#each activeItem.ingredients as ingredient}
-					<TaskItem data={ingredient} />
+					<Ingredient data={ingredient} />
 				{/each}
-			</TasksContainer>
+			</Section>
 		{/if}
 	</DragOverlay>
 </DndContext>
 <Button
 	onclick={() => {
-		items = updatePositions([...items, newSection()]);
+		sections = updatePositions([...sections, newSection()]);
 	}}>New section</Button
 >
