@@ -48,10 +48,21 @@
 	};
 
 	let items = $state(recipeSections);
+
+	// autoadd ingredient rows
+	// using $effect for manipulating state is a bit against Svelte's
+	// best practices, but oh well
+	$effect(() => {
+		items.forEach((section) => {
+			const last = section.ingredients[section.ingredients.length - 1];
+			if (last.name && last.quantity && last.unit) {
+				section.ingredients = [...section.ingredients, newIngredient(last.position + 1)];
+			}
+		});
+	});
+
 	let activeItem = $state(null);
 	let activeType = $state(null); // container or item
-
-	$inspect(items);
 
 	const updatePositions = (arr) => {
 		return arr.map((x, i) => ({ ...x, position: i + 1 }));
