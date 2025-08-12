@@ -11,6 +11,7 @@
 	import TaskItem from './task-item.svelte';
 
 	import { sections as recipeSections } from './data.json';
+	import Button from '$lib/components/ui/button/button.svelte';
 
 	// TODO:
 	// 1. make positions update when stuff moves
@@ -32,6 +33,10 @@
 	let activeType = $state(null); // container or item
 
 	$inspect(items);
+
+	const updatePositions = (arr) => {
+		return arr.map((x, i) => ({ ...x, position: i + 1 }));
+	};
 
 	const isContainerItem = (item) => item !== null && 'ingredients' in item;
 	const isNestedItem = (item) => item !== null && !('ingredients' in item);
@@ -124,6 +129,17 @@
 		);
 		overContainer.ingredients.push(item);
 	};
+
+	const removeItem = (item) => {
+		if (isContainerItem(item)) {
+			items = updatePositions(items.filter((it) => it.id !== item.id));
+		} else {
+			const container = findContainer(item.id);
+			container.ingredients = updatePositions(
+				container.ingredients.filter((ing) => ing.id !== item.id)
+			);
+		}
+	};
 </script>
 
 <DndContext
@@ -136,10 +152,19 @@
 		<Droppable id="container" data={{ accepts: ['container'] }}>
 			<div class="flex-col space-y-2">
 				{#each items as section, i (section.id)}
-					<TasksContainer bind:data={items[i]} type="container" accepts={['item']}>
+					<TasksContainer
+						bind:data={items[i]}
+						type="container"
+						accepts={['item']}
+						removefunc={() => removeItem(section)}
+					>
 						<SortableContext items={section.ingredients.map((item) => item.id)}>
 							{#each section.ingredients as ingredient, j (ingredient.id)}
-								<TaskItem bind:data={section.ingredients[j]} type="item" />
+								<TaskItem
+									bind:data={section.ingredients[j]}
+									type="item"
+									removefunc={() => removeItem(ingredient)}
+								/>
 							{:else}
 								<p class="text-(sm center #9E9E9E) fw-medium pt">No ingredients</p>
 							{/each}
@@ -163,3 +188,16 @@
 		{/if}
 	</DragOverlay>
 </DndContext>
+<Button
+	onclick={() => {
+		items = [
+			...items,
+			{
+				id: nextId++,
+				position: 10,
+				name: null,
+				ingredients: [{ id: nextId++, name: null, quantity: null, unit: null, position: null }]
+			}
+		];
+	}}>New section</Button
+>

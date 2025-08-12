@@ -4,7 +4,7 @@
 	import CrossIcon from '@lucide/svelte/icons/x';
 	import Input from '$lib/components/ui/input/input.svelte';
 
-	let { data = $bindable(), type } = $props();
+	let { data = $bindable(), removefunc, type } = $props();
 
 	const {
 		attributes,
