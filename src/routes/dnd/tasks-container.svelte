@@ -38,6 +38,7 @@
 			bind:this={activatorNode.current}
 			{...attributes.current}
 			{...listeners.current}
+			tabindex="-1"
 		>
 			⠿
 		</button>
