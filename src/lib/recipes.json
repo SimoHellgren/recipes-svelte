@@ -24,32 +24,38 @@
           {
             "position": 1,
             "name": "Jauho",
-            "quantity": "195 g"
+            "quantity": "195",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Leivinjauhe",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 3,
             "name": "Suola",
-            "quantity": "max 0,5 tl"
+            "quantity": "0.5",
+            "unit": "tl (max.)"
           },
           {
             "position": 4,
             "name": "Siemeni\u00e4",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 5,
             "name": "Hunaja",
-            "quantity": "1,5 rkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Vesi",
-            "quantity": "150 g"
+            "quantity": "150",
+            "unit": "g"
           }
         ]
       }
@@ -93,67 +99,80 @@
           {
             "position": 1,
             "name": "Ankankoipi",
-            "quantity": "2-3kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Kaneli",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Vehn\u00e4jauho",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Punaviini",
-            "quantity": "1.5dl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "Purkkitomaatti",
-            "quantity": "1purkki"
+            "quantity": "1",
+            "unit": "purkki"
           },
           {
             "position": 8,
             "name": "Kanaliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 9,
             "name": "Tuore timjami",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 10,
             "name": "Laakerinlehti",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 11,
             "name": "Sokeri",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 12,
             "name": "Maito",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 13,
             "name": "Pasta",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           }
         ]
       }
@@ -185,22 +204,26 @@
           {
             "position": 1,
             "name": "Salottisipuli",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkoviini",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Valkoviinietikka",
-            "quantity": "3rkl"
+            "quantity": "3",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Voi",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           }
         ]
       }
@@ -240,27 +263,32 @@
           {
             "position": 1,
             "name": "Her\u00e4telty hapanjuuri",
-            "quantity": "150g"
+            "quantity": "150",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Vehn\u00e4jauho",
-            "quantity": "420g"
+            "quantity": "420",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Vesi",
-            "quantity": "340g"
+            "quantity": "340",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "30ml"
+            "quantity": "30",
+            "unit": "ml"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "12g"
+            "quantity": "12",
+            "unit": "g"
           }
         ]
       }
@@ -299,32 +327,38 @@
           {
             "position": 1,
             "name": "Vehn\u00e4jauho",
-            "quantity": "2\u00bddl"
+            "quantity": "2.5",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Kananmuna",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "T\u00e4ysmaito",
-            "quantity": "3dl"
+            "quantity": "3",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Sokeri",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "ripaus"
+            "quantity": "1",
+            "unit": "ripaus"
           },
           {
             "position": 6,
             "name": "Voi",
-            "quantity": "50g"
+            "quantity": "50",
+            "unit": "g"
           }
         ]
       },
@@ -335,17 +369,20 @@
           {
             "position": 1,
             "name": "Voi",
-            "quantity": "50g"
+            "quantity": "50",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Sokeri",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Veriappelsiini",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           }
         ]
       },
@@ -356,12 +393,14 @@
           {
             "position": 1,
             "name": "Veriappelsiini",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Vaniljaj\u00e4\u00e4tel\u00f6",
-            "quantity": "sopivasti"
+            "quantity": "1",
+            "unit": "sopivasti"
           }
         ]
       }
@@ -388,107 +427,196 @@
           {
             "position": 1,
             "name": "Kurkuma",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Jeera",
-            "quantity": "14g"
+            "quantity": "14",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Korianteri",
-            "quantity": "12g"
+            "quantity": "12",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Kuivattu appelsiininkuori",
-            "quantity": "10g"
+            "quantity": "10",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Sarviapila",
-            "quantity": "5g"
+            "quantity": "5",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "Fenkolinsiemen",
-            "quantity": "5g"
+            "quantity": "5",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Kaneli",
-            "quantity": "4g"
+            "quantity": "4",
+            "unit": "g"
           },
           {
             "position": 8,
             "name": "Cayenne",
-            "quantity": "4g"
+            "quantity": "4",
+            "unit": "g"
           },
           {
             "position": 9,
             "name": "Valkosipulijauhe",
-            "quantity": "3g"
+            "quantity": "3",
+            "unit": "g"
           },
           {
             "position": 10,
             "name": "Inkiv\u00e4\u00e4rijauhe",
-            "quantity": "3g"
+            "quantity": "3",
+            "unit": "g"
           },
           {
             "position": 11,
             "name": "Tilli (jauhe)",
-            "quantity": "3g"
+            "quantity": "3",
+            "unit": "g"
           },
           {
             "position": 12,
             "name": "Maustepippuri",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 13,
             "name": "Kardemumma",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 14,
             "name": "Neilikka",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 15,
             "name": "T\u00e4htianis",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 16,
             "name": "Salvia",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 17,
             "name": "Timjami",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 18,
             "name": "Muskottip\u00e4hkin\u00e4",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 19,
             "name": "Mustapippuri",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           },
           {
             "position": 20,
             "name": "Laakerinlehti",
-            "quantity": "2g"
+            "quantity": "2",
+            "unit": "g"
           }
         ]
       }
     ],
     "id": "curryjauhe"
+  },
+  {
+    "name": "Granola",
+    "servings": "???",
+    "tags": [
+      "granola"
+    ],
+    "source": "https://www.anninuunissa.fi/ihanan-rapea-granola-g/",
+    "method": [
+      "L\u00e4mmit\u00e4 uuni 150 asteeseen",
+      "Rouhi p\u00e4hkin\u00e4t",
+      "Sekoita kaurahiutaleet, p\u00e4hkin\u00e4t, kaneli ja suola",
+      "Yhdist\u00e4 \u00f6ljy ja hunaja kattilassa, l\u00e4mmit\u00e4 ja sekoita",
+      "Jahka \u00f6ljy ja hunaja menneet sekaisin, ota pois l\u00e4mm\u00f6lt\u00e4 ja sekoita mukaan vaniljauute",
+      "Yhdist\u00e4 seokset yhdeksi seokseksi",
+      "Levit\u00e4 leivinpaperilla varustetulle uuninpellille",
+      "Paahda noin 20 minuuttia"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kaurahiutale",
+            "quantity": "4.5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "P\u00e4hkin\u00e4",
+            "quantity": "3.5",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Kaneli",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "ripaus"
+          },
+          {
+            "position": 5,
+            "name": "Vaniljauute",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Hunaja (tai vaaahterasiirappi)",
+            "quantity": "70",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "\u00d6ljy (esim. rapsi)",
+            "quantity": "45",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
+    "id": "granola"
   },
   {
     "name": "Japanilainen BBQ-kastike",
@@ -516,62 +644,74 @@
           {
             "position": 1,
             "name": "Granny Smith -omena",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sipuli",
-            "quantity": "1kpl (iso)"
+            "quantity": "1",
+            "unit": "kpl (iso)"
           },
           {
             "position": 3,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "4cm"
+            "quantity": "4",
+            "unit": "cm"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Soija",
-            "quantity": "1\u00bddl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Mirin",
-            "quantity": "1\u00bd5dl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "Valkoviini",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 8,
             "name": "Vesi",
-            "quantity": "1\u00bddl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 9,
             "name": "Miso",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 10,
             "name": "Siirappi",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 11,
             "name": "Sessami\u00f6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 12,
             "name": "Sitruuna",
-            "quantity": "\u00bdkpl"
+            "quantity": "0.5",
+            "unit": "kpl"
           }
         ]
       }
@@ -604,22 +744,26 @@
           {
             "position": 1,
             "name": "Avomaankurkku",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Hunaja",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 3,
             "name": "V\u00e4kiviinaetikka",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           }
         ]
       },
@@ -630,67 +774,80 @@
           {
             "position": 1,
             "name": "Suikaloitu varhaiskaali",
-            "quantity": "2l"
+            "quantity": "2",
+            "unit": "l"
           },
           {
             "position": 2,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Rypsi\u00f6ljy",
-            "quantity": "2-3rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Soijarouhe",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Soijakastike",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Pitk\u00e4jyv\u00e4inen riisi",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "Meirami",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 9,
             "name": "Valkopippuri",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 10,
             "name": "Siirappi",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 11,
             "name": "Vesi",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 12,
             "name": "Kasvisliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 13,
             "name": "Kasviskerma",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           }
         ]
       }
@@ -733,17 +890,20 @@
           {
             "position": 1,
             "name": "Vesi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 2,
             "name": "Kombu",
-            "quantity": "15g"
+            "quantity": "15",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Katsuobushi",
-            "quantity": "15g"
+            "quantity": "15",
+            "unit": "g"
           }
         ]
       },
@@ -754,87 +914,104 @@
           {
             "position": 1,
             "name": "Valkosipuli",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "30g"
+            "quantity": "30",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Sipuli",
-            "quantity": "600g"
+            "quantity": "600",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Porkkanaraaste",
-            "quantity": "70g"
+            "quantity": "70",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Ruokasooda",
-            "quantity": "0.125tl"
+            "quantity": "0.125",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Curryjauhe",
-            "quantity": "3rkl"
+            "quantity": "3",
+            "unit": "rkl"
           },
           {
             "position": 8,
             "name": "Cayennejauhe",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 9,
             "name": "Kyps\u00e4 banaani",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 10,
             "name": "Laakerinlehti",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 11,
             "name": "T\u00e4htianis",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 12,
             "name": "Soija",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 13,
             "name": "Chuno",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 14,
             "name": "Tomaattipyre",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 15,
             "name": "Kaakaojauhe",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 16,
             "name": "Peruna",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 17,
             "name": "Porkkana",
-            "quantity": "300g"
+            "quantity": "300",
+            "unit": "g"
           }
         ]
       }
@@ -871,27 +1048,32 @@
           {
             "position": 1,
             "name": "Kurkku",
-            "quantity": "\u00bdkpl"
+            "quantity": "0.5",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sinapinsiemen",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Riisiviinietikka",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Hunaja",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -902,12 +1084,14 @@
           {
             "position": 1,
             "name": "Majoneesi",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Gochujang",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           }
         ]
       },
@@ -918,12 +1102,14 @@
           {
             "position": 1,
             "name": "Majoneesi",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Raastettu inkiv\u00e4\u00e4ri",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           }
         ]
       },
@@ -934,27 +1120,32 @@
           {
             "position": 1,
             "name": "Kananmuna",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Kerma",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Voi",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 5,
             "name": "Paahdettu seesam\u00f6ljy",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           }
         ]
       },
@@ -965,12 +1156,14 @@
           {
             "position": 1,
             "name": "Briossis\u00e4mpyl\u00e4",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Kev\u00e4tsipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           }
         ]
       }
@@ -1012,32 +1205,38 @@
           {
             "position": 1,
             "name": "Maustamaton tofu",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Raastettu inkiv\u00e4\u00e4ri",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Ruokosokeri",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Seesami\u00f6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Soijakastike",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           }
         ]
       },
@@ -1048,12 +1247,14 @@
           {
             "position": 1,
             "name": "Majoneesi",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Gochujang",
-            "quantity": "1\u00bdrkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           }
         ]
       },
@@ -1064,37 +1265,44 @@
           {
             "position": 1,
             "name": "Kev\u00e4tsipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Punakaali",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Chili",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Sinimailasen ituja",
-            "quantity": "1pkt"
+            "quantity": "1",
+            "unit": "pkt"
           },
           {
             "position": 5,
             "name": "Seesaminsiemieni\u00e4",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Minitortilla",
-            "quantity": "8kpl"
+            "quantity": "8",
+            "unit": "kpl"
           },
           {
             "position": 7,
             "name": "Lime",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           }
         ]
       }
@@ -1126,27 +1334,32 @@
           {
             "position": 1,
             "name": "Purjo",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Parsakaali",
-            "quantity": "300g"
+            "quantity": "300",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Kukkakaali",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Sulatejuusto",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Kasvisliemi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           }
         ]
       }
@@ -1174,12 +1387,14 @@
           {
             "position": 1,
             "name": "Kukkakaali",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Parsakaali",
-            "quantity": "300g"
+            "quantity": "300",
+            "unit": "g"
           }
         ]
       }
@@ -1216,37 +1431,44 @@
           {
             "position": 1,
             "name": "Cashewp\u00e4hkin\u00e4",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Lime",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Jalapeno",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Korianteri",
-            "quantity": "\u00bdruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           },
           {
             "position": 5,
             "name": "\u00d6ljy",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Vesi",
-            "quantity": "n. \u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           }
         ]
       },
@@ -1257,27 +1479,32 @@
           {
             "position": 1,
             "name": "Kukkakaali",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "\u00d6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Savupaprikajauhe",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -1288,17 +1515,20 @@
           {
             "position": 1,
             "name": "Maissitortilla",
-            "quantity": "8kpl"
+            "quantity": "8",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Feta",
-            "quantity": "150g"
+            "quantity": "150",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Korianteri",
-            "quantity": "\u00bdruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           }
         ]
       }
@@ -1329,22 +1559,26 @@
           {
             "position": 1,
             "name": "80% viina",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 2,
             "name": "Sitruuna",
-            "quantity": "10kpl"
+            "quantity": "10",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Sokeri",
-            "quantity": "600g"
+            "quantity": "600",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Vesi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           }
         ]
       }
@@ -1382,97 +1616,116 @@
           {
             "position": 1,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Tuore inkiv\u00e4\u00e4ri",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Bataatti",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Lehtikaali tai pinaatti",
-            "quantity": "50g"
+            "quantity": "50",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "Papuja",
-            "quantity": "230g"
+            "quantity": "230",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Rypsi\u00f6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 8,
             "name": "Jauhettu korianteri",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 9,
             "name": "Jeera",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 10,
             "name": "Chilirouhe",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 11,
             "name": "Jauhettu muskottip\u00e4hkin\u00e4",
-            "quantity": "1/4 tl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 12,
             "name": "Paseerattu tomaatti",
-            "quantity": "500g"
+            "quantity": "500",
+            "unit": "g"
           },
           {
             "position": 13,
             "name": "Vesi",
-            "quantity": "2.5dl"
+            "quantity": "2.5",
+            "unit": "dl"
           },
           {
             "position": 14,
             "name": "Kasvisliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 15,
             "name": "Maap\u00e4hkin\u00e4voi",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 16,
             "name": "Limemehu",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 17,
             "name": "Suola",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 18,
             "name": "Suolap\u00e4hkin\u00e4",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 19,
             "name": "Korianteri",
-            "quantity": "1ruukku"
+            "quantity": "1",
+            "unit": "ruukku"
           }
         ]
       }
@@ -1504,27 +1757,32 @@
           {
             "position": 1,
             "name": "Mango",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Punasipuli",
-            "quantity": "1kpl (pieni)"
+            "quantity": "1",
+            "unit": "kpl (pieni)"
           },
           {
             "position": 3,
             "name": "Jalopeno",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Korianteri",
-            "quantity": "\u00bdruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           },
           {
             "position": 5,
             "name": "Lime",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           }
         ]
       }
@@ -1557,52 +1815,62 @@
           {
             "position": 1,
             "name": "Kikherne",
-            "quantity": "purkillinen"
+            "quantity": "1",
+            "unit": "purkki"
           },
           {
             "position": 2,
             "name": "Parsakaali",
-            "quantity": "2 kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Valkokaali",
-            "quantity": "600 g"
+            "quantity": "600",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "2-3 tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Kev\u00e4tsipuli",
-            "quantity": "3 kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Jalapeno",
-            "quantity": "1-2 kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 7,
             "name": "Lime",
-            "quantity": "2 kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 8,
             "name": "Persilja",
-            "quantity": "1 ruukku"
+            "quantity": "1",
+            "unit": "ruukku"
           },
           {
             "position": 9,
             "name": "Rapsi\u00f6ljy",
-            "quantity": "1 dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 10,
             "name": "Paprikajauhe",
-            "quantity": "Maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           }
         ]
       }
@@ -1645,87 +1913,104 @@
           {
             "position": 1,
             "name": "Porkkana",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sellerinvarsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Lehtikaali",
-            "quantity": "150g"
+            "quantity": "150",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "Vihre\u00e4 papu",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Valkopapu",
-            "quantity": "1prk"
+            "quantity": "1",
+            "unit": "prk"
           },
           {
             "position": 8,
             "name": "Tomaattipyre",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 9,
             "name": "Laakerinlehti",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 10,
             "name": "Yrttimausteseos",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 11,
             "name": "Chilirouhe",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 12,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 13,
             "name": "Mustapippuri",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 14,
             "name": "Kasvisliemikuutio",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 15,
             "name": "Vesi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 16,
             "name": "Pienikuvioinen pasta",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 17,
-            "name": "(Basilikaa)",
-            "quantity": "viimeistelyyn"
+            "name": "(Basilika)",
+            "quantity": "1",
+            "unit": "viimeistelyyn"
           }
         ]
       }
@@ -1765,17 +2050,20 @@
           {
             "position": 1,
             "name": "Ruskea sokeri",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Saksanp\u00e4hkin\u00e4 tai pekaanip\u00e4hkin\u00e4",
-            "quantity": "67g"
+            "quantity": "67",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Kaneli",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -1786,62 +2074,74 @@
           {
             "position": 1,
             "name": "Voi",
-            "quantity": "113g"
+            "quantity": "113",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Vehn\u00e4jauho",
-            "quantity": "219g"
+            "quantity": "219",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Ruokasooda",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Leivinjauhe",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Sokeri",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Ruskea sokeri",
-            "quantity": "50g"
+            "quantity": "50",
+            "unit": "g"
           },
           {
             "position": 8,
             "name": "Kananmuna",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 9,
             "name": "Ranskankerma tai maustamaton jogurtti",
-            "quantity": "120g"
+            "quantity": "120",
+            "unit": "g"
           },
           {
             "position": 10,
             "name": "Vaniljauute",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 11,
             "name": "Maito",
-            "quantity": "60ml"
+            "quantity": "60",
+            "unit": "ml"
           },
           {
             "position": 12,
             "name": "Mustikka",
-            "quantity": "210g"
+            "quantity": "210",
+            "unit": "g"
           }
         ]
       }
@@ -1872,27 +2172,32 @@
           {
             "position": 1,
             "name": "Creme fraiche",
-            "quantity": "1prk"
+            "quantity": "1",
+            "unit": "prk"
           },
           {
             "position": 2,
             "name": "Punasipuli",
-            "quantity": "\u00bd-1kpl"
+            "quantity": "0.5",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Limetti",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Kirjolohen m\u00e4ti",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Ruohosipuli",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           }
         ]
       }
@@ -1924,42 +2229,50 @@
           {
             "position": 1,
             "name": "Iso salottisipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Punainen chili",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "3cm"
+            "quantity": "3",
+            "unit": "cm"
           },
           {
             "position": 5,
             "name": "Sitruunaruoho",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Kurkuma",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "\u00d6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 8,
             "name": "Mustapippuri",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           }
         ]
       },
@@ -1970,32 +2283,38 @@
           {
             "position": 1,
             "name": "Kookosmaito",
-            "quantity": "4dl"
+            "quantity": "4",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Soijakastike",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Nyht\u00f6kaura",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Kaffirlimetin lehti",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "(Kookos-)sokeri",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -2006,17 +2325,20 @@
           {
             "position": 1,
             "name": "Riisi\u00e4",
-            "quantity": "3\u00bddl"
+            "quantity": "3.5",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Korianteria",
-            "quantity": "\u00bdruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           },
           {
             "position": 3,
             "name": "Lime",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           }
         ]
       }
@@ -2057,37 +2379,44 @@
           {
             "position": 1,
             "name": "Kikherne",
-            "quantity": "2 purkkia"
+            "quantity": "2",
+            "unit": "purkkia"
           },
           {
             "position": 2,
             "name": "Kirsikkatomaatti",
-            "quantity": "300g"
+            "quantity": "300",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Valkosipuli",
-            "quantity": "10 kyntt\u00e4"
+            "quantity": "10",
+            "unit": "kyntt\u00e4"
           },
           {
             "position": 4,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "30g"
+            "quantity": "30",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Chili",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Tomaattipyre",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 7,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "1.5dl"
+            "quantity": "1.5",
+            "unit": "dl"
           }
         ]
       },
@@ -2098,42 +2427,50 @@
           {
             "position": 1,
             "name": "Jeera",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 2,
             "name": "Jauhettu korianteri",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 3,
             "name": "Kurkuma",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Chilihiutale",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Chilijauhe",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Paprikajauhe",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Sokeri",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -2144,27 +2481,32 @@
           {
             "position": 1,
             "name": "Minttu",
-            "quantity": "0.5 ruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           },
           {
             "position": 2,
             "name": "Korianteri",
-            "quantity": "0.5 ruukku"
+            "quantity": "0.5",
+            "unit": "ruukku"
           },
           {
             "position": 3,
             "name": "Kreikkalainen jogurtti",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Lime",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Suola",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           }
         ]
       },
@@ -2175,7 +2517,8 @@
           {
             "position": 1,
             "name": "Pitaleip\u00e4",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           }
         ]
       }
@@ -2204,42 +2547,50 @@
           {
             "position": 1,
             "name": "Jeera",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Jauhettu korianteri",
-            "quantity": "18g"
+            "quantity": "18",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Kurkuma",
-            "quantity": "5g"
+            "quantity": "5",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Chilihiutale",
-            "quantity": "3g"
+            "quantity": "3",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Chilijauhe",
-            "quantity": "4g"
+            "quantity": "4",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "Paprikajauhe",
-            "quantity": "10g"
+            "quantity": "10",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Sokeri",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           },
           {
             "position": 8,
             "name": "Suola",
-            "quantity": "24g"
+            "quantity": "24",
+            "unit": "g"
           }
         ]
       }
@@ -2276,52 +2627,62 @@
           {
             "position": 1,
             "name": "Salottisipuli (pienehk\u00f6)",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "5kpl"
+            "quantity": "5",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Parsakaali",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Herkkusieni",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Voi",
-            "quantity": "3rkl"
+            "quantity": "3",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 7,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Gnocchi",
-            "quantity": "500g"
+            "quantity": "500",
+            "unit": "g"
           },
           {
             "position": 9,
             "name": "Mustapippuri",
-            "quantity": "\u00bctl"
+            "quantity": "0.25",
+            "unit": "tl"
           },
           {
             "position": 10,
             "name": "Tuore timjami",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           }
         ]
       }
@@ -2354,42 +2715,50 @@
           {
             "position": 1,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Palsternakka",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Juuriselleri",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Valkoisia papuja",
-            "quantity": "1tlk"
+            "quantity": "1",
+            "unit": "tlk"
           },
           {
             "position": 5,
             "name": "Kasvisliemi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 6,
             "name": "(Kasvi)kerma",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "Suola",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Valkopippuri",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           }
         ]
       }
@@ -2407,6 +2776,9 @@
       "Sauvasekoittimella kaikki sekaisin",
       "Jos on liian l\u00f6ys\u00e4\u00e4, lis\u00e4\u00e4 \u00f6ljy\u00e4"
     ],
+    "notes": [
+      "Mirini\u00e4 voi laittaa enemm\u00e4nkin, maun mukaan"
+    ],
     "sections": [
       {
         "position": 1,
@@ -2415,37 +2787,44 @@
           {
             "position": 1,
             "name": "Raastettu parmesaani",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Muna",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Valkoviinietikka",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Sinappi (esim. dijon, Colman's)",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Rypsi\u00f6ljy",
-            "quantity": "1\u00bddl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "(Mirin)",
-            "quantity": "1-2tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       }
@@ -2477,27 +2856,32 @@
           {
             "position": 1,
             "name": "Parsa",
-            "quantity": "500g"
+            "quantity": "500",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Gnocchi",
-            "quantity": "500g"
+            "quantity": "500",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Raastettu piparjuuri",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Raastettu parmesaani",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Voi",
-            "quantity": "75g"
+            "quantity": "75",
+            "unit": "g"
           }
         ]
       }
@@ -2530,52 +2914,62 @@
           {
             "position": 1,
             "name": "Nauhamakaroni",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Voi",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Vehn\u00e4jauho",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Vesi",
-            "quantity": "3dl"
+            "quantity": "3",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Kalaliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Sinappi (esim. Colman's)",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 7,
             "name": "Kuohukerma",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 8,
             "name": "Sitruunamehua",
-            "quantity": "\u00bdrkl"
+            "quantity": "0.5",
+            "unit": "rkl"
           },
           {
             "position": 9,
             "name": "Savustettua kirjolohta",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 10,
-            "name": "(Tilli\u00e4)",
-            "quantity": "maun mukaan"
+            "name": "(Tilli)",
+            "quantity": "1",
+            "unit": "maun mukaan"
           }
         ]
       }
@@ -2626,12 +3020,14 @@
           {
             "position": 1,
             "name": "Ohrahelmi",
-            "quantity": "1\u00bddl"
+            "quantity": "1.5",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       },
@@ -2642,42 +3038,50 @@
           {
             "position": 1,
             "name": "Sipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Porkkana",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Paprikajauhe",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Cajunmauste",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Jeera",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "H\u00e4rkis",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           }
         ]
       },
@@ -2688,32 +3092,38 @@
           {
             "position": 1,
             "name": "(Vegaaninen) voi",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Vehn\u00e4jauho",
-            "quantity": "4dl"
+            "quantity": "4",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Kaurajauho",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Leivinjauhe",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "(Vegaaninen) creme fraiche",
-            "quantity": "200g"
+            "quantity": "200",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           }
         ]
       }
@@ -2746,42 +3156,50 @@
           {
             "position": 1,
             "name": "Voi",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 2,
             "name": "Purjo",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Kanaliemi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 4,
             "name": "Peruna",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Laakerinlehti",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Creme fraiche",
-            "quantity": "150g"
+            "quantity": "150",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Muskottip\u00e4hkin\u00e4",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Ruoho- tai kev\u00e4tsipulia",
-            "quantity": "koristeeksi"
+            "quantity": "1",
+            "unit": "koristeeksi"
           }
         ]
       }
@@ -2817,32 +3235,38 @@
           {
             "position": 1,
             "name": "Piim\u00e4",
-            "quantity": "5dl"
+            "quantity": "5",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Hiivaleip\u00e4jauho",
-            "quantity": "~1,2l"
+            "quantity": "1.2",
+            "unit": "l"
           },
           {
             "position": 3,
             "name": "Kuivahiiva",
-            "quantity": "2ps"
+            "quantity": "2",
+            "unit": "ps"
           },
           {
             "position": 4,
             "name": "Siirappi",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Anis",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       }
@@ -2872,22 +3296,26 @@
           {
             "position": 1,
             "name": "Punasipuli",
-            "quantity": "1l (siivuina)"
+            "quantity": "1",
+            "unit": "l (siivuina)"
           },
           {
             "position": 2,
             "name": "Vesi",
-            "quantity": "2\u00bddl"
+            "quantity": "2.5",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Etikka",
-            "quantity": "2\u00bddl (50-50 v\u00e4kiviinaetikka ja esim. riisiviinietikka)"
+            "quantity": "2.5",
+            "unit": "dl (50-50 v\u00e4kiviinaetikka ja esim. riisiviinietikka)"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       }
@@ -2919,32 +3347,38 @@
           {
             "position": 1,
             "name": "Pororouhe (kylm\u00e4savustettu)",
-            "quantity": "150g"
+            "quantity": "150",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Kuohukerma",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Ranskankerma",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Liivatelehti",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Sitruunamehu",
-            "quantity": "1rkl / maun mukaan"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Mustapippuri",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           }
         ]
       }
@@ -2991,17 +3425,20 @@
           {
             "position": 1,
             "name": "Kombu",
-            "quantity": "1pala"
+            "quantity": "1",
+            "unit": "pala"
           },
           {
             "position": 2,
             "name": "Kuivattu siitake",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Vesi",
-            "quantity": "0.25l"
+            "quantity": "0.25",
+            "unit": "l"
           }
         ]
       },
@@ -3012,12 +3449,14 @@
           {
             "position": 1,
             "name": "Kananmuna",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Soija",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           }
         ]
       },
@@ -3028,62 +3467,74 @@
           {
             "position": 1,
             "name": "Paahdettu sesaminsiemen",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 2,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "2.5cm"
+            "quantity": "2.5",
+            "unit": "cm"
           },
           {
             "position": 3,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Kev\u00e4tsipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Paahdettu seesami\u00f6ljy",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Doubanjiang",
-            "quantity": "1.5rkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           },
           {
             "position": 7,
             "name": "Miso",
-            "quantity": "1.5rkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           },
           {
             "position": 8,
             "name": "Sake",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 9,
             "name": "Soijakastike",
-            "quantity": "1.5rkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           },
           {
             "position": 10,
             "name": "Makeuttamaton soijamaito",
-            "quantity": "0.5l"
+            "quantity": "0.5",
+            "unit": "l"
           },
           {
             "position": 11,
             "name": "Suola",
-            "quantity": "0.5tl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 12,
             "name": "Valkopippuri",
-            "quantity": "ripaus"
+            "quantity": "1",
+            "unit": "ripaus"
           }
         ]
       },
@@ -3094,12 +3545,14 @@
           {
             "position": 1,
             "name": "Nuudeli",
-            "quantity": "1pkt / sy\u00f6j\u00e4"
+            "quantity": "1",
+            "unit": "pkt / sy\u00f6j\u00e4"
           },
           {
             "position": 2,
             "name": "Paksoi",
-            "quantity": "0.5pkt"
+            "quantity": "0.5",
+            "unit": "pkt"
           }
         ]
       }
@@ -3134,42 +3587,50 @@
           {
             "position": 1,
             "name": "Rypsi\u00f6ljy",
-            "quantity": "120ml"
+            "quantity": "120",
+            "unit": "ml"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Inkiv\u00e4\u00e4ri",
-            "quantity": "2siivua"
+            "quantity": "2",
+            "unit": "siivua"
           },
           {
             "position": 4,
             "name": "Kev\u00e4tsipulin varsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Sichuanin pippuri",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Gochugaru",
-            "quantity": "15g"
+            "quantity": "15",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Ichimi",
-            "quantity": "15g"
+            "quantity": "15",
+            "unit": "g"
           },
           {
             "position": 8,
             "name": "Seesami\u00f6ljy",
-            "quantity": "60ml"
+            "quantity": "60",
+            "unit": "ml"
           }
         ]
       }
@@ -3208,57 +3669,68 @@
           {
             "position": 1,
             "name": "Vesi",
-            "quantity": "1l (ish)"
+            "quantity": "1",
+            "unit": "l (ish)"
           },
           {
             "position": 2,
             "name": "Satsuma",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Salottisipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Risottoriisi",
-            "quantity": "3\u00bddl"
+            "quantity": "3.5",
+            "unit": "dl"
           },
           {
             "position": 7,
             "name": "Kasvisliemikuutio",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 8,
             "name": "Raastettu parmesaani",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 9,
             "name": "Voi",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 10,
             "name": "Hienonnettu ruohosipuli",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 11,
             "name": "(Sitruunamehu, valkoviini tms. happo)",
-            "quantity": "maun mukaan tarvittaessa"
+            "quantity": "1",
+            "unit": "maun mukaan tarvittaessa"
           }
         ]
       }
@@ -3292,32 +3764,38 @@
           {
             "position": 1,
             "name": "Nauhapasta",
-            "quantity": "nelj\u00e4lle"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Savupaprika",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Kaurakerma",
-            "quantity": "4dl"
+            "quantity": "4",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Kasvisliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Pakasteherne",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           }
         ]
       }
@@ -3342,8 +3820,7 @@
       "Lis\u00e4\u00e4 tomaatit ja liemikuutiot. Keittele kasaan kunnes koostumus on paksuhko",
       "Lis\u00e4\u00e4 linssit ja kaada p\u00e4\u00e4lle vesi",
       "Keit\u00e4 10 minuuttia",
-      "Ota kattila liedelt\u00e4 ja sekoita mukaan kerma",
-      "(lis\u00e4\u00e4 pekonikuutiot takaisin kattilaan. Voit s\u00e4\u00e4st\u00e4\u00e4 osan p\u00e4\u00e4lle ripoteltavaksi)"
+      "Lis\u00e4\u00e4 kerma ja keit\u00e4 hetki t\u00e4ysill\u00e4 jotta rasva emulgoituu"
     ],
     "notes": [
       "Alkuper\u00e4isess\u00e4 reseptiss\u00e4 paistetaan ensin 140g pekonikuutioita rapeiksi, noukitaan pois ja lis\u00e4t\u00e4\u00e4n sitten lopuksi sekaan ja p\u00e4\u00e4lle. Toimii hyvin ilmankin!"
@@ -3356,52 +3833,62 @@
           {
             "position": 1,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Tomaatti",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Tomaattipyr\u00e9",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 5,
             "name": "(Gochujang)",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Kypsi\u00e4 linssej\u00e4",
-            "quantity": "2prk (\u00e0 380g)"
+            "quantity": "2",
+            "unit": "prk (\u00e0 380 g)"
           },
           {
             "position": 7,
             "name": "Kanaliemikuutio",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 8,
             "name": "Vesi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 9,
             "name": "Savupaprikajauhe",
-            "quantity": "1\u00bdtl"
+            "quantity": "1.5",
+            "unit": "tl"
           },
           {
             "position": 10,
             "name": "(Kasvi)kerma",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           }
         ]
       }
@@ -3437,72 +3924,86 @@
           {
             "position": 1,
             "name": "Iso sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Valkosipulinkynsi",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Tomaatti",
-            "quantity": "5kpl"
+            "quantity": "5",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Chili",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Jeera",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 6,
             "name": "Jauhettu korianteri",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Mustapippuri",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 9,
             "name": "Harissa",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 10,
             "name": "Tomaattipyr\u00e9",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 11,
             "name": "Olut (tai vesi)",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 12,
             "name": "Korianteri",
-            "quantity": "1ruukku"
+            "quantity": "1",
+            "unit": "ruukku"
           },
           {
             "position": 13,
             "name": "Muna",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 14,
             "name": "Imukykyist\u00e4 leip\u00e4\u00e4",
-            "quantity": "sopivasti"
+            "quantity": "4",
+            "unit": "kpl"
           }
         ]
       }
@@ -3544,17 +4045,20 @@
           {
             "position": 1,
             "name": "Vehn\u00e4jauho",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Vesi",
-            "quantity": "27g"
+            "quantity": "27",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Maito",
-            "quantity": "60g"
+            "quantity": "60",
+            "unit": "g"
           }
         ]
       },
@@ -3565,12 +4069,14 @@
           {
             "position": 1,
             "name": "Kuivahiiva",
-            "quantity": "10g"
+            "quantity": "10",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Vesi",
-            "quantity": "20g"
+            "quantity": "20",
+            "unit": "g"
           }
         ]
       },
@@ -3581,32 +4087,38 @@
           {
             "position": 1,
             "name": "Vehn\u00e4jauho",
-            "quantity": "380g"
+            "quantity": "380",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Sokeri",
-            "quantity": "60g"
+            "quantity": "60",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Suola",
-            "quantity": "3g"
+            "quantity": "3",
+            "unit": "g"
           },
           {
             "position": 4,
             "name": "Maito",
-            "quantity": "130g"
+            "quantity": "130",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Muna",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Voi",
-            "quantity": "45g"
+            "quantity": "45",
+            "unit": "g"
           }
         ]
       },
@@ -3617,12 +4129,14 @@
           {
             "position": 1,
             "name": "Voi",
-            "quantity": "vuoan voiteluun"
+            "quantity": "1",
+            "unit": "rkl (vuoan voiteluun)"
           },
           {
             "position": 2,
             "name": "Muna",
-            "quantity": "leiv\u00e4n voiteluun"
+            "quantity": "1",
+            "unit": "kpl (leiv\u00e4n voiteluun)"
           }
         ]
       }
@@ -3657,47 +4171,56 @@
           {
             "position": 1,
             "name": "Auringonkukansiemen",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Seesaminsiemen",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Pellavansiemen",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Kurpitsansiemen",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Chiansiemen",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Kiehuva vesi",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 8,
             "name": "\u00d6ljy",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           },
           {
             "position": 9,
             "name": "Sormisuola",
-            "quantity": "koristeeksi"
+            "quantity": "1",
+            "unit": "ripaus"
           }
         ]
       }
@@ -3738,57 +4261,62 @@
           {
             "position": 1,
             "name": "Porkkana",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sellerinvarsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Iso sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Tomaatti",
-            "quantity": "5-6kpl"
+            "quantity": "5",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Valkosipulinkynsi",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Chipotle-chili adobokastikkeessa",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 7,
             "name": "Savuviskietikka",
-            "quantity": "1\u00bdtl"
+            "quantity": "1.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Kasvisliemikuutio",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 9,
             "name": "Vesi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 10,
             "name": "Punaisia linssej\u00e4",
-            "quantity": "1prk"
-          },
-          {
-            "position": 11,
-            "name": "(Paahtoleip\u00e4\u00e4)",
-            "quantity": "sy\u00f6t\u00e4v\u00e4ksi"
+            "quantity": "1",
+            "unit": "prk"
           }
         ]
       }
@@ -3821,62 +4349,74 @@
           {
             "position": 1,
             "name": "Salottisipuli",
-            "quantity": "6kpl"
+            "quantity": "6",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Keltasipuli",
-            "quantity": "6kpl"
+            "quantity": "6",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Valkosipulinkynsi",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Voi",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "T\u00e4htianis",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Mustapippuri",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Kuiva valkoviini",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 9,
             "name": "Liha-, kana- tai kasvislient\u00e4",
-            "quantity": "1\u00bdl"
+            "quantity": "1.5",
+            "unit": "l"
           },
           {
             "position": 10,
             "name": "Timjaminoksa",
-            "quantity": "5kpl"
+            "quantity": "5",
+            "unit": "kpl"
           },
           {
             "position": 11,
             "name": "Leip\u00e4\u00e4",
-            "quantity": "4kpl"
+            "quantity": "4",
+            "unit": "kpl"
           },
           {
             "position": 12,
             "name": "Raastettua juustoa (esim. gruy\u00e9re)",
-            "quantity": "120g"
+            "quantity": "120",
+            "unit": "g"
           }
         ]
       }
@@ -3908,27 +4448,32 @@
           {
             "position": 1,
             "name": "Kurkku",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Soija",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Sokeri",
-            "quantity": "\u00bdtl"
+            "quantity": "0.5",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Seesami\u00f6ljy",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 5,
             "name": "Gochugaru",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           }
         ]
       }
@@ -3961,42 +4506,50 @@
           {
             "position": 1,
             "name": "Makaroni",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Soijarouhe",
-            "quantity": "3dl"
+            "quantity": "3",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Soijakastike",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Muna",
-            "quantity": "3kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Maito",
-            "quantity": "5dl"
+            "quantity": "5",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Suola",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Mustapippuri",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 8,
             "name": "Voi",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           }
         ]
       }
@@ -4033,47 +4586,56 @@
           {
             "position": 1,
             "name": "Lohi",
-            "quantity": "800g"
+            "quantity": "800",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Dijonsinappi",
-            "quantity": "2-3rkl"
+            "quantity": "3",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Fariinisokeri",
-            "quantity": "3rkl"
+            "quantity": "3",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 5,
             "name": "Mustapippuri",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 6,
             "name": "Voi",
-            "quantity": "30g"
+            "quantity": "30",
+            "unit": "g"
           },
           {
             "position": 7,
             "name": "Persilja",
-            "quantity": "1ruukku"
+            "quantity": "1",
+            "unit": "ruukku"
           },
           {
             "position": 8,
             "name": "Pankojauho",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 9,
             "name": "Sitruuna",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           }
         ]
       }
@@ -4114,32 +4676,38 @@
           {
             "position": 1,
             "name": "Vesi",
-            "quantity": "5dl"
+            "quantity": "5",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Maito",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Kuivahiiva",
-            "quantity": "1pussi"
+            "quantity": "1",
+            "unit": "pussi"
           },
           {
             "position": 4,
             "name": "Suola",
-            "quantity": "2tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 5,
             "name": "Hunaja",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Vehn\u00e4jauho",
-            "quantity": "12\u00bddl"
+            "quantity": "12.5",
+            "unit": "dl"
           }
         ]
       }
@@ -4179,57 +4747,68 @@
           {
             "position": 1,
             "name": "Tofu",
-            "quantity": "1pkt"
+            "quantity": "1",
+            "unit": "pkt"
           },
           {
             "position": 2,
             "name": "Kaali",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Soijakastike",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Kalakastike",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Nuudeli",
-            "quantity": "2pkt"
+            "quantity": "2",
+            "unit": "pkt"
           },
           {
             "position": 8,
             "name": "Seesaminsiemen",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 9,
             "name": "Chili",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 10,
             "name": "Limemehu",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           },
           {
             "position": 11,
             "name": "Suolap\u00e4hkin\u00e4",
-            "quantity": "\u00bddl"
+            "quantity": "0.5",
+            "unit": "dl"
           }
         ]
       }
@@ -4266,52 +4845,62 @@
           {
             "position": 1,
             "name": "Tofu",
-            "quantity": "1pkt"
+            "quantity": "1",
+            "unit": "pkt"
           },
           {
             "position": 2,
             "name": "Sipuli",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 3,
             "name": "Valkosipuli",
-            "quantity": "2 kyntt\u00e4"
+            "quantity": "2",
+            "unit": "kyntt\u00e4"
           },
           {
             "position": 4,
             "name": "Raastettu inkiv\u00e4\u00e4ri",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 5,
             "name": "Currymauste",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 6,
             "name": "Chilihiutale",
-            "quantity": "1tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "Sokeri",
-            "quantity": "1\u00bdtl"
+            "quantity": "1.5",
+            "unit": "tl"
           },
           {
             "position": 8,
             "name": "Kookoskerma",
-            "quantity": "250ml"
+            "quantity": "250",
+            "unit": "ml"
           },
           {
             "position": 9,
             "name": "Paseerattu tomaatti",
-            "quantity": "400g"
+            "quantity": "400",
+            "unit": "g"
           },
           {
             "position": 10,
             "name": "Suola",
-            "quantity": "maun mukaan"
+            "quantity": "1",
+            "unit": "maun mukaan"
           }
         ]
       }
@@ -4360,27 +4949,32 @@
           {
             "position": 1,
             "name": "Kananmuna",
-            "quantity": "2 kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Voi",
-            "quantity": "42 g"
+            "quantity": "42",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Sokeri",
-            "quantity": "2 tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Vesi",
-            "quantity": "120 g"
+            "quantity": "120",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Jauho",
-            "quantity": "75 g"
+            "quantity": "75",
+            "unit": "g"
           }
         ]
       },
@@ -4391,37 +4985,44 @@
           {
             "position": 1,
             "name": "Keltuainen",
-            "quantity": "3 kpl"
+            "quantity": "3",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Sokeri",
-            "quantity": "105 g"
+            "quantity": "105",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Jauho (siivil\u00f6ity)",
-            "quantity": "2 tl"
+            "quantity": "2",
+            "unit": "tl"
           },
           {
             "position": 4,
             "name": "Maito",
-            "quantity": "240 g"
+            "quantity": "240",
+            "unit": "g"
           },
           {
             "position": 5,
             "name": "Voi (sula)",
-            "quantity": "14 g"
+            "quantity": "14",
+            "unit": "g"
           },
           {
             "position": 6,
             "name": "(Matcha-jauhe)",
-            "quantity": "1 tl"
+            "quantity": "1",
+            "unit": "tl"
           },
           {
             "position": 7,
             "name": "(Vesi)",
-            "quantity": "2 tl"
+            "quantity": "2",
+            "unit": "tl"
           }
         ]
       }
@@ -4468,27 +5069,32 @@
           {
             "position": 1,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "\u00bedl"
+            "quantity": "0.75",
+            "unit": "dl"
           },
           {
             "position": 2,
             "name": "Soija",
-            "quantity": "1\u00bdrkl"
+            "quantity": "1.5",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Riisiviinietikka",
-            "quantity": "1rkl"
+            "quantity": "1",
+            "unit": "rkl"
           },
           {
             "position": 4,
             "name": "Valkosipulinkynsi",
-            "quantity": "5kpl"
+            "quantity": "5",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Persilja",
-            "quantity": "1dl"
+            "quantity": "1",
+            "unit": "dl"
           }
         ]
       },
@@ -4499,37 +5105,44 @@
           {
             "position": 1,
             "name": "Kirsikkatomaatti",
-            "quantity": "250g"
+            "quantity": "250",
+            "unit": "g"
           },
           {
             "position": 2,
             "name": "Herkkusieni",
-            "quantity": "100g"
+            "quantity": "100",
+            "unit": "g"
           },
           {
             "position": 3,
             "name": "Vesi",
-            "quantity": "6dl"
+            "quantity": "6",
+            "unit": "dl"
           },
           {
             "position": 4,
             "name": "Kasvisliemikuutio",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 5,
             "name": "Riisi",
-            "quantity": "3dl"
+            "quantity": "3",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Tofu (maustettu, jos haluat)",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 7,
             "name": "Teriyakikastike",
-            "quantity": "2rkl"
+            "quantity": "2",
+            "unit": "rkl"
           }
         ]
       }
@@ -4555,17 +5168,20 @@
           {
             "position": 1,
             "name": "Appelsiinirosmariinisiirappi",
-            "quantity": "3 cl"
+            "quantity": "3",
+            "unit": "cl"
           },
           {
             "position": 2,
             "name": "Karpalomehu",
-            "quantity": "1 dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 3,
             "name": "Kivenn\u00e4isvesi",
-            "quantity": "2 dl"
+            "quantity": "2",
+            "unit": "dl"
           }
         ]
       }
@@ -4600,47 +5216,56 @@
           {
             "position": 1,
             "name": "Salottisipuli",
-            "quantity": "2kpl"
+            "quantity": "2",
+            "unit": "kpl"
           },
           {
             "position": 2,
             "name": "Oliivi\u00f6ljy",
-            "quantity": "4rkl"
+            "quantity": "4",
+            "unit": "rkl"
           },
           {
             "position": 3,
             "name": "Kana- tai kasvisliemi",
-            "quantity": "1l"
+            "quantity": "1",
+            "unit": "l"
           },
           {
             "position": 4,
             "name": "Risottoriisi",
-            "quantity": "3dl"
+            "quantity": "3",
+            "unit": "dl"
           },
           {
             "position": 5,
             "name": "Valkoviini\u00e4",
-            "quantity": "2dl"
+            "quantity": "2",
+            "unit": "dl"
           },
           {
             "position": 6,
             "name": "Luomuveriappelsiini (iso)",
-            "quantity": "1kpl"
+            "quantity": "1",
+            "unit": "kpl"
           },
           {
             "position": 7,
             "name": "Raastettu parmesaani",
-            "quantity": "1 dl"
+            "quantity": "1",
+            "unit": "dl"
           },
           {
             "position": 8,
             "name": "Voi",
-            "quantity": "2 rkl"
+            "quantity": "2",
+            "unit": "rkl"
           },
           {
             "position": 9,
             "name": "(Ruoho- tai kev\u00e4tsipulia)",
-            "quantity": "koristeeksi"
+            "quantity": "1",
+            "unit": "koristeeksi"
           }
         ]
       }

@@ -7,27 +7,32 @@
                 {
                     "position": 1,
                     "name": "Kurkku",
-                    "quantity": "\u00bdkpl"
+                    "quantity": "0.5",
+                    "unit": "kpl"
                 },
                 {
                     "position": 2,
                     "name": "Sinapinsiemen",
-                    "quantity": "1rkl"
+                    "quantity": "1",
+                    "unit": "rkl"
                 },
                 {
                     "position": 3,
                     "name": "Riisiviinietikka",
-                    "quantity": "1rkl"
+                    "quantity": "1",
+                    "unit": "rkl"
                 },
                 {
                     "position": 4,
                     "name": "Suola",
-                    "quantity": "\u00bctl"
+                    "quantity": "0.25",
+                    "unit": "tl"
                 },
                 {
                     "position": 5,
                     "name": "Hunaja",
-                    "quantity": "1tl"
+                    "quantity": "1",
+                    "unit": "tl"
                 }
             ]
         },
@@ -38,12 +43,14 @@
                 {
                     "position": 1,
                     "name": "Majoneesi",
-                    "quantity": "1dl"
+                    "quantity": "1",
+                    "unit": "dl"
                 },
                 {
                     "position": 2,
                     "name": "Gochujang",
-                    "quantity": "1rkl"
+                    "quantity": "1",
+                    "unit": "rkl"
                 }
             ]
         },
@@ -54,12 +61,14 @@
                 {
                     "position": 1,
                     "name": "Majoneesi",
-                    "quantity": "1dl"
+                    "quantity": "1",
+                    "unit": "dl"
                 },
                 {
                     "position": 2,
                     "name": "Raastettu inkiv\u00e4\u00e4ri",
-                    "quantity": "2tl"
+                    "quantity": "2",
+                    "unit": "tl"
                 }
             ]
         },
@@ -70,27 +79,32 @@
                 {
                     "position": 1,
                     "name": "Kananmuna",
-                    "quantity": "4kpl"
+                    "quantity": "4",
+                    "unit": "kpl"
                 },
                 {
                     "position": 2,
                     "name": "Kerma",
-                    "quantity": "1dl"
+                    "quantity": "1",
+                    "unit": "dl"
                 },
                 {
                     "position": 3,
                     "name": "Suola",
-                    "quantity": "\u00bdtl"
+                    "quantity": "0.5",
+                    "unit": "tl"
                 },
                 {
                     "position": 4,
                     "name": "Voi",
-                    "quantity": "1rkl"
+                    "quantity": "1",
+                    "unit": "rkl"
                 },
                 {
                     "position": 5,
                     "name": "Paahdettu seesam\u00f6ljy",
-                    "quantity": "2tl"
+                    "quantity": "2",
+                    "unit": "tl"
                 }
             ]
         },
@@ -101,12 +115,14 @@
                 {
                     "position": 1,
                     "name": "Briossis\u00e4mpyl\u00e4",
-                    "quantity": "4kpl"
+                    "quantity": "4",
+                    "unit": "kpl"
                 },
                 {
                     "position": 2,
                     "name": "Kev\u00e4tsipuli",
-                    "quantity": "2kpl"
+                    "quantity": "2",
+                    "unit": "kpl"
                 }
             ]
         }

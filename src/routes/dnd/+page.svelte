@@ -134,7 +134,7 @@
 >
 	<SortableContext items={items.map((item) => item.id)}>
 		<Droppable id="container" data={{ accepts: ['container'] }}>
-			<div class="flex-col">
+			<div class="flex-col space-y-2">
 				{#each items as section, i (section.id)}
 					<TasksContainer bind:data={items[i]} type="container" accepts={['item']}>
 						<SortableContext items={section.ingredients.map((item) => item.id)}>

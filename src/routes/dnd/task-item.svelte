@@ -56,13 +56,10 @@
 
 	<!-- Drag placeholder -->
 	{#if isDragging.current}
-		<div class="abs inset-0 flex items-center justify-center">
-			<!-- You can put any content here for the dragging state -->
-			<div
-				class="bg-orange/10 rd-2xl b-2 b-orange b-dashed flex h-full w-full items-center justify-center"
-			>
-				<span class="text-orange">Moving: {data.name}</span>
-			</div>
+		<div
+			class=" inset-0 flex items-center justify-center rounded-xl border-1 border-dashed border-orange-500 bg-orange-100"
+		>
+			<span class="text-orange-500">Moving: {data.name}</span>
 		</div>
 	{/if}
 </div>

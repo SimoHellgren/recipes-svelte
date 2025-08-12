@@ -29,7 +29,7 @@
 	);
 </script>
 
-<div class="relative" bind:this={node.current} {style}>
+<div class="relative rounded-xl border-1 bg-secondary" bind:this={node.current} {style}>
 	<!-- Original element - becomes invisible during drag but maintains dimensions -->
 
 	<div class={['flex max-w-lg gap-0.5 p-1', className, { invisible: isDragging.current }]}>
@@ -51,11 +51,13 @@
 		>
 	</div>
 
-	<div class="mt-3 grid gap-2">
+	<div class="mt-3 grid gap-0.5">
 		{@render children(isDragging.current)}
 	</div>
 
 	{#if isDragging.current}
-		<div class="bg-orange/10 b b-dashed b-orange rd-3xl absolute inset-0 max-md:hidden"></div>
+		<div
+			class="absolute inset-0 rounded-xl border-1 border-dashed border-orange-500 bg-orange-100 max-md:hidden"
+		></div>
 	{/if}
 </div>
