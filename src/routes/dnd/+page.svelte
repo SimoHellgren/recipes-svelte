@@ -28,6 +28,25 @@
 		});
 	});
 
+	const newIngredient = (position = null) => {
+		return {
+			position: position,
+			name: null,
+			quantity: null,
+			unit: null,
+			id: `ingredient-${nextId++}`
+		};
+	};
+
+	const newSection = () => {
+		return {
+			position: null,
+			name: null,
+			ingredients: [newIngredient(1)],
+			id: `section-${nextId++}`
+		};
+	};
+
 	let items = $state(recipeSections);
 	let activeItem = $state(null);
 	let activeType = $state(null); // container or item
@@ -193,16 +212,6 @@
 </DndContext>
 <Button
 	onclick={() => {
-		items = updatePositions([
-			...items,
-			{
-				position: null,
-				name: null,
-				ingredients: [
-					{ id: `ingredient-${nextId++}`, name: null, quantity: null, unit: null, position: 1 }
-				],
-				id: `section-${nextId++}`
-			}
-		]);
+		items = updatePositions([...items, newSection()]);
 	}}>New section</Button
 >
