@@ -6,26 +6,6 @@
       "leivonta"
     ],
     "source": "https://www.lily.fi/blogit/tahan-on-tultu/herkulliset-ja-nopeat-aamupalasampylat-ilman-hiivaa/",
-    "ingredients": [
-      {
-        "Jauho": "195 g"
-      },
-      {
-        "Leivinjauhe": "2tl"
-      },
-      {
-        "Suola": "max 0,5 tl"
-      },
-      {
-        "Siemeni\u00e4": "maun mukaan"
-      },
-      {
-        "Hunaja": "1,5 rkl"
-      },
-      {
-        "Vesi": "150 g"
-      }
-    ],
     "method": [
       "Laita uuni kuumenemaan 200 asteeseen.",
       "Sekoita kuivat aineet ja siemenet kesken\u00e4\u00e4n esim. nuolijan avulla.",
@@ -35,6 +15,50 @@
     ],
     "notes": [
       "Jauhoon voi sekoittaa mukaan 20% ryynej\u00e4 tai hiivaleip\u00e4jauhoja tms."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Jauho",
+            "quantity": "195",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Leivinjauhe",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 3,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl (max.)"
+          },
+          {
+            "position": 4,
+            "name": "Siemeni\u00e4",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 5,
+            "name": "Hunaja",
+            "quantity": "1.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Vesi",
+            "quantity": "150",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "aamus\u00e4mpyl\u00e4t"
   },
@@ -46,47 +70,6 @@
       "ankka"
     ],
     "source": "https://www.bbcgoodfood.com/recipes/venetian-duck-ragu",
-    "ingredients": [
-      {
-        "Ankankoipi": "2-3kpl"
-      },
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Kaneli": "1tl"
-      },
-      {
-        "Vehn\u00e4jauho": "1tl"
-      },
-      {
-        "Punaviini": "1.5dl"
-      },
-      {
-        "Purkkitomaatti": "1purkki"
-      },
-      {
-        "Kanaliemikuutio": "1kpl"
-      },
-      {
-        "Tuore timjami": "2tl"
-      },
-      {
-        "Laakerinlehti": "2kpl"
-      },
-      {
-        "Sokeri": "\u00bdtl"
-      },
-      {
-        "Maito": "2rkl"
-      },
-      {
-        "Pasta": "200g"
-      }
-    ],
     "method": [
       "Paista ankankoipia kattilassa, kunnes ruskistuu molemmin puolin. Jos tarttuu pannun pohjaan hippuja, ei haittaa.",
       "Hienonna sill\u00e4 v\u00e4lin sipuli ja valkosipuli",
@@ -108,6 +91,92 @@
       "Kastike saattaa kaivata lis\u00e4\u00e4 tomaattisuutta ja makeutta - esim. ketsupilla saa buustattua!",
       "Nakattiin sekaan taannoin talteenotettua lammasmakkaran paistorasvaa - eritt\u00e4in jeba"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Ankankoipi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Kaneli",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Punaviini",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "Purkkitomaatti",
+            "quantity": "1",
+            "unit": "purkki"
+          },
+          {
+            "position": 8,
+            "name": "Kanaliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 9,
+            "name": "Tuore timjami",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 10,
+            "name": "Laakerinlehti",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 11,
+            "name": "Sokeri",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 12,
+            "name": "Maito",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 13,
+            "name": "Pasta",
+            "quantity": "200",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
     "id": "ankkaragu"
   },
   {
@@ -117,20 +186,6 @@
       "kastike"
     ],
     "source": "https://www.alko.fi/juoma-ruoka/reseptit/beurre-blanc",
-    "ingredients": [
-      {
-        "Salottisipuli": "4kpl"
-      },
-      {
-        "Valkoviini": "2dl"
-      },
-      {
-        "Valkoviinietikka": "3rkl"
-      },
-      {
-        "Voi": "200g"
-      }
-    ],
     "method": [
       "Kuori ja hienonna salotit",
       "Yhdist\u00e4 salotit, etikka ja viini ja anna j\u00f6jj\u00f6tty\u00e4 hetki",
@@ -140,6 +195,38 @@
       "Miedolla l\u00e4mm\u00f6ll\u00e4, vispaa mukaan muutama voikuutio kerrallaan emulgoiden. Seoksen kuuluisi pysy\u00e4 noin k\u00e4denl\u00e4mp\u00f6isen\u00e4.",
       "Suolaa maun mukaan",
       "Tarjoile heti, sill\u00e4 kastike ei kest\u00e4 pitk\u00e4\u00e4 s\u00e4ilytyst\u00e4"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Salottisipuli",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkoviini",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Valkoviinietikka",
+            "quantity": "3",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Voi",
+            "quantity": "200",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "beurre-blanc"
   },
@@ -151,23 +238,6 @@
       "leivonta"
     ],
     "source": null,
-    "ingredients": [
-      {
-        "Her\u00e4telty hapanjuuri": "150g"
-      },
-      {
-        "Vehn\u00e4jauho": "420g"
-      },
-      {
-        "Vesi": "340g"
-      },
-      {
-        "Oliivi\u00f6ljy": "30ml"
-      },
-      {
-        "Suola": "12g"
-      }
-    ],
     "method": [
       "Sekoita vehn\u00e4jauho ja vesi perusteellisesti, anna tutustua 30min",
       "Lis\u00e4\u00e4 hapanjuuri, \u00f6ljy ja suola. Sekoita ja anna tekeyt\u00e4 20min",
@@ -185,6 +255,44 @@
       "Siirr\u00e4 pelti uuniin. Lis\u00e4\u00e4 uuniin my\u00f6s vesiastia h\u00f6yryn aikaansaamiseksi",
       "Paista 20-25min, k\u00e4\u00e4nt\u00e4en v\u00e4liss\u00e4 tarvittaessa"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Her\u00e4telty hapanjuuri",
+            "quantity": "150",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "420",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Vesi",
+            "quantity": "340",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "30",
+            "unit": "ml"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "12",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
     "id": "ciabatta-juurella"
   },
   {
@@ -195,53 +303,6 @@
       "j\u00e4lkk\u00e4ri"
     ],
     "source": "http://nautiskellen.fi/2017/03/veriappelsiini-crepes-suzette/",
-    "ingredients": [
-      {
-        "Letut": [
-          {
-            "Vehn\u00e4jauho": "2\u00bddl"
-          },
-          {
-            "Kananmuna": "3kpl"
-          },
-          {
-            "T\u00e4ysmaito": "3dl"
-          },
-          {
-            "Sokeri": "\u00bddl"
-          },
-          {
-            "Suola": "ripaus"
-          },
-          {
-            "Voi": "50g"
-          }
-        ]
-      },
-      {
-        "Soosi": [
-          {
-            "Voi": "50g"
-          },
-          {
-            "Sokeri": "\u00bddl"
-          },
-          {
-            "Veriappelsiini": "1kpl"
-          }
-        ]
-      },
-      {
-        "Loput": [
-          {
-            "Veriappelsiini": "2kpl"
-          },
-          {
-            "Vaniljaj\u00e4\u00e4tel\u00f6": "sopivasti"
-          }
-        ]
-      }
-    ],
     "method": [
       "Riko munat kulhoon",
       "Lis\u00e4\u00e4 maito, jauho, sokeri ja suola ja sekoita",
@@ -258,6 +319,92 @@
       "Nostele soosia lettujen p\u00e4\u00e4lle, jotta ne maustuvat tasaisesti",
       "Tarjoile veriappelsiinilohkojen ja j\u00e4\u00e4tel\u00f6n kera"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Letut",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "2.5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Kananmuna",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "T\u00e4ysmaito",
+            "quantity": "3",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Sokeri",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "ripaus"
+          },
+          {
+            "position": 6,
+            "name": "Voi",
+            "quantity": "50",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Soosi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Voi",
+            "quantity": "50",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Sokeri",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Veriappelsiini",
+            "quantity": "1",
+            "unit": "kpl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Loput",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Veriappelsiini",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Vaniljaj\u00e4\u00e4tel\u00f6",
+            "quantity": "1",
+            "unit": "sopivasti"
+          }
+        ]
+      }
+    ],
     "id": "crepes-suzette"
   },
   {
@@ -267,74 +414,209 @@
       "japani"
     ],
     "source": "https://norecipes.com/how-to-make-japanese-curry-powder/",
-    "ingredients": [
-      {
-        "Kurkuma": "20g"
-      },
-      {
-        "Jeera": "14g"
-      },
-      {
-        "Korianteri": "12g"
-      },
-      {
-        "Kuivattu appelsiininkuori": "10g"
-      },
-      {
-        "Sarviapila": "5g"
-      },
-      {
-        "Fenkolinsiemen": "5g"
-      },
-      {
-        "Kaneli": "4g"
-      },
-      {
-        "Cayenne": "4g"
-      },
-      {
-        "Valkosipulijauhe": "3g"
-      },
-      {
-        "Inkiv\u00e4\u00e4rijauhe": "3g"
-      },
-      {
-        "Tilli (jauhe)": "3g"
-      },
-      {
-        "Maustepippuri": "2g"
-      },
-      {
-        "Kardemumma": "2g"
-      },
-      {
-        "Neilikka": "2g"
-      },
-      {
-        "T\u00e4htianis": "2g"
-      },
-      {
-        "Salvia": "2g"
-      },
-      {
-        "Timjami": "2g"
-      },
-      {
-        "Muskottip\u00e4hkin\u00e4": "2g"
-      },
-      {
-        "Mustapippuri": "2g"
-      },
-      {
-        "Laakerinlehti": "2g"
-      }
-    ],
     "method": [
       "Jauha jauhettavat mausteet",
       "Halutessasi paahda mausteita hetki kuivalla pannulla",
       "Sekoita ja s\u00e4ilyt\u00e4 ilmatiiviiss\u00e4 astiassa"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kurkuma",
+            "quantity": "20",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Jeera",
+            "quantity": "14",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Korianteri",
+            "quantity": "12",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Kuivattu appelsiininkuori",
+            "quantity": "10",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Sarviapila",
+            "quantity": "5",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "Fenkolinsiemen",
+            "quantity": "5",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Kaneli",
+            "quantity": "4",
+            "unit": "g"
+          },
+          {
+            "position": 8,
+            "name": "Cayenne",
+            "quantity": "4",
+            "unit": "g"
+          },
+          {
+            "position": 9,
+            "name": "Valkosipulijauhe",
+            "quantity": "3",
+            "unit": "g"
+          },
+          {
+            "position": 10,
+            "name": "Inkiv\u00e4\u00e4rijauhe",
+            "quantity": "3",
+            "unit": "g"
+          },
+          {
+            "position": 11,
+            "name": "Tilli (jauhe)",
+            "quantity": "3",
+            "unit": "g"
+          },
+          {
+            "position": 12,
+            "name": "Maustepippuri",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 13,
+            "name": "Kardemumma",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 14,
+            "name": "Neilikka",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 15,
+            "name": "T\u00e4htianis",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 16,
+            "name": "Salvia",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 17,
+            "name": "Timjami",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 18,
+            "name": "Muskottip\u00e4hkin\u00e4",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 19,
+            "name": "Mustapippuri",
+            "quantity": "2",
+            "unit": "g"
+          },
+          {
+            "position": 20,
+            "name": "Laakerinlehti",
+            "quantity": "2",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
     "id": "curryjauhe"
+  },
+  {
+    "name": "Granola",
+    "servings": "???",
+    "tags": [
+      "granola"
+    ],
+    "source": "https://www.anninuunissa.fi/ihanan-rapea-granola-g/",
+    "method": [
+      "L\u00e4mmit\u00e4 uuni 150 asteeseen",
+      "Rouhi p\u00e4hkin\u00e4t",
+      "Sekoita kaurahiutaleet, p\u00e4hkin\u00e4t, kaneli ja suola",
+      "Yhdist\u00e4 \u00f6ljy ja hunaja kattilassa, l\u00e4mmit\u00e4 ja sekoita",
+      "Jahka \u00f6ljy ja hunaja menneet sekaisin, ota pois l\u00e4mm\u00f6lt\u00e4 ja sekoita mukaan vaniljauute",
+      "Yhdist\u00e4 seokset yhdeksi seokseksi",
+      "Levit\u00e4 leivinpaperilla varustetulle uuninpellille",
+      "Paahda noin 20 minuuttia"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kaurahiutale",
+            "quantity": "4.5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "P\u00e4hkin\u00e4",
+            "quantity": "3.5",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Kaneli",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "ripaus"
+          },
+          {
+            "position": 5,
+            "name": "Vaniljauute",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Hunaja (tai vaaahterasiirappi)",
+            "quantity": "70",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "\u00d6ljy (esim. rapsi)",
+            "quantity": "45",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
+    "id": "granola"
   },
   {
     "name": "Japanilainen BBQ-kastike",
@@ -344,44 +626,6 @@
       "kastike"
     ],
     "source": "https://dilliajapiparjuurta.blogspot.com/2013/07/japanilainen-bbq-possu.html",
-    "ingredients": [
-      {
-        "Granny Smith -omena": "1kpl"
-      },
-      {
-        "Sipuli": "1kpl (iso)"
-      },
-      {
-        "Inkiv\u00e4\u00e4ri": "4cm"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Soija": "1\u00bddl"
-      },
-      {
-        "Mirin": "1\u00bd5dl"
-      },
-      {
-        "Valkoviini": "\u00bddl"
-      },
-      {
-        "Vesi": "1\u00bddl"
-      },
-      {
-        "Miso": "1rkl"
-      },
-      {
-        "Siirappi": "1rkl"
-      },
-      {
-        "Sessami\u00f6ljy": "2rkl"
-      },
-      {
-        "Sitruuna": "\u00bdkpl"
-      }
-    ],
     "method": [
       "Kuori ja raasta omena, inkiv\u00e4\u00e4ri, valkosipuli ja sipuli (voit my\u00f6s pilkkoa sipulin hienoksi)",
       "Laita kaikki paitsi sitruuna ja seesami\u00f6ljy kattilaan ja keit\u00e4 miedolla l\u00e4mm\u00f6ll\u00e4 n. 60min",
@@ -391,6 +635,86 @@
     "notes": [
       "Toimii hyvin esim. possun ja riisin kastikkeena",
       "T\u00e4h\u00e4n k\u00e4y hyvin kaveriksi esim. paahdetut seesaminsiemenet ja kev\u00e4tsipuli"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Granny Smith -omena",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl (iso)"
+          },
+          {
+            "position": 3,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "4",
+            "unit": "cm"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Soija",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Mirin",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "Valkoviini",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 8,
+            "name": "Vesi",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Miso",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 10,
+            "name": "Siirappi",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 11,
+            "name": "Sessami\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 12,
+            "name": "Sitruuna",
+            "quantity": "0.5",
+            "unit": "kpl"
+          }
+        ]
+      }
     ],
     "id": "japanilainen-bbq-kastike"
   },
@@ -402,67 +726,6 @@
       "soija"
     ],
     "source": "https://www.soppa365.fi/reseptit/liha-arjen-nopeat-padat-ja-laatikot/kaalilaatikko-kasarissa",
-    "ingredients": [
-      {
-        "H\u00f6lskytetyt kurkut": [
-          {
-            "Avomaankurkku": "3kpl"
-          },
-          {
-            "Hunaja": "2tl"
-          },
-          {
-            "V\u00e4kiviinaetikka": "1rkl"
-          },
-          {
-            "Suola": "\u00bdtl"
-          }
-        ]
-      },
-      {
-        "Laatikko": [
-          {
-            "Suikaloitu varhaiskaali": "2l"
-          },
-          {
-            "Sipuli": "1kpl"
-          },
-          {
-            "Rypsi\u00f6ljy": "2-3rkl"
-          },
-          {
-            "Soijarouhe": "2dl"
-          },
-          {
-            "Soijakastike": "2rkl"
-          },
-          {
-            "Pitk\u00e4jyv\u00e4inen riisi": "2dl"
-          },
-          {
-            "Meirami": "2tl"
-          },
-          {
-            "Suola": "1tl"
-          },
-          {
-            "Valkopippuri": "\u00bctl"
-          },
-          {
-            "Siirappi": "2rkl"
-          },
-          {
-            "Vesi": "2dl"
-          },
-          {
-            "Kasvisliemikuutio": "1kpl"
-          },
-          {
-            "Kasviskerma": "2dl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Valmista ensin kurkut: leikka kurkut lohkoiksi ja sekoita hunajan, etikan ja suolan kanssa purkissa. Anna maustua j\u00e4\u00e4kaapissa.",
       "Suikaloi kaali",
@@ -472,6 +735,122 @@
       "Lis\u00e4\u00e4 kaali ja sipuli, paistele hetki",
       "Lis\u00e4\u00e4 riisi, mausteet, siirappi, liemikuutio, vesi ja kerma",
       "Sekoita tasaiseksi, laske l\u00e4mp\u00f6 ja anna hautua kannen alla 10-15min tai kunnes riisi on kyps\u00e4\u00e4"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "H\u00f6lskytetyt kurkut",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Avomaankurkku",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Hunaja",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 3,
+            "name": "V\u00e4kiviinaetikka",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Laatikko",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Suikaloitu varhaiskaali",
+            "quantity": "2",
+            "unit": "l"
+          },
+          {
+            "position": 2,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Rypsi\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Soijarouhe",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Soijakastike",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Pitk\u00e4jyv\u00e4inen riisi",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "Meirami",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 9,
+            "name": "Valkopippuri",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 10,
+            "name": "Siirappi",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 11,
+            "name": "Vesi",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 12,
+            "name": "Kasvisliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 13,
+            "name": "Kasviskerma",
+            "quantity": "2",
+            "unit": "dl"
+          }
+        ]
+      }
     ],
     "id": "kaalilaatikko-kasarissa"
   },
@@ -484,76 +863,6 @@
       "aasia"
     ],
     "source": "https://norecipes.com/japanese-curry-recipe-from-scratch/",
-    "ingredients": [
-      {
-        "Dashi": [
-          {
-            "Vesi": "1l"
-          },
-          {
-            "Kombu": "15g"
-          },
-          {
-            "Katsuobushi": "15g"
-          }
-        ]
-      },
-      {
-        "Curry": [
-          {
-            "Valkosipuli": "20g"
-          },
-          {
-            "Inkiv\u00e4\u00e4ri": "30g"
-          },
-          {
-            "Sipuli": "600g"
-          },
-          {
-            "Porkkanaraaste": "70g"
-          },
-          {
-            "Suola": "1tl"
-          },
-          {
-            "Ruokasooda": "0.125tl"
-          },
-          {
-            "Curryjauhe": "3rkl"
-          },
-          {
-            "Cayennejauhe": "0.5tl"
-          },
-          {
-            "Kyps\u00e4 banaani": "1kpl"
-          },
-          {
-            "Laakerinlehti": "1kpl"
-          },
-          {
-            "T\u00e4htianis": "1kpl"
-          },
-          {
-            "Soija": "2rkl"
-          },
-          {
-            "Chuno": "1rkl"
-          },
-          {
-            "Tomaattipyre": "1rkl"
-          },
-          {
-            "Kaakaojauhe": "2tl"
-          },
-          {
-            "Peruna": "400g"
-          },
-          {
-            "Porkkana": "300g"
-          }
-        ]
-      }
-    ],
     "method": [
       "Lillit\u00e4 kombu-merilev\u00e4\u00e4 vedess\u00e4 y\u00f6n yli j\u00e4\u00e4kaapissa",
       "L\u00e4mmit\u00e4 dashi juuri ja juuri kiehuvaksi. Ota pois l\u00e4mm\u00f6lt\u00e4 ja lis\u00e4\u00e4 katsuobushi. Uuta 4 minuuttia.",
@@ -573,6 +882,140 @@
       "Lis\u00e4\u00e4 suolaa maun mukaan.",
       "Tarjoile riisin ja esim. Paistetun tofun tai friteeratun kanan kera."
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Dashi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 2,
+            "name": "Kombu",
+            "quantity": "15",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Katsuobushi",
+            "quantity": "15",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Curry",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Valkosipuli",
+            "quantity": "20",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "30",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Sipuli",
+            "quantity": "600",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Porkkanaraaste",
+            "quantity": "70",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Ruokasooda",
+            "quantity": "0.125",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Curryjauhe",
+            "quantity": "3",
+            "unit": "rkl"
+          },
+          {
+            "position": 8,
+            "name": "Cayennejauhe",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 9,
+            "name": "Kyps\u00e4 banaani",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 10,
+            "name": "Laakerinlehti",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 11,
+            "name": "T\u00e4htianis",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 12,
+            "name": "Soija",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 13,
+            "name": "Chuno",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 14,
+            "name": "Tomaattipyre",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 15,
+            "name": "Kaakaojauhe",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 16,
+            "name": "Peruna",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 17,
+            "name": "Porkkana",
+            "quantity": "300",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
     "id": "kareeraisu"
   },
   {
@@ -584,76 +1027,6 @@
       "aamiainen"
     ],
     "source": "https://www.soppa365.fi/reseptit/burgerit-ja-hodarit-kasvis-arjen-nopeat-aamiaiset/korealaiset-aamiaissampylat",
-    "ingredients": [
-      {
-        "Marinoidut kurkut": [
-          {
-            "Kurkku": "\u00bdkpl"
-          },
-          {
-            "Sinapinsiemen": "1rkl"
-          },
-          {
-            "Riisiviinietikka": "1rkl"
-          },
-          {
-            "Suola": "\u00bctl"
-          },
-          {
-            "Hunaja": "1tl"
-          }
-        ]
-      },
-      {
-        "Gochujangmajoneesi": [
-          {
-            "Majoneesi": "1dl"
-          },
-          {
-            "Gochujang": "1rkl"
-          }
-        ]
-      },
-      {
-        "Inkiv\u00e4\u00e4rimajoneesi": [
-          {
-            "Majoneesi": "1dl"
-          },
-          {
-            "Raastettu inkiv\u00e4\u00e4ri": "2tl"
-          }
-        ]
-      },
-      {
-        "Munakokkeli": [
-          {
-            "Kananmuna": "4kpl"
-          },
-          {
-            "Kerma": "1dl"
-          },
-          {
-            "Suola": "\u00bdtl"
-          },
-          {
-            "Voi": "1rkl"
-          },
-          {
-            "Paahdettu seesam\u00f6ljy": "2tl"
-          }
-        ]
-      },
-      {
-        "Muu": [
-          {
-            "Briossis\u00e4mpyl\u00e4": "4kpl"
-          },
-          {
-            "Kev\u00e4tsipuli": "2kpl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Viipaloi kurkku esim. juustohy\u00f6l\u00e4ll\u00e4 ohuiksi siivuiksi ja siirr\u00e4 tiiviiseen kannelliseen rasiaan",
       "Lis\u00e4\u00e4 joukkoon sinapinsiemenet, etikka, suola ja hunaja",
@@ -666,6 +1039,134 @@
       "(Paahda halutessasi s\u00e4mpyl\u00e4t)",
       "Levit\u00e4 s\u00e4mpyl\u00e4n puolikkaalle inkiv\u00e4\u00e4rimajoneesia ja toiselle puolikkaalle gochujangmajoneesia",
       "Laita s\u00e4mpyl\u00e4in v\u00e4liin munakokkelia, kurkkua ja kev\u00e4tsipulia"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Marinoidut kurkut",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kurkku",
+            "quantity": "0.5",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sinapinsiemen",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Riisiviinietikka",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Hunaja",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Gochujangmajoneesi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Majoneesi",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Gochujang",
+            "quantity": "1",
+            "unit": "rkl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Inkiv\u00e4\u00e4rimajoneesi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Majoneesi",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Raastettu inkiv\u00e4\u00e4ri",
+            "quantity": "2",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "name": "Munakokkeli",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kananmuna",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Kerma",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Voi",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 5,
+            "name": "Paahdettu seesam\u00f6ljy",
+            "quantity": "2",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "name": "Muu",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Briossis\u00e4mpyl\u00e4",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Kev\u00e4tsipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          }
+        ]
+      }
     ],
     "id": "korealaiset-aamuslaiderit"
   },
@@ -681,65 +1182,6 @@
       "mvp"
     ],
     "source": "https://www.soppa365.fi/reseptit/kasvis-vegaaninen/korealaiset-tacot-nyhtotofulla",
-    "ingredients": [
-      {
-        "Nyht\u00f6tofu": [
-          {
-            "Maustamaton tofu": "250g"
-          },
-          {
-            "Raastettu inkiv\u00e4\u00e4ri": "2rkl"
-          },
-          {
-            "Valkosipulinkynsi": "2kpl"
-          },
-          {
-            "Ruokosokeri": "1tl"
-          },
-          {
-            "Seesami\u00f6ljy": "2rkl"
-          },
-          {
-            "Soijakastike": "2rkl"
-          }
-        ]
-      },
-      {
-        "Gochujang-majoneesi": [
-          {
-            "Majoneesi": "1dl"
-          },
-          {
-            "Gochujang": "1\u00bdrkl"
-          }
-        ]
-      },
-      {
-        "Lis\u00e4ksi": [
-          {
-            "Kev\u00e4tsipuli": "2kpl"
-          },
-          {
-            "Punakaali": "200g"
-          },
-          {
-            "Chili": "1kpl"
-          },
-          {
-            "Sinimailasen ituja": "1pkt"
-          },
-          {
-            "Seesaminsiemieni\u00e4": "1rkl"
-          },
-          {
-            "Minitortilla": "8kpl"
-          },
-          {
-            "Lime": "1kpl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Kuumenna uuni 225 asteeseen",
       "Purista tofusta enimm\u00e4t nesteet",
@@ -755,6 +1197,116 @@
     "notes": [
       "T\u00e4h\u00e4n k\u00e4y hyvin kaveriksi my\u00f6s esim. mangosalsa!"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Nyht\u00f6tofu",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Maustamaton tofu",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Raastettu inkiv\u00e4\u00e4ri",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Ruokosokeri",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Seesami\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Soijakastike",
+            "quantity": "2",
+            "unit": "rkl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Gochujang-majoneesi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Majoneesi",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Gochujang",
+            "quantity": "1.5",
+            "unit": "rkl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Lis\u00e4ksi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kev\u00e4tsipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Punakaali",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Chili",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Sinimailasen ituja",
+            "quantity": "1",
+            "unit": "pkt"
+          },
+          {
+            "position": 5,
+            "name": "Seesaminsiemieni\u00e4",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Minitortilla",
+            "quantity": "8",
+            "unit": "kpl"
+          },
+          {
+            "position": 7,
+            "name": "Lime",
+            "quantity": "1",
+            "unit": "kpl"
+          }
+        ]
+      }
+    ],
     "id": "korealaisettacot"
   },
   {
@@ -765,23 +1317,6 @@
       "mvp"
     ],
     "source": "https://yhteishyva.fi/reseptit/kukkakaali-parsakaalikeitto/recipe-2164",
-    "ingredients": [
-      {
-        "Purjo": "1kpl"
-      },
-      {
-        "Parsakaali": "300g"
-      },
-      {
-        "Kukkakaali": "400g"
-      },
-      {
-        "Sulatejuusto": "100g"
-      },
-      {
-        "Kasvisliemi": "1l"
-      }
-    ],
     "method": [
       "Pese ja pilko purjo",
       "Paloittele kukkakaali ja parsakaali",
@@ -790,6 +1325,44 @@
       "Keit\u00e4 kunnes on pehme\u00e4\u00e4",
       "Lis\u00e4\u00e4 sulatejuusto ja soseuta",
       "Mausta suolalla ja pippurilla"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Purjo",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Parsakaali",
+            "quantity": "300",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Kukkakaali",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Sulatejuusto",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Kasvisliemi",
+            "quantity": "1",
+            "unit": "l"
+          }
+        ]
+      }
     ],
     "id": "kukkakaaliparsakaalikeitto"
   },
@@ -801,18 +1374,30 @@
       "vegaani"
     ],
     "source": "Simbon \u00e4ite",
-    "ingredients": [
-      {
-        "Kukkakaali": "400g"
-      },
-      {
-        "Parsakaali": "300g"
-      }
-    ],
     "method": [
       "Pieni kaalit ja surauta tehosekoittimella pienehk\u00f6ksi muruksi",
       "Paista pannulla \u00f6ljyss\u00e4 haluttuun kypsyyteen",
       "Suolaa maun mukaan"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kukkakaali",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Parsakaali",
+            "quantity": "300",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "kukkakaaliparsakaaliriisi"
   },
@@ -823,65 +1408,6 @@
       "taco"
     ],
     "source": "https://www.soppa365.fi/reseptit/kasvis-arjen-nopeat/kukkakaalitacot-ja-cashewtahna",
-    "ingredients": [
-      {
-        "Cashewtahna": [
-          {
-            "Cashewp\u00e4hkin\u00e4": "2dl"
-          },
-          {
-            "Lime": "1kpl"
-          },
-          {
-            "Jalapeno": "1kpl"
-          },
-          {
-            "Korianteri": "\u00bdruukku"
-          },
-          {
-            "\u00d6ljy": "\u00bddl"
-          },
-          {
-            "Suola": "\u00bctl"
-          },
-          {
-            "Vesi": "n. \u00bddl"
-          }
-        ]
-      },
-      {
-        "Paahdettu kukkakaali": [
-          {
-            "Kukkakaali": "1kpl"
-          },
-          {
-            "Valkosipulinkynsi": "1kpl"
-          },
-          {
-            "\u00d6ljy": "2rkl"
-          },
-          {
-            "Savupaprikajauhe": "2tl"
-          },
-          {
-            "Suola": "1tl"
-          }
-        ]
-      },
-      {
-        "Lis\u00e4ksi": [
-          {
-            "Maissitortilla": "8kpl"
-          },
-          {
-            "Feta": "150g"
-          },
-          {
-            "Korianteri": "\u00bdruukku"
-          }
-        ]
-      }
-    ],
     "method": [
       "Liota cashewp\u00e4hkin\u00f6it\u00e4 vedess\u00e4 (esim. y\u00f6n yli)",
       "Kuumenna uuni 225 asteeseen",
@@ -897,6 +1423,116 @@
       "L\u00e4mmit\u00e4 tortillat (esim. uunin j\u00e4lkil\u00e4mm\u00f6ss\u00e4, pannulla tai mikrossa)",
       "Levita\u0308 cashewtahnaa tortillalle ja lado kuumia kukkakaalinuppuja pa\u0308a\u0308lle. Murustele feta pinnalle ja viimeistele korianterilla."
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Cashewtahna",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Cashewp\u00e4hkin\u00e4",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Lime",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Jalapeno",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Korianteri",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          },
+          {
+            "position": 5,
+            "name": "\u00d6ljy",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Vesi",
+            "quantity": "0.5",
+            "unit": "dl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Paahdettu kukkakaali",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kukkakaali",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "\u00d6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Savupaprikajauhe",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Lis\u00e4ksi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Maissitortilla",
+            "quantity": "8",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Feta",
+            "quantity": "150",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Korianteri",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          }
+        ]
+      }
+    ],
     "id": "kukkakaalitacot"
   },
   {
@@ -907,20 +1543,6 @@
       "vegaani"
     ],
     "source": "Madonna di Campiglion rinneravintola Viviani",
-    "ingredients": [
-      {
-        "80% viina": "1l"
-      },
-      {
-        "Sitruuna": "10kpl"
-      },
-      {
-        "Sokeri": "600g"
-      },
-      {
-        "Vesi": "1l"
-      }
-    ],
     "method": [
       "Pese sitruunat hyvin",
       "Kuori sitruunat veitsell\u00e4, varo ettei valkoista kuorta tule liiaksi mukaan",
@@ -928,6 +1550,38 @@
       "Kuumenna vett\u00e4 ja liuota sokeri siihen. Viilenn\u00e4.",
       "Sekoita viina ja sokerivesi",
       "Pullota ja anna tekeyty\u00e4 j\u00e4\u00e4kaapissa viel\u00e4 noin viikko"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "80% viina",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 2,
+            "name": "Sitruuna",
+            "quantity": "10",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Sokeri",
+            "quantity": "600",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l"
+          }
+        ]
+      }
     ],
     "id": "limoncello"
   },
@@ -939,65 +1593,6 @@
       "papu"
     ],
     "source": "https://www.hs.fi/ruoka/reseptit/art-2000008331933.html",
-    "ingredients": [
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Tuore inkiv\u00e4\u00e4ri": "1rkl"
-      },
-      {
-        "Bataatti": "250g"
-      },
-      {
-        "Lehtikaali tai pinaatti": "50g"
-      },
-      {
-        "Papuja": "230g"
-      },
-      {
-        "Rypsi\u00f6ljy": "2rkl"
-      },
-      {
-        "Jauhettu korianteri": "2tl"
-      },
-      {
-        "Jeera": "1tl"
-      },
-      {
-        "Chilirouhe": "\u00bdtl"
-      },
-      {
-        "Jauhettu muskottip\u00e4hkin\u00e4": "1/4 tl"
-      },
-      {
-        "Paseerattu tomaatti": "500g"
-      },
-      {
-        "Vesi": "2.5dl"
-      },
-      {
-        "Kasvisliemikuutio": "1kpl"
-      },
-      {
-        "Maap\u00e4hkin\u00e4voi": "\u00bddl"
-      },
-      {
-        "Limemehu": "2rkl"
-      },
-      {
-        "Suola": "maun mukaan"
-      },
-      {
-        "Suolap\u00e4hkin\u00e4": "\u00bddl"
-      },
-      {
-        "Korianteri": "1ruukku"
-      }
-    ],
     "method": [
       "Pilko sipuli ja valkosiipuli",
       "Kuori ja raasta inkiv\u00e4\u00e4ri",
@@ -1013,6 +1608,128 @@
       "Mausta limemehulla ja suolalla",
       "Tarjoile suolap\u00e4hkin\u00f6iden ja korianterin kanssa"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Tuore inkiv\u00e4\u00e4ri",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Bataatti",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Lehtikaali tai pinaatti",
+            "quantity": "50",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "Papuja",
+            "quantity": "230",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Rypsi\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 8,
+            "name": "Jauhettu korianteri",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 9,
+            "name": "Jeera",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 10,
+            "name": "Chilirouhe",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 11,
+            "name": "Jauhettu muskottip\u00e4hkin\u00e4",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 12,
+            "name": "Paseerattu tomaatti",
+            "quantity": "500",
+            "unit": "g"
+          },
+          {
+            "position": 13,
+            "name": "Vesi",
+            "quantity": "2.5",
+            "unit": "dl"
+          },
+          {
+            "position": 14,
+            "name": "Kasvisliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 15,
+            "name": "Maap\u00e4hkin\u00e4voi",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 16,
+            "name": "Limemehu",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 17,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 18,
+            "name": "Suolap\u00e4hkin\u00e4",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 19,
+            "name": "Korianteri",
+            "quantity": "1",
+            "unit": "ruukku"
+          }
+        ]
+      }
+    ],
     "id": "maap\u00e4hkin\u00e4papupata"
   },
   {
@@ -1023,23 +1740,6 @@
       "lisuke"
     ],
     "source": "https://www.gimmesomeoven.com/5-ingredient-mango-salsa-recipe/",
-    "ingredients": [
-      {
-        "Mango": "2kpl"
-      },
-      {
-        "Punasipuli": "1kpl (pieni)"
-      },
-      {
-        "Jalopeno": "2kpl"
-      },
-      {
-        "Korianteri": "\u00bdruukku"
-      },
-      {
-        "Lime": "1kpl"
-      }
-    ],
     "method": [
       "Kuori ja pilko mango 3-5mm kuutioiksi",
       "Kuori ja pilko punasipuli",
@@ -1048,6 +1748,44 @@
       "Nypi ja pieni korianterin lehti\u00e4",
       "Sekoita",
       "Mausta tarvittaessa suolalla ja mustapippurilla"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Mango",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Punasipuli",
+            "quantity": "1",
+            "unit": "kpl (pieni)"
+          },
+          {
+            "position": 3,
+            "name": "Jalopeno",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Korianteri",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          },
+          {
+            "position": 5,
+            "name": "Lime",
+            "quantity": "1",
+            "unit": "kpl"
+          }
+        ]
+      }
     ],
     "id": "mangosalsa"
   },
@@ -1058,38 +1796,6 @@
       "vegaani"
     ],
     "source": "https://yle.fi/a/20-10008297",
-    "ingredients": [
-      {
-        "Kikherne": "purkillinen"
-      },
-      {
-        "Parsakaali": "2 kpl"
-      },
-      {
-        "Valkokaali": "600 g"
-      },
-      {
-        "Suola": "2-3 tl"
-      },
-      {
-        "Kev\u00e4tsipuli": "3 kpl"
-      },
-      {
-        "Jalapeno": "1-2 kpl"
-      },
-      {
-        "Lime": "2 kpl"
-      },
-      {
-        "Persilja": "1 ruukku"
-      },
-      {
-        "Rapsi\u00f6ljy": "1 dl"
-      },
-      {
-        "Paprikajauhe": "Maun mukaan"
-      }
-    ],
     "method": [
       "Kuumenna uuni 200 asteeseen.",
       "Levit\u00e4 kikherneet leivinpaperilla vuoratulle uunipellille ja valuta p\u00e4\u00e4lle hieman \u00f6ljy\u00e4. Mausta suolalla ja paprikajauheella.",
@@ -1100,6 +1806,74 @@
       "Poista jalapenoista siemenet ja laita malto tehosekoittimeen. Lis\u00e4\u00e4 joukkoon limettien raastettu kuori ja mehu.",
       "Lis\u00e4\u00e4 persilja ja \u00f6ljy ja k\u00e4yt\u00e4 konetta noin minuutin ajan.",
       "Sekoita kastike salaattiin."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kikherne",
+            "quantity": "1",
+            "unit": "purkki"
+          },
+          {
+            "position": 2,
+            "name": "Parsakaali",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Valkokaali",
+            "quantity": "600",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Kev\u00e4tsipuli",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Jalapeno",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 7,
+            "name": "Lime",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 8,
+            "name": "Persilja",
+            "quantity": "1",
+            "unit": "ruukku"
+          },
+          {
+            "position": 9,
+            "name": "Rapsi\u00f6ljy",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 10,
+            "name": "Paprikajauhe",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
     ],
     "id": "marinoitu-kaalisalaatti"
   },
@@ -1112,59 +1886,6 @@
       "papu"
     ],
     "source": "https://www.soppa365.fi/reseptit/kasvis-arjen-nopeat-keitot/minestrone-vapaalla-kadella",
-    "ingredients": [
-      {
-        "Porkkana": "2kpl"
-      },
-      {
-        "Sellerinvarsi": "2kpl"
-      },
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "3kpl"
-      },
-      {
-        "Lehtikaali": "150g"
-      },
-      {
-        "Vihre\u00e4 papu": "200g"
-      },
-      {
-        "Valkopapu": "1prk"
-      },
-      {
-        "Tomaattipyre": "2rkl"
-      },
-      {
-        "Laakerinlehti": "2kpl"
-      },
-      {
-        "Yrttimausteseos": "2tl"
-      },
-      {
-        "Chilirouhe": "\u00bdtl"
-      },
-      {
-        "Suola": "\u00bdtl"
-      },
-      {
-        "Mustapippuri": "\u00bctl"
-      },
-      {
-        "Kasvisliemikuutio": "2kpl"
-      },
-      {
-        "Vesi": "1l"
-      },
-      {
-        "Pienikuvioinen pasta": "2dl"
-      },
-      {
-        "(Basilikaa)": "viimeistelyyn"
-      }
-    ],
     "method": [
       "Hienonna porkkanat, selleri ja sipuli, siirr\u00e4 kattilaan tutustumaan matalalla l\u00e4mm\u00f6ll\u00e4 \u00f6ljyss\u00e4",
       "Leikkaa lehtikaaleista ruodit pois ja revi suupaloiksi",
@@ -1184,6 +1905,116 @@
       "Jos meinaa j\u00e4\u00e4d\u00e4 turhan tiiviiksi, lis\u00e4\u00e4 vett\u00e4 sek\u00e4 tomaattipyrett\u00e4.",
       "Yrttimausteseos voi olla esim. herbes de Provence, tai itse sekoiteltu versio kaapista l\u00f6ytyvist\u00e4 yrttimausteista."
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Porkkana",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sellerinvarsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Lehtikaali",
+            "quantity": "150",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "Vihre\u00e4 papu",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Valkopapu",
+            "quantity": "1",
+            "unit": "prk"
+          },
+          {
+            "position": 8,
+            "name": "Tomaattipyre",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 9,
+            "name": "Laakerinlehti",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 10,
+            "name": "Yrttimausteseos",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 11,
+            "name": "Chilirouhe",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 12,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 13,
+            "name": "Mustapippuri",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 14,
+            "name": "Kasvisliemikuutio",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 15,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 16,
+            "name": "Pienikuvioinen pasta",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 17,
+            "name": "(Basilika)",
+            "quantity": "1",
+            "unit": "viimeistelyyn"
+          }
+        ]
+      }
+    ],
     "id": "minestrone"
   },
   {
@@ -1194,61 +2025,6 @@
       "muffini"
     ],
     "source": "https://sallysbakingaddiction.com/blueberry-muffins/#tasty-recipes-67559",
-    "ingredients": [
-      {
-        "Sokerikuorrute": [
-          {
-            "Ruskea sokeri": "100g"
-          },
-          {
-            "Saksanp\u00e4hkin\u00e4 tai pekaanip\u00e4hkin\u00e4": "67g"
-          },
-          {
-            "Kaneli": "1tl"
-          }
-        ]
-      },
-      {
-        "Taikina": [
-          {
-            "Voi": "113g"
-          },
-          {
-            "Vehn\u00e4jauho": "219g"
-          },
-          {
-            "Ruokasooda": "1tl"
-          },
-          {
-            "Leivinjauhe": "1tl"
-          },
-          {
-            "Suola": "\u00bdtl"
-          },
-          {
-            "Sokeri": "100g"
-          },
-          {
-            "Ruskea sokeri": "50g"
-          },
-          {
-            "Kananmuna": "2kpl"
-          },
-          {
-            "Ranskankerma tai maustamaton jogurtti": "120g"
-          },
-          {
-            "Vaniljauute": "2tl"
-          },
-          {
-            "Maito": "60ml"
-          },
-          {
-            "Mustikka": "210g"
-          }
-        ]
-      }
-    ],
     "method": [
       "Laita voi l\u00e4mpi\u00e4m\u00e4\u00e4n huoneenl\u00e4mp\u00f6\u00f6n",
       "Kuumenna uuni 220\u00b0C",
@@ -1266,6 +2042,110 @@
       "Paista 5min 220\u00b0C ja laske sitten l\u00e4mp\u00f6 180\u00b0C ja paista viel\u00e4 15-20min",
       "Anna j\u00e4\u00e4hty\u00e4 5min vuuissa, sitten siirr\u00e4 ritil\u00e4lle j\u00e4\u00e4htym\u00e4\u00e4n"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Sokerikuorrute",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Ruskea sokeri",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Saksanp\u00e4hkin\u00e4 tai pekaanip\u00e4hkin\u00e4",
+            "quantity": "67",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Kaneli",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Taikina",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Voi",
+            "quantity": "113",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "219",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Ruokasooda",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Leivinjauhe",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Sokeri",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Ruskea sokeri",
+            "quantity": "50",
+            "unit": "g"
+          },
+          {
+            "position": 8,
+            "name": "Kananmuna",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 9,
+            "name": "Ranskankerma tai maustamaton jogurtti",
+            "quantity": "120",
+            "unit": "g"
+          },
+          {
+            "position": 10,
+            "name": "Vaniljauute",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 11,
+            "name": "Maito",
+            "quantity": "60",
+            "unit": "ml"
+          },
+          {
+            "position": 12,
+            "name": "Mustikka",
+            "quantity": "210",
+            "unit": "g"
+          }
+        ]
+      }
+    ],
     "id": "mustikkamuffini"
   },
   {
@@ -1275,23 +2155,6 @@
       "lisuke"
     ],
     "source": null,
-    "ingredients": [
-      {
-        "Creme fraiche": "1prk"
-      },
-      {
-        "Punasipuli": "\u00bd-1kpl"
-      },
-      {
-        "Limetti": "2kpl"
-      },
-      {
-        "Kirjolohen m\u00e4ti": "100g"
-      },
-      {
-        "Ruohosipuli": "maun mukaan"
-      }
-    ],
     "method": [
       "Hienonna punasipuli ja ruohosipuli",
       "Raasta limettien kuoret",
@@ -1300,6 +2163,44 @@
       "Mausta suolalla ja mustapippurilla",
       "Koristele isoilla m\u00e4tikeoilla ja hienon hienoksi silputulla ruohosipulilla",
       "Nauti sipsien kanssa"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Creme fraiche",
+            "quantity": "1",
+            "unit": "prk"
+          },
+          {
+            "position": 2,
+            "name": "Punasipuli",
+            "quantity": "0.5",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Limetti",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Kirjolohen m\u00e4ti",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Ruohosipuli",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
     ],
     "id": "m\u00e4tidippi"
   },
@@ -1311,71 +2212,6 @@
       "vegaani"
     ],
     "source": "https://hannansoppa.com/nyhtokaura-rendang/",
-    "ingredients": [
-      {
-        "Currytahna": [
-          {
-            "Iso salottisipuli": "1kpl"
-          },
-          {
-            "Valkosipulinkynsi": "4kpl"
-          },
-          {
-            "Punainen chili": "3kpl"
-          },
-          {
-            "Inkiv\u00e4\u00e4ri": "3cm"
-          },
-          {
-            "Sitruunaruoho": "1kpl"
-          },
-          {
-            "Kurkuma": "1tl"
-          },
-          {
-            "\u00d6ljy": "2rkl"
-          },
-          {
-            "Mustapippuri": "\u00bctl"
-          }
-        ]
-      },
-      {
-        "Curry": [
-          {
-            "Kookosmaito": "4dl"
-          },
-          {
-            "Soijakastike": "1rkl"
-          },
-          {
-            "Nyht\u00f6kaura": "250g"
-          },
-          {
-            "Kaffirlimetin lehti": "3kpl"
-          },
-          {
-            "(Kookos-)sokeri": "2rkl"
-          },
-          {
-            "Suola": "1tl"
-          }
-        ]
-      },
-      {
-        "Tarjoiluun": [
-          {
-            "Riisi\u00e4": "3\u00bddl"
-          },
-          {
-            "Korianteria": "\u00bdruukku"
-          },
-          {
-            "Lime": "2kpl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Raasta inkiv\u00e4\u00e4ri",
       "Kuori ja hienonna sitruunaruoho",
@@ -1384,6 +2220,128 @@
       "Paista tahnaa pannulla pari minuuttia",
       "Lis\u00e4\u00e4 muut curryn ainekset ja anna muhia miedolla l\u00e4mm\u00f6ll\u00e4 30min",
       "Tarjoile keitetyn riisin, limelohkojen ja korianterin kanssa"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Currytahna",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Iso salottisipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Punainen chili",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "3",
+            "unit": "cm"
+          },
+          {
+            "position": 5,
+            "name": "Sitruunaruoho",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Kurkuma",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "\u00d6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 8,
+            "name": "Mustapippuri",
+            "quantity": "0.25",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Curry",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kookosmaito",
+            "quantity": "4",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Soijakastike",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Nyht\u00f6kaura",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Kaffirlimetin lehti",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "(Kookos-)sokeri",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Tarjoiluun",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Riisi\u00e4",
+            "quantity": "3.5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Korianteria",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          },
+          {
+            "position": 3,
+            "name": "Lime",
+            "quantity": "2",
+            "unit": "kpl"
+          }
+        ]
+      }
     ],
     "id": "nyht\u00f6kaura-rendang"
   },
@@ -1395,94 +2353,16 @@
       "mvp"
     ],
     "source": "https://www.theguardian.com/food/2020/jul/11/yotam-ottolenghi-chickpea-recipes-confit-tandoori-polenta-chips-parmesan-braise",
-    "ingredients": [
-      {
-        "Herneet": [
-          {
-            "Kikherne": "2 purkkia"
-          },
-          {
-            "Valkosipuli": "10 kyntt\u00e4"
-          },
-          {
-            "Inkiv\u00e4\u00e4ri": "30g"
-          },
-          {
-            "Kirsikkatomaatti": "300g"
-          },
-          {
-            "Chili": "3kpl"
-          },
-          {
-            "Tomaattipyre": "2rkl"
-          },
-          {
-            "Oliivi\u00f6ljy": "1\u00bddl"
-          }
-        ]
-      },
-      {
-        "Mausteseos": [
-          {
-            "Jeera": "2tl"
-          },
-          {
-            "Jauhettu korianteri": "2tl"
-          },
-          {
-            "Kurkuma": "0.5tl"
-          },
-          {
-            "Chilihiutale": "0.5tl"
-          },
-          {
-            "Chilijauhe": "0.5tl"
-          },
-          {
-            "Paprikajauhe": "1tl"
-          },
-          {
-            "Sokeri": "1tl"
-          },
-          {
-            "Suola": "1tl"
-          }
-        ]
-      },
-      {
-        "Kastike": [
-          {
-            "Minttu": "1 ruukku"
-          },
-          {
-            "Korianteri": "1 ruukku"
-          },
-          {
-            "Kreikkalainen jogurtti": "180g"
-          },
-          {
-            "Lime": "1kpl"
-          },
-          {
-            "Suola": "\u00bdtl"
-          }
-        ]
-      },
-      {
-        "Muu": [
-          {
-            "Pitaleip\u00e4": "4kpl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Kuumenna uuni 170 asteeseen",
+      "Huuhtele kikherneet ja tomaatit",
       "Kuori valkosipulinkynnet",
-      "Paloittele inkiv\u00e4\u00e4ri (esim. julienne)",
+      "Paloittele inkiv\u00e4\u00e4ri",
       "Halkaise chilit, poista halutessasi siemenet",
-      "Laita uunivuokaan:\n kikherneet\n valkosipulit\n inkiv\u00e4\u00e4ri\n kirsikkatomaatit\n chilit\n tomaattipyre\n jeera\n jauhettu korianteri\n kurkuma\n chilijauhe ja -hiutaleet\n paprikajauhe\n sokeri\n oliivi\u00f6ljy\n suola\n",
-      "Sekoita ja paahda uunissa 75 minuuttia, sekoittaen puoliv\u00e4liss\u00e4",
+      "Yhdist\u00e4 edell\u00e4 mainitut vuoassa",
+      "Lis\u00e4\u00e4 mukaan tomaattipyre ja \u00f6ljy",
+      "Lis\u00e4\u00e4 vuokaan 26g valmiiksi sekoitettua <a href=\"ottolenghimix.html\">mausteseosta</a> tai yll\u00e4 olevan ohjeen mukaiset mausteet.",
+      "Sekoita ja paahda uunissa 70 minuuttia sekoittaen puoliv\u00e4liss\u00e4",
       "Hienonna mintun ja korianterin lehdet",
       "Sekoita jogurttiin minttu, korianteri ja limen mehu",
       "Suolaa kastike maun mukaan"
@@ -1491,44 +2371,229 @@
       "Pita kannattaa ostaa Lidlin paistopisteelt\u00e4!",
       "Riippuen sy\u00f6jist\u00e4, riitto voi olla l\u00e4hemp\u00e4n\u00e4 2\u00bd kuin 3 annosta"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Herneet",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kikherne",
+            "quantity": "2",
+            "unit": "purkkia"
+          },
+          {
+            "position": 2,
+            "name": "Kirsikkatomaatti",
+            "quantity": "300",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipuli",
+            "quantity": "10",
+            "unit": "kyntt\u00e4"
+          },
+          {
+            "position": 4,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "30",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Chili",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Tomaattipyre",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 7,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "1.5",
+            "unit": "dl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Mausteseos",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Jeera",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 2,
+            "name": "Jauhettu korianteri",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 3,
+            "name": "Kurkuma",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Chilihiutale",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Chilijauhe",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Paprikajauhe",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Sokeri",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Kastike",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Minttu",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          },
+          {
+            "position": 2,
+            "name": "Korianteri",
+            "quantity": "0.5",
+            "unit": "ruukku"
+          },
+          {
+            "position": 3,
+            "name": "Kreikkalainen jogurtti",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Lime",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "name": "Muu",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Pitaleip\u00e4",
+            "quantity": "2",
+            "unit": "kpl"
+          }
+        ]
+      }
+    ],
     "id": "ottolenghi-tandoori-chickpeas"
   },
   {
     "name": "Ottolenghimix",
-    "servings": "???",
+    "servings": "104g",
     "tags": [
-      "mvp"
+      "vegaani"
     ],
     "source": "-",
-    "ingredients": [
-      {
-        "Jeera": "2tl"
-      },
-      {
-        "Jauhettu korianteri": "2tl"
-      },
-      {
-        "Kurkuma": "0.5tl"
-      },
-      {
-        "Chilihiutale": "0.5tl"
-      },
-      {
-        "Chilijauhe": "0.5tl"
-      },
-      {
-        "Paprikajauhe": "1tl"
-      },
-      {
-        "Sokeri": "1tl"
-      },
-      {
-        "Suola": "1tl"
-      }
-    ],
     "method": [
-      "Sekoita.",
-      "K\u00e4yt\u00e4 <a href=\"ottolenghi-tandoori-chickpeas.html\">t\u00e4\u00e4ll\u00e4</a>"
+      "Sekoita."
+    ],
+    "notes": [
+      "K\u00e4ytet\u00e4\u00e4n <a href=\"ottolenghi-tandoori-chickpeas.html\">t\u00e4\u00e4ll\u00e4</a>",
+      "T\u00e4m\u00e4 m\u00e4\u00e4r\u00e4 riitt\u00e4\u00e4 n. 4 satsiin em. resepti\u00e4."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Jeera",
+            "quantity": "20",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Jauhettu korianteri",
+            "quantity": "18",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Kurkuma",
+            "quantity": "5",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Chilihiutale",
+            "quantity": "3",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Chilijauhe",
+            "quantity": "4",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "Paprikajauhe",
+            "quantity": "10",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Sokeri",
+            "quantity": "20",
+            "unit": "g"
+          },
+          {
+            "position": 8,
+            "name": "Suola",
+            "quantity": "24",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "ottolenghimix"
   },
@@ -1539,38 +2604,6 @@
       "gnocchi"
     ],
     "source": "https://www.happyveggiekitchen.com/roasted-gnocchi-with-mushrooms-broccoli/",
-    "ingredients": [
-      {
-        "Salottisipuli (pienehk\u00f6)": "2kpl"
-      },
-      {
-        "Valkosipulinkynsi": "5kpl"
-      },
-      {
-        "Parsakaali": "1kpl"
-      },
-      {
-        "Herkkusieni": "200g"
-      },
-      {
-        "Voi": "3rkl"
-      },
-      {
-        "Oliivi\u00f6ljy": "2rkl"
-      },
-      {
-        "Suola": "\u00bdtl"
-      },
-      {
-        "Gnocchi": "500g"
-      },
-      {
-        "Mustapippuri": "\u00bctl"
-      },
-      {
-        "Tuore timjami": "1rkl"
-      }
-    ],
     "method": [
       "L\u00e4mmit\u00e4 uuni 200 asteeseen",
       "Hienonna valkosipulinkynnet ja salottisipulit",
@@ -1586,6 +2619,74 @@
       "Paahda uunissa 15-20 minuuttia tai kunnes gnocchit ja parsakaalit ovat saaneet v\u00e4ri\u00e4",
       "Tarjoile esim. parmesaaniraasteen kera"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Salottisipuli (pienehk\u00f6)",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "5",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Parsakaali",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Herkkusieni",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Voi",
+            "quantity": "3",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 7,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Gnocchi",
+            "quantity": "500",
+            "unit": "g"
+          },
+          {
+            "position": 9,
+            "name": "Mustapippuri",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 10,
+            "name": "Tuore timjami",
+            "quantity": "1",
+            "unit": "rkl"
+          }
+        ]
+      }
+    ],
     "id": "paahdettu-gnocchi-parsakaali-sieni"
   },
   {
@@ -1596,32 +2697,6 @@
       "vegaani"
     ],
     "source": "https://www.soppa365.fi/reseptit/alkuruuat-keitot-gluteeniton/palsternakka-valkopapusosekeitto",
-    "ingredients": [
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Palsternakka": "200g"
-      },
-      {
-        "Juuriselleri": "200g"
-      },
-      {
-        "Valkoisia papuja": "1tlk"
-      },
-      {
-        "Kasvisliemi": "1l"
-      },
-      {
-        "(Kasvi)kerma": "2dl"
-      },
-      {
-        "Suola": "2tl"
-      },
-      {
-        "Valkopippuri": "\u00bdtl"
-      }
-    ],
     "method": [
       "Kuori ja paloittele sipuli, palsternakka ja juuriselleri",
       "Paista kasviksia kattilassa \u00f6ljyss\u00e4 5min",
@@ -1632,6 +2707,62 @@
     "notes": [
       "Alkuper\u00e4isess\u00e4 reseptiss\u00e4 on 50% enempi vett\u00e4 - tulee meir\u00e4m mielest\u00e4 liian vetist\u00e4."
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Palsternakka",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Juuriselleri",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Valkoisia papuja",
+            "quantity": "1",
+            "unit": "tlk"
+          },
+          {
+            "position": 5,
+            "name": "Kasvisliemi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 6,
+            "name": "(Kasvi)kerma",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "Suola",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Valkopippuri",
+            "quantity": "0.5",
+            "unit": "tl"
+          }
+        ]
+      }
+    ],
     "id": "palsternakka-juurisellerikeitto"
   },
   {
@@ -1641,32 +2772,62 @@
       "lisuke"
     ],
     "source": "Joni V.",
-    "ingredients": [
-      {
-        "Raastettu parmesaani": "1dl"
-      },
-      {
-        "Muna": "1kpl"
-      },
-      {
-        "Valkoviinietikka": "1rkl"
-      },
-      {
-        "Valkosipulinkynsi": "1kpl"
-      },
-      {
-        "Sinappi (esim. dijon, Colman's)": "1rkl"
-      },
-      {
-        "Rypsi\u00f6ljy": "1\u00bddl"
-      },
-      {
-        "(Mirin)": "1-2tl"
-      }
-    ],
     "method": [
       "Sauvasekoittimella kaikki sekaisin",
       "Jos on liian l\u00f6ys\u00e4\u00e4, lis\u00e4\u00e4 \u00f6ljy\u00e4"
+    ],
+    "notes": [
+      "Mirini\u00e4 voi laittaa enemm\u00e4nkin, maun mukaan"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Raastettu parmesaani",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Muna",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Valkoviinietikka",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Sinappi (esim. dijon, Colman's)",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Rypsi\u00f6ljy",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "(Mirin)",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      }
     ],
     "id": "parmesaanimajoneesi"
   },
@@ -1678,23 +2839,6 @@
       "gnocchi"
     ],
     "source": "https://www.soppa365.fi/reseptit/kasvis-arjen-nopeat-pastat-ja-risotot/parsa-piparjuurignocchit",
-    "ingredients": [
-      {
-        "Parsa": "500g"
-      },
-      {
-        "Gnocchi": "500g"
-      },
-      {
-        "Raastettu piparjuuri": "1dl"
-      },
-      {
-        "Raastettu parmesaani": "1dl"
-      },
-      {
-        "Voi": "75g"
-      }
-    ],
     "method": [
       "Leikkaa parsat suupaloiksi ja keit\u00e4.",
       "Poista parsat kun ovat kypsi\u00e4.",
@@ -1703,6 +2847,44 @@
       "Lis\u00e4\u00e4 pannulle gnocchit ja parsat. Py\u00f6r\u00e4yt\u00e4.",
       "Lis\u00e4\u00e4 parmesaani sek\u00e4 hiukan keitinvett\u00e4.",
       "Sekoita ja mausta mustapippurilla."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Parsa",
+            "quantity": "500",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Gnocchi",
+            "quantity": "500",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Raastettu piparjuuri",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Raastettu parmesaani",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Voi",
+            "quantity": "75",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "parsa-piparjuurignocchi"
   },
@@ -1715,38 +2897,6 @@
       "mvp"
     ],
     "source": "https://keittokirja.pasilohi.net/light/view.php?class=main&id=Pastat&r=Kirjolohipasta#r",
-    "ingredients": [
-      {
-        "Nauhamakaroni": "400g"
-      },
-      {
-        "Voi": "2rkl"
-      },
-      {
-        "Vehn\u00e4jauho": "\u00bddl"
-      },
-      {
-        "Vesi": "3dl"
-      },
-      {
-        "Kalaliemikuutio": "1kpl"
-      },
-      {
-        "Sinappi (esim. Colman's)": "1rkl"
-      },
-      {
-        "Kuohukerma": "2dl"
-      },
-      {
-        "Sitruunamehua": "\u00bdrkl"
-      },
-      {
-        "Savustettua kirjolohta": "200g"
-      },
-      {
-        "(Tilli\u00e4)": "maun mukaan"
-      }
-    ],
     "method": [
       "Keit\u00e4 pasta pakkauksen ohjeen mukaan. Pastan kiehuessa valmista kastike",
       "Sulata voi kattilassa ja lis\u00e4\u00e4 jauho. Sekoita tasaiseksi ja kypsenn\u00e4 hetki",
@@ -1755,6 +2905,74 @@
       "Suikaloi kala ja lis\u00e4\u00e4 kastikkeeseen juuri ennen tarjoilua",
       "(Hienonna tilli ja lis\u00e4\u00e4 sit\u00e4 kastikkeeseen halutessasi)",
       "Tarjoile pastan kanssa"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Nauhamakaroni",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Voi",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Vesi",
+            "quantity": "3",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Kalaliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Sinappi (esim. Colman's)",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 7,
+            "name": "Kuohukerma",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 8,
+            "name": "Sitruunamehua",
+            "quantity": "0.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 9,
+            "name": "Savustettua kirjolohta",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 10,
+            "name": "(Tilli)",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
     ],
     "id": "pasilohipasta"
   },
@@ -1766,68 +2984,6 @@
       "h\u00e4rkis"
     ],
     "source": "https://www.soppa365.fi/reseptit/leivonta-pizzat-ja-piirakat-vegaaninen/peltivihis",
-    "ingredients": [
-      {
-        "Ohrat\u00e4yte": [
-          {
-            "Ohrahelmi": "1\u00bddl"
-          },
-          {
-            "Suola": "1tl"
-          }
-        ]
-      },
-      {
-        "H\u00e4rkist\u00e4yte": [
-          {
-            "Sipuli": "2kpl"
-          },
-          {
-            "Valkosipulinkynsi": "2kpl"
-          },
-          {
-            "Porkkana": "2kpl"
-          },
-          {
-            "Paprikajauhe": "1tl"
-          },
-          {
-            "Cajunmauste": "1tl"
-          },
-          {
-            "Jeera": "1tl"
-          },
-          {
-            "Suola": "\u00bdtl"
-          },
-          {
-            "H\u00e4rkis": "250g"
-          }
-        ]
-      },
-      {
-        "Kuori": [
-          {
-            "(Vegaaninen) voi": "250g"
-          },
-          {
-            "Vehn\u00e4jauho": "4dl"
-          },
-          {
-            "Kaurajauho": "2dl"
-          },
-          {
-            "Leivinjauhe": "1tl"
-          },
-          {
-            "(Vegaaninen) creme fraiche": "200g"
-          },
-          {
-            "Suola": "\u00bdtl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Keit\u00e4 ohrahelmet reippaassa, suolatussa vedess\u00e4. Kun valmista, valuta ja l\u00e4\u00e4hdyt\u00e4",
       "Kuori ja pilko sipulit ja valkosipulinkynnet",
@@ -1856,6 +3012,122 @@
       "Taikinan voi my\u00f6s tehd\u00e4 yleiskoneessa",
       "Ketsuppi ja chili\u00f6ljy on uskomattoman b\u00e4ngerit tillbeh\u00f6rit!"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Ohrat\u00e4yte",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Ohrahelmi",
+            "quantity": "1.5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "H\u00e4rkist\u00e4yte",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Sipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Porkkana",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Paprikajauhe",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Cajunmauste",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Jeera",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "H\u00e4rkis",
+            "quantity": "250",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Kuori",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "(Vegaaninen) voi",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "4",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Kaurajauho",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Leivinjauhe",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "(Vegaaninen) creme fraiche",
+            "quantity": "200",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          }
+        ]
+      }
+    ],
     "id": "peltivihis"
   },
   {
@@ -1866,32 +3138,6 @@
       "mvp"
     ],
     "source": "https://www.seriouseats.com/best-potato-leek-soup-recipe",
-    "ingredients": [
-      {
-        "Voi": "2rkl"
-      },
-      {
-        "Purjo": "2kpl"
-      },
-      {
-        "Kanaliemi": "1l"
-      },
-      {
-        "Peruna": "400g"
-      },
-      {
-        "Laakerinlehti": "1kpl"
-      },
-      {
-        "Creme fraiche": "150g"
-      },
-      {
-        "Muskottip\u00e4hkin\u00e4": "\u00bdtl"
-      },
-      {
-        "Ruoho- tai kev\u00e4tsipulia": "koristeeksi"
-      }
-    ],
     "method": [
       "Pese ja pilko purjot",
       "Sulata voi kattilassa, lis\u00e4\u00e4 purjot ja hieman suolaa",
@@ -1901,6 +3147,62 @@
       "Keit\u00e4, kunnes on kyps\u00e4\u00e4",
       "Poista laakerinlehti ja soseuta",
       "Lis\u00e4\u00e4 creme fraiche ja muskottip\u00e4hkin\u00e4"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Voi",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 2,
+            "name": "Purjo",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Kanaliemi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 4,
+            "name": "Peruna",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Laakerinlehti",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Creme fraiche",
+            "quantity": "150",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Muskottip\u00e4hkin\u00e4",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Ruoho- tai kev\u00e4tsipulia",
+            "quantity": "1",
+            "unit": "koristeeksi"
+          }
+        ]
+      }
     ],
     "id": "perunapurjokeitto"
   },
@@ -1913,26 +3215,6 @@
       "leivonta"
     ],
     "source": "Simbon \u00e4ite",
-    "ingredients": [
-      {
-        "Piim\u00e4": "5dl"
-      },
-      {
-        "Hiivaleip\u00e4jauho": "~1,2l"
-      },
-      {
-        "Kuivahiiva": "2ps"
-      },
-      {
-        "Siirappi": "1dl"
-      },
-      {
-        "Anis": "1tl"
-      },
-      {
-        "Suola": "1tl"
-      }
-    ],
     "method": [
       "L\u00e4mmit\u00e4 piim\u00e4 ja siirappi kattilassa hiivanaktivointil\u00e4mp\u00f6tilaan",
       "Murskaa anista hieman (esim. k\u00e4mmeni\u00e4 vasten)",
@@ -1945,6 +3227,50 @@
       "Paista 175 asteessa n. 45 min",
       "(Jos leipiin haluaa kiilt\u00e4v\u00e4n pinnan, sekoita v\u00e4h\u00e4n siirappia veteen ja valele t\u00e4ll\u00e4 liuoksella leipi\u00e4 pari kertaa paiston aikana ja viimeksi kun olet ottanut kyps\u00e4t leiv\u00e4t uunista.)"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Piim\u00e4",
+            "quantity": "5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Hiivaleip\u00e4jauho",
+            "quantity": "1.2",
+            "unit": "l"
+          },
+          {
+            "position": 3,
+            "name": "Kuivahiiva",
+            "quantity": "2",
+            "unit": "ps"
+          },
+          {
+            "position": 4,
+            "name": "Siirappi",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Anis",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      }
+    ],
     "id": "piim\u00e4limppu"
   },
   {
@@ -1955,26 +3281,44 @@
       "pikkeli"
     ],
     "source": "https://www.ethanchlebowski.com/cooking-techniques-recipes/pickled-onions-forever",
-    "ingredients": [
-      {
-        "Punasipuli": "1l (siivuina)"
-      },
-      {
-        "Vesi": "2\u00bddl"
-      },
-      {
-        "Etikka": "2\u00bddl (50-50 v\u00e4kiviinaetikka ja esim. riisiviinietikka)"
-      },
-      {
-        "Suola": "1tl"
-      }
-    ],
     "method": [
       "Kuori ja puoli punasipulit",
       "Siivuta sipulit \"akselin\" suuntaisesti",
       "Siirr\u00e4 sipulit litran vetoiseen purkkiin",
       "Kiehauta vesi ja etikka, liuota suola mukaan",
       "Kaada liemi purkkiin"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Punasipuli",
+            "quantity": "1",
+            "unit": "l (siivuina)"
+          },
+          {
+            "position": 2,
+            "name": "Vesi",
+            "quantity": "2.5",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Etikka",
+            "quantity": "2.5",
+            "unit": "dl (50-50 v\u00e4kiviinaetikka ja esim. riisiviinietikka)"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      }
     ],
     "id": "pikkel\u00f6ity-punasipuli"
   },
@@ -1985,26 +3329,6 @@
       "joulu"
     ],
     "source": "Simbon \u00e4ite",
-    "ingredients": [
-      {
-        "Pororouhe (kylm\u00e4savustettu)": "150g"
-      },
-      {
-        "Kuohukerma": "1dl"
-      },
-      {
-        "Ranskankerma": "2dl"
-      },
-      {
-        "Liivatelehti": "2kpl"
-      },
-      {
-        "Sitruunamehu": "1rkl / maun mukaan"
-      },
-      {
-        "Mustapippuri": "maun mukaan"
-      }
-    ],
     "method": [
       "Sekoita pororouhe, kermat, sitruunamehu ja mustapippuri.",
       "Liota liivatelehti\u00e4 kylm\u00e4ss\u00e4 vedess\u00e4",
@@ -2014,6 +3338,50 @@
     ],
     "notes": [
       "Resepti toimii my\u00f6s ilman liivatetta, joskin konsistenssi on ymm\u00e4rrett\u00e4v\u00e4sti silloin l\u00f6ysempi."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Pororouhe (kylm\u00e4savustettu)",
+            "quantity": "150",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Kuohukerma",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Ranskankerma",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Liivatelehti",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Sitruunamehu",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Mustapippuri",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
     ],
     "id": "poromousse"
   },
@@ -2026,81 +3394,6 @@
       "nuudeli"
     ],
     "source": "https://www.justonecookbook.com/vegetarian-ramen/",
-    "ingredients": [
-      {
-        "Dashi": [
-          {
-            "Kombu": "1pala"
-          },
-          {
-            "Kuivattu siitake": "1kpl"
-          },
-          {
-            "Vesi": "0.25l"
-          }
-        ]
-      },
-      {
-        "Soijamunat": [
-          {
-            "Kananmuna": "4kpl"
-          },
-          {
-            "Soija": "2rkl"
-          }
-        ]
-      },
-      {
-        "Ramen": [
-          {
-            "Paahdettu sesaminsiemen": "2rkl"
-          },
-          {
-            "Inkiv\u00e4\u00e4ri": "2.5cm"
-          },
-          {
-            "Valkosipulinkynsi": "2kpl"
-          },
-          {
-            "Kev\u00e4tsipuli": "2kpl"
-          },
-          {
-            "Paahdettu seesami\u00f6ljy": "1rkl"
-          },
-          {
-            "Doubanjiang": "1.5rkl"
-          },
-          {
-            "Miso": "1.5rkl"
-          },
-          {
-            "Sake": "1rkl"
-          },
-          {
-            "Soijakastike": "1.5rkl"
-          },
-          {
-            "Makeuttamaton soijamaito": "0.5l"
-          },
-          {
-            "Suola": "0.5tl"
-          },
-          {
-            "Valkopippuri": "ripaus"
-          }
-        ]
-      },
-      {
-        "Muut": [
-          {
-            "Nuudeli": "1pkt / sy\u00f6j\u00e4"
-          },
-          {
-            "Paksoi": "0.5pkt"
-          }
-        ]
-      }
-    ],
     "method": [
       "Dashi: liota kombua ja siitaketta vedess\u00e4 v\u00e4hint\u00e4\u00e4n 30 min (2-3h tai y\u00f6n yli paras)",
       "Dashi: siirr\u00e4 vesi ja muu kattilaan ja kuumenna hiljalleen l\u00e4hes kiehuvaksi. Juuri enne kuin neste alkaa kiehua, poista kombu ja siitake ja poista kattila liedelt\u00e4",
@@ -2124,6 +3417,146 @@
       "Puolita munat",
       "Kokoa nuudelit, paksoi, liemi ja munat kulhoihin, koristele kev\u00e4tsipulin vihreill\u00e4 osilla"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Dashi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kombu",
+            "quantity": "1",
+            "unit": "pala"
+          },
+          {
+            "position": 2,
+            "name": "Kuivattu siitake",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Vesi",
+            "quantity": "0.25",
+            "unit": "l"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Soijamunat",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kananmuna",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Soija",
+            "quantity": "2",
+            "unit": "rkl"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Ramen",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Paahdettu sesaminsiemen",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 2,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "2.5",
+            "unit": "cm"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Kev\u00e4tsipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Paahdettu seesami\u00f6ljy",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Doubanjiang",
+            "quantity": "1.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 7,
+            "name": "Miso",
+            "quantity": "1.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 8,
+            "name": "Sake",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 9,
+            "name": "Soijakastike",
+            "quantity": "1.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 10,
+            "name": "Makeuttamaton soijamaito",
+            "quantity": "0.5",
+            "unit": "l"
+          },
+          {
+            "position": 11,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 12,
+            "name": "Valkopippuri",
+            "quantity": "1",
+            "unit": "ripaus"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "name": "Muut",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Nuudeli",
+            "quantity": "1",
+            "unit": "pkt / sy\u00f6j\u00e4"
+          },
+          {
+            "position": 2,
+            "name": "Paksoi",
+            "quantity": "0.5",
+            "unit": "pkt"
+          }
+        ]
+      }
+    ],
     "id": "ramen"
   },
   {
@@ -2133,32 +3566,6 @@
       "japani"
     ],
     "source": "https://www.justonecookbook.com/homemade-la-yu/",
-    "ingredients": [
-      {
-        "Rypsi\u00f6ljy": "120ml"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Inkiv\u00e4\u00e4ri": "2siivua"
-      },
-      {
-        "Kev\u00e4tsipulin varsi": "2kpl"
-      },
-      {
-        "Sichuanin pippuri": "1tl"
-      },
-      {
-        "Gochugaru": "15g"
-      },
-      {
-        "Ichimi": "15g"
-      },
-      {
-        "Seesami\u00f6ljy": "60ml"
-      }
-    ],
     "method": [
       "Siivuta valkosipuli",
       "Leikkele kev\u00e4tsipulin varret muutamaan osaan",
@@ -2172,6 +3579,62 @@
       "Rypsi\u00f6ljy\u00e4 voi laittaa my\u00f6s lis\u00e4\u00e4 (esim. yhteens\u00e4 180ml) jos haluaa enemm\u00e4n, mutta toki tulee hieman laimeampaa",
       "Laittamalla enemm\u00e4 ichimi\u00e4 suhteessa gochugaruun tulee stydimp\u00e4\u00e4"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Rypsi\u00f6ljy",
+            "quantity": "120",
+            "unit": "ml"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Inkiv\u00e4\u00e4ri",
+            "quantity": "2",
+            "unit": "siivua"
+          },
+          {
+            "position": 4,
+            "name": "Kev\u00e4tsipulin varsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Sichuanin pippuri",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Gochugaru",
+            "quantity": "15",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Ichimi",
+            "quantity": "15",
+            "unit": "g"
+          },
+          {
+            "position": 8,
+            "name": "Seesami\u00f6ljy",
+            "quantity": "60",
+            "unit": "ml"
+          }
+        ]
+      }
+    ],
     "id": "rayu"
   },
   {
@@ -2181,41 +3644,6 @@
       "risotto"
     ],
     "source": "https://www.hs.fi/ruoka/art-2000009952280.html",
-    "ingredients": [
-      {
-        "Vesi": "1l (ish)"
-      },
-      {
-        "Satsuma": "3kpl"
-      },
-      {
-        "Salottisipuli": "2kpl"
-      },
-      {
-        "Valkosipulinkynsi": "1kpl"
-      },
-      {
-        "Oliivi\u00f6ljy": "2rkl"
-      },
-      {
-        "Risottoriisi": "3\u00bddl"
-      },
-      {
-        "Kasvisliemikuutio": "2kpl"
-      },
-      {
-        "Raastettu parmesaani": "1dl"
-      },
-      {
-        "Voi": "2rkl"
-      },
-      {
-        "Hienonnettu ruohosipuli": "2rkl"
-      },
-      {
-        "(Sitruunamehu, valkoviini tms. happo)": "maun mukaan tarvittaessa"
-      }
-    ],
     "method": [
       "Kuumenna litra vett\u00e4",
       "Pese satsumat, raasta kuoret ja purista mehu talteen",
@@ -2233,6 +3661,80 @@
     "notes": [
       "Satsuman maku voi olla hieman hento - sitruunamehulla saa v\u00e4h\u00e4n pontta ilman ett\u00e4 alkaa varsinaisesti maistua sitruunalta."
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l (ish)"
+          },
+          {
+            "position": 2,
+            "name": "Satsuma",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Salottisipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Risottoriisi",
+            "quantity": "3.5",
+            "unit": "dl"
+          },
+          {
+            "position": 7,
+            "name": "Kasvisliemikuutio",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 8,
+            "name": "Raastettu parmesaani",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Voi",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 10,
+            "name": "Hienonnettu ruohosipuli",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 11,
+            "name": "(Sitruunamehu, valkoviini tms. happo)",
+            "quantity": "1",
+            "unit": "maun mukaan tarvittaessa"
+          }
+        ]
+      }
+    ],
     "id": "satsumarisotto"
   },
   {
@@ -2244,26 +3746,6 @@
       "mvp"
     ],
     "source": "GRV 9 / 2024",
-    "ingredients": [
-      {
-        "Nauhapasta": "nelj\u00e4lle"
-      },
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Savupaprika": "1tl"
-      },
-      {
-        "Kaurakerma": "4dl"
-      },
-      {
-        "Kasvisliemikuutio": "1kpl"
-      },
-      {
-        "Pakasteherne": "400g"
-      }
-    ],
     "method": [
       "Laita pastavesi kiehumaan ja keit\u00e4 pasta ohjeen mukaan",
       "Kuori ja pilko sipuli",
@@ -2273,6 +3755,50 @@
       "Murustele joukkoon liemikuutio ja sekoita tasaiseksi",
       "Lis\u00e4\u00e4 herneet ja kuumenna",
       "Mausta suolalla ja mustapippurilla, l\u00f6ysyt\u00e4 pastan keitinvedell\u00e4 tarvittaessa"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Nauhapasta",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Savupaprika",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Kaurakerma",
+            "quantity": "4",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Kasvisliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Pakasteherne",
+            "quantity": "400",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "savuinen-hernepasta"
   },
@@ -2284,40 +3810,8 @@
       "mvp"
     ],
     "source": "https://www.soppa365.fi/reseptit/liha-arjen-nopeat-keitot/savuinen-linssikeitto",
-    "ingredients": [
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Tomaatti": "4kpl"
-      },
-      {
-        "Tomaattipyr\u00e9": "2rkl"
-      },
-      {
-        "(Gochujang)": "1rkl"
-      },
-      {
-        "Kypsi\u00e4 linssej\u00e4": "2prk (\u00e0 380g)"
-      },
-      {
-        "Kanaliemikuutio": "2kpl"
-      },
-      {
-        "Vesi": "1l"
-      },
-      {
-        "Savupaprikajauhe": "1\u00bdtl"
-      },
-      {
-        "(Kasvi)kerma": "2dl"
-      }
-    ],
     "method": [
-      "Kuumenna vesi kiehuvaksi",
+      "Kuumenna vesi kiehuvaksi vedenkeittimess\u00e4",
       "Pilko sipuli ja valkosipulinkynnet",
       "Lohko tomaatit",
       "Paista sipulia ja valkosipulia (\u00f6ljyss\u00e4) kattilassa",
@@ -2326,11 +3820,78 @@
       "Lis\u00e4\u00e4 tomaatit ja liemikuutiot. Keittele kasaan kunnes koostumus on paksuhko",
       "Lis\u00e4\u00e4 linssit ja kaada p\u00e4\u00e4lle vesi",
       "Keit\u00e4 10 minuuttia",
-      "Ota kattila liedelt\u00e4 ja sekoita mukaan kerma",
-      "(lis\u00e4\u00e4 pekonikuutiot takaisin kattilaan. Voit s\u00e4\u00e4st\u00e4\u00e4 osan p\u00e4\u00e4lle ripoteltavaksi)"
+      "Lis\u00e4\u00e4 kerma ja keit\u00e4 hetki t\u00e4ysill\u00e4 jotta rasva emulgoituu"
     ],
     "notes": [
       "Alkuper\u00e4isess\u00e4 reseptiss\u00e4 paistetaan ensin 140g pekonikuutioita rapeiksi, noukitaan pois ja lis\u00e4t\u00e4\u00e4n sitten lopuksi sekaan ja p\u00e4\u00e4lle. Toimii hyvin ilmankin!"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Tomaatti",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Tomaattipyr\u00e9",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 5,
+            "name": "(Gochujang)",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Kypsi\u00e4 linssej\u00e4",
+            "quantity": "2",
+            "unit": "prk (\u00e0 380 g)"
+          },
+          {
+            "position": 7,
+            "name": "Kanaliemikuutio",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 8,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 9,
+            "name": "Savupaprikajauhe",
+            "quantity": "1.5",
+            "unit": "tl"
+          },
+          {
+            "position": 10,
+            "name": "(Kasvi)kerma",
+            "quantity": "2",
+            "unit": "dl"
+          }
+        ]
+      }
     ],
     "id": "savuinen-linssikeitto"
   },
@@ -2341,50 +3902,6 @@
       "aamiainen"
     ],
     "source": "https://www.koket.se/shakshuka-nidal-kershs-recept",
-    "ingredients": [
-      {
-        "Iso sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "3kpl"
-      },
-      {
-        "Tomaatti": "5kpl"
-      },
-      {
-        "Chili": "2kpl"
-      },
-      {
-        "Jeera": "1tl"
-      },
-      {
-        "Jauhettu korianteri": "1tl"
-      },
-      {
-        "Mustapippuri": "1tl"
-      },
-      {
-        "Suola": "1tl"
-      },
-      {
-        "Harissa": "1rkl"
-      },
-      {
-        "Tomaattipyr\u00e9": "1rkl"
-      },
-      {
-        "Olut (tai vesi)": "2dl"
-      },
-      {
-        "Korianteri": "1ruukku"
-      },
-      {
-        "Muna": "4kpl"
-      },
-      {
-        "Imukykyist\u00e4 leip\u00e4\u00e4": "sopivasti"
-      }
-    ],
     "method": [
       "Kuori ja pilko sipuli ja valkosipuli",
       "Pehmenn\u00e4 sipuli pannulla",
@@ -2399,6 +3916,98 @@
       "Laita kansi p\u00e4\u00e4lle kunnes munat kypsi\u00e4",
       "Tarjoile imukykyisen leiv\u00e4n ja tuoreen korianterin kera"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Iso sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Valkosipulinkynsi",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Tomaatti",
+            "quantity": "5",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Chili",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Jeera",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 6,
+            "name": "Jauhettu korianteri",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Mustapippuri",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 9,
+            "name": "Harissa",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 10,
+            "name": "Tomaattipyr\u00e9",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 11,
+            "name": "Olut (tai vesi)",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 12,
+            "name": "Korianteri",
+            "quantity": "1",
+            "unit": "ruukku"
+          },
+          {
+            "position": 13,
+            "name": "Muna",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 14,
+            "name": "Imukykyist\u00e4 leip\u00e4\u00e4",
+            "quantity": "4",
+            "unit": "kpl"
+          }
+        ]
+      }
+    ],
     "id": "shakshuka"
   },
   {
@@ -2410,63 +4019,6 @@
       "leivonta"
     ],
     "source": "https://kwokspots.com/japanese-milk-bread/",
-    "ingredients": [
-      {
-        "Tangzhong": [
-          {
-            "Vehn\u00e4jauho": "20g"
-          },
-          {
-            "Vesi": "27g"
-          },
-          {
-            "Maito": "60g"
-          }
-        ]
-      },
-      {
-        "Hiivasetti": [
-          {
-            "Kuivahiiva": "10g"
-          },
-          {
-            "Vesi": "20g"
-          }
-        ]
-      },
-      {
-        "Loput": [
-          {
-            "Vehn\u00e4jauho": "380g"
-          },
-          {
-            "Sokeri": "60g"
-          },
-          {
-            "Suola": "3g"
-          },
-          {
-            "Maito": "130g"
-          },
-          {
-            "Muna": "1kpl"
-          },
-          {
-            "Voi": "45g"
-          }
-        ]
-      },
-      {
-        "Voiteluun": [
-          {
-            "Voi": "vuoan voiteluun"
-          },
-          {
-            "Muna": "leiv\u00e4n voiteluun"
-          }
-        ]
-      }
-    ],
     "method": [
       "Ota taikinaan menev\u00e4 voi huoneenl\u00e4mp\u00f6\u00f6n pehmenem\u00e4\u00e4n",
       "Laita nokare voita pehmenem\u00e4\u00e4n pienemp\u00e4\u00e4n leip\u00e4vuokaan",
@@ -2485,6 +4037,110 @@
       "Voitele leip\u00e4 kananmunalla",
       "Paista uunin keskitasolla 20 minuuttia"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Tangzhong",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "20",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Vesi",
+            "quantity": "27",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Maito",
+            "quantity": "60",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Hiivasetti",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kuivahiiva",
+            "quantity": "10",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Vesi",
+            "quantity": "20",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "Loput",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "380",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Sokeri",
+            "quantity": "60",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Suola",
+            "quantity": "3",
+            "unit": "g"
+          },
+          {
+            "position": 4,
+            "name": "Maito",
+            "quantity": "130",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Muna",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Voi",
+            "quantity": "45",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "name": "Voiteluun",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Voi",
+            "quantity": "1",
+            "unit": "rkl (vuoan voiteluun)"
+          },
+          {
+            "position": 2,
+            "name": "Muna",
+            "quantity": "1",
+            "unit": "kpl (leiv\u00e4n voiteluun)"
+          }
+        ]
+      }
+    ],
     "id": "shokupan"
   },
   {
@@ -2496,35 +4152,6 @@
       "leivonta"
     ],
     "source": "Maija M\u00e4ki",
-    "ingredients": [
-      {
-        "Auringonkukansiemen": "1dl"
-      },
-      {
-        "Seesaminsiemen": "1dl"
-      },
-      {
-        "Pellavansiemen": "\u00bddl"
-      },
-      {
-        "Kurpitsansiemen": "\u00bddl"
-      },
-      {
-        "Chiansiemen": "\u00bddl"
-      },
-      {
-        "Suola": "1tl"
-      },
-      {
-        "Kiehuva vesi": "2dl"
-      },
-      {
-        "\u00d6ljy": "\u00bddl"
-      },
-      {
-        "Sormisuola": "koristeeksi"
-      }
-    ],
     "method": [
       "Kuumenna uuni 175 asteeseen",
       "Sekoita kuivat ainekset kulhossa",
@@ -2535,6 +4162,68 @@
       "Sirottele halutessasi sormisuolaa pinnalle",
       "Paista uunissa noin 30min tai kunnes n\u00e4kk\u00e4ri on saanut v\u00e4ri\u00e4 ja rapeutunut",
       "Anna j\u00e4\u00e4hty\u00e4"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Auringonkukansiemen",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Seesaminsiemen",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Pellavansiemen",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Kurpitsansiemen",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Chiansiemen",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Kiehuva vesi",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 8,
+            "name": "\u00d6ljy",
+            "quantity": "0.5",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Sormisuola",
+            "quantity": "1",
+            "unit": "ripaus"
+          }
+        ]
+      }
     ],
     "id": "siemenn\u00e4kk\u00e4ri"
   },
@@ -2547,41 +4236,6 @@
       "linssi"
     ],
     "source": "Simbo",
-    "ingredients": [
-      {
-        "Porkkana": "2kpl"
-      },
-      {
-        "Sellerinvarsi": "2kpl"
-      },
-      {
-        "Iso sipuli": "1kpl"
-      },
-      {
-        "Tomaatti": "5-6kpl"
-      },
-      {
-        "Valkosipulinkynsi": "3kpl"
-      },
-      {
-        "Chipotle-chili adobokastikkeessa": "2kpl"
-      },
-      {
-        "Savuviskietikka": "1\u00bdtl"
-      },
-      {
-        "Kasvisliemikuutio": "2kpl"
-      },
-      {
-        "Vesi": "1l"
-      },
-      {
-        "Punaisia linssej\u00e4": "1prk"
-      },
-      {
-        "(Paahtoleip\u00e4\u00e4)": "sy\u00f6t\u00e4v\u00e4ksi"
-      }
-    ],
     "method": [
       "Laita uuni kuumenemaan kiertoilmalla 250 asteeseen",
       "Kuori ja pilko porkkanat, selleri ja sipuli",
@@ -2599,6 +4253,74 @@
       "Surauta sauvasekoittimella tasaiseksi, mausta ja lis\u00e4\u00e4 tarvittaessa vett\u00e4",
       "(Tarjoile esim. paahdetun leiv\u00e4n kanssa)"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Porkkana",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sellerinvarsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Iso sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Tomaatti",
+            "quantity": "5",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Valkosipulinkynsi",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Chipotle-chili adobokastikkeessa",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 7,
+            "name": "Savuviskietikka",
+            "quantity": "1.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Kasvisliemikuutio",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 9,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 10,
+            "name": "Punaisia linssej\u00e4",
+            "quantity": "1",
+            "unit": "prk"
+          }
+        ]
+      }
+    ],
     "id": "simbon-chipotle-tomaatti-linssikeitto"
   },
   {
@@ -2608,44 +4330,6 @@
       "keitto"
     ],
     "source": "https://www.hs.fi/ruoka/reseptit/art-2000007864743.html",
-    "ingredients": [
-      {
-        "Salottisipuli": "6kpl"
-      },
-      {
-        "Keltasipuli": "6kpl"
-      },
-      {
-        "Valkosipulinkynsi": "2kpl"
-      },
-      {
-        "Voi": "100g"
-      },
-      {
-        "T\u00e4htianis": "2kpl"
-      },
-      {
-        "Suola": "2tl"
-      },
-      {
-        "Mustapippuri": "\u00bdtl"
-      },
-      {
-        "Kuiva valkoviini": "1dl"
-      },
-      {
-        "Liha-, kana- tai kasvislient\u00e4": "1\u00bdl"
-      },
-      {
-        "Timjaminoksa": "5kpl"
-      },
-      {
-        "Leip\u00e4\u00e4": "4kpl"
-      },
-      {
-        "Raastettua juustoa (esim. gruy\u00e9re)": "120g"
-      }
-    ],
     "method": [
       "Kuori sipulit ja leikkaa siivuiksi",
       "Kuori ja hienonna valkosipulit",
@@ -2656,6 +4340,86 @@
       "Poista timjaminoksat ja t\u00e4htianikset",
       "Mausta tarvittaessa suolalla ja mustapippurilla",
       "Paahda juustoraasteella kuorrutetut leiv\u00e4t uunissa"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Salottisipuli",
+            "quantity": "6",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Keltasipuli",
+            "quantity": "6",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Voi",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "T\u00e4htianis",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Mustapippuri",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Kuiva valkoviini",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Liha-, kana- tai kasvislient\u00e4",
+            "quantity": "1.5",
+            "unit": "l"
+          },
+          {
+            "position": 10,
+            "name": "Timjaminoksa",
+            "quantity": "5",
+            "unit": "kpl"
+          },
+          {
+            "position": 11,
+            "name": "Leip\u00e4\u00e4",
+            "quantity": "4",
+            "unit": "kpl"
+          },
+          {
+            "position": 12,
+            "name": "Raastettua juustoa (esim. gruy\u00e9re)",
+            "quantity": "120",
+            "unit": "g"
+          }
+        ]
+      }
     ],
     "id": "sipulikeitto"
   },
@@ -2669,23 +4433,6 @@
       "pikkeli"
     ],
     "source": "https://www.justonecookbook.com/spicy-japanese-pickled-cucumbers/",
-    "ingredients": [
-      {
-        "Kurkku": "1kpl"
-      },
-      {
-        "Soija": "2rkl"
-      },
-      {
-        "Sokeri": "\u00bdtl"
-      },
-      {
-        "Seesami\u00f6ljy": "1rkl"
-      },
-      {
-        "Gochugaru": "1tl"
-      }
-    ],
     "method": [
       "Pese kurkku ja leikkaa se haluamasi muotoisiksi paloiksi",
       "Ripottele kurkuille suolaa ja anna niiden itketty\u00e4 15min esim. siivil\u00e4ss\u00e4",
@@ -2693,7 +4440,121 @@
       "Kuivattele kurkut, lis\u00e4\u00e4 ne marinadin kanssa minigrip-pussiin ja sekoita hyvin",
       "Anna maustua j\u00e4\u00e4kaapissa y\u00f6n yli"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kurkku",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Soija",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Sokeri",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Seesami\u00f6ljy",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 5,
+            "name": "Gochugaru",
+            "quantity": "1",
+            "unit": "tl"
+          }
+        ]
+      }
+    ],
     "id": "soijakurkut"
+  },
+  {
+    "name": "Soijamakaronilaatikko",
+    "servings": 4,
+    "tags": [
+      "soija"
+    ],
+    "source": "Simbo :)",
+    "method": [
+      "L\u00e4mmit\u00e4 uuni 180\u00b0C",
+      "Keit\u00e4 makaronit",
+      "Sekoita soijarouhe ja -kastike, sek\u00e4 hieman vett\u00e4 jotta on sopivan kosteaa",
+      "Sekoita munat, maito, suola ja mustapippuri",
+      "Voitele vuoka",
+      "Sekoita kolme nelj\u00e4sosaa makaroneista ja soijaruohe vuoassa",
+      "Lis\u00e4\u00e4 p\u00e4\u00e4lle loput makaronit",
+      "Kaada munamaito p\u00e4\u00e4lle",
+      "Paista uunissa 60min"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Makaroni",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Soijarouhe",
+            "quantity": "3",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Soijakastike",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Muna",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Maito",
+            "quantity": "5",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Mustapippuri",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 8,
+            "name": "Voi",
+            "quantity": "1",
+            "unit": "rkl"
+          }
+        ]
+      }
+    ],
+    "id": "soijamakaronilaatikko"
   },
   {
     "name": "Sokerilohi",
@@ -2702,35 +4563,6 @@
       "kala"
     ],
     "source": "https://kotiliesi.fi/ruoka/hanna-gullichsenin-sokerilohi/",
-    "ingredients": [
-      {
-        "Lohi": "800g"
-      },
-      {
-        "Dijonsinappi": "2-3rkl"
-      },
-      {
-        "Fariinisokeri": "3rkl"
-      },
-      {
-        "Suola": "maun mukaan"
-      },
-      {
-        "Mustapippuri": "maun mukaan"
-      },
-      {
-        "Voi": "30g"
-      },
-      {
-        "Persilja": "1ruukku"
-      },
-      {
-        "Pankojauho": "1dl"
-      },
-      {
-        "Sitruuna": "1kpl"
-      }
-    ],
     "method": [
       "Kuumenna uuni 175 asteeseen",
       "Poista kalasta nahka ja leikkaa ronskisti kutakuinkin yht\u00e4 isoiksi kuutioiksi",
@@ -2746,6 +4578,68 @@
       "Nosta pelti uunista ja laita sitruunankuori ja -mehu kalojen p\u00e4\u00e4lle",
       "Tarjoile valitsemiesi lisukkeiden (esim. riisi) kera"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Lohi",
+            "quantity": "800",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Dijonsinappi",
+            "quantity": "3",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Fariinisokeri",
+            "quantity": "3",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 5,
+            "name": "Mustapippuri",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 6,
+            "name": "Voi",
+            "quantity": "30",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Persilja",
+            "quantity": "1",
+            "unit": "ruukku"
+          },
+          {
+            "position": 8,
+            "name": "Pankojauho",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Sitruuna",
+            "quantity": "1",
+            "unit": "kpl"
+          }
+        ]
+      }
+    ],
     "id": "sokerilohi"
   },
   {
@@ -2756,26 +4650,6 @@
       "leivonta"
     ],
     "source": "https://www.soppa365.fi/reseptit/fantastinen-leipa-0",
-    "ingredients": [
-      {
-        "Vesi": "5dl"
-      },
-      {
-        "Maito": "1dl"
-      },
-      {
-        "Kuivahiiva": "1pussi"
-      },
-      {
-        "Suola": "2tl"
-      },
-      {
-        "Hunaja": "1rkl"
-      },
-      {
-        "Vehn\u00e4jauho": "12\u00bddl"
-      }
-    ],
     "method": [
       "L\u00e4mmit\u00e4 vesi k\u00e4denl\u00e4mp\u00f6iseksi ja yhdist\u00e4 maidon kanssa astiaan",
       "Sekoita isossa kulhossa suola ja hunaja",
@@ -2794,6 +4668,50 @@
       "Nosta s\u00e4mpyl\u00e4t pellille ja paista pelti kerrallaan noin 20min. Ensimm\u00e4inen pelti vaatii yleens\u00e4 pari minuuttia pidemm\u00e4n kypsytyksen kuin j\u00e4lkimm\u00e4inen.",
       "Anna s\u00e4mpyl\u00f6iden j\u00e4\u00e4hty\u00e4 peitteitt\u00e4 jotta kuori rapeutuu"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Vesi",
+            "quantity": "5",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Maito",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Kuivahiiva",
+            "quantity": "1",
+            "unit": "pussi"
+          },
+          {
+            "position": 4,
+            "name": "Suola",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 5,
+            "name": "Hunaja",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Vehn\u00e4jauho",
+            "quantity": "12.5",
+            "unit": "dl"
+          }
+        ]
+      }
+    ],
     "id": "s\u00e4mpyl\u00e4t"
   },
   {
@@ -2805,41 +4723,6 @@
       "nuudeli"
     ],
     "source": "https://yhteishyva.fi/reseptit/kaali-tofuvokki/recipe-4234",
-    "ingredients": [
-      {
-        "Tofu": "1pkt"
-      },
-      {
-        "Kaali": "250g"
-      },
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipulinkynsi": "1kpl"
-      },
-      {
-        "Soijakastike": "2rkl"
-      },
-      {
-        "Kalakastike": "1tl"
-      },
-      {
-        "Nuudeli": "2pkt"
-      },
-      {
-        "Seesaminsiemen": "1rkl"
-      },
-      {
-        "Chili": "1kpl"
-      },
-      {
-        "Limemehu": "maun mukaan"
-      },
-      {
-        "Suolap\u00e4hkin\u00e4": "\u00bddl"
-      }
-    ],
     "method": [
       "Kuivata tofu",
       "Leikkaa kaali sy\u00f6t\u00e4v\u00e4n kokoisiksi paloiksi",
@@ -2856,6 +4739,80 @@
       "Tarjoile siivutetun chilin, limemehun ja seesaninsiemenien kanssa",
       "Lis\u00e4\u00e4 soijaa ja/tai kalakastiketta maun mukaan"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Tofu",
+            "quantity": "1",
+            "unit": "pkt"
+          },
+          {
+            "position": 2,
+            "name": "Kaali",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Soijakastike",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Kalakastike",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Nuudeli",
+            "quantity": "2",
+            "unit": "pkt"
+          },
+          {
+            "position": 8,
+            "name": "Seesaminsiemen",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 9,
+            "name": "Chili",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 10,
+            "name": "Limemehu",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 11,
+            "name": "Suolap\u00e4hkin\u00e4",
+            "quantity": "0.5",
+            "unit": "dl"
+          }
+        ]
+      }
+    ],
     "id": "tofu-kaalivokki"
   },
   {
@@ -2867,38 +4824,6 @@
       "tofu"
     ],
     "source": "https://jalotofu.fi/reseptit/hittiresepti-kookos-tofukorma/",
-    "ingredients": [
-      {
-        "Tofu": "1pkt"
-      },
-      {
-        "Sipuli": "1kpl"
-      },
-      {
-        "Valkosipuli": "2 kyntt\u00e4"
-      },
-      {
-        "Raastettu inkiv\u00e4\u00e4ri": "2rkl"
-      },
-      {
-        "Currymauste": "2rkl"
-      },
-      {
-        "Chilihiutale": "1tl"
-      },
-      {
-        "Sokeri": "1\u00bdtl"
-      },
-      {
-        "Kookoskerma": "250ml"
-      },
-      {
-        "Paseerattu tomaatti": "400g"
-      },
-      {
-        "Suola": "maun mukaan"
-      }
-    ],
     "method": [
       "Paloittele tofu",
       "Silppua sipuli ja valkosipuli",
@@ -2912,6 +4837,74 @@
       "Lis\u00e4\u00e4 suolaa maun mukaan",
       "Tarjoile esim. riisin kera"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Tofu",
+            "quantity": "1",
+            "unit": "pkt"
+          },
+          {
+            "position": 2,
+            "name": "Sipuli",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipuli",
+            "quantity": "2",
+            "unit": "kyntt\u00e4"
+          },
+          {
+            "position": 4,
+            "name": "Raastettu inkiv\u00e4\u00e4ri",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 5,
+            "name": "Currymauste",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Chilihiutale",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "Sokeri",
+            "quantity": "1.5",
+            "unit": "tl"
+          },
+          {
+            "position": 8,
+            "name": "Kookoskerma",
+            "quantity": "250",
+            "unit": "ml"
+          },
+          {
+            "position": 9,
+            "name": "Paseerattu tomaatti",
+            "quantity": "400",
+            "unit": "g"
+          },
+          {
+            "position": 10,
+            "name": "Suola",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
+    ],
     "id": "tofukorma"
   },
   {
@@ -2922,52 +4915,6 @@
       "j\u00e4lkk\u00e4ri"
     ],
     "source": "https://www.thespruceeats.com/shu-cream-japanese-cream-puff-2031139",
-    "ingredients": [
-      {
-        "Taikina": [
-          {
-            "Kananmuna": "2 kpl"
-          },
-          {
-            "Voi": "42 g"
-          },
-          {
-            "Sokeri": "2 tl"
-          },
-          {
-            "Vesi": "120 g"
-          },
-          {
-            "Jauho": "75 g"
-          }
-        ]
-      },
-      {
-        "T\u00e4yte": [
-          {
-            "Keltuainen": "3 kpl"
-          },
-          {
-            "Sokeri": "105 g"
-          },
-          {
-            "Jauho (siivil\u00f6ity)": "2 tl"
-          },
-          {
-            "Maito": "240 g"
-          },
-          {
-            "Voi (sula)": "14 g"
-          },
-          {
-            "(Matcha-jauhe)": "1 tl"
-          },
-          {
-            "(Vesi)": "2 tl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Tee ensin taikina.",
       "Ota ainekset ja ty\u00f6kalut esiin.",
@@ -2994,6 +4941,92 @@
       "\u00c4l\u00e4 k\u00e4yt\u00e4 tyllaa pursotinpussissa, sill\u00e4 taikina on sille liian paksua",
       "Kun teet t\u00e4ytett\u00e4, laita levy heti melko kovalle. Vaikka maito on l\u00e4mmitetty, t\u00e4ytteen sakeutumisessa voi menn\u00e4 muuten todella kauan (jopa 15 min!)"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Taikina",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kananmuna",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Voi",
+            "quantity": "42",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Sokeri",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Vesi",
+            "quantity": "120",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Jauho",
+            "quantity": "75",
+            "unit": "g"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "T\u00e4yte",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Keltuainen",
+            "quantity": "3",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Sokeri",
+            "quantity": "105",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Jauho (siivil\u00f6ity)",
+            "quantity": "2",
+            "unit": "tl"
+          },
+          {
+            "position": 4,
+            "name": "Maito",
+            "quantity": "240",
+            "unit": "g"
+          },
+          {
+            "position": 5,
+            "name": "Voi (sula)",
+            "quantity": "14",
+            "unit": "g"
+          },
+          {
+            "position": 6,
+            "name": "(Matcha-jauhe)",
+            "quantity": "1",
+            "unit": "tl"
+          },
+          {
+            "position": 7,
+            "name": "(Vesi)",
+            "quantity": "2",
+            "unit": "tl"
+          }
+        ]
+      }
+    ],
     "id": "tuulihatut"
   },
   {
@@ -3005,52 +5038,6 @@
       "riisi"
     ],
     "source": "https://jalotofu.fi/reseptit/paras-uuniriisi-rapea-tofu/",
-    "ingredients": [
-      {
-        "Soosi": [
-          {
-            "Oliivi\u00f6ljy": "\u00bedl"
-          },
-          {
-            "Soija": "1\u00bdrkl"
-          },
-          {
-            "Riisiviinietikka": "1rkl"
-          },
-          {
-            "Valkosipulinkynsi": "5kpl"
-          },
-          {
-            "Persilja": "1dl"
-          }
-        ]
-      },
-      {
-        "Loput": [
-          {
-            "Kirsikkatomaatti": "250g"
-          },
-          {
-            "Herkkusieni": "100g"
-          },
-          {
-            "Vesi": "6dl"
-          },
-          {
-            "Kasvisliemikuutio": "1kpl"
-          },
-          {
-            "Riisi": "3dl"
-          },
-          {
-            "Tofu (maustettu, jos haluat)": "1kpl"
-          },
-          {
-            "Teriyakikastike": "2rkl"
-          }
-        ]
-      }
-    ],
     "method": [
       "Laita uuni l\u00e4mpi\u00e4m\u00e4\u00e4n 175 asteeseen",
       "Pilko herkkusienet sopiviksi",
@@ -3074,6 +5061,92 @@
       "Herkkusienet voi hyvin korvata esim. suppilovahveroilla",
       "Riisi voi hyvin olla vaikka pitk\u00e4jyv\u00e4ist\u00e4"
     ],
+    "sections": [
+      {
+        "position": 1,
+        "name": "Soosi",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "0.75",
+            "unit": "dl"
+          },
+          {
+            "position": 2,
+            "name": "Soija",
+            "quantity": "1.5",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Riisiviinietikka",
+            "quantity": "1",
+            "unit": "rkl"
+          },
+          {
+            "position": 4,
+            "name": "Valkosipulinkynsi",
+            "quantity": "5",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Persilja",
+            "quantity": "1",
+            "unit": "dl"
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "Loput",
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Kirsikkatomaatti",
+            "quantity": "250",
+            "unit": "g"
+          },
+          {
+            "position": 2,
+            "name": "Herkkusieni",
+            "quantity": "100",
+            "unit": "g"
+          },
+          {
+            "position": 3,
+            "name": "Vesi",
+            "quantity": "6",
+            "unit": "dl"
+          },
+          {
+            "position": 4,
+            "name": "Kasvisliemikuutio",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 5,
+            "name": "Riisi",
+            "quantity": "3",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Tofu (maustettu, jos haluat)",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 7,
+            "name": "Teriyakikastike",
+            "quantity": "2",
+            "unit": "rkl"
+          }
+        ]
+      }
+    ],
     "id": "uuniriisi"
   },
   {
@@ -3083,20 +5156,35 @@
       "juoma"
     ],
     "source": "Rosan syv\u00e4 viisaus",
-    "ingredients": [
-      {
-        "Appelsiinirosmariinisiirappi": "3 cl"
-      },
-      {
-        "Karpalomehu": "1 dl"
-      },
-      {
-        "Kivenn\u00e4isvesi": "2 dl"
-      }
-    ],
     "method": [
       "Valmista appelsiinirosmariinisiirappi, j\u00e4\u00e4hdyt\u00e4.",
       "Sekoita juoma."
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Appelsiinirosmariinisiirappi",
+            "quantity": "3",
+            "unit": "cl"
+          },
+          {
+            "position": 2,
+            "name": "Karpalomehu",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 3,
+            "name": "Kivenn\u00e4isvesi",
+            "quantity": "2",
+            "unit": "dl"
+          }
+        ]
+      }
     ],
     "id": "varsijousi"
   },
@@ -3107,35 +5195,6 @@
       "risotto"
     ],
     "source": "https://kotiliesi.fi/resepti/veriappelsiinirisotto-a-la-ravintola-basbas/",
-    "ingredients": [
-      {
-        "Salottisipuli": "2kpl"
-      },
-      {
-        "Oliivi\u00f6ljy": "4rkl"
-      },
-      {
-        "Kana- tai kasvisliemi": "1l"
-      },
-      {
-        "Risottoriisi": "3dl"
-      },
-      {
-        "Valkoviini\u00e4": "2dl"
-      },
-      {
-        "Luomuveriappelsiini (iso)": "1kpl"
-      },
-      {
-        "Raastettu parmesaani": "1 dl"
-      },
-      {
-        "Voi": "2 rkl"
-      },
-      {
-        "(Ruoho- tai kev\u00e4tsipulia)": "koristeeksi"
-      }
-    ],
     "method": [
       "Kuumenna litra vett\u00e4",
       "Hienonna salotit",
@@ -3148,6 +5207,68 @@
       "Purista veriappelsiinin mehu",
       "Kun riisi on hieman vaille al dente, sekoita mukaan veriappelsiinin kuori ja mehu, parmesaani ja voi",
       "Tarjoile esim. silputun ruoho- tai kev\u00e4tsipulin kera"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Salottisipuli",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 2,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "4",
+            "unit": "rkl"
+          },
+          {
+            "position": 3,
+            "name": "Kana- tai kasvisliemi",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 4,
+            "name": "Risottoriisi",
+            "quantity": "3",
+            "unit": "dl"
+          },
+          {
+            "position": 5,
+            "name": "Valkoviini\u00e4",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 6,
+            "name": "Luomuveriappelsiini (iso)",
+            "quantity": "1",
+            "unit": "kpl"
+          },
+          {
+            "position": 7,
+            "name": "Raastettu parmesaani",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 8,
+            "name": "Voi",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 9,
+            "name": "(Ruoho- tai kev\u00e4tsipulia)",
+            "quantity": "1",
+            "unit": "koristeeksi"
+          }
+        ]
+      }
     ],
     "id": "veriappelsiinirisotto"
   }

@@ -1,4 +1,11 @@
 <script>
+	import Badge from '$lib/components/ui/badge/badge.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
+	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
+	import Input from '$lib/components/ui/input/input.svelte';
+	import Label from '$lib/components/ui/label/label.svelte';
+	import { Body } from '$lib/components/ui/table/index.js';
+	import * as Table from '$lib/components/ui/table';
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -26,71 +33,44 @@
 
 <svelte:window on:keydown={jumpToSearch} />
 
-<div>
+<div class="flex flex-wrap">
 	{#each tagStates as tag}
-		<label>
-			<input type="checkbox" bind:checked={tag.checked} />
+		<Label class="m-1 rounded-md border-1 border-neutral-900 p-1">
+			<Checkbox bind:checked={tag.checked} class="bg-neutral-50" />
 			{tag.name}
-		</label>
+		</Label>
 	{/each}
 
-	<button
-		type="button"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</button
+	<Button
+		variant="outline"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</Button
 	>
-	<button
-		type="button"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</button
+	<Button
+		variant="outline"
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</Button
 	>
 </div>
 
 <div>
-	<input id="search" type="text" placeholder="Haku" bind:value={searchString} />
+	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<ul>
-	{#each selectedRecipes as recipe}
-		<li data-mvp={recipe.tags.includes('mvp') ? '' : undefined}>
-			<a href="/recipes/{recipe.id}">{recipe.name}</a>
-		</li>
-	{/each}
-</ul>
-
-<style>
-	label {
-		border: 2px solid #ccc;
-		border-radius: 4px;
-		background-color: #f9f9f9;
-		margin: 0.1em;
-		display: inline-flex;
-		align-items: center;
-		gap: 0.1em;
-		padding-left: 0.1em;
-		padding-right: 0.1em;
-	}
-
-	input[type='checkbox'] {
-		margin: 0;
-		vertical-align: middle;
-	}
-
-	li {
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
-		font-size: 1.5rem;
-	}
-
-	li > * {
-		color: black;
-	}
-
-	li[data-mvp]::marker {
-		content: '★ ';
-		color: #ffc107;
-		text-shadow:
-			-1px 0 black,
-			0 1px black,
-			1px 0 black,
-			0 -1px black;
-	}
-</style>
+<Table.Root>
+	<Table.Body>
+		{#each selectedRecipes as recipe}
+			<Table.Row>
+				<Table.Cell class="w-1 text-2xl text-amber-400 text-shadow-black text-shadow-xs">
+					{recipe.tags.includes('mvp') ? '★' : null}
+				</Table.Cell>
+				<Table.Cell>
+					<a href="/recipes/{recipe.id}">{recipe.name}</a>
+				</Table.Cell>
+				<Table.Cell>
+					{#each recipe.tags as tag}
+						<Badge variant="secondary">{tag}</Badge>
+					{/each}
+				</Table.Cell>
+			</Table.Row>
+		{/each}
+	</Table.Body>
+</Table.Root>

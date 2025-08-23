@@ -1,10 +1,19 @@
 <script>
+	import Badge from '$lib/components/ui/badge/badge.svelte';
+	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
+	import Label from '$lib/components/ui/label/label.svelte';
+
 	let { data } = $props();
 </script>
 
 <header>
-	<h1>{data.name}</h1>
+	<h1 class="text-2xl font-bold">{data.name}</h1>
 	<a href="/">🏠↩️</a>
+	{#each data.tags as tag}
+		<Badge variant="secondary">
+			{tag}
+		</Badge>
+	{/each}
 </header>
 
 <p>
@@ -20,47 +29,53 @@
 
 {#if data.notes}
 	<section class="liirumlaarum">
-		<h3>Liirum laarum</h3>
+		<h3 class="text-lg font-medium">Liirum laarum</h3>
 		{#each data.notes as note}
 			<p>{note}</p>
 		{/each}
 	</section>
 {/if}
 
-<main>
-	<section>
-		<h2>Ainehet</h2>
-		<p>TODO: parsing sections etc.</p>
+<main class="flex">
+	<section class="m-3">
+		<h2 class="text-xl font-bold">Ainehet</h2>
+		<ul class="space-y-2.5">
+			{#each data.sections as section}
+				{#if section.name}
+					<div class="font-bold">{section.name}</div>
+				{/if}
+				{#each section.ingredients as ingredient}
+					<li>
+						<Label
+							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
+						>
+							<Checkbox />
+							{ingredient.name}
+							{ingredient.quantity}
+						</Label>
+					</li>
+				{/each}
+			{/each}
+		</ul>
 	</section>
-	<section>
-		<h2>Tee näin</h2>
-		<ol>
+	<section class="m-3">
+		<h2 class="text-xl font-bold">Tee näin</h2>
+		<ol class="space-y-2.5">
 			{#each data.method as step}
-				<!-- TODO: implement strikethrough -->
-				<li>{step}</li>
+				<li>
+					<Label
+						class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
+					>
+						<Checkbox />
+						{step}
+					</Label>
+				</li>
 			{/each}
 		</ol>
 	</section>
 </main>
 
 <style>
-	header {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	header > a {
-		text-decoration: None;
-	}
-
-	main {
-		width: 70%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
 	.done {
 		color: #aaaaaa;
 		text-decoration: line-through;

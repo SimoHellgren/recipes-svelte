@@ -1,0 +1,130 @@
+{
+    "sections": [
+        {
+            "position": 1,
+            "name": "Marinoidut kurkut",
+            "ingredients": [
+                {
+                    "position": 1,
+                    "name": "Kurkku",
+                    "quantity": "0.5",
+                    "unit": "kpl"
+                },
+                {
+                    "position": 2,
+                    "name": "Sinapinsiemen",
+                    "quantity": "1",
+                    "unit": "rkl"
+                },
+                {
+                    "position": 3,
+                    "name": "Riisiviinietikka",
+                    "quantity": "1",
+                    "unit": "rkl"
+                },
+                {
+                    "position": 4,
+                    "name": "Suola",
+                    "quantity": "0.25",
+                    "unit": "tl"
+                },
+                {
+                    "position": 5,
+                    "name": "Hunaja",
+                    "quantity": "1",
+                    "unit": "tl"
+                }
+            ]
+        },
+        {
+            "position": 2,
+            "name": "Gochujangmajoneesi",
+            "ingredients": [
+                {
+                    "position": 1,
+                    "name": "Majoneesi",
+                    "quantity": "1",
+                    "unit": "dl"
+                },
+                {
+                    "position": 2,
+                    "name": "Gochujang",
+                    "quantity": "1",
+                    "unit": "rkl"
+                }
+            ]
+        },
+        {
+            "position": 3,
+            "name": "Inkiv\u00e4\u00e4rimajoneesi",
+            "ingredients": [
+                {
+                    "position": 1,
+                    "name": "Majoneesi",
+                    "quantity": "1",
+                    "unit": "dl"
+                },
+                {
+                    "position": 2,
+                    "name": "Raastettu inkiv\u00e4\u00e4ri",
+                    "quantity": "2",
+                    "unit": "tl"
+                }
+            ]
+        },
+        {
+            "position": 4,
+            "name": "Munakokkeli",
+            "ingredients": [
+                {
+                    "position": 1,
+                    "name": "Kananmuna",
+                    "quantity": "4",
+                    "unit": "kpl"
+                },
+                {
+                    "position": 2,
+                    "name": "Kerma",
+                    "quantity": "1",
+                    "unit": "dl"
+                },
+                {
+                    "position": 3,
+                    "name": "Suola",
+                    "quantity": "0.5",
+                    "unit": "tl"
+                },
+                {
+                    "position": 4,
+                    "name": "Voi",
+                    "quantity": "1",
+                    "unit": "rkl"
+                },
+                {
+                    "position": 5,
+                    "name": "Paahdettu seesam\u00f6ljy",
+                    "quantity": "2",
+                    "unit": "tl"
+                }
+            ]
+        },
+        {
+            "position": 5,
+            "name": "Muu",
+            "ingredients": [
+                {
+                    "position": 1,
+                    "name": "Briossis\u00e4mpyl\u00e4",
+                    "quantity": "4",
+                    "unit": "kpl"
+                },
+                {
+                    "position": 2,
+                    "name": "Kev\u00e4tsipuli",
+                    "quantity": "2",
+                    "unit": "kpl"
+                }
+            ]
+        }
+    ]
+}
