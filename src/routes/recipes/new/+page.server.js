@@ -19,7 +19,7 @@ export const actions = {
             });
         }
 
-        console.log(form)
+        console.log(JSON.stringify(form, null, 2))
 
         return {
             form,

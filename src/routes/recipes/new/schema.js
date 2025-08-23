@@ -12,7 +12,7 @@ export const formSchema = z.object({
     notes: z.string(),
     tags: z.array(z.string()),
     sections: z.array(z.object({
-        name: z.string(),
+        name: z.nullable(z.string()),
         ingredients: z.array(z.object({
             name: z.string(),
             quantity: z.number(),

@@ -20,15 +20,29 @@
 
 	const { form: formData, enhance } = form;
 
+	const newIngredient = { name: null, quantity: null, unit: null };
+	const newSection = { name: null, ingredients: [newIngredient] };
+
 	const addSection = () => {
-		$formData.sections = [
-			...$formData.sections,
-			{ name: null, ingredients: [{ name: null, quantity: null, unit: null }] }
-		];
+		$formData.sections = [...$formData.sections, newSection];
 	};
 
 	const removeSection = (index) => {
 		$formData.sections = $formData.sections.filter((_, i) => i !== index);
+	};
+
+	const addIngredient = (sectionIndex) => {
+		$formData.sections = $formData.sections.map((s, i) =>
+			i == sectionIndex ? { ...s, ingredients: [...s.ingredients, newIngredient] } : s
+		);
+	};
+
+	const removeIngredient = (sectionIndex, ingredientIndex) => {
+		const section = $formData.sections[sectionIndex];
+
+		$formData.sections[sectionIndex].ingredients = $formData.sections[
+			sectionIndex
+		].ingredients.filter((_, i) => i !== ingredientIndex);
 	};
 
 	//auto add empty section
@@ -102,18 +116,64 @@
 
 	<Form.Fieldset {form} name="sections">
 		<Form.Legend>Recipe sections</Form.Legend>
-		<!-- <Form.Description>Huhuehue heheheh</Form.Description> -->
 		{#each $formData.sections as section, i}
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
-						<Label class="sr-only">Section {i + 1}</Label>
-						<Input
-							{...props}
-							bind:value={$formData.sections[i].name}
-							placeholder="(nimetön osio)"
-						/>
-						<RemoveButton removefunc={() => removeSection(i)} />
+						<div class="flex flex-row">
+							<Label class="sr-only">Section {i + 1}</Label>
+							<Input
+								{...props}
+								bind:value={$formData.sections[i].name}
+								placeholder="(nimetön osio)"
+							/>
+							<RemoveButton removefunc={() => removeSection(i)} />
+						</div>
+
+						{#each section.ingredients as ingredient, j}
+							<div class="flex flex-row">
+								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
+									<div class="flex flex-row">
+										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
+											<Form.Control>
+												{#snippet children({ props })}
+													<Input
+														{...props}
+														bind:value={$formData.sections[i].ingredients[j].name}
+														placeholder="aines"
+													/>
+												{/snippet}
+											</Form.Control>
+										</Form.ElementField>
+										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].quantity">
+											<Form.Control>
+												{#snippet children({ props })}
+													<Input
+														type="number"
+														{...props}
+														bind:value={$formData.sections[i].ingredients[j].quantity}
+														placeholder="1"
+													/>
+												{/snippet}
+											</Form.Control>
+										</Form.ElementField>
+										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].unit">
+											<Form.Control>
+												{#snippet children({ props })}
+													<Input
+														{...props}
+														bind:value={$formData.sections[i].ingredients[j].unit}
+														placeholder="kpl"
+													/>
+												{/snippet}
+											</Form.Control>
+										</Form.ElementField>
+									</div>
+								</Form.Fieldset>
+								<RemoveButton removefunc={() => removeIngredient(i, j)} />
+							</div>
+						{/each}
+						<Button onclick={() => addIngredient(i)}>Add Ingredient</Button>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
@@ -121,16 +181,6 @@
 		<Form.FieldErrors />
 		<Button onclick={addSection}>Add section</Button>
 	</Form.Fieldset>
-
-	<!-- <Form.Field {form} name="sections">
-		<Form.Control>
-			{#snippet children({ props })}
-				<Form.Label>Ingredients</Form.Label>
-				<Form.Description>Empty ingredients will be ignored</Form.Description>
-				<IngredientInput {...props} bind:value={$formData.sections} />
-			{/snippet}
-		</Form.Control>
-	</Form.Field> -->
 
 	<Form.Field {form} name="method">
 		<Form.Control>
