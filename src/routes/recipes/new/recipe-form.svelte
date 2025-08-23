@@ -15,9 +15,9 @@
 	});
 
 	const { form: formData, enhance } = form;
-</script>
 
-<IngredientInput />
+	$inspect($formData);
+</script>
 
 <form method="POST" use:enhance>
 	<Form.Field {form} name="name">
@@ -60,6 +60,16 @@
 		</Form.Control>
 		<Form.Description>How plenty is the thing?</Form.Description>
 		<Form.FieldErrors />
+	</Form.Field>
+
+	<Form.Field {form} name="sections">
+		<Form.Control>
+			{#snippet children({ props })}
+				<Form.Label>Ingredients</Form.Label>
+				<Form.Description>Empty ingredients will be ignored</Form.Description>
+				<IngredientInput {...props} bind:value={$formData.sections} />
+			{/snippet}
+		</Form.Control>
 	</Form.Field>
 
 	<Form.Field {form} name="method">

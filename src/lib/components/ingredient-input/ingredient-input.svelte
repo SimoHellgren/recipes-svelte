@@ -9,11 +9,13 @@
 
 	import Button from '$lib/components/ui/button/button.svelte';
 
-	let { data } = $props();
+	let { value: data = $bindable([]) } = $props();
 
+	$inspect(data);
 	// generate unique ids for the elements
 	let nextId = 1;
-	data.sections.forEach((section) => {
+
+	data = data.map((section) => {
 		section.id = `section-${nextId++}`;
 		section.ingredients.forEach((ingredient) => {
 			ingredient.id = `ingredient-${nextId++}`;
@@ -39,13 +41,12 @@
 		};
 	};
 
-	let sections = $state(data.sections);
-
+	data = [newSection()];
 	// autoadd ingredient rows
 	// using $effect for manipulating state is a bit against Svelte's
 	// best practices, but oh well
 	$effect(() => {
-		sections.forEach((section) => {
+		data.forEach((section) => {
 			const last = section.ingredients[section.ingredients.length - 1];
 			if (last.name && last.quantity && last.unit) {
 				section.ingredients = [...section.ingredients, newIngredient(last.position + 1)];
@@ -66,11 +67,11 @@
 	const findSection = (id) => {
 		//given a section id OR an ingredient id, returns corresponding section
 
-		const sectionIndex = sections.findIndex(
+		const sectionIndex = data.findIndex(
 			(section) => section.id === id || section.ingredients.some((i) => i.id === id)
 		);
 
-		return sectionIndex !== -1 ? sections[sectionIndex] : null;
+		return sectionIndex !== -1 ? data[sectionIndex] : null;
 	};
 
 	const getTypeAndAccepts = (active, over) => {
@@ -102,9 +103,9 @@
 
 		// if moving a container to a place where containers can be moved, do that
 		if (activeType === 'section' && (overType === 'section' || acceptsSection)) {
-			const oldIndex = sections.findIndex((item) => item.id === active.id);
-			const newIndex = sections.findIndex((item) => item.id === over.id);
-			sections = updatePositions(arrayMove(sections, oldIndex, newIndex));
+			const oldIndex = data.findIndex((item) => item.id === active.id);
+			const newIndex = data.findIndex((item) => item.id === over.id);
+			data = updatePositions(arrayMove(data, oldIndex, newIndex));
 			return;
 		}
 
@@ -165,7 +166,7 @@
 
 	const removeItem = (item) => {
 		if (isContainerItem(item)) {
-			sections = updatePositions(sections.filter((it) => it.id !== item.id));
+			data = updatePositions(data.filter((it) => it.id !== item.id));
 		} else {
 			const container = findSection(item.id);
 			container.ingredients = updatePositions(
@@ -181,12 +182,12 @@
 	onDragEnd={handleDragEnd}
 	onDragOver={handleDragOver}
 >
-	<SortableContext items={sections.map((item) => item.id)}>
+	<SortableContext items={data.map((item) => item.id)}>
 		<Droppable id="section" data={{ accepts: ['section'] }}>
 			<div class="flex-col space-y-2">
-				{#each sections as section, i (section.id)}
+				{#each data as section, i (section.id)}
 					<Section
-						bind:data={sections[i]}
+						bind:data={data[i]}
 						type="section"
 						accepts={['ingredient']}
 						removefunc={() => removeItem(section)}
@@ -223,6 +224,6 @@
 </DndContext>
 <Button
 	onclick={() => {
-		sections = updatePositions([...sections, newSection()]);
+		data = updatePositions([...data, newSection()]);
 	}}>New section</Button
 >

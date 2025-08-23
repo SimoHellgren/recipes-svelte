@@ -8,5 +8,5 @@ export const formSchema = z.object({
     method: z.string(),
     notes: z.string(),
     tags: z.array(z.string()),
-    sections: z.string()
+    sections: z.array(z.object()) //hash out structure
 })
