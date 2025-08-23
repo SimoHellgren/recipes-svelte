@@ -74,16 +74,26 @@
 		<Form.FieldErrors />
 	</Form.Field>
 
-	<Form.Field {form} name="servings">
-		<Form.Control>
-			{#snippet children({ props })}
-				<Form.Label>Servings</Form.Label>
-				<Input {...props} bind:value={$formData.servings} />
-			{/snippet}
-		</Form.Control>
+	<Form.Fieldset {form} name="servings">
+		<Form.Legend>Riitto</Form.Legend>
 		<Form.Description>How plenty is the thing?</Form.Description>
-		<Form.FieldErrors />
-	</Form.Field>
+		<Form.Field {form} name="servings.quantity">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Input type="number" {...props} bind:value={$formData.servings.quantity} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+		<Form.Field {form} name="servings.unit">
+			<Form.Control>
+				{#snippet children({ props })}
+					<Input {...props} bind:value={$formData.servings.unit} />
+				{/snippet}
+			</Form.Control>
+			<Form.FieldErrors />
+		</Form.Field>
+	</Form.Fieldset>
 
 	<Form.Fieldset {form} name="sections">
 		<Form.Legend>Recipe sections</Form.Legend>
