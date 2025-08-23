@@ -52,6 +52,7 @@
 							<Checkbox />
 							{ingredient.name}
 							{ingredient.quantity}
+							{ingredient.unit}
 						</Label>
 					</li>
 				{/each}
