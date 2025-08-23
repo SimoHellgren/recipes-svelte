@@ -11,6 +11,10 @@
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import UpIcon from '@lucide/svelte/icons/chevron-up';
+	import DownIcon from '@lucide/svelte/icons/chevron-down';
+	import { arrayMove } from '@dnd-kit-svelte/sortable';
+
 	let { data } = $props();
 
 	const form = superForm(data.form, {
@@ -43,6 +47,14 @@
 		$formData.sections[sectionIndex].ingredients = $formData.sections[
 			sectionIndex
 		].ingredients.filter((_, i) => i !== ingredientIndex);
+	};
+
+	const sectionUp = (index) => {
+		$formData.sections = arrayMove($formData.sections, index, index - 1);
+	};
+
+	const sectionDown = (index) => {
+		$formData.sections = arrayMove($formData.sections, index, index + 1);
 	};
 
 	//auto add empty section
@@ -121,6 +133,8 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="flex flex-row">
+							<Button variant="ghost" onclick={() => sectionUp(i)}><UpIcon /></Button>
+							<Button variant="ghost" onclick={() => sectionDown(i)}><DownIcon /></Button>
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
