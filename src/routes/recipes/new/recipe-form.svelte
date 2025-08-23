@@ -21,7 +21,10 @@
 	const { form: formData, enhance } = form;
 
 	const addSection = () => {
-		$formData.sections = [...$formData.sections, ''];
+		$formData.sections = [
+			...$formData.sections,
+			{ name: null, ingredients: [{ name: null, quantity: null, unit: null }] }
+		];
 	};
 
 	const removeSection = (index) => {
@@ -39,7 +42,9 @@
 	// 	}
 	// });
 
-	$inspect($formData);
+	$inspect($formData.sections).with((type, value) => {
+		console.table(value);
+	});
 </script>
 
 <form method="POST" use:enhance>
@@ -97,13 +102,17 @@
 
 	<Form.Fieldset {form} name="sections">
 		<Form.Legend>Recipe sections</Form.Legend>
-		<Form.Description>Huhuehue heheheh</Form.Description>
+		<!-- <Form.Description>Huhuehue heheheh</Form.Description> -->
 		{#each $formData.sections as section, i}
-			<Form.ElementField {form} name="sections[{i}]">
+			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
 						<Label class="sr-only">Section {i + 1}</Label>
-						<Input {...props} bind:value={$formData.sections[i]} placeholder="(nimetön osio)" />
+						<Input
+							{...props}
+							bind:value={$formData.sections[i].name}
+							placeholder="(nimetön osio)"
+						/>
 						<RemoveButton removefunc={() => removeSection(i)} />
 					{/snippet}
 				</Form.Control>

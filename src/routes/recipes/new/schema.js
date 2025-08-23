@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { optional, z } from 'zod';
 
 
 export const formSchema = z.object({
@@ -11,5 +11,14 @@ export const formSchema = z.object({
     method: z.string(),
     notes: z.string(),
     tags: z.array(z.string()),
-    sections: z.array(z.string()).default([""]) //hash out structure
+    sections: z.array(z.object({
+        name: z.string(),
+        ingredients: z.array(z.object({
+            name: z.string(),
+            quantity: z.number(),
+            unit: z.string(),
+            // comment: z.string(),
+            // optional: z.boolean(),
+        }))
+    })).default([{ name: null, ingredients: [{ name: null, quantity: null, unit: null }] }])
 })
