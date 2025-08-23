@@ -57,6 +57,22 @@
 		$formData.sections = arrayMove($formData.sections, index, index + 1);
 	};
 
+	const ingredientUp = (sectionIndex, ingredientIndex) => {
+		$formData.sections[sectionIndex].ingredients = arrayMove(
+			$formData.sections[sectionIndex].ingredients,
+			ingredientIndex,
+			ingredientIndex - 1
+		);
+	};
+
+	const ingredientDown = (sectionIndex, ingredientIndex) => {
+		$formData.sections[sectionIndex].ingredients = arrayMove(
+			$formData.sections[sectionIndex].ingredients,
+			ingredientIndex,
+			ingredientIndex + 1
+		);
+	};
+
 	//auto add empty section
 	//would probably be better to conditionally render a placeholder which,
 	//when focused, triggers adding an empty row. This way the actual formData
@@ -148,6 +164,10 @@
 							<div class="flex flex-row">
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
 									<div class="flex flex-row">
+										<Button variant="ghost" onclick={() => ingredientUp(i, j)}><UpIcon /></Button>
+										<Button variant="ghost" onclick={() => ingredientDown(i, j)}
+											><DownIcon /></Button
+										>
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
 											<Form.Control>
 												{#snippet children({ props })}
