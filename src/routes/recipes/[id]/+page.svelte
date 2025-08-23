@@ -25,7 +25,7 @@
 	{/if}
 </p>
 
-<p><b>Riitto:</b> {data.servings}</p>
+<p><b>Riitto:</b> {data.servings.quantity} {data.servings.unit}</p>
 
 {#if data.notes}
 	<section class="liirumlaarum">

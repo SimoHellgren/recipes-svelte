@@ -1,7 +1,10 @@
 [
   {
     "name": "Aamus\u00e4mpyl\u00e4t",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "leivonta"
     ],
@@ -64,7 +67,10 @@
   },
   {
     "name": "Ankkaragu",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "pasta",
       "ankka"
@@ -181,7 +187,10 @@
   },
   {
     "name": "Beurre blanc",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "kastike"
     ],
@@ -232,7 +241,10 @@
   },
   {
     "name": "Ciabatta juurella",
-    "servings": "2 leip\u00e4\u00e4",
+    "servings": {
+      "quantity": 2.0,
+      "unit": "leip\u00e4\u00e4"
+    },
     "tags": [
       "leip\u00e4",
       "leivonta"
@@ -297,7 +309,10 @@
   },
   {
     "name": "Cr\u00eapes suzette",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "leivonta",
       "j\u00e4lkk\u00e4ri"
@@ -409,7 +424,10 @@
   },
   {
     "name": "\u30ab\u30ec\u30fc\u7c89",
-    "servings": "101g",
+    "servings": {
+      "quantity": 101.0,
+      "unit": "g"
+    },
     "tags": [
       "japani"
     ],
@@ -551,7 +569,10 @@
   },
   {
     "name": "Granola",
-    "servings": "???",
+    "servings": {
+      "quantity": 1.0,
+      "unit": "l"
+    },
     "tags": [
       "granola"
     ],
@@ -620,7 +641,10 @@
   },
   {
     "name": "Japanilainen BBQ-kastike",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "japani",
       "kastike"
@@ -720,7 +744,10 @@
   },
   {
     "name": "Kaalilaatikko kasarissa",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "soija"
@@ -855,8 +882,115 @@
     "id": "kaalilaatikko-kasarissa"
   },
   {
+    "name": "Kantarelli-misopasta",
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
+    "tags": [
+      "pasta",
+      "sieni",
+      "kantarelli"
+    ],
+    "source": "https://www.soppa365.fi/reseptit/kasvis-arjen-nopeat-pastat-ja-risotot/herkkutatti-misopasta",
+    "method": [
+      "Puhdista ja pilko sienet",
+      "Keit\u00e4 pasta ohjeen mukaan",
+      "Kuumenna \u00f6ljy pannulla ja paista sieni\u00e4 ja sipuleita 5 min",
+      "Lis\u00e4\u00e4 miso, kerma, timjami, suola ja musatpippuri",
+      "Kiehauta ja keit\u00e4 noin 15 min kunnes kastike on muhennosmaista",
+      "Ota talteen 1 dl pastan keitinvett\u00e4 ja valuta pasta",
+      "Sekoita pasta, kastike ja parmesaani kattilassa",
+      "L\u00f6ysyt\u00e4 sopivaksi keitinvedell\u00e4"
+    ],
+    "sections": [
+      {
+        "position": 1,
+        "name": null,
+        "ingredients": [
+          {
+            "position": 1,
+            "name": "Pasta",
+            "quantity": "4",
+            "unit": "hl\u00f6"
+          },
+          {
+            "position": 2,
+            "name": "Kantarelli",
+            "quantity": "1",
+            "unit": "l"
+          },
+          {
+            "position": 3,
+            "name": "Valkosipulinkynsi",
+            "quantity": "2",
+            "unit": "kpl"
+          },
+          {
+            "position": 4,
+            "name": "Kev\u00e4tsipuli",
+            "quantity": "1",
+            "unit": "nippu"
+          },
+          {
+            "position": 5,
+            "name": "Oliivi\u00f6ljy",
+            "quantity": "2",
+            "unit": "rkl"
+          },
+          {
+            "position": 6,
+            "name": "Miso",
+            "quantity": "69",
+            "unit": "g"
+          },
+          {
+            "position": 7,
+            "name": "Kerma",
+            "quantity": "2",
+            "unit": "dl"
+          },
+          {
+            "position": 8,
+            "name": "Vesi",
+            "quantity": "1",
+            "unit": "dl"
+          },
+          {
+            "position": 9,
+            "name": "Timjami",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          },
+          {
+            "position": 10,
+            "name": "Suola",
+            "quantity": "0.5",
+            "unit": "tl"
+          },
+          {
+            "position": 11,
+            "name": "Mustapippuri",
+            "quantity": "0.25",
+            "unit": "tl"
+          },
+          {
+            "position": 12,
+            "name": "Parmesaani",
+            "quantity": "1",
+            "unit": "maun mukaan"
+          }
+        ]
+      }
+    ],
+    "id": "kantarellimisopasta"
+  },
+  {
     "name": "\u30ab\u30ec\u30fc\u30e9\u30a4\u30b9",
-    "servings": 6,
+    "servings": {
+      "quantity": 6.0,
+      "unit": ""
+    },
     "tags": [
       "japani",
       "riisi",
@@ -1020,7 +1154,10 @@
   },
   {
     "name": "Korealaiset aamuslaiderit",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "aasia",
       "korea",
@@ -1172,7 +1309,10 @@
   },
   {
     "name": "Korealaiset tacot",
-    "servings": 2,
+    "servings": {
+      "quantity": 2.0,
+      "unit": ""
+    },
     "tags": [
       "taco",
       "korea",
@@ -1311,7 +1451,10 @@
   },
   {
     "name": "Kukkakaali-parsakaalikeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto",
       "mvp"
@@ -1368,7 +1511,10 @@
   },
   {
     "name": "Kukkakaali-parsakaaliriisi",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "lisuke",
       "vegaani"
@@ -1403,7 +1549,10 @@
   },
   {
     "name": "Kukkakaalitacot ja cashewtahna",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "taco"
     ],
@@ -1537,7 +1686,10 @@
   },
   {
     "name": "Limoncello",
-    "servings": ">50",
+    "servings": {
+      "quantity": 2.5,
+      "unit": "l"
+    },
     "tags": [
       "juoma",
       "vegaani"
@@ -1587,7 +1739,10 @@
   },
   {
     "name": "Maap\u00e4hkin\u00e4-papupata",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "papu"
@@ -1734,7 +1889,10 @@
   },
   {
     "name": "Mangosalsa",
-    "servings": 6,
+    "servings": {
+      "quantity": 6.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "lisuke"
@@ -1791,7 +1949,10 @@
   },
   {
     "name": "Marinoitu kaalisalaatti",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani"
     ],
@@ -1879,7 +2040,10 @@
   },
   {
     "name": "Minestrone",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "keitto",
@@ -1902,6 +2066,7 @@
       "Koristele basilikalla ja \u00f6ljyll\u00e4 (voit my\u00f6s tehd\u00e4 basilika\u00f6ljyn halutessasi)"
     ],
     "notes": [
+      "Pasta on mitoitettu 4 annokseen - kannattaa harkita keitt\u00e4\u00e4k\u00f6 vain sen verran mit\u00e4 juuri nyt tarvitset",
       "Jos meinaa j\u00e4\u00e4d\u00e4 turhan tiiviiksi, lis\u00e4\u00e4 vett\u00e4 sek\u00e4 tomaattipyrett\u00e4.",
       "Yrttimausteseos voi olla esim. herbes de Provence, tai itse sekoiteltu versio kaapista l\u00f6ytyvist\u00e4 yrttimausteista."
     ],
@@ -2003,8 +2168,8 @@
           {
             "position": 16,
             "name": "Pienikuvioinen pasta",
-            "quantity": "2",
-            "unit": "dl"
+            "quantity": "300",
+            "unit": "g"
           },
           {
             "position": 17,
@@ -2019,7 +2184,10 @@
   },
   {
     "name": "Mustikkamuffini",
-    "servings": "14kpl",
+    "servings": {
+      "quantity": 14.0,
+      "unit": "kpl"
+    },
     "tags": [
       "leivonta",
       "muffini"
@@ -2150,7 +2318,10 @@
   },
   {
     "name": "M\u00e4tidippi",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "lisuke"
     ],
@@ -2206,7 +2377,10 @@
   },
   {
     "name": "Nyht\u00f6kaura-rendang",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "aasia",
       "vegaani"
@@ -2347,7 +2521,10 @@
   },
   {
     "name": "Ottolenghi's tandoori chickpeas",
-    "servings": 3,
+    "servings": {
+      "quantity": 3.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "mvp"
@@ -2527,7 +2704,10 @@
   },
   {
     "name": "Ottolenghimix",
-    "servings": "104g",
+    "servings": {
+      "quantity": 104.0,
+      "unit": "g"
+    },
     "tags": [
       "vegaani"
     ],
@@ -2599,7 +2779,10 @@
   },
   {
     "name": "Paahdettu gnocchi parsakaalilla ja sienill\u00e4",
-    "servings": 3,
+    "servings": {
+      "quantity": 3.0,
+      "unit": ""
+    },
     "tags": [
       "gnocchi"
     ],
@@ -2691,7 +2874,10 @@
   },
   {
     "name": "Palsternakka-juurisellerikeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto",
       "vegaani"
@@ -2767,7 +2953,10 @@
   },
   {
     "name": "Parmesaanimajoneesi",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "lisuke"
     ],
@@ -2833,7 +3022,10 @@
   },
   {
     "name": "Parsa-piparjuurignocchit",
-    "servings": 2,
+    "servings": {
+      "quantity": 2.0,
+      "unit": ""
+    },
     "tags": [
       "pasta",
       "gnocchi"
@@ -2890,7 +3082,10 @@
   },
   {
     "name": "Pasi Lohi -pasta",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "pasta",
       "kala",
@@ -2978,7 +3173,10 @@
   },
   {
     "name": "Peltivihis",
-    "servings": 6,
+    "servings": {
+      "quantity": 6.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "h\u00e4rkis"
@@ -3132,7 +3330,10 @@
   },
   {
     "name": "Perunapurjokeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto",
       "mvp"
@@ -3208,7 +3409,10 @@
   },
   {
     "name": "Piim\u00e4limppu",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "leip\u00e4",
       "joulu",
@@ -3275,7 +3479,10 @@
   },
   {
     "name": "Pikkel\u00f6ity punasipuli",
-    "servings": 12,
+    "servings": {
+      "quantity": 12.0,
+      "unit": ""
+    },
     "tags": [
       "lisuke",
       "pikkeli"
@@ -3324,7 +3531,10 @@
   },
   {
     "name": "Poromousse",
-    "servings": 6,
+    "servings": {
+      "quantity": 6.0,
+      "unit": ""
+    },
     "tags": [
       "joulu"
     ],
@@ -3387,7 +3597,10 @@
   },
   {
     "name": "\u30e9\u30fc\u30e1\u30f3",
-    "servings": 3,
+    "servings": {
+      "quantity": 3.0,
+      "unit": ""
+    },
     "tags": [
       "japani",
       "vegaani",
@@ -3561,7 +3774,10 @@
   },
   {
     "name": "\u30e9\u30fc\u6cb9",
-    "servings": "180ml",
+    "servings": {
+      "quantity": 180.0,
+      "unit": "ml"
+    },
     "tags": [
       "japani"
     ],
@@ -3639,7 +3855,10 @@
   },
   {
     "name": "Satsumarisotto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "risotto"
     ],
@@ -3739,7 +3958,10 @@
   },
   {
     "name": "Savuinen hernepasta",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "pasta",
       "vegaani",
@@ -3804,7 +4026,10 @@
   },
   {
     "name": "Savuinen linssikeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto",
       "mvp"
@@ -3897,7 +4122,10 @@
   },
   {
     "name": "Shakshuka",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "aamiainen"
     ],
@@ -4012,7 +4240,10 @@
   },
   {
     "name": "\u98df\u30d1\u30f3",
-    "servings": 8,
+    "servings": {
+      "quantity": 8.0,
+      "unit": ""
+    },
     "tags": [
       "japani",
       "leip\u00e4",
@@ -4145,7 +4376,10 @@
   },
   {
     "name": "Siemenn\u00e4kk\u00e4ri",
-    "servings": 8,
+    "servings": {
+      "quantity": 8.0,
+      "unit": ""
+    },
     "tags": [
       "leip\u00e4",
       "lisuke",
@@ -4229,7 +4463,10 @@
   },
   {
     "name": "Simbon chipotle-tomaatti-linssikeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto",
       "vegaani",
@@ -4325,7 +4562,10 @@
   },
   {
     "name": "Sipulikeitto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "keitto"
     ],
@@ -4425,7 +4665,10 @@
   },
   {
     "name": "Soijakurkut",
-    "servings": 6,
+    "servings": {
+      "quantity": 6.0,
+      "unit": ""
+    },
     "tags": [
       "aasia",
       "lisuke",
@@ -4482,7 +4725,10 @@
   },
   {
     "name": "Soijamakaronilaatikko",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "soija"
     ],
@@ -4558,7 +4804,10 @@
   },
   {
     "name": "Sokerilohi",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "kala"
     ],
@@ -4644,7 +4893,10 @@
   },
   {
     "name": "S\u00e4mpyl\u00e4t",
-    "servings": 12,
+    "servings": {
+      "quantity": 12.0,
+      "unit": ""
+    },
     "tags": [
       "leip\u00e4",
       "leivonta"
@@ -4716,7 +4968,10 @@
   },
   {
     "name": "Tofu-kaalivokki",
-    "servings": 3,
+    "servings": {
+      "quantity": 3.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "tofu",
@@ -4817,7 +5072,10 @@
   },
   {
     "name": "Tofukorma",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "riisi",
       "vegaani",
@@ -4909,7 +5167,10 @@
   },
   {
     "name": "Tuulihatut",
-    "servings": 10,
+    "servings": {
+      "quantity": 10.0,
+      "unit": ""
+    },
     "tags": [
       "leivonta",
       "j\u00e4lkk\u00e4ri"
@@ -5031,7 +5292,10 @@
   },
   {
     "name": "Uuniriisi",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "vegaani",
       "tofu",
@@ -5151,7 +5415,10 @@
   },
   {
     "name": "Varsijousi eli Rosan raskausmocktail",
-    "servings": 1,
+    "servings": {
+      "quantity": 1.0,
+      "unit": ""
+    },
     "tags": [
       "juoma"
     ],
@@ -5190,7 +5457,10 @@
   },
   {
     "name": "Veriappelsiinirisotto",
-    "servings": 4,
+    "servings": {
+      "quantity": 4.0,
+      "unit": ""
+    },
     "tags": [
       "risotto"
     ],
