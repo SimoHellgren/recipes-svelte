@@ -25,7 +25,7 @@
 	{/if}
 </p>
 
-<p><b>Riitto:</b> {data.servings.quantity} {data.servings.unit}</p>
+<p><b>Riitto:</b> {data.yield_quantity} {data.yield_unit}</p>
 
 {#if data.notes}
 	<section class="liirumlaarum">
@@ -40,19 +40,19 @@
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Ainehet</h2>
 		<ul class="space-y-2.5">
-			{#each data.sections as section}
+			{#each data.section as section}
 				{#if section.name}
 					<div class="font-bold">{section.name}</div>
 				{/if}
-				{#each section.ingredients as ingredient}
+				{#each section.assembly as item}
 					<li>
 						<Label
 							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
 						>
 							<Checkbox />
-							{ingredient.name}
-							{ingredient.quantity}
-							{ingredient.unit}
+							{item.ingredient.name}
+							{item.quantity}
+							{item.unit}
 						</Label>
 					</li>
 				{/each}
@@ -77,11 +77,6 @@
 </main>
 
 <style>
-	.done {
-		color: #aaaaaa;
-		text-decoration: line-through;
-	}
-
 	.liirumlaarum {
 		border: 1px dashed #555555;
 		background-color: #f5f5f5;
