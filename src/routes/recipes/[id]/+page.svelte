@@ -25,7 +25,7 @@
 	{/if}
 </p>
 
-<p><b>Riitto:</b> {data.servings.quantity} {data.servings.unit}</p>
+<p><b>Riitto:</b> {data.yield_quantity} {data.yield_unit}</p>
 
 {#if data.notes}
 	<section class="liirumlaarum">
@@ -77,11 +77,6 @@
 </main>
 
 <style>
-	.done {
-		color: #aaaaaa;
-		text-decoration: line-through;
-	}
-
 	.liirumlaarum {
 		border: 1px dashed #555555;
 		background-color: #f5f5f5;
