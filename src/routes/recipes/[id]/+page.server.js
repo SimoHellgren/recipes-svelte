@@ -9,7 +9,7 @@ export async function load({ params }) {
 
     // split what shall be split here
     data.method = data.method.split("\n")
-    data.notes = data.notes.split("\n")
+    data.notes = data.notes?.split("\n")
 
     return data ?? {};
 }
