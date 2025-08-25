@@ -1,7 +1,6 @@
 <script>
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
-	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 
 	let { data } = $props();
@@ -113,5 +112,11 @@
 
 	.liirumlaarum > h3 {
 		margin: 0;
+	}
+
+	/* ensures the increment/decrement arrows always display */
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		opacity: 1;
 	}
 </style>
