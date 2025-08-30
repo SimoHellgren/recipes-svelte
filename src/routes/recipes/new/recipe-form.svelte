@@ -84,9 +84,9 @@
 	// 	}
 	// });
 
-	$inspect($formData.sections).with((type, value) => {
-		console.table(value);
-	});
+	// $inspect($formData.sections).with((type, value) => {
+	// 	console.table(value);
+	// });
 </script>
 
 <form method="POST" use:enhance>

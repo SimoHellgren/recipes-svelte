@@ -4,7 +4,7 @@ import { optional, z } from 'zod';
 export const formSchema = z.object({
     name: z.string(),
     yield: z.object({
-        quantity: z.number().default(0),
+        quantity: z.number().default(1),
         unit: z.string().default("hlö")
     }),
     source: z.string(),
@@ -17,8 +17,19 @@ export const formSchema = z.object({
             name: z.string(),
             quantity: z.number(),
             unit: z.string(),
-            // comment: z.string(),
-            // optional: z.boolean(),
+            // comment: z.nullable(z.string()),
+            // optional: z.boolean().default(false),
         }))
-    })).default([{ name: null, ingredients: [{ name: null, quantity: null, unit: null }] }])
+    })).default([{
+        name: null,
+        ingredients: [
+            {
+                name: null,
+                quantity: null,
+                unit: null,
+                // comment: null, 
+                // optional: false,
+            }
+        ]
+    }])
 })
