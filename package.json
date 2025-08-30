@@ -44,6 +44,7 @@
 	"dependencies": {
 		"@dnd-kit-svelte/core": "^0.0.11",
 		"@dnd-kit-svelte/sortable": "^0.0.11",
+		"@supabase/ssr": "^0.7.0",
 		"@supabase/supabase-js": "^2.56.0",
 		"marked": "^16.1.2"
 	}
