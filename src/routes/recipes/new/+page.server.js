@@ -1,5 +1,5 @@
 import { superValidate } from "sveltekit-superforms";
-import { formSchema } from "./schema";
+import { formSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { fail } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";

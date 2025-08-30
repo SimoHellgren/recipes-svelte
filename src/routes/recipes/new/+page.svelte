@@ -1,5 +1,5 @@
 <script>
-	import RecipeForm from './recipe-form.svelte';
+	import RecipeForm from '$lib/components/recipe-form/recipe-form.svelte';
 
 	let { data } = $props();
 </script>
