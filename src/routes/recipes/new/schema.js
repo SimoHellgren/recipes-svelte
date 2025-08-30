@@ -3,7 +3,7 @@ import { optional, z } from 'zod';
 
 export const formSchema = z.object({
     name: z.string(),
-    servings: z.object({
+    yield: z.object({
         quantity: z.number().default(0),
         unit: z.string().default("hlö")
     }),

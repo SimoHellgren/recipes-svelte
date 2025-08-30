@@ -121,21 +121,21 @@
 		<Form.FieldErrors />
 	</Form.Field>
 
-	<Form.Fieldset {form} name="servings">
+	<Form.Fieldset {form} name="yield">
 		<Form.Legend>Riitto</Form.Legend>
 		<Form.Description>How plenty is the thing?</Form.Description>
-		<Form.Field {form} name="servings.quantity">
+		<Form.Field {form} name="yield.quantity">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input type="number" {...props} bind:value={$formData.servings.quantity} />
+					<Input type="number" {...props} bind:value={$formData.yield.quantity} />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
 		</Form.Field>
-		<Form.Field {form} name="servings.unit">
+		<Form.Field {form} name="yield.unit">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input {...props} bind:value={$formData.servings.unit} />
+					<Input {...props} bind:value={$formData.yield.unit} />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
