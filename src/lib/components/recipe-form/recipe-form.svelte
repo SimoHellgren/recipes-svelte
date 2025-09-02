@@ -187,6 +187,7 @@
 														{...props}
 														bind:value={$formData.sections[i].ingredients[j].quantity}
 														placeholder="1"
+														step="any"
 													/>
 												{/snippet}
 											</Form.Control>
