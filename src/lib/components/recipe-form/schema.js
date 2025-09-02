@@ -9,7 +9,7 @@ export const formSchema = z.object({
     }),
     source: z.string(),
     method: z.string(),
-    notes: z.string(),
+    notes: z.nullable(z.string()),
     tags: z.array(z.string()),
     sections: z.array(z.object({
         name: z.nullable(z.string()),
@@ -32,4 +32,8 @@ export const formSchema = z.object({
             }
         ]
     }])
+})
+
+export const editSchema = formSchema.extend({
+    id: z.number()
 })
