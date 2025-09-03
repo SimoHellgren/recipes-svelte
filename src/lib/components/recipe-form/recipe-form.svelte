@@ -7,7 +7,7 @@
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import { Description } from 'formsnap';
-	import { formSchema } from './schema';
+	import { recipeSchema } from './schema';
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import Button from '$lib/components/ui/button/button.svelte';
@@ -18,14 +18,14 @@
 	let { data } = $props();
 
 	const form = superForm(data.form, {
-		validators: zodClient(formSchema),
+		validators: zodClient(recipeSchema),
 		dataType: 'json'
 	});
 
 	const { form: formData, enhance } = form;
 
-	const newIngredient = { name: null, quantity: null, unit: null };
-	const newSection = { name: null, ingredients: [newIngredient] };
+	const newIngredient = { id: null, name: null, quantity: null, unit: null };
+	const newSection = { id: null, name: null, ingredients: [newIngredient] };
 
 	const addSection = () => {
 		$formData.sections = [...$formData.sections, newSection];

@@ -1,19 +1,19 @@
 import { superValidate } from "sveltekit-superforms";
-import { formSchema } from "$lib/components/recipe-form/schema";
+import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { fail } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";
 
 export const load = async () => {
     return {
-        form: await superValidate(zod(formSchema)),
+        form: await superValidate(zod(recipeSchema)),
     };
 };
 
 
 export const actions = {
     default: async (event) => {
-        const form = await superValidate(event, zod(formSchema));
+        const form = await superValidate(event, zod(recipeSchema));
 
 
         if (!form.valid) {

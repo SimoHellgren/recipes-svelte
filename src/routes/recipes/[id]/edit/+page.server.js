@@ -1,14 +1,21 @@
 import { superValidate } from "sveltekit-superforms";
-import { formSchema, editSchema } from "$lib/components/recipe-form/schema";
+import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { supabase } from "$lib/supabaseClient";
 
 export async function load({ params }) {
-    const { data } = await supabase.from("recipe").select(
-        `*,
-         section( *, assembly ( *, ingredient ( name )) ) )
+    const { data, error } = await supabase
+        .from("recipe")
+        .select(
+            `*,
+         section( *, assembly ( *, ingredient ( * )) ) )
         `
-    ).eq("id", params.id).single();
+        )
+        .eq("id", params.id)
+        .order("position", { referencedTable: "section" })
+        .order("position", { referencedTable: "section.assembly" })
+        .single();
+
 
     const recipe = {
         id: data.id,
@@ -29,7 +36,7 @@ export async function load({ params }) {
 
     }
 
-    const form = await superValidate(recipe ?? {}, zod(editSchema))
+    const form = await superValidate(recipe ?? {}, zod(recipeSchema))
     return {
         form
     };
@@ -38,9 +45,7 @@ export async function load({ params }) {
 
 export const actions = {
     default: async (event) => {
-        const form = await superValidate(event, zod(editSchema));
-
-        console.log(form)
+        const form = await superValidate(event, zod(recipeSchema));
 
         if (!form.valid) {
             return fail(400, {
@@ -73,9 +78,45 @@ export const actions = {
         // need to work on how to identify which records were deleted, though. Naive approach is
         // to query the db, but there's probably something nicer available. Might be a separate ticket, though. 
 
-        // TODO: delete sections (cascade)
-        // TODO: update sections
-        // TODO: add sections
+
+        // sections
+        // ignore ingredients for now
+        const sections = form.data.sections
+            .map((s, i) => ({
+                id: s.id,
+                name: s.name,
+                position: i + 1,
+                recipe_id: form.data.id,
+            }))
+
+        const sectionIds = sections.map(s => s.id).filter(s => s) // no nulls
+
+        // delete sections (cascades to assembly rows)
+        const { data: deletedSections } = await supabase
+            .from("section")
+            .delete()
+            .eq("recipe_id", form.data.id)
+            .not("id", "in", `(${sectionIds.join(",")})`)
+
+        // update sections. Upsert since it allows a list as input
+        const { data: updatedSections, error: updateSectionError } = await supabase
+            .from("section")
+            .upsert(sections.filter(s => s.id)) // no nulls, i.e. only existing sections
+            .select()
+
+        console.log(updateSectionError)
+
+        // add sections
+        const { data: insertedSections, error: insertError } = await supabase
+            .from("section")
+            .insert(sections.filter(s => s.id === null).map(s => ({
+                name: s.name,
+                position: s.position,
+                recipe_id: s.recipe_id,
+            }))) // only new sections, and ignore ids
+            .select()
+
+        console.log(insertError)
 
         // TODO: delete assembly rows (cascade)
         // TODO: update assembly rows

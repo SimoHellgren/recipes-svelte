@@ -15,6 +15,7 @@ const defaultSection = {
 }
 
 const ingredientSchema = z.object({
+    id: z.nullable(z.number()), // nullable not great; hack for edit-mode
     name: z.string(),
     quantity: z.number(),
     unit: z.string(),
@@ -23,11 +24,13 @@ const ingredientSchema = z.object({
 }).default(defaultIngredient)
 
 const sectionSchema = z.object({
+    id: z.nullable(z.number()), // nullable not great; hack for edit-mode
     name: z.nullable(z.string()),
     ingredients: z.array(ingredientSchema)
 }).default(defaultSection)
 
-export const formSchema = z.object({
+export const recipeSchema = z.object({
+    id: z.nullable(z.number()), // nullable not great; hack for edit-mode
     name: z.string(),
     yield: z.object({
         quantity: z.number().default(1),
@@ -40,6 +43,3 @@ export const formSchema = z.object({
     sections: z.array(sectionSchema).default([defaultSection])
 })
 
-export const editSchema = formSchema.extend({
-    id: z.number(),
-})
