@@ -3,6 +3,7 @@ import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { fail } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";
+import { getOrCreateIngredients } from "$lib/db";
 
 export const load = async () => {
     return {
@@ -34,27 +35,8 @@ export const actions = {
             yield_unit: form.data.yield.unit,
         }).select().single()
 
-
         // add ingredients
-        const formIngredients = form.data.sections.map(s => s.ingredients).flat()
-
-        // check which rows exist
-        const { data: dbIngredients } = await supabase
-            .from("ingredient")
-            .select()
-            .in("name", formIngredients.map(i => i.name))
-
-        // create missing ingredients
-        const ingredientsToCreate = formIngredients.filter(i => !dbIngredients.some(x => x.name === i.name))
-
-        const { data: createdIngredients, error: ingredientError } = await supabase
-            .from("ingredient")
-            .insert(
-                ingredientsToCreate.map(i => ({ name: i.name }))
-            ).select()
-
-        const allIngredients = [...dbIngredients, ...createdIngredients]
-
+        const allIngredients = getOrCreateIngredients(form.data.sections.map(s => s.ingredients).flat())
 
         // add sections
         const sectionsIn = form.data.sections.map((section, index) => ({
