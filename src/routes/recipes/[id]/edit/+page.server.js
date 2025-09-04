@@ -115,12 +115,20 @@ export const actions = {
 
         const allSections = [...updatedSections, ...insertedSections]
 
-        console.log(form.data.sections.map(s => s.ingredients).flat())
+        const ingredients = form.data.sections.map(s => s.ingredients).flat()
 
         // Get / Create ingredients
-        const allIngredients = await getOrCreateIngredients(form.data.sections.map(s => s.ingredients).flat())
+        const allIngredients = await getOrCreateIngredients(ingredients)
 
-        // TODO: delete assembly rows (cascade)
+        // delete assembly rows
+        const assemblyIds = ingredients.map(i => i.id).filter(i => i) // no nulls
+        const { data: deletedAssemblies } = await supabase
+            .from("assembly")
+            .delete()
+            .in("section_id", sectionIds)
+            .not("id", "in", `(${assemblyIds.join(",")})`)
+            .select()
+
         // TODO: update assembly rows
         // TODO: add new assembly rows
 
