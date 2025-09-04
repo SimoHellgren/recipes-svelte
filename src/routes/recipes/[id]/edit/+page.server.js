@@ -2,6 +2,7 @@ import { superValidate } from "sveltekit-superforms";
 import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { supabase } from "$lib/supabaseClient";
+import { getOrCreateIngredients } from "$lib/db";
 
 export async function load({ params }) {
     const { data, error } = await supabase
@@ -67,9 +68,6 @@ export const actions = {
             })
             .eq("id", form.data.id)
 
-        // TODO: create missing ingredients
-        // easiest is probably to just "get or create" all
-
         // the order of operation is significant:
         // 1. delete first: makes sure that no conflicts on position when updating rest
         // 2. (update existing ones)
@@ -77,7 +75,6 @@ export const actions = {
 
         // need to work on how to identify which records were deleted, though. Naive approach is
         // to query the db, but there's probably something nicer available. Might be a separate ticket, though. 
-
 
         // sections
         // ignore ingredients for now
@@ -116,7 +113,12 @@ export const actions = {
             }))) // only new sections, and ignore ids
             .select()
 
-        console.log(insertError)
+        const allSections = [...updatedSections, ...insertedSections]
+
+        console.log(form.data.sections.map(s => s.ingredients).flat())
+
+        // Get / Create ingredients
+        const allIngredients = await getOrCreateIngredients(form.data.sections.map(s => s.ingredients).flat())
 
         // TODO: delete assembly rows (cascade)
         // TODO: update assembly rows
