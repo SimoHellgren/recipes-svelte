@@ -93,18 +93,16 @@
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Recipe name</Form.Label>
+				<Form.Label>Nimi</Form.Label>
 				<Input {...props} bind:value={$formData.name} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>Name of the recipe</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Field {form} name="tags">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Tags</Form.Label>
-				<Form.Description>Tagges</Form.Description>
+				<Form.Label>Tagit</Form.Label>
 				<TagsInput {...props} bind:value={$formData.tags} />
 			{/snippet}
 		</Form.Control>
@@ -113,17 +111,15 @@
 	<Form.Field {form} name="source">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Source</Form.Label>
+				<Form.Label>Alkuperä</Form.Label>
 				<Input {...props} bind:value={$formData.source} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>Source of the recipe</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 
 	<Form.Fieldset {form} name="yield">
 		<Form.Legend>Riitto</Form.Legend>
-		<Form.Description>How plenty is the thing?</Form.Description>
 		<Form.Field {form} name="yield.quantity">
 			<Form.Control>
 				{#snippet children({ props })}
@@ -224,9 +220,8 @@
 	<Form.Field {form} name="method">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Method</Form.Label>
-				<Form.Description>One step per row. Supports markdown!</Form.Description>
-				<MarkdownInput {...props} bind:value={$formData.method} />
+				<Form.Label>Askelet</Form.Label>
+				<MarkdownInput {...props} bind:value={$formData.method} placholder="Kokeile *muotoiluja*" />
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
@@ -236,8 +231,11 @@
 		<Form.Control>
 			{#snippet children({ props })}
 				<Form.Label>Notes</Form.Label>
-				<Form.Description>One note per row. Supports markdown!</Form.Description>
-				<MarkdownInput {...props} bind:value={$formData.notes} />
+				<MarkdownInput
+					{...props}
+					bind:value={$formData.notes}
+					placeholder="Täälläking voi **muotoilla**"
+				/>
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
