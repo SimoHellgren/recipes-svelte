@@ -129,7 +129,34 @@ export const actions = {
             .not("id", "in", `(${assemblyIds.join(",")})`)
             .select()
 
-        // TODO: update assembly rows
+        // update assembly rows
+        const assembliesToUpdate = form.data.sections.map(section => section.ingredients.map((assembly, index) => ({
+            id: assembly.id,
+            // new sections' rows are always inserted, so no need to check section ids here
+            section_id: section.id,
+            position: index + 1,
+            quantity: assembly.quantity,
+            unit: assembly.unit,
+            //comment
+            //optional
+            ingredient_id: allIngredients.find(i => i.name === assembly.name).id
+        }))).flat().filter(x => x.id) // no nulls; they are new rows
+
+        console.log(assembliesToUpdate)
+
+        // offset trick for positions because unique index
+        const BIG_NUMBER = 1000;
+        // stupid, but works because realistically we'll never hit the offset number
+        await supabase
+            .from("assembly")
+            .upsert(assembliesToUpdate.map(a => ({ ...a, position: a.position + BIG_NUMBER })))
+
+        // fix the positions
+        const { data: updatedAssemblies, error: assemblyError } = await supabase
+            .from("assembly")
+            .upsert(assembliesToUpdate)
+
+
         // TODO: add new assembly rows
 
         // const { data, error } = await supabase.from("ingredient")
