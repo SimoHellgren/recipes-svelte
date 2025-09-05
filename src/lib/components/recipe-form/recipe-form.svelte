@@ -103,7 +103,7 @@
 	<Form.Field {form} name="tags">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Tagit</Form.Label>
+				<Form.Label>Hipat</Form.Label>
 				<TagsInput {...props} bind:value={$formData.tags} />
 			{/snippet}
 		</Form.Control>
@@ -139,7 +139,7 @@
 	</Form.Fieldset>
 
 	<Form.Fieldset {form} name="sections">
-		<Form.Legend>Recipe sections</Form.Legend>
+		<Form.Legend>Osiot & ainehet</Form.Legend>
 		{#each $formData.sections as section, i}
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
@@ -208,13 +208,13 @@
 								<RemoveButton removefunc={() => removeIngredient(i, j)} />
 							</div>
 						{/each}
-						<Button onclick={() => addIngredient(i)}>Add Ingredient</Button>
+						<Button onclick={() => addIngredient(i)}>Lisää aines</Button>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
 		{/each}
 		<Form.FieldErrors />
-		<Button onclick={addSection}>Add section</Button>
+		<Button onclick={addSection}>Lisää osio</Button>
 	</Form.Fieldset>
 
 	<Form.Field {form} name="method">
@@ -230,7 +230,7 @@
 	<Form.Field {form} name="notes">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Notes</Form.Label>
+				<Form.Label>Liirum laarum</Form.Label>
 				<MarkdownInput
 					{...props}
 					bind:value={$formData.notes}
