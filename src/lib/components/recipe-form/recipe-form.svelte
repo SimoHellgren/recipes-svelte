@@ -149,8 +149,10 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="flex flex-row">
-							<Button variant="ghost" onclick={() => sectionUp(i)}><UpIcon /></Button>
-							<Button variant="ghost" onclick={() => sectionDown(i)}><DownIcon /></Button>
+							<Button variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"><UpIcon /></Button>
+							<Button variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
+								><DownIcon /></Button
+							>
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
@@ -164,8 +166,10 @@
 							<div class="flex flex-row">
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
 									<div class="flex flex-row">
-										<Button variant="ghost" onclick={() => ingredientUp(i, j)}><UpIcon /></Button>
-										<Button variant="ghost" onclick={() => ingredientDown(i, j)}
+										<Button variant="ghost" onclick={() => ingredientUp(i, j)} tabindex="-1"
+											><UpIcon /></Button
+										>
+										<Button variant="ghost" onclick={() => ingredientDown(i, j)} tabindex="-1"
 											><DownIcon /></Button
 										>
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
