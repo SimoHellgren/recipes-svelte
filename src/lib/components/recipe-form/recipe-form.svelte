@@ -117,8 +117,7 @@
 		</Form.Control>
 		<Form.FieldErrors />
 	</Form.Field>
-
-	<Form.Fieldset {form} name="yield">
+	<Form.Fieldset {form} name="yield" class="grid auto-cols-max grid-flow-col gap-2">
 		<Form.Legend>Riitto</Form.Legend>
 		<Form.Field {form} name="yield.quantity">
 			<Form.Control>
