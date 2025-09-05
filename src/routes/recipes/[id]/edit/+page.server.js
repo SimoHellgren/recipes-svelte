@@ -68,14 +68,6 @@ export const actions = {
             })
             .eq("id", form.data.id)
 
-        // the order of operation is significant:
-        // 1. delete first: makes sure that no conflicts on position when updating rest
-        // 2. (update existing ones)
-        // 3. add new ones - because rest have been updated, there cannot be conflicts with position (I think) 
-
-        // need to work on how to identify which records were deleted, though. Naive approach is
-        // to query the db, but there's probably something nicer available. Might be a separate ticket, though. 
-
         // sections
         // ignore ingredients for now
         const sections = form.data.sections
@@ -100,8 +92,6 @@ export const actions = {
             .from("section")
             .upsert(sections.filter(s => s.id)) // no nulls, i.e. only existing sections
             .select()
-
-        console.log(updateSectionError)
 
         // add sections
         const { data: insertedSections, error: insertError } = await supabase
@@ -130,19 +120,20 @@ export const actions = {
             .select()
 
         // update assembly rows
-        const assembliesToUpdate = form.data.sections.map(section => section.ingredients.map((assembly, index) => ({
+        const assemblyRecords = form.data.sections.map(section => section.ingredients.map((assembly, index) => ({
             id: assembly.id,
-            // new sections' rows are always inserted, so no need to check section ids here
-            section_id: section.id,
+            section_id: allSections.find(s => s.name === section.name).id,
+            ingredient_id: allIngredients.find(i => i.name === assembly.name).id,
             position: index + 1,
             quantity: assembly.quantity,
             unit: assembly.unit,
-            //comment
-            //optional
-            ingredient_id: allIngredients.find(i => i.name === assembly.name).id
-        }))).flat().filter(x => x.id) // no nulls; they are new rows
+            // comment: assembly.comment,
+            // optional: assembly.optional,
+        }))).flat()
 
-        console.log(assembliesToUpdate)
+
+        const assembliesToUpdate = assemblyRecords.filter(x => x.id)
+        const assembliesToCreate = assemblyRecords.filter(x => !x.id).map(({ id, ...rest }) => rest) //drop null ids
 
         // offset trick for positions because unique index
         const BIG_NUMBER = 1000;
@@ -152,18 +143,23 @@ export const actions = {
             .upsert(assembliesToUpdate.map(a => ({ ...a, position: a.position + BIG_NUMBER })))
 
         // fix the positions
-        const { data: updatedAssemblies, error: assemblyError } = await supabase
+        const { data: updatedAssemblies, error: updatedAssemblyError } = await supabase
             .from("assembly")
             .upsert(assembliesToUpdate)
+            .select()
 
 
-        // TODO: add new assembly rows
+        const { data: createdAssemblies, error: createdAssemblyError } = await supabase
+            .from("assembly")
+            .insert(assembliesToCreate.map(a => ({ ...a, position: a.position + BIG_NUMBER })))
+            .select()
 
-        // const { data, error } = await supabase.from("ingredient")
-        //     .upsert([{ name: "Öljy", conversions: { "g": 90, "ml": 100 } }], { onConflict: "name" })
-        //     .select()
 
-
+        // fix positions
+        const { data: fixedAssemblies, error: fixedAssemblyError } = await supabase
+            .from("assembly")
+            .upsert(createdAssemblies.map(a => ({ ...a, position: a.position - BIG_NUMBER })))
+            .select()
 
         // TODO: submmitting should probably redirect back to the recipe
         // and display a success message
