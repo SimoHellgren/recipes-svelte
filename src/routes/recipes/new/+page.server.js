@@ -1,7 +1,7 @@
 import { superValidate } from "sveltekit-superforms";
 import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
-import { fail } from "@sveltejs/kit";
+import { fail, redirect } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";
 import { getOrCreateIngredients } from "$lib/db";
 
@@ -35,7 +35,7 @@ export const actions = {
         }).select().single()
 
         // add ingredients
-        const allIngredients = getOrCreateIngredients(form.data.sections.map(s => s.ingredients).flat())
+        const allIngredients = await getOrCreateIngredients(form.data.sections.map(s => s.ingredients).flat())
 
         // add sections
         const sectionsIn = form.data.sections.map((section, index) => ({
@@ -78,8 +78,6 @@ export const actions = {
             .insert(assemblyIn)
             .select()
 
-        return {
-            form,
-        };
+        throw redirect(303, `/recipes/${recipe.id}`)
     },
 };

@@ -22,7 +22,7 @@
 		dataType: 'json'
 	});
 
-	const { form: formData, enhance } = form;
+	const { form: formData, enhance, errors } = form;
 
 	const newIngredient = { id: null, name: null, quantity: null, unit: null };
 	const newSection = { id: null, name: null, ingredients: [newIngredient] };
@@ -90,7 +90,6 @@
 </script>
 
 <form method="POST" use:enhance>
-	<input type="hidden" bind:value={$formData.id} />
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
@@ -141,6 +140,7 @@
 	<Form.Fieldset {form} name="sections">
 		<Form.Legend>Osiot & ainehet</Form.Legend>
 		{#each $formData.sections as section, i}
+			<input type="hidden" bind:value={$formData.sections[i].id} />
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
@@ -159,6 +159,7 @@
 						</div>
 
 						{#each section.ingredients as ingredient, j}
+							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
 							<div class="flex flex-row">
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
 									<div class="flex flex-row">
