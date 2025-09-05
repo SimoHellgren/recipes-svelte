@@ -233,7 +233,7 @@
 				<MarkdownInput
 					{...props}
 					bind:value={$formData.notes}
-					placeholder="Täälläking voi **muotoilla**"
+					placeholder="Täälläkin voi **muotoilla**"
 				/>
 			{/snippet}
 		</Form.Control>
