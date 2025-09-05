@@ -3,6 +3,7 @@ import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { supabase } from "$lib/supabaseClient";
 import { getOrCreateIngredients } from "$lib/db";
+import { redirect } from "@sveltejs/kit";
 
 export async function load({ params }) {
     const { data, error } = await supabase
@@ -161,10 +162,6 @@ export const actions = {
             .upsert(createdAssemblies.map(a => ({ ...a, position: a.position - BIG_NUMBER })))
             .select()
 
-        // TODO: submmitting should probably redirect back to the recipe
-        // and display a success message
-        return {
-            form,
-        };
+        throw redirect(303, `/recipes/${event.params.id}`)
     },
 };
