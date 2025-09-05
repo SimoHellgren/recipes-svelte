@@ -16,7 +16,6 @@ export const actions = {
     default: async (event) => {
         const form = await superValidate(event, zod(recipeSchema));
 
-
         if (!form.valid) {
             return fail(400, {
                 form,

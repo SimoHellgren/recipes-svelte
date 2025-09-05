@@ -31,10 +31,10 @@ const sectionSchema = z.object({
 
 export const recipeSchema = z.object({
     id: z.nullable(z.number()), // nullable not great; hack for edit-mode
-    name: z.string(),
+    name: z.string().min(1),
     yield: z.object({
-        quantity: z.number().default(1),
-        unit: z.string().default("hlö")
+        quantity: z.number().positive().default(1),
+        unit: z.string().min(1).default("hlö")
     }),
     source: z.string(),
     method: z.string(),
@@ -42,4 +42,3 @@ export const recipeSchema = z.object({
     tags: z.array(z.string()),
     sections: z.array(sectionSchema).default([defaultSection])
 })
-

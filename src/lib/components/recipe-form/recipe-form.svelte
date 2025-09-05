@@ -90,6 +90,7 @@
 </script>
 
 <form method="POST" use:enhance>
+	<input type="hidden" bind:value={$formData.id} />
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
