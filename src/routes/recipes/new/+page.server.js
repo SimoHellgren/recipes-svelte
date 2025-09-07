@@ -5,7 +5,7 @@ import { fail, redirect } from "@sveltejs/kit";
 import { supabase } from "$lib/supabaseClient";
 import { getOrCreateIngredients } from "$lib/db";
 
-export const load = async () => {
+export const load = async ({ depends, locals: { supabase } }) => {
     return {
         form: await superValidate(zod(recipeSchema)),
     };
