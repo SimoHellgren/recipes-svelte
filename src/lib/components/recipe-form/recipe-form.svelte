@@ -222,7 +222,11 @@
 		<Form.Control>
 			{#snippet children({ props })}
 				<Form.Label>Askelet</Form.Label>
-				<MarkdownInput {...props} bind:value={$formData.method} placholder="Kokeile *muotoiluja*" />
+				<MarkdownInput
+					{...props}
+					bind:value={$formData.method}
+					placeholder="Kokeile *muotoiluja*"
+				/>
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
