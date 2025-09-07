@@ -110,7 +110,7 @@ export const actions = {
         const ingredients = form.data.sections.map(s => s.ingredients).flat()
 
         // Get / Create ingredients
-        const allIngredients = await getOrCreateIngredients(ingredients)
+        const allIngredients = await getOrCreateIngredients(supabase, ingredients)
 
         // delete assembly rows
         const assemblyIds = ingredients.map(i => i.id).filter(i => i) // no nulls

@@ -1,7 +1,5 @@
-import { supabase } from "$lib/supabaseClient";
 
-
-export const getOrCreateIngredients = async (ingredients) => {
+export const getOrCreateIngredients = async (supabase, ingredients) => {
     //ingredients shall have names
 
     // check which rows exist
