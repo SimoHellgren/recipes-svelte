@@ -2,7 +2,6 @@ import { superValidate } from "sveltekit-superforms";
 import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { fail, redirect } from "@sveltejs/kit";
-import { supabase } from "$lib/supabaseClient";
 import { getOrCreateIngredients } from "$lib/db";
 
 export const load = async ({ depends, locals: { supabase } }) => {
@@ -16,12 +15,13 @@ export const actions = {
     default: async (event) => {
         const form = await superValidate(event, zod(recipeSchema));
 
+        const { locals: { supabase } } = event;
+
         if (!form.valid) {
             return fail(400, {
                 form,
             });
         }
-
 
         // add recipe
         const { data: recipe, error: recipeError } = await supabase.from("recipe").insert({

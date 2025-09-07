@@ -24,6 +24,8 @@
 
 	const { form: formData, enhance, errors } = form;
 
+	// $inspect($errors);
+
 	const newIngredient = { id: null, name: null, quantity: null, unit: null };
 	const newSection = { id: null, name: null, ingredients: [newIngredient] };
 
