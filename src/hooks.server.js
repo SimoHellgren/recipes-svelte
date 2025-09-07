@@ -66,7 +66,15 @@ const authGuard = async ({ event, resolve }) => {
     event.locals.session = session
     event.locals.user = user
 
-    if (!event.locals.session && event.url.pathname.startsWith('/recipes/new')) {
+    const path = event.url.pathname;
+
+    // new recipe page
+    if (!event.locals.session && path.startsWith('/recipes/new')) {
+        redirect(303, '/auth')
+    }
+
+    // edit pages
+    if (!event.locals.session && path.startsWith('/recipes') && path.endsWith("edit")) {
         redirect(303, '/auth')
     }
 
