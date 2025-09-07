@@ -7,7 +7,7 @@
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import { Description } from 'formsnap';
-	import { formSchema } from './schema';
+	import { recipeSchema } from './schema';
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import Button from '$lib/components/ui/button/button.svelte';
@@ -18,14 +18,16 @@
 	let { data } = $props();
 
 	const form = superForm(data.form, {
-		validators: zodClient(formSchema),
+		validators: zodClient(recipeSchema),
 		dataType: 'json'
 	});
 
-	const { form: formData, enhance } = form;
+	const { form: formData, enhance, errors } = form;
 
-	const newIngredient = { name: null, quantity: null, unit: null };
-	const newSection = { name: null, ingredients: [newIngredient] };
+	// $inspect($errors);
+
+	const newIngredient = { id: null, name: null, quantity: null, unit: null };
+	const newSection = { id: null, name: null, ingredients: [newIngredient] };
 
 	const addSection = () => {
 		$formData.sections = [...$formData.sections, newSection];
@@ -84,27 +86,25 @@
 	// 	}
 	// });
 
-	$inspect($formData.sections).with((type, value) => {
-		console.table(value);
-	});
+	// $inspect($formData.sections).with((type, value) => {
+	// 	console.table(value);
+	// });
 </script>
 
 <form method="POST" use:enhance>
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Recipe name</Form.Label>
+				<Form.Label>Nimi</Form.Label>
 				<Input {...props} bind:value={$formData.name} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>Name of the recipe</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
 	<Form.Field {form} name="tags">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Tags</Form.Label>
-				<Form.Description>Tagges</Form.Description>
+				<Form.Label>Hipat</Form.Label>
 				<TagsInput {...props} bind:value={$formData.tags} />
 			{/snippet}
 		</Form.Control>
@@ -113,29 +113,26 @@
 	<Form.Field {form} name="source">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Source</Form.Label>
+				<Form.Label>Alkuperä</Form.Label>
 				<Input {...props} bind:value={$formData.source} />
 			{/snippet}
 		</Form.Control>
-		<Form.Description>Source of the recipe</Form.Description>
 		<Form.FieldErrors />
 	</Form.Field>
-
-	<Form.Fieldset {form} name="servings">
+	<Form.Fieldset {form} name="yield" class="grid auto-cols-max grid-flow-col gap-2">
 		<Form.Legend>Riitto</Form.Legend>
-		<Form.Description>How plenty is the thing?</Form.Description>
-		<Form.Field {form} name="servings.quantity">
+		<Form.Field {form} name="yield.quantity">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input type="number" {...props} bind:value={$formData.servings.quantity} />
+					<Input type="number" {...props} bind:value={$formData.yield.quantity} />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
 		</Form.Field>
-		<Form.Field {form} name="servings.unit">
+		<Form.Field {form} name="yield.unit">
 			<Form.Control>
 				{#snippet children({ props })}
-					<Input {...props} bind:value={$formData.servings.unit} />
+					<Input {...props} bind:value={$formData.yield.unit} />
 				{/snippet}
 			</Form.Control>
 			<Form.FieldErrors />
@@ -143,14 +140,17 @@
 	</Form.Fieldset>
 
 	<Form.Fieldset {form} name="sections">
-		<Form.Legend>Recipe sections</Form.Legend>
+		<Form.Legend>Osiot & ainehet</Form.Legend>
 		{#each $formData.sections as section, i}
+			<input type="hidden" bind:value={$formData.sections[i].id} />
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="flex flex-row">
-							<Button variant="ghost" onclick={() => sectionUp(i)}><UpIcon /></Button>
-							<Button variant="ghost" onclick={() => sectionDown(i)}><DownIcon /></Button>
+							<Button variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"><UpIcon /></Button>
+							<Button variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
+								><DownIcon /></Button
+							>
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
@@ -161,11 +161,14 @@
 						</div>
 
 						{#each section.ingredients as ingredient, j}
+							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
 							<div class="flex flex-row">
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
 									<div class="flex flex-row">
-										<Button variant="ghost" onclick={() => ingredientUp(i, j)}><UpIcon /></Button>
-										<Button variant="ghost" onclick={() => ingredientDown(i, j)}
+										<Button variant="ghost" onclick={() => ingredientUp(i, j)} tabindex="-1"
+											><UpIcon /></Button
+										>
+										<Button variant="ghost" onclick={() => ingredientDown(i, j)} tabindex="-1"
 											><DownIcon /></Button
 										>
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
@@ -187,6 +190,7 @@
 														{...props}
 														bind:value={$formData.sections[i].ingredients[j].quantity}
 														placeholder="1"
+														step="any"
 													/>
 												{/snippet}
 											</Form.Control>
@@ -207,21 +211,24 @@
 								<RemoveButton removefunc={() => removeIngredient(i, j)} />
 							</div>
 						{/each}
-						<Button onclick={() => addIngredient(i)}>Add Ingredient</Button>
+						<Button onclick={() => addIngredient(i)}>Lisää aines</Button>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
 		{/each}
 		<Form.FieldErrors />
-		<Button onclick={addSection}>Add section</Button>
+		<Button onclick={addSection}>Lisää osio</Button>
 	</Form.Fieldset>
 
 	<Form.Field {form} name="method">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Method</Form.Label>
-				<Form.Description>One step per row. Supports markdown!</Form.Description>
-				<MarkdownInput {...props} bind:value={$formData.method} />
+				<Form.Label>Askelet</Form.Label>
+				<MarkdownInput
+					{...props}
+					bind:value={$formData.method}
+					placeholder="Kokeile *muotoiluja*"
+				/>
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />
@@ -230,9 +237,12 @@
 	<Form.Field {form} name="notes">
 		<Form.Control>
 			{#snippet children({ props })}
-				<Form.Label>Notes</Form.Label>
-				<Form.Description>One note per row. Supports markdown!</Form.Description>
-				<MarkdownInput {...props} bind:value={$formData.notes} />
+				<Form.Label>Liirum laarum</Form.Label>
+				<MarkdownInput
+					{...props}
+					bind:value={$formData.notes}
+					placeholder="Täälläkin voi **muotoilla**"
+				/>
 			{/snippet}
 		</Form.Control>
 		<Form.FieldErrors />

@@ -2,17 +2,18 @@
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
+	import EditIcon from '@lucide/svelte/icons/pencil';
 
 	let { data } = $props();
 
-	const original_qty = data.yield_quantity;
+	const original_qty = data.recipe.yield_quantity;
 	let scaled_quantity = $state(original_qty);
 
-	let recipe = $derived.by(() => {
+	let scaledRecipe = $derived.by(() => {
 		let r = {
-			...data,
+			...data.recipe,
 			yield_quantity: scaled_quantity,
-			section: data.section.map((s) => ({
+			section: data.recipe.section.map((s) => ({
 				...s,
 				assembly: s.assembly.map((i) => ({
 					...i,
@@ -26,21 +27,24 @@
 </script>
 
 <header class="flex gap-x-2 text-center align-middle">
-	<h1 class="text-2xl font-bold">{recipe.name}</h1>
-	{#each recipe.tags as tag}
+	<h1 class="text-2xl font-bold">{scaledRecipe.name}</h1>
+	{#each scaledRecipe.tags as tag}
 		<Badge variant="secondary">
 			{tag}
 		</Badge>
 	{/each}
+	<a href="/recipes/{data.id}/edit">
+		<EditIcon />
+	</a>
 </header>
 
 <div class="flex flex-col gap-y-3 py-2">
 	<p>
 		<b>Alkuperä</b>:
-		{#if recipe.source && recipe.source.startsWith('http')}
-			<a href={recipe.source}>{recipe.source}</a>
+		{#if scaledRecipe.source && scaledRecipe.source.startsWith('http')}
+			<a href={scaledRecipe.source}>{scaledRecipe.source}</a>
 		{:else}
-			{recipe.source}
+			{scaledRecipe.source}
 		{/if}
 	</p>
 
@@ -48,14 +52,14 @@
 		<span>
 			<b>Riitto:</b>
 			<input class="w-10" type="number" step="0.5" min="0" bind:value={scaled_quantity} />
-			{recipe.yield_unit}
+			{scaledRecipe.yield_unit}
 		</span>
 	</div>
 </div>
-{#if recipe.notes}
+{#if scaledRecipe.notes}
 	<section class="liirumlaarum">
 		<h3 class="text-lg font-medium">Liirum laarum</h3>
-		{#each recipe.notes as note}
+		{#each scaledRecipe.notes as note}
 			<p>{note}</p>
 		{/each}
 	</section>
@@ -65,7 +69,7 @@
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Ainehet</h2>
 		<ul class="space-y-2.5">
-			{#each recipe.section as section}
+			{#each scaledRecipe.section as section}
 				{#if section.name}
 					<div class="font-bold">{section.name}</div>
 				{/if}
@@ -87,7 +91,7 @@
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Tee näin</h2>
 		<ol class="space-y-2.5">
-			{#each recipe.method as step}
+			{#each scaledRecipe.method as step}
 				<li>
 					<Label
 						class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"

@@ -15,6 +15,6 @@
 		<Textarea bind:this={ref} bind:value class {...restProps} />
 	</Tabs.Content>
 	<Tabs.Content value="preview">
-		{@html marked(value)}
+		{@html marked(value || '')}
 	</Tabs.Content>
 </Tabs.Root>
