@@ -99,7 +99,7 @@
 				<Table.Cell>
 					<Button
 						variant="outline"
-						class={cn(inCart && 'text-destructive')}
+						class={cn(inCart && 'border-destructive/10 text-destructive hover:text-destructive')}
 						onclick={inCart ? () => removeFromCart(recipe.id) : () => addToCart(recipe)}
 					>
 						{#if inCart}
