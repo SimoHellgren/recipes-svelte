@@ -7,6 +7,9 @@
 	import { Body } from '$lib/components/ui/table/index.js';
 	import * as Table from '$lib/components/ui/table';
 	import { getCartState } from '$lib/state.svelte';
+	import ShoppingBasketIcon from '@lucide/svelte/icons/shopping-basket';
+	import XIcon from '@lucide/svelte/icons/x';
+	import { cn } from '$lib/utils.js';
 
 	let { data } = $props();
 	let { recipes } = data;
@@ -39,6 +42,10 @@
 	function addToCart(recipe) {
 		cart.items.push(recipe);
 	}
+
+	function removeFromCart(recipe_id) {
+		cart.items = cart.items.filter((i) => i.id !== recipe_id);
+	}
 </script>
 
 <svelte:window on:keydown={jumpToSearch} />
@@ -65,7 +72,15 @@
 	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<Table.Root>
+<Table.Root class="w-auto">
+	<Table.Header>
+		<Table.Row>
+			<Table.Head></Table.Head>
+			<Table.Head>Resepti</Table.Head>
+			<Table.Head>Hipat</Table.Head>
+			<Table.Head>Kori?</Table.Head>
+		</Table.Row>
+	</Table.Header>
 	<Table.Body>
 		{#each selectedRecipes as recipe}
 			{@const inCart = cartIds.includes(recipe.id)}
@@ -82,9 +97,17 @@
 					{/each}
 				</Table.Cell>
 				<Table.Cell>
-					<Button onclick={() => addToCart(recipe)} disabled={inCart}
-						>{inCart ? 'Korissa!' : 'Koriin'}</Button
+					<Button
+						variant="outline"
+						class={cn(inCart && 'text-destructive')}
+						onclick={inCart ? () => removeFromCart(recipe.id) : () => addToCart(recipe)}
 					>
+						{#if inCart}
+							<XIcon />
+						{:else}
+							<ShoppingBasketIcon />
+						{/if}
+					</Button>
 				</Table.Cell>
 			</Table.Row>
 		{/each}
