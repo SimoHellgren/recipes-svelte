@@ -27,7 +27,7 @@
 </div>
 
 <h1>Ostoslista</h1>
-{#each Object.entries(grouped) as [group, items]}
+{#each Object.entries(grouped).toSorted() as [group, items]}
 	<details>
 		<summary>
 			{group}:
