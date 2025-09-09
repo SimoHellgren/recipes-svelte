@@ -11,7 +11,9 @@
 
 	const recipesInCart = $derived(cart.items.map((x) => x.id));
 	const chosen = $derived(ingredients.filter((i) => recipesInCart.includes(i.recipe_id)));
-	const grouped = $derived(Object.groupBy(chosen, ({ ingredient, unit }) => [ingredient, unit]));
+	const grouped = $derived(
+		Object.groupBy(chosen, ({ ingredient, unit }) => `${ingredient} (${unit})`)
+	);
 
 	const emptyCart = () => {
 		cart.name = null;
