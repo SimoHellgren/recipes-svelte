@@ -78,7 +78,7 @@
 			<Table.Head></Table.Head>
 			<Table.Head>Resepti</Table.Head>
 			<Table.Head>Hipat</Table.Head>
-			<Table.Head>Kori?</Table.Head>
+			<Table.Head>Koriin?</Table.Head>
 		</Table.Row>
 	</Table.Header>
 	<Table.Body>
