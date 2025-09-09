@@ -1,6 +1,7 @@
 <script>
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
+	import DatePicker from '$lib/components/date-picker.svelte';
 	import { getCartState } from '$lib/state.svelte';
 
 	const { data } = $props();
@@ -19,11 +20,13 @@
 	};
 </script>
 
-<Input bind:value={cart.name} placeholder="(nimetön ostoskori)" />
+<div class="grid-col grid gap-2">
+	<Input bind:value={cart.name} placeholder="(nimetön ostoskori)" />
+	<DatePicker bind:value={cart.date} />
+	<Button onclick={emptyCart}>Tyhjennä kori</Button>
+</div>
 
-<Input bind:value={cart.date} placeholder="vvvv-kk-pp" />
-<Button onclick={emptyCart}>Tyhjennä</Button>
-
+<h1>Ostoslista</h1>
 {#each Object.entries(grouped) as [group, items]}
 	<details>
 		<summary>
