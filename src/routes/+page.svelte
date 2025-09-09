@@ -6,8 +6,13 @@
 	import Label from '$lib/components/ui/label/label.svelte';
 	import { Body } from '$lib/components/ui/table/index.js';
 	import * as Table from '$lib/components/ui/table';
+	import { getCartState } from '$lib/state.svelte';
+
 	let { data } = $props();
 	let { recipes } = data;
+	let cart = getCartState();
+
+	let cartIds = $derived(cart.items.map((x) => x.id));
 
 	//filters
 	let searchString = $state('');
@@ -28,6 +33,11 @@
 			event.preventDefault();
 			document.getElementById('search').focus();
 		}
+	}
+
+	// cart
+	function addToCart(recipe) {
+		cart.items.push(recipe);
 	}
 </script>
 
@@ -58,6 +68,7 @@
 <Table.Root>
 	<Table.Body>
 		{#each selectedRecipes as recipe}
+			{@const inCart = cartIds.includes(recipe.id)}
 			<Table.Row>
 				<Table.Cell class="w-1 text-2xl text-amber-400 text-shadow-black text-shadow-xs">
 					{recipe.tags.includes('mvp') ? '★' : null}
@@ -69,6 +80,11 @@
 					{#each recipe.tags as tag}
 						<Badge variant="secondary">{tag}</Badge>
 					{/each}
+				</Table.Cell>
+				<Table.Cell>
+					<Button onclick={() => addToCart(recipe)} disabled={inCart}
+						>{inCart ? 'Korissa!' : 'Koriin'}</Button
+					>
 				</Table.Cell>
 			</Table.Row>
 		{/each}

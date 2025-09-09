@@ -4,9 +4,13 @@
 	import '../app.css';
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { setCartState } from '$lib/state.svelte';
 
 	let { data, children } = $props();
 	let { session, supabase } = $derived(data);
+
+	// test global state
+	setCartState();
 
 	// users supabase.auth.getUser() behind the scenes, so should be safe.
 	// also, this is just to display the email, not to verify sessions
