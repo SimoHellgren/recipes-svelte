@@ -3,10 +3,11 @@
 	import Label from '$lib/components/ui/label/label.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
 	import DatePicker from '$lib/components/date-picker.svelte';
+	import XIcon from '@lucide/svelte/icons/x';
 	import { getCartState } from '$lib/state.svelte';
 
 	const { data } = $props();
-	const cart = getCartState();
+	let cart = getCartState();
 
 	const { ingredients } = data;
 
@@ -39,6 +40,10 @@
 		Object.groupBy(scaledIngredients, ({ ingredient, unit }) => `${ingredient} (${unit})`)
 	);
 
+	function removeFromCart(recipe_id) {
+		cart.items = cart.items.filter((item) => item.id !== recipe_id);
+	}
+
 	const emptyCart = () => {
 		cart.name = null;
 		cart.date = null;
@@ -59,6 +64,13 @@
 			<Input type="number" step="any" bind:value={scales[recipe.id]} />
 			{recipe.yield_unit}
 		</Label>
+		<Button
+			variant="outline"
+			class="border-destructive/10 text-destructive hover:text-destructive"
+			onclick={() => removeFromCart(recipe.id)}
+		>
+			<XIcon />
+		</Button>
 	{/each}
 </div>
 
