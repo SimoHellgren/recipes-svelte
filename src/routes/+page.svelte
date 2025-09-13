@@ -37,15 +37,6 @@
 			document.getElementById('search').focus();
 		}
 	}
-
-	// cart
-	function addToCart(recipe) {
-		cart.items.push(recipe);
-	}
-
-	function removeFromCart(recipe_id) {
-		cart.items = cart.items.filter((i) => i.id !== recipe_id);
-	}
 </script>
 
 <svelte:window on:keydown={jumpToSearch} />
@@ -100,7 +91,7 @@
 					<Button
 						variant="outline"
 						class={cn(inCart && 'border-destructive/10 text-destructive hover:text-destructive')}
-						onclick={inCart ? () => removeFromCart(recipe.id) : () => addToCart(recipe)}
+						onclick={inCart ? () => cart.remove(recipe) : () => cart.add(recipe)}
 					>
 						{#if inCart}
 							<XIcon />
