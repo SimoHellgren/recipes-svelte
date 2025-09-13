@@ -1,10 +1,25 @@
 <script>
 	import Badge from '$lib/components/ui/badge/badge.svelte';
+	import Button from '$lib/components/ui/button/button.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
+	import { getCartState } from '$lib/state.svelte.js';
 	import EditIcon from '@lucide/svelte/icons/pencil';
 
 	let { data } = $props();
+	let { recipe } = data;
+
+	let cart = getCartState();
+
+	let inCart = $derived(cart.includes(recipe));
+
+	const toggleCart = () => {
+		if (!cart.includes(recipe)) {
+			cart.add(recipe);
+		} else {
+			cart.remove(recipe);
+		}
+	};
 
 	const original_qty = data.recipe.yield_quantity;
 	let scaled_quantity = $state(original_qty);
@@ -36,6 +51,8 @@
 	<a href="/recipes/{data.id}/edit">
 		<EditIcon />
 	</a>
+
+	<Button onclick={toggleCart}>{inCart ? 'Poista korista' : 'Lisää koriin'}</Button>
 </header>
 
 <div class="flex flex-col gap-y-3 py-2">

@@ -7,6 +7,18 @@ class Cart {
     name = $state(null);
     date = $state()
     items = $state([])
+
+    add(item) {
+        this.items.push(item)
+    }
+
+    remove(item) {
+        this.items = this.items.filter(i => i.id !== item.id)
+    }
+
+    includes(item) {
+        return this.items.map(i => i.id).includes(item.id)
+    }
 }
 
 export function setCartState() {
