@@ -60,7 +60,7 @@
 			<div class="grid grid-cols-2 items-center justify-start gap-2">
 				<Label class="item-center flex">
 					<span class="w-32">{recipe.name}</span>
-					<Input class="w-14" type="number" step="any" bind:value={scales[recipe.id]} />
+					<Input class="w-14" type="number" min="0" step="any" bind:value={scales[recipe.id]} />
 					<span class="w-12">{recipe.yield_unit}</span>
 				</Label>
 
