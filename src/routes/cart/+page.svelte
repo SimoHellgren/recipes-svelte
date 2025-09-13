@@ -51,44 +51,51 @@
 	};
 </script>
 
-<div class="grid-col grid gap-2">
-	<Input bind:value={cart.name} placeholder="(nimetön ostoskori)" />
+<div class="grid-col grid justify-items-start gap-6">
+	<Input class="w-[200px]" bind:value={cart.name} placeholder="(nimetön ostoskori)" />
 	<DatePicker bind:value={cart.date} />
-	<Button onclick={emptyCart}>Tyhjennä kori</Button>
-</div>
 
-<div class="grid grid-rows-1">
-	{#each recipes as recipe, i}
-		<Label>
-			{recipe.name}
-			<Input type="number" step="any" bind:value={scales[recipe.id]} />
-			{recipe.yield_unit}
-		</Label>
-		<Button
-			variant="outline"
-			class="border-destructive/10 text-destructive hover:text-destructive"
-			onclick={() => removeFromCart(recipe.id)}
-		>
-			<XIcon />
-		</Button>
-	{/each}
-</div>
+	<div class="flex flex-col space-y-1">
+		{#each recipes as recipe, i}
+			<div class="grid grid-cols-2 items-center justify-start gap-2">
+				<Label class="item-center flex">
+					<span class="w-32">{recipe.name}</span>
+					<Input class="w-14" type="number" step="any" bind:value={scales[recipe.id]} />
+					<span class="w-12">{recipe.yield_unit}</span>
+				</Label>
 
-<h1>Ostoslista</h1>
-{#each Object.entries(grouped).toSorted() as [group, items]}
-	<details>
-		<summary>
-			{group}:
-			{items.map((i) => i.quantity).reduce((a, b) => a + b)}
-		</summary>
-		<ul>
-			{#each items as item}
-				<li>
-					{item.recipe_name}
-					{item.quantity}
-					{item.unit}
-				</li>
-			{/each}
-		</ul>
-	</details>
-{/each}
+				<Button
+					variant="ghost"
+					class="h-5 w-5 hover:text-destructive"
+					onclick={() => removeFromCart(recipe.id)}
+				>
+					<XIcon />
+				</Button>
+			</div>
+		{/each}
+	</div>
+
+	<h1 class="text-2xl">Ostoslista</h1>
+	<ul>
+		{#each Object.entries(grouped).toSorted() as [group, items]}
+			<li class="grid-col grid gap-2">
+				<details>
+					<summary>
+						{group}:
+						{items.map((i) => i.quantity).reduce((a, b) => a + b)}
+					</summary>
+					<ul>
+						{#each items as item}
+							<li>
+								{item.recipe_name}
+								{item.quantity}
+								{item.unit}
+							</li>
+						{/each}
+					</ul>
+				</details>
+			</li>
+		{/each}
+	</ul>
+	<Button class="w-s" onclick={emptyCart}>Tyhjennä kori</Button>
+</div>
