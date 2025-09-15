@@ -1,4 +1,5 @@
 <script>
+	import * as Accordion from '$lib/components/ui/accordion/index.js';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import Input from '$lib/components/ui/input/input.svelte';
@@ -76,14 +77,14 @@
 	</div>
 
 	<h1 class="text-2xl">Ostoslista</h1>
-	<ul>
+	<Accordion.Root>
 		{#each Object.entries(grouped).toSorted() as [group, items]}
-			<li class="grid-col grid gap-2">
-				<details>
-					<summary>
-						{group}:
-						{items.map((i) => i.quantity).reduce((a, b) => a + b)}
-					</summary>
+			<Accordion.Item>
+				<Accordion.Trigger>
+					{group}:
+					{items.map((i) => i.quantity).reduce((a, b) => a + b)}
+				</Accordion.Trigger>
+				<Accordion.Content>
 					<ul>
 						{#each items as item}
 							<li>
@@ -93,9 +94,9 @@
 							</li>
 						{/each}
 					</ul>
-				</details>
-			</li>
+				</Accordion.Content>
+			</Accordion.Item>
 		{/each}
-	</ul>
+	</Accordion.Root>
 	<Button class="w-s" onclick={emptyCart}>Tyhjennä kori</Button>
 </div>
