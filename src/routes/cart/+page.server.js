@@ -1,5 +1,9 @@
 import { getCartState } from "$lib/state.svelte"
 
+import { superValidate } from "sveltekit-superforms";
+import { zod } from "sveltekit-superforms/adapters";
+import { cartSchema } from "./cartSchema";
+
 export async function load({ parent, locals: { supabase } }) {
     // TODO: filter these to avoid loading everything every time
     const { data, error } = await supabase
@@ -19,5 +23,10 @@ export async function load({ parent, locals: { supabase } }) {
             }))
         ).flat()).flat()
 
-    return { ingredients }
+
+    // TODO: populate with the actual data
+    const form = await superValidate(zod(cartSchema));
+
+    console.log(form)
+    return { ingredients, form }
 }
