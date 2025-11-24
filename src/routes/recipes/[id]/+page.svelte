@@ -1,8 +1,10 @@
 <script>
+	import * as Popover from '$lib/components/ui/popover/index.js';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import EditIcon from '@lucide/svelte/icons/pencil';
+	import CommentIcon from '@lucide/svelte/icons/message-square-more';
 
 	let { data } = $props();
 
@@ -93,6 +95,13 @@
 							{item.ingredient.name}
 							{item.quantity}
 							{item.unit}
+
+							{#if item.comment}
+								<Popover.Root>
+									<Popover.Trigger><CommentIcon size="18" /></Popover.Trigger>
+									<Popover.Content class="text-sm">{item.comment}</Popover.Content>
+								</Popover.Root>
+							{/if}
 						</Label>
 					</li>
 				{/each}
