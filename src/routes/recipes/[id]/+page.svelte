@@ -24,6 +24,14 @@
 
 		return r;
 	});
+
+	let hasOptionals = $derived(
+		scaledRecipe.section
+			.map((s) => s.assembly)
+			.flat()
+			.map((a) => a.optional)
+			.some(Boolean)
+	);
 </script>
 
 <header class="flex gap-x-2 text-center align-middle">
@@ -79,6 +87,9 @@
 							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
 						>
 							<Checkbox />
+							{#if item.optional}
+								*
+							{/if}
 							{item.ingredient.name}
 							{item.quantity}
 							{item.unit}
@@ -87,6 +98,11 @@
 				{/each}
 			{/each}
 		</ul>
+
+		{#if hasOptionals}
+			<br />
+			<i class="text-sm">* valinnainen</i>
+		{/if}
 	</section>
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Tee näin</h2>
