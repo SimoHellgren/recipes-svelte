@@ -3,6 +3,7 @@
 	import CookingPotIcon from '@lucide/svelte/icons/cooking-pot';
 	import PlusIcon from '@lucide/svelte/icons/file-plus-2';
 	import ShoppingBasketIcon from '@lucide/svelte/icons/shopping-basket';
+	import CarrotIcon from '@lucide/svelte/icons/carrot';
 	import LoginIcon from '@lucide/svelte/icons/log-in';
 	import LogoutIcon from '@lucide/svelte/icons/log-out';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
@@ -26,7 +27,8 @@
 		{ title: 'Reseptit', url: '/', icon: CookingPotIcon },
 		{ title: 'Uusi', url: '/recipes/new/', icon: PlusIcon },
 		{ title: 'Suunnittelu', url: '#plan', icon: CalendarIcon },
-		{ title: 'Ostoskori', url: '#basket', icon: ShoppingBasketIcon }
+		{ title: 'Ostoskori', url: '#basket', icon: ShoppingBasketIcon },
+		{ title: 'Ainesten hallinta', url: '/ingredients', icon: CarrotIcon }
 	];
 </script>
 
