@@ -199,6 +199,7 @@
 														bind:value={$formData.sections[i].ingredients[j].quantity}
 														placeholder="1"
 														step="any"
+														class="w-20"
 													/>
 												{/snippet}
 											</Form.Control>
@@ -210,6 +211,7 @@
 														{...props}
 														bind:value={$formData.sections[i].ingredients[j].unit}
 														placeholder="kpl"
+														class="w-32"
 													/>
 												{/snippet}
 											</Form.Control>
