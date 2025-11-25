@@ -154,31 +154,44 @@
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
-						<div class="flex flex-row">
-							<Button variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"><UpIcon /></Button>
-							<Button variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
-								><DownIcon /></Button
-							>
+						<div class="flex">
+							<div class="flex">
+								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"
+									><UpIcon /></Button
+								>
+								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
+									><DownIcon /></Button
+								>
+							</div>
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
 								bind:value={$formData.sections[i].name}
 								placeholder="(nimetön osio)"
+								class="w-md"
 							/>
 							<RemoveButton removefunc={() => removeSection(i)} />
 						</div>
 
 						{#each section.ingredients as ingredient, j}
 							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
-							<div class="flex flex-row">
+							<div class="flex gap-x-2">
+								<div class="flex">
+									<Button
+										class="h-7 w-7"
+										variant="ghost"
+										onclick={() => ingredientUp(i, j)}
+										tabindex="-1"><UpIcon /></Button
+									>
+									<Button
+										class="h-7 w-7"
+										variant="ghost"
+										onclick={() => ingredientDown(i, j)}
+										tabindex="-1"><DownIcon /></Button
+									>
+								</div>
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
-									<div class="flex flex-row">
-										<Button variant="ghost" onclick={() => ingredientUp(i, j)} tabindex="-1"
-											><UpIcon /></Button
-										>
-										<Button variant="ghost" onclick={() => ingredientDown(i, j)} tabindex="-1"
-											><DownIcon /></Button
-										>
+									<div class="flex">
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
 											<Form.Control>
 												{#snippet children({ props })}
@@ -217,7 +230,7 @@
 											</Form.Control>
 										</Form.ElementField>
 										<Popover.Root>
-											<Popover.Trigger class="hover:bg-accent">
+											<Popover.Trigger class="ml-2 hover:bg-accent">
 												{@const extras = ingredient.optional || ingredient.comment}
 												<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
 											</Popover.Trigger>
@@ -255,7 +268,7 @@
 										</Popover.Root>
 									</div>
 								</Form.Fieldset>
-								<RemoveButton removefunc={() => removeIngredient(i, j)} />
+								<RemoveButton class="ml-auto" removefunc={() => removeIngredient(i, j)} />
 							</div>
 						{/each}
 						<Button onclick={() => addIngredient(i)}>Lisää aines</Button>
