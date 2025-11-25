@@ -18,6 +18,7 @@
 	import * as Popover from '$lib/components/ui/popover/index.js';
 	import Checkbox from '../ui/checkbox/checkbox.svelte';
 	import Textarea from '../ui/textarea/textarea.svelte';
+	import Separator from '../ui/separator/separator.svelte';
 	let { data } = $props();
 
 	const form = superForm(data.form, {
@@ -218,7 +219,7 @@
 												{@const extras = ingredient.optional || ingredient.comment}
 												<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
 											</Popover.Trigger>
-											<Popover.Content>
+											<Popover.Content class="flex flex-col gap-y-2">
 												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].optional">
 													<Label>
 														Valinnainen
@@ -232,16 +233,21 @@
 														</Form.Control>
 													</Label>
 												</Form.ElementField>
+												<Separator />
 												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].comment">
-													<Form.Control>
-														{#snippet children({ props })}
-															<Textarea
-																placeholder="kommentti"
-																{...props}
-																bind:value={$formData.sections[i].ingredients[j].comment}
-															/>
-														{/snippet}
-													</Form.Control>
+													<Label class="flex flex-col items-start text-left">
+														Nuotit
+														<Form.Control>
+															{#snippet children({ props })}
+																<Textarea
+																	placeholder="kommentti"
+																	{...props}
+																	bind:value={$formData.sections[i].ingredients[j].comment}
+																	class="font-normal"
+																/>
+															{/snippet}
+														</Form.Control>
+													</Label>
 												</Form.ElementField>
 											</Popover.Content>
 										</Popover.Root>
