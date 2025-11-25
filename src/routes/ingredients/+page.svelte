@@ -1,7 +1,8 @@
 <script>
 	let { data } = $props();
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-	import { MergeIcon } from '@lucide/svelte/icons/merge';
+	import Input from '$lib/components/ui/input/input.svelte';
+	import MergeIcon from '@lucide/svelte/icons/merge';
 </script>
 
 <ul>
@@ -10,13 +11,15 @@
 			{ingredient.name}
 
 			<Dialog.Root>
-				<Dialog.Trigger><MergeIcon /></Dialog.Trigger>
+				<Dialog.Trigger>
+					<MergeIcon size={12} />
+				</Dialog.Trigger>
 				<Dialog.Content>
 					<Dialog.Header>
 						<Dialog.Title>Are you sure absolutely sure?</Dialog.Title>
 						<Dialog.Description>
-							This action cannot be undone. This will permanently delete your account and remove
-							your data from our servers.
+							Valitse aines
+							<Input />
 						</Dialog.Description>
 					</Dialog.Header>
 				</Dialog.Content>
