@@ -13,8 +13,12 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import UpIcon from '@lucide/svelte/icons/chevron-up';
 	import DownIcon from '@lucide/svelte/icons/chevron-down';
+	import Ellipsis from '@lucide/svelte/icons/ellipsis';
 	import { arrayMove } from '@dnd-kit-svelte/sortable';
-
+	import * as Popover from '$lib/components/ui/popover/index.js';
+	import Checkbox from '../ui/checkbox/checkbox.svelte';
+	import Textarea from '../ui/textarea/textarea.svelte';
+	import Separator from '../ui/separator/separator.svelte';
 	let { data } = $props();
 
 	const form = superForm(data.form, {
@@ -60,6 +64,8 @@
 	};
 
 	const ingredientUp = (sectionIndex, ingredientIndex) => {
+		if (ingredientIndex <= 0) return; // prevent cycling the list
+
 		$formData.sections[sectionIndex].ingredients = arrayMove(
 			$formData.sections[sectionIndex].ingredients,
 			ingredientIndex,
@@ -87,6 +93,10 @@
 	// });
 
 	// $inspect($formData.sections).with((type, value) => {
+	// 	console.table(value);
+	// });
+
+	// $inspect($formData.sections.map((s) => s.ingredients).flat()).with((type, value) => {
 	// 	console.table(value);
 	// });
 </script>
@@ -146,31 +156,44 @@
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
 					{#snippet children({ props })}
-						<div class="flex flex-row">
-							<Button variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"><UpIcon /></Button>
-							<Button variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
-								><DownIcon /></Button
-							>
+						<div class="flex">
+							<div class="flex">
+								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"
+									><UpIcon /></Button
+								>
+								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
+									><DownIcon /></Button
+								>
+							</div>
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
 								bind:value={$formData.sections[i].name}
 								placeholder="(nimetön osio)"
+								class="w-md"
 							/>
 							<RemoveButton removefunc={() => removeSection(i)} />
 						</div>
 
 						{#each section.ingredients as ingredient, j}
 							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
-							<div class="flex flex-row">
+							<div class="flex gap-x-2">
+								<div class="flex">
+									<Button
+										class="h-7 w-7"
+										variant="ghost"
+										onclick={() => ingredientUp(i, j)}
+										tabindex="-1"><UpIcon /></Button
+									>
+									<Button
+										class="h-7 w-7"
+										variant="ghost"
+										onclick={() => ingredientDown(i, j)}
+										tabindex="-1"><DownIcon /></Button
+									>
+								</div>
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
-									<div class="flex flex-row">
-										<Button variant="ghost" onclick={() => ingredientUp(i, j)} tabindex="-1"
-											><UpIcon /></Button
-										>
-										<Button variant="ghost" onclick={() => ingredientDown(i, j)} tabindex="-1"
-											><DownIcon /></Button
-										>
+									<div class="flex">
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
 											<Form.Control>
 												{#snippet children({ props })}
@@ -191,6 +214,7 @@
 														bind:value={$formData.sections[i].ingredients[j].quantity}
 														placeholder="1"
 														step="any"
+														class="w-20"
 													/>
 												{/snippet}
 											</Form.Control>
@@ -202,13 +226,51 @@
 														{...props}
 														bind:value={$formData.sections[i].ingredients[j].unit}
 														placeholder="kpl"
+														class="w-32"
 													/>
 												{/snippet}
 											</Form.Control>
 										</Form.ElementField>
+										<Popover.Root>
+											<Popover.Trigger class="ml-2 hover:bg-accent">
+												{@const extras = ingredient.optional || ingredient.comment}
+												<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
+											</Popover.Trigger>
+											<Popover.Content class="flex flex-col gap-y-2">
+												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].optional">
+													<Label>
+														Valinnainen
+														<Form.Control>
+															{#snippet children({ props })}
+																<Checkbox
+																	{...props}
+																	bind:checked={$formData.sections[i].ingredients[j].optional}
+																/>
+															{/snippet}
+														</Form.Control>
+													</Label>
+												</Form.ElementField>
+												<Separator />
+												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].comment">
+													<Label class="flex flex-col items-start text-left">
+														Nuotit
+														<Form.Control>
+															{#snippet children({ props })}
+																<Textarea
+																	placeholder="kommentti"
+																	{...props}
+																	bind:value={$formData.sections[i].ingredients[j].comment}
+																	class="font-normal"
+																/>
+															{/snippet}
+														</Form.Control>
+													</Label>
+												</Form.ElementField>
+											</Popover.Content>
+										</Popover.Root>
 									</div>
 								</Form.Fieldset>
-								<RemoveButton removefunc={() => removeIngredient(i, j)} />
+								<RemoveButton class="ml-auto" removefunc={() => removeIngredient(i, j)} />
 							</div>
 						{/each}
 						<Button onclick={() => addIngredient(i)}>Lisää aines</Button>

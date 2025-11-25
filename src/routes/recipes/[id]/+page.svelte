@@ -1,8 +1,10 @@
 <script>
+	import * as Popover from '$lib/components/ui/popover/index.js';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
 	import Checkbox from '$lib/components/ui/checkbox/checkbox.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import EditIcon from '@lucide/svelte/icons/pencil';
+	import CommentIcon from '@lucide/svelte/icons/message-square-more';
 
 	let { data } = $props();
 
@@ -24,6 +26,14 @@
 
 		return r;
 	});
+
+	let hasOptionals = $derived(
+		scaledRecipe.section
+			.map((s) => s.assembly)
+			.flat()
+			.map((a) => a.optional)
+			.some(Boolean)
+	);
 </script>
 
 <header class="flex gap-x-2 text-center align-middle">
@@ -79,14 +89,29 @@
 							class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
 						>
 							<Checkbox />
+							{#if item.optional}
+								*
+							{/if}
 							{item.ingredient.name}
 							{item.quantity}
 							{item.unit}
+
+							{#if item.comment}
+								<Popover.Root>
+									<Popover.Trigger><CommentIcon size="18" /></Popover.Trigger>
+									<Popover.Content class="text-sm">{item.comment}</Popover.Content>
+								</Popover.Root>
+							{/if}
 						</Label>
 					</li>
 				{/each}
 			{/each}
 		</ul>
+
+		{#if hasOptionals}
+			<br />
+			<i class="text-sm">* valinnainen</i>
+		{/if}
 	</section>
 	<section class="m-3">
 		<h2 class="text-xl font-bold">Tee näin</h2>

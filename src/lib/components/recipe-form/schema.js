@@ -6,8 +6,8 @@ const defaultIngredient = {
     name: null,
     quantity: null,
     unit: null,
-    // comment: null, 
-    // optional: false,
+    comment: null,
+    optional: false,
 }
 
 const defaultSection = {
@@ -21,8 +21,8 @@ const ingredientSchema = z.object({
     name: z.string(),
     quantity: z.number(),
     unit: z.string(),
-    // comment: z.nullable(z.string()),
-    // optional: z.boolean().default(false),
+    comment: z.nullable(z.string()),
+    optional: z.boolean().default(false),
 }).default(defaultIngredient)
 
 const sectionSchema = z.object({
