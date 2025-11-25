@@ -214,9 +214,9 @@
 											</Form.Control>
 										</Form.ElementField>
 										<Popover.Root>
-											<Popover.Trigger>
-												<!-- voisi muuttaa väriä jos on sisältöä -->
-												<Ellipsis />
+											<Popover.Trigger class="hover:bg-accent">
+												{@const extras = ingredient.optional || ingredient.comment}
+												<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
 											</Popover.Trigger>
 											<Popover.Content>
 												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].optional">
