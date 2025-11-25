@@ -64,6 +64,8 @@
 	};
 
 	const ingredientUp = (sectionIndex, ingredientIndex) => {
+		if (ingredientIndex <= 0) return; // prevent cycling the list
+
 		$formData.sections[sectionIndex].ingredients = arrayMove(
 			$formData.sections[sectionIndex].ingredients,
 			ingredientIndex,
