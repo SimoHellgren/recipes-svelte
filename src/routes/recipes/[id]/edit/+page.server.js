@@ -129,8 +129,8 @@ export const actions = {
             position: index + 1,
             quantity: assembly.quantity,
             unit: assembly.unit,
-            // comment: assembly.comment,
-            // optional: assembly.optional,
+            comment: assembly.comment,
+            optional: assembly.optional,
         }))).flat()
 
 

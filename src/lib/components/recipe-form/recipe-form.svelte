@@ -13,8 +13,11 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import UpIcon from '@lucide/svelte/icons/chevron-up';
 	import DownIcon from '@lucide/svelte/icons/chevron-down';
+	import Ellipsis from '@lucide/svelte/icons/ellipsis';
 	import { arrayMove } from '@dnd-kit-svelte/sortable';
-
+	import * as Popover from '$lib/components/ui/popover/index.js';
+	import Checkbox from '../ui/checkbox/checkbox.svelte';
+	import Textarea from '../ui/textarea/textarea.svelte';
 	let { data } = $props();
 
 	const form = superForm(data.form, {
@@ -87,6 +90,10 @@
 	// });
 
 	// $inspect($formData.sections).with((type, value) => {
+	// 	console.table(value);
+	// });
+
+	// $inspect($formData.sections.map((s) => s.ingredients).flat()).with((type, value) => {
 	// 	console.table(value);
 	// });
 </script>
@@ -206,6 +213,38 @@
 												{/snippet}
 											</Form.Control>
 										</Form.ElementField>
+										<Popover.Root>
+											<Popover.Trigger>
+												<!-- voisi muuttaa väriä jos on sisältöä -->
+												<Ellipsis />
+											</Popover.Trigger>
+											<Popover.Content>
+												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].optional">
+													<Label>
+														Valinnainen
+														<Form.Control>
+															{#snippet children({ props })}
+																<Checkbox
+																	{...props}
+																	bind:checked={$formData.sections[i].ingredients[j].optional}
+																/>
+															{/snippet}
+														</Form.Control>
+													</Label>
+												</Form.ElementField>
+												<Form.ElementField {form} name="sections[{i}].ingredients[{j}].comment">
+													<Form.Control>
+														{#snippet children({ props })}
+															<Textarea
+																placeholder="kommentti"
+																{...props}
+																bind:value={$formData.sections[i].ingredients[j].comment}
+															/>
+														{/snippet}
+													</Form.Control>
+												</Form.ElementField>
+											</Popover.Content>
+										</Popover.Root>
 									</div>
 								</Form.Fieldset>
 								<RemoveButton removefunc={() => removeIngredient(i, j)} />
