@@ -5,8 +5,8 @@
 	let { data } = $props();
 	let { ingredients, recipes } = data;
 
-	let ingredientStates = $state(ingredients.map((i) => ({ ...i, checked: false })));
-	let selectedIngredients = $derived(ingredientStates.filter((i) => i.checked));
+	let allIngredients = $state(ingredients.map((ing) => ({ ...ing, checked: false })));
+	let selectedIngredients = $derived(allIngredients.filter((i) => i.checked));
 
 	let selectedRecipes = $derived(
 		recipes.filter((recipe) =>
@@ -15,13 +15,21 @@
 			)
 		)
 	);
+
+	let availableIngredients = $derived(
+		!selectedIngredients.length
+			? allIngredients
+			: allIngredients.filter((ing) =>
+					selectedRecipes.some((recipe) => recipe.ingredients.some((i) => i.id === ing.id))
+				)
+	);
 </script>
 
 <div class="grid grid-cols-3 gap-18">
 	<div>
 		<h1>Ainehet</h1>
 		<ul>
-			{#each ingredientStates.filter((i) => !i.checked) as ingredient}
+			{#each availableIngredients.filter((i) => !i.checked) as ingredient}
 				<li>
 					<Label class="m-1 rounded-md border-1 border-neutral-900 p-1">
 						<Checkbox bind:checked={ingredient.checked} class="bg-neutral-50" />
@@ -34,7 +42,7 @@
 	<div>
 		<h1>Valitut</h1>
 		<ul>
-			{#each ingredientStates.filter((i) => i.checked) as ingredient}
+			{#each availableIngredients.filter((i) => i.checked) as ingredient}
 				<li>
 					<Label class="m-1 rounded-md border-1 border-neutral-900 p-1">
 						<Checkbox bind:checked={ingredient.checked} class="bg-neutral-50" />
