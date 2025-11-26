@@ -6,6 +6,8 @@
 	import { crossfade } from 'svelte/transition';
 	import { fade, slide } from 'svelte/transition';
 	import { tick } from 'svelte';
+	import EditIcon from '@lucide/svelte/icons/square-arrow-out-up-right';
+	import Button from '$lib/components/ui/button/button.svelte';
 
 	const [send, receive] = crossfade({
 		// duration: (d) => Math.sqrt(d) * 150
@@ -72,6 +74,7 @@
 		<ul>
 			{#each availableIngredients as ingredient (ingredient.id)}
 				<li
+					class="flex items-center gap-2"
 					in:receive={{ key: ingredient.id }}
 					out:send={{ key: ingredient.id }}
 					animate:flip={{ duration: 400 }}
@@ -80,15 +83,22 @@
 						<Checkbox bind:checked={ingredient.checked} class="bg-neutral-50" />
 						{ingredient.name}
 					</Label>
+					<a href="/ingredients/{ingredient.id}">
+						<EditIcon size="20" />
+					</a>
 				</li>
 			{/each}
 		</ul>
 	</div>
 	<div>
 		<h1>Valitut</h1>
+		<Button variant="outline" onclick={() => allIngredients.forEach((i) => (i.checked = false))}
+			>Tyhjennä</Button
+		>
 		<ul>
 			{#each selectedIngredients as ingredient (ingredient.id)}
 				<li
+					class="flex items-center gap-2"
 					in:receive={{ key: ingredient.id }}
 					out:send={{ key: ingredient.id }}
 					animate:flip={{ duration: 400 }}
@@ -101,6 +111,9 @@
 						/>
 						{ingredient.name}
 					</Label>
+					<a href="/ingredients/{ingredient.id}">
+						<EditIcon size="20" />
+					</a>
 				</li>
 			{/each}
 		</ul>
