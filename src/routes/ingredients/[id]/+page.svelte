@@ -34,92 +34,124 @@
 		});
 	}
 
-	// dialog stuff
-	let dialogOpen = $state(false);
+	// merge dialog stuff
+	let mergeDialogOpen = $state(false);
 
-	function closeDialogAndReset() {
-		dialogOpen = false;
+	function closeMergeDialogAndReset() {
+		mergeDialogOpen = false;
 		value = '';
 	}
+
+	// delete dialog stuff
+	let deleteDialogOpen = $state(false);
 </script>
 
-<form method="POST" use:enhance action="?/update_ingredient">
-	<input hidden name="id" value={current.id} />
-	<Label>
-		Ainehen nimi:
-		<Input name="name" bind:value={name} />
-	</Label>
+<div class="flex flex-col gap-y-3">
+	<form method="POST" use:enhance action="?/update_ingredient">
+		<input hidden name="id" value={current.id} />
+		<Label>
+			Ainehen nimi:
+			<Input name="name" bind:value={name} />
+		</Label>
 
-	<Label>
-		Oletussuure:
-		<Input name="default_unit" bind:value={default_unit} />
-	</Label>
+		<Label>
+			Oletussuure:
+			<Input name="default_unit" bind:value={default_unit} />
+		</Label>
 
-	<Button type="submit">Tallenna</Button>
-</form>
+		<Button type="submit">Tallenna</Button>
+	</form>
 
-<Separator />
+	<Separator />
 
-<h1>Vaaravyöhyke</h1>
-<Popover.Root bind:open={comboOpen}>
-	<Popover.Trigger bind:ref={triggerRef}>
-		{#snippet child({ props })}
-			<Button
-				variant="outline"
-				class="w-[200px] justify-between"
-				{...props}
-				role="combobox"
-				aria-expanded={comboOpen}
+	<h1>Vaaravyöhyke</h1>
+
+	<div>
+		<Popover.Root bind:open={comboOpen}>
+			<Popover.Trigger bind:ref={triggerRef}>
+				{#snippet child({ props })}
+					<Button
+						variant="outline"
+						class="w-[200px] justify-between"
+						{...props}
+						role="combobox"
+						aria-expanded={comboOpen}
+					>
+						{selectedValue?.name || 'Etsi aines'}
+						<ChevronsUpDownIcon class="ms-2 size-4 shrink-0 opacity-50" />
+					</Button>
+				{/snippet}
+			</Popover.Trigger>
+			<Popover.Content class="w-[200px] p-0">
+				<Command.Root>
+					<Command.Input placeholder="Etsi" />
+					<Command.List>
+						<Command.Empty>Ei löydy!</Command.Empty>
+						<Command.Group>
+							{#each others as ingredient}
+								<Command.Item
+									value={ingredient.name}
+									onSelect={() => {
+										value = ingredient.name;
+										closeAndFocusTrigger();
+									}}
+								>
+									<CheckIcon
+										class={cn('me-2 size-4', value !== ingredient.name && 'text-transparent')}
+									/>
+									{ingredient.name}
+								</Command.Item>
+							{/each}
+						</Command.Group>
+					</Command.List>
+				</Command.Root>
+			</Popover.Content>
+		</Popover.Root>
+
+		<Dialog.Root bind:open={mergeDialogOpen}>
+			<Dialog.Trigger class={buttonVariants({ variant: 'outline' })} disabled={!selectedValue}
+				>Yhdistä <MergeIcon /></Dialog.Trigger
 			>
-				{selectedValue?.name || 'Etsi aines'}
-				<ChevronsUpDownIcon class="ms-2 size-4 shrink-0 opacity-50" />
-			</Button>
-		{/snippet}
-	</Popover.Trigger>
-	<Popover.Content class="w-[200px] p-0">
-		<Command.Root>
-			<Command.Input placeholder="Etsi" />
-			<Command.List>
-				<Command.Empty>Ei löydy!</Command.Empty>
-				<Command.Group>
-					{#each others as ingredient}
-						<Command.Item
-							value={ingredient.name}
-							onSelect={() => {
-								value = ingredient.name;
-								closeAndFocusTrigger();
-							}}
-						>
-							<CheckIcon
-								class={cn('me-2 size-4', value !== ingredient.name && 'text-transparent')}
-							/>
-							{ingredient.name}
-						</Command.Item>
-					{/each}
-				</Command.Group>
-			</Command.List>
-		</Command.Root>
-	</Popover.Content>
-</Popover.Root>
+			<Dialog.Content>
+				<Dialog.Header>
+					<Dialog.Title>Ookkonää varma?</Dialog.Title>
+					<Dialog.Description
+						><i>{current.name}</i> paikalle tulee <i>{selectedValue.name}</i> kaikissa resepteissä.
+					</Dialog.Description>
+				</Dialog.Header>
 
-<Dialog.Root bind:open={dialogOpen}>
-	<Dialog.Trigger class={buttonVariants({ variant: 'outline' })} disabled={!selectedValue}
-		>Yhdistä <MergeIcon /></Dialog.Trigger
-	>
-	<Dialog.Content>
-		<Dialog.Header>
-			<Dialog.Title>Ookkonää varma?</Dialog.Title>
-			<Dialog.Description
-				><i>{current.name}</i> paikalle tulee <i>{selectedValue.name}</i> kaikissa resepteissä.
-			</Dialog.Description>
-		</Dialog.Header>
+				<Dialog.Footer>
+					<form method="POST" action="?/merge">
+						<input name="target_id" hidden value={selectedValue.id} />
+						<Button variant="outline" onclick={closeMergeDialogAndReset}>ou shit gou bäk</Button>
+						<Button type="submit">Joo let's go</Button>
+					</form>
+				</Dialog.Footer>
+			</Dialog.Content>
+		</Dialog.Root>
+	</div>
 
-		<Dialog.Footer>
-			<form method="POST" action="?/merge">
-				<input name="target_id" hidden value={selectedValue.id} />
-				<Button variant="outline" onclick={closeDialogAndReset}>ou shit gou bäk</Button>
-				<Button type="submit">Joo let's go</Button>
-			</form>
-		</Dialog.Footer>
-	</Dialog.Content>
-</Dialog.Root>
+	<Dialog.Root bind:open={deleteDialogOpen}>
+		<Dialog.Trigger class={`${buttonVariants({ variant: 'destructive' })} w-fit`}
+			>Poista</Dialog.Trigger
+		>
+		<Dialog.Content>
+			<Dialog.Header>
+				<Dialog.Title>Ookkonää varma?</Dialog.Title>
+				<Dialog.Description>Meinaat poistaa ainehen <i>{current.name}</i></Dialog.Description>
+			</Dialog.Header>
+
+			<Dialog.Footer>
+				<form method="POST" action="?/delete_ingredient">
+					<Button
+						variant="outline"
+						onclick={() => {
+							deleteDialogOpen = false;
+						}}>ou shit gou bäk</Button
+					>
+					<Button variant="destructive" type="submit">Poista</Button>
+				</form>
+			</Dialog.Footer>
+		</Dialog.Content>
+	</Dialog.Root>
+</div>

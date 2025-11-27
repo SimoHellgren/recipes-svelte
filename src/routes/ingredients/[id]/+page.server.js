@@ -44,6 +44,18 @@ export const actions = {
 
     },
 
+    delete_ingredient: async (event) => {
+        const { locals: { supabase } } = event;
+        const { data: deletedIngredient, error } = await supabase
+            .from("ingredient")
+            .delete()
+            .eq("id", event.params.id)
+
+        console.log(error)
+
+        throw redirect(303, `/ingredients`)
+    },
+
     merge: async (event) => {
         const data = await event.request.formData();
 
