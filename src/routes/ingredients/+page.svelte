@@ -123,7 +123,7 @@
 		<ul>
 			{#each selectedRecipes as recipe (recipe.id)}
 				<li in:slide={{ duration: 200 }} out:fade={{ duration: 120 }}>
-					{recipe.name}
+					<a href="recipes/{recipe.id}">{recipe.name}</a>
 				</li>
 			{/each}
 		</ul>
