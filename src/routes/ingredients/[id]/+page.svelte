@@ -4,14 +4,22 @@
 	import ChevronsUpDownIcon from '@lucide/svelte/icons/chevrons-up-down';
 	import * as Command from '$lib/components/ui/command/index.js';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
-
 	import * as Popover from '$lib/components/ui/popover/index.js';
 	import MergeIcon from '@lucide/svelte/icons/merge';
 	import { cn } from '$lib/utils.js';
 	import { tick } from 'svelte';
+	import Input from '$lib/components/ui/input/input.svelte';
+	import Textarea from '$lib/components/ui/textarea/textarea.svelte';
+	import Label from '$lib/components/ui/label/label.svelte';
+	import Separator from '$lib/components/ui/separator/separator.svelte';
+	import { enhance } from '$app/forms';
 
 	let { data } = $props();
 	let { current, others } = data;
+
+	// ingredient stuff
+	let name = $state(current.name);
+	let default_unit = $state(current.default_unit);
 
 	// combobox stuff
 	let comboOpen = $state(false);
@@ -35,8 +43,24 @@
 	}
 </script>
 
-Current ingredient: {current.name}
+<form method="POST" use:enhance>
+	<input hidden name="id" value={current.id} />
+	<Label>
+		Ainehen nimi:
+		<Input name="name" bind:value={name} />
+	</Label>
 
+	<Label>
+		Oletussuure:
+		<Input name="default_unit" bind:value={default_unit} />
+	</Label>
+
+	<Button type="submit">Tallenna</Button>
+</form>
+
+<Separator />
+
+<h1>Vaaravyöhyke</h1>
 <Popover.Root bind:open={comboOpen}>
 	<Popover.Trigger bind:ref={triggerRef}>
 		{#snippet child({ props })}
