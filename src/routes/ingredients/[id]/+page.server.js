@@ -23,7 +23,7 @@ export async function load({ params }) {
 
 
 export const actions = {
-    default: async (event) => {
+    update_ingredient: async (event) => {
         const data = await event.request.formData();
 
         const newData = {
@@ -42,5 +42,28 @@ export const actions = {
 
         throw redirect(303, `/ingredients/${event.params.id}`)
 
+    },
+
+    merge: async (event) => {
+        const data = await event.request.formData();
+
+        const new_id = data.get("target_id")
+        const old_id = event.params.id
+
+        const { locals: { supabase } } = event;
+
+        const { data: dbData } = await supabase
+            .from("assembly")
+            .update({ ingredient_id: new_id })
+            .eq("ingredient_id", old_id)
+
+
+        const { data: deletedIngredient } = await supabase
+            .from("ingredient")
+            .delete()
+            .eq("id", old_id)
+
+
+        throw redirect(303, `/ingredients/${data.get("target_id")}`)
     }
 }

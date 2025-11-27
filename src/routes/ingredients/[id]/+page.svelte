@@ -25,7 +25,7 @@
 	let comboOpen = $state(false);
 	let value = $state('');
 	let triggerRef = $state(null);
-	let selectedValue = $derived(others.find((i) => i.name === value)?.name);
+	let selectedValue = $derived(others.find((i) => i.name === value));
 
 	function closeAndFocusTrigger() {
 		comboOpen = false;
@@ -43,7 +43,7 @@
 	}
 </script>
 
-<form method="POST" use:enhance>
+<form method="POST" use:enhance action="?/update_ingredient">
 	<input hidden name="id" value={current.id} />
 	<Label>
 		Ainehen nimi:
@@ -71,7 +71,7 @@
 				role="combobox"
 				aria-expanded={comboOpen}
 			>
-				{selectedValue || 'Etsi aines'}
+				{selectedValue?.name || 'Etsi aines'}
 				<ChevronsUpDownIcon class="ms-2 size-4 shrink-0 opacity-50" />
 			</Button>
 		{/snippet}
@@ -110,13 +110,16 @@
 		<Dialog.Header>
 			<Dialog.Title>Ookkonää varma?</Dialog.Title>
 			<Dialog.Description
-				><i>{current.name}</i> paikalle tulee <i>{selectedValue}</i> näissä resepteissä:
+				><i>{current.name}</i> paikalle tulee <i>{selectedValue.name}</i> kaikissa resepteissä.
 			</Dialog.Description>
 		</Dialog.Header>
 
 		<Dialog.Footer>
-			<Button variant="outline" onclick={closeDialogAndReset}>ou shit gou bäk</Button>
-			<Button>Joo let's go</Button>
+			<form method="POST" action="?/merge">
+				<input name="target_id" hidden value={selectedValue.id} />
+				<Button variant="outline" onclick={closeDialogAndReset}>ou shit gou bäk</Button>
+				<Button type="submit">Joo let's go</Button>
+			</form>
 		</Dialog.Footer>
 	</Dialog.Content>
 </Dialog.Root>
