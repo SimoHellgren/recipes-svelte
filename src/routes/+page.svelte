@@ -13,13 +13,15 @@
 	let searchString = $state('');
 
 	let tags = [...new Set(recipes.map((r) => r.tags).flat())].toSorted();
-	let tagStates = $state(tags.map((t) => ({ name: t, checked: true })));
+	let tagStates = $state(tags.map((t) => ({ name: t, checked: false })));
 	let selectedTags = $derived(tagStates.filter((t) => t.checked).map((t) => t.name));
 
 	let selectedRecipes = $derived(
-		recipes
-			.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
-			.filter((recipe) => recipe.name.toLowerCase().includes(searchString))
+		!selectedTags.length
+			? recipes
+			: recipes
+					.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
+					.filter((recipe) => recipe.name.toLowerCase().includes(searchString))
 	);
 
 	//function for jumping to the search box with ctrl+f
@@ -43,11 +45,7 @@
 
 	<Button
 		variant="outline"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: true })))}>Kaikki</Button
-	>
-	<Button
-		variant="outline"
-		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Ei mitään</Button
+		onclick={() => (tagStates = tagStates.map((t) => ({ ...t, checked: false })))}>Tyhjennä</Button
 	>
 </div>
 
