@@ -17,11 +17,10 @@
 	let selectedTags = $derived(tagStates.filter((t) => t.checked).map((t) => t.name));
 
 	let selectedRecipes = $derived(
-		!selectedTags.length
+		(!selectedTags.length
 			? recipes
-			: recipes
-					.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
-					.filter((recipe) => recipe.name.toLowerCase().includes(searchString))
+			: recipes.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
+		).filter((recipe) => recipe.name.toLowerCase().includes(searchString))
 	);
 
 	//function for jumping to the search box with ctrl+f
