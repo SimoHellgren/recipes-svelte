@@ -53,7 +53,7 @@
 	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
 </div>
 
-<Table.Root>
+<Table.Root class="w-fit">
 	<Table.Body>
 		{#each selectedRecipes as recipe}
 			<Table.Row>
