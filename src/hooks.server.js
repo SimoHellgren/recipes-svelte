@@ -82,6 +82,13 @@ const authGuard = async ({ event, resolve }) => {
         redirect(303, '/')
     }
 
+    // individual ingredients
+    const regex = /\/ingredients\/\d+$/;
+    if (!event.locals.session && regex.test(event.url.pathname)) {
+        redirect(303, '/auth')
+    }
+
+
     return resolve(event)
 }
 
