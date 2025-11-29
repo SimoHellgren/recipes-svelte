@@ -1,0 +1,46 @@
+name: Supabase Database Backup to S3
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:              
+      - name: Install PostgreSQL 17 client
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql-common
+
+          sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+          wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+          sudo apt-get update
+          sudo apt-get install -y postgresql-client-17
+
+          echo "Installed versions:"
+          ls -1 /usr/lib/postgresql/
+
+      - name: Dump Supabase DB
+        env:
+          SUPABASE_CONNECTION_STRING: ${{ secrets.SUPABASE_CONNECTION_STRING }}
+        run: |
+          BACKUP_NAME="supabase_backup_$(date '+%F_%T').dump"
+          echo "BACKUP_NAME=$BACKUP_NAME" >> $GITHUB_ENV
+
+          /usr/lib/postgresql/17/bin/pg_dump "$SUPABASE_CONNECTION_STRING" \
+            --format=custom \
+            --file="$BACKUP_NAME"
+
+      - name: Upload to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+        run: |
+          aws --version
+          aws s3 cp "$BACKUP_NAME" "s3://${S3_BUCKET_NAME}/"
