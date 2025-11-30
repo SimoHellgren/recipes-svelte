@@ -19,7 +19,8 @@
 	import Checkbox from '../ui/checkbox/checkbox.svelte';
 	import Textarea from '../ui/textarea/textarea.svelte';
 	import Separator from '../ui/separator/separator.svelte';
-	let { data } = $props();
+
+	let { data, action } = $props();
 
 	const form = superForm(data.form, {
 		validators: zodClient(recipeSchema),
@@ -101,7 +102,7 @@
 	// });
 </script>
 
-<form method="POST" use:enhance>
+<form method="POST" use:enhance {action}>
 	<Form.Field {form} name="name">
 		<Form.Control>
 			{#snippet children({ props })}
