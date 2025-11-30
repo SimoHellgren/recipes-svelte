@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex flex-col gap-y-2">
-	<RecipeForm {data} />
+	<RecipeForm {data} action="?/update_recipe" />
 
 	<Separator />
 

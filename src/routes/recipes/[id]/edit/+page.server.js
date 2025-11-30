@@ -45,7 +45,7 @@ export async function load({ params, locals: { supabase } }) {
 
 
 export const actions = {
-    default: async (event) => {
+    update_recipe: async (event) => {
         const form = await superValidate(event, zod(recipeSchema));
 
         const { locals: { supabase } } = event;
@@ -165,4 +165,8 @@ export const actions = {
 
         throw redirect(303, `/recipes/${event.params.id}`)
     },
+
+    delete_recipe: async () => {
+        console.log(":3")
+    }
 };
