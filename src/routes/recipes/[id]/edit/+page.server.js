@@ -166,7 +166,19 @@ export const actions = {
         throw redirect(303, `/recipes/${event.params.id}`)
     },
 
-    delete_recipe: async () => {
-        console.log(":3")
+    delete_recipe: async (event) => {
+        const { locals: { supabase } } = event;
+
+        const recipeId = event.params.id
+
+        // delete cascades to sections and assembly
+        const { data, error } = await supabase
+            .from("recipe")
+            .delete()
+            .eq("id", recipeId)
+            .select()
+
+        throw redirect(303, "/")
+
     }
 };
