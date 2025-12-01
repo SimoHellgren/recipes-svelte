@@ -19,6 +19,7 @@
 	import Checkbox from '../ui/checkbox/checkbox.svelte';
 	import Textarea from '../ui/textarea/textarea.svelte';
 	import Separator from '../ui/separator/separator.svelte';
+	import Spinner from '../ui/spinner/spinner.svelte';
 
 	let { data, action } = $props();
 
@@ -27,7 +28,7 @@
 		dataType: 'json'
 	});
 
-	const { form: formData, enhance, errors } = form;
+	const { form: formData, enhance, submitting, delayed, errors } = form;
 
 	// $inspect($errors);
 
@@ -311,5 +312,11 @@
 		<Form.FieldErrors />
 	</Form.Field>
 
-	<Form.Button>Submit</Form.Button>
+	<Form.Button disabled={$submitting}
+		>Submit
+
+		{#if $delayed}
+			<Spinner />
+		{/if}
+	</Form.Button>
 </form>
