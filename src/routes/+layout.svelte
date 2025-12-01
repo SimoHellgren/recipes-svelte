@@ -4,6 +4,7 @@
 	import '../app.css';
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { Toaster } from '$lib/components/ui/sonner/index.js';
 
 	let { data, children } = $props();
 	let { session, supabase } = $derived(data);
@@ -28,6 +29,7 @@
 	<AppSidebar {session} {supabase} {user} />
 	<main>
 		<Sidebar.Trigger />
+		<Toaster />
 		{@render children?.()}
 	</main>
 </Sidebar.Provider>

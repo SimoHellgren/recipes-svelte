@@ -15,6 +15,7 @@
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import { enhance } from '$app/forms';
 	import Spinner from '$lib/components/ui/spinner/spinner.svelte';
+	import { toast } from 'svelte-sonner';
 
 	let { data } = $props();
 	let { current, others } = data;
@@ -62,11 +63,17 @@
 				delayed = true;
 			}, 500);
 
-			return async ({ update }) => {
-				await update();
+			return async ({ result, update }) => {
+				await update({ reset: false });
 				clearTimeout(timer);
 				submitting = false;
 				delayed = false;
+
+				if (result.type === 'success') {
+					toast.success("Tallennettu'd");
+				} else if (result.type === 'failure') {
+					toast.error('Voi räkä! Jotain meni pieleen :<', { description: result.data.error });
+				}
 			};
 		}}
 	>
