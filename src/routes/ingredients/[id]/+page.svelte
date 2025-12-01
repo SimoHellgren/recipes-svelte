@@ -94,6 +94,15 @@
 				<Spinner />
 			{/if}
 		</Button>
+		<Button
+			onclick={() => {
+				name = current.name;
+				default_unit = current.default_unit;
+			}}
+			variant="outline"
+		>
+			Palauta
+		</Button>
 	</form>
 
 	<Separator />
