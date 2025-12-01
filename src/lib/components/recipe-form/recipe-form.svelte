@@ -19,15 +19,23 @@
 	import Checkbox from '../ui/checkbox/checkbox.svelte';
 	import Textarea from '../ui/textarea/textarea.svelte';
 	import Separator from '../ui/separator/separator.svelte';
+	import Spinner from '../ui/spinner/spinner.svelte';
+	import { toast } from 'svelte-sonner';
 
 	let { data, action } = $props();
 
 	const form = superForm(data.form, {
 		validators: zodClient(recipeSchema),
-		dataType: 'json'
+		dataType: 'json',
+		onResult: ({ result }) => {
+			// this probably has several corner cases / issues lol
+			if (result.type === 'redirect') {
+				toast.success("Tallenettu'd!");
+			}
+		}
 	});
 
-	const { form: formData, enhance, errors } = form;
+	const { form: formData, enhance, submitting, delayed, errors } = form;
 
 	// $inspect($errors);
 
@@ -311,5 +319,11 @@
 		<Form.FieldErrors />
 	</Form.Field>
 
-	<Form.Button>Submit</Form.Button>
+	<Form.Button disabled={$submitting}
+		>Submit
+
+		{#if $delayed}
+			<Spinner />
+		{/if}
+	</Form.Button>
 </form>

@@ -1,5 +1,5 @@
 import { supabase } from "$lib/supabaseClient";
-import { redirect } from "@sveltejs/kit";
+import { redirect, fail } from "@sveltejs/kit";
 
 export async function load({ params }) {
     const { data, error } = await supabase
@@ -33,14 +33,17 @@ export const actions = {
 
         const { locals: { supabase } } = event;
 
-        const { data: dbData } = await supabase
+        const { data: dbData, error } = await supabase
             .from("ingredient")
             .update(newData)
             .eq("id", event.params.id)
             .select()
+            .single()
 
 
-        throw redirect(303, `/ingredients/${event.params.id}`)
+        if (error) return fail(400, { error: error.message })
+
+        return dbData
 
     },
 
