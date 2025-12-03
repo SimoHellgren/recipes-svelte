@@ -5,6 +5,7 @@
 	import Label from '$lib/components/ui/label/label.svelte';
 	import EditIcon from '@lucide/svelte/icons/pencil';
 	import CommentIcon from '@lucide/svelte/icons/message-square-more';
+	import { marked } from 'marked';
 
 	let { data } = $props();
 
@@ -70,7 +71,7 @@
 	<section class="liirumlaarum">
 		<h3 class="text-lg font-medium">Liirum laarum</h3>
 		{#each scaledRecipe.notes as note}
-			<p>{note}</p>
+			<p>{@html marked(note || '')}</p>
 		{/each}
 	</section>
 {/if}
@@ -122,7 +123,7 @@
 						class="font-normal has-[[aria-checked=true]]:text-gray-400 has-[[aria-checked=true]]:line-through"
 					>
 						<Checkbox />
-						{step}
+						{@html marked(step || '')}
 					</Label>
 				</li>
 			{/each}
