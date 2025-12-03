@@ -68,8 +68,8 @@
 	</div>
 </div>
 {#if scaledRecipe.notes}
-	<section class="liirumlaarum">
-		<h3 class="text-lg font-medium">Liirum laarum</h3>
+	<section class="w-fit rounded-lg border border-dashed border-[#555555] bg-[#f5f5f5] px-4 py-2">
+		<h3 class="m-0 text-lg font-medium">Liirum laarum</h3>
 		{#each scaledRecipe.notes as note}
 			<p>{@html marked(note || '')}</p>
 		{/each}
@@ -130,17 +130,3 @@
 		</ol>
 	</section>
 </main>
-
-<style>
-	.liirumlaarum {
-		border: 1px dashed #555555;
-		background-color: #f5f5f5;
-		padding: 0.5rem 1rem 0.5rem 1rem;
-		border-radius: 0.5rem;
-		width: fit-content;
-	}
-
-	.liirumlaarum > h3 {
-		margin: 0;
-	}
-</style>
