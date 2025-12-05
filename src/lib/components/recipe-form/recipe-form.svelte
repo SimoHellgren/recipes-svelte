@@ -21,6 +21,7 @@
 	import Separator from '../ui/separator/separator.svelte';
 	import Spinner from '../ui/spinner/spinner.svelte';
 	import { toast } from 'svelte-sonner';
+	import MoveButtons from './move-buttons.svelte';
 
 	let { data, action } = $props();
 
@@ -166,14 +167,8 @@
 				<Form.Control>
 					{#snippet children({ props })}
 						<div class="flex">
-							<div class="flex">
-								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionUp(i)} tabindex="-1"
-									><UpIcon /></Button
-								>
-								<Button class="h-7 w-7" variant="ghost" onclick={() => sectionDown(i)} tabindex="-1"
-									><DownIcon /></Button
-								>
-							</div>
+							<MoveButtons onUp={() => sectionUp(i)} onDown={() => sectionDown(i)} />
+
 							<Label class="sr-only">Section {i + 1}</Label>
 							<Input
 								{...props}
@@ -187,20 +182,8 @@
 						{#each section.ingredients as ingredient, j}
 							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
 							<div class="flex gap-x-2">
-								<div class="flex">
-									<Button
-										class="h-7 w-7"
-										variant="ghost"
-										onclick={() => ingredientUp(i, j)}
-										tabindex="-1"><UpIcon /></Button
-									>
-									<Button
-										class="h-7 w-7"
-										variant="ghost"
-										onclick={() => ingredientDown(i, j)}
-										tabindex="-1"><DownIcon /></Button
-									>
-								</div>
+								<MoveButtons onUp={() => ingredientUp(i, j)} onDown={() => ingredientDown(i, j)} />
+
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
 									<div class="flex">
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
