@@ -1,5 +1,4 @@
 <script>
-	import IngredientInput from '$lib/components/ingredient-input/ingredient-input.svelte';
 	import MarkdownInput from '$lib/components/markdown-input.svelte';
 	import TagsInput from '$lib/components/tags-input.svelte';
 	import RemoveButton from '$lib/components/ingredient-input/remove-button.svelte';
@@ -11,8 +10,6 @@
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import Button from '$lib/components/ui/button/button.svelte';
-	import UpIcon from '@lucide/svelte/icons/chevron-up';
-	import DownIcon from '@lucide/svelte/icons/chevron-down';
 	import Ellipsis from '@lucide/svelte/icons/ellipsis';
 	import { arrayMove } from '@dnd-kit-svelte/sortable';
 	import * as Popover from '$lib/components/ui/popover/index.js';
