@@ -6,6 +6,8 @@
 	import Label from '$lib/components/ui/label/label.svelte';
 	import { Body } from '$lib/components/ui/table/index.js';
 	import * as Table from '$lib/components/ui/table';
+	import SearchInput from '$lib/components/search-input.svelte';
+
 	let { data } = $props();
 	let { recipes } = data;
 
@@ -22,17 +24,7 @@
 			: recipes.filter((recipe) => recipe.tags.some((tag) => selectedTags.includes(tag)))
 		).filter((recipe) => recipe.name.toLowerCase().includes(searchString))
 	);
-
-	//function for jumping to the search box with ctrl+f
-	function jumpToSearch(event) {
-		if (event.ctrlKey && event.key === 'f') {
-			event.preventDefault();
-			document.getElementById('search').focus();
-		}
-	}
 </script>
-
-<svelte:window on:keydown={jumpToSearch} />
 
 <div class="flex flex-wrap">
 	{#each tagStates as tag}
@@ -49,7 +41,7 @@
 </div>
 
 <div>
-	<Input id="search" type="text" placeholder="Haku" bind:value={searchString} class="w-sm" />
+	<SearchInput bind:value={searchString} placeholder="Haku" class="w-sm" />
 </div>
 
 <Table.Root class="w-fit">

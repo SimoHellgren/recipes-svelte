@@ -8,6 +8,7 @@
 	import { tick } from 'svelte';
 	import EditIcon from '@lucide/svelte/icons/square-arrow-out-up-right';
 	import Button from '$lib/components/ui/button/button.svelte';
+	import SearchInput from '$lib/components/search-input.svelte';
 
 	const [send, receive] = crossfade({
 		// duration: (d) => Math.sqrt(d) * 150
@@ -55,22 +56,12 @@
 			.filter((ing) => !ing.checked)
 			.filter((ing) => ing.name.toLowerCase().includes(search))
 	);
-
-	//function for jumping to the search box with ctrl+f
-	function jumpToSearch(event) {
-		if (event.ctrlKey && event.key === 'f') {
-			event.preventDefault();
-			searchRef.focus();
-		}
-	}
 </script>
-
-<svelte:window on:keydown={jumpToSearch} />
 
 <div class="grid grid-cols-3 gap-18">
 	<div>
 		<h1>Ainehet</h1>
-		<Input bind:ref={searchRef} bind:value={search} placeholder="Haku" />
+		<SearchInput bind:value={search} placeholder="Haku" />
 		<ul>
 			{#each availableIngredients as ingredient (ingredient.id)}
 				<li
