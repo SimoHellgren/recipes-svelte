@@ -2,7 +2,7 @@ import { superValidate } from "sveltekit-superforms";
 import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
 import { fail, redirect } from "@sveltejs/kit";
-import { getOrCreateIngredients } from "$lib/db";
+import * as db from "$lib/db";
 
 export const load = async ({ depends, locals: { supabase } }) => {
     return {
@@ -24,7 +24,7 @@ export const actions = {
         }
 
         // add recipe
-        const { data: recipe, error: recipeError } = await supabase.from("recipe").insert({
+        const { data: recipe, error: recipeError } = await db.createRecipe(supabase, {
             name: form.data.name,
             tags: form.data.tags,
             source: form.data.source,
@@ -32,10 +32,10 @@ export const actions = {
             notes: form.data.notes || null,
             yield_quantity: form.data.yield.quantity,
             yield_unit: form.data.yield.unit,
-        }).select().single()
+        })
 
         // add ingredients
-        const allIngredients = await getOrCreateIngredients(supabase, form.data.sections.map(s => s.ingredients).flat())
+        const allIngredients = await db.getOrCreateIngredients(supabase, form.data.sections.map(s => s.ingredients).flat())
 
         // add sections
         const sectionsIn = form.data.sections.map((section, index) => ({

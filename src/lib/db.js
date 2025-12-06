@@ -25,6 +25,12 @@ export const getRecipeById = async (supabase, id) => {
     return { data, error }
 }
 
+export const createRecipe = async (supabase, data) => {
+    const { data: dbData, error } = await supabase.from("recipe").insert(data).select().single()
+
+    return { data: dbData, error }
+}
+
 
 // ingredient stuff
 
