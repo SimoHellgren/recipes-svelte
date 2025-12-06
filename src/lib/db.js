@@ -5,6 +5,26 @@ export const getAllRecipes = async (supabase) => {
     return { data, error }
 }
 
+export const getRecipeById = async (supabase, id) => {
+    const { data, error } = await supabase
+        .from("recipe")
+        .select(
+            `*,
+         section( *, assembly ( *, ingredient ( * )) ) )
+        `
+        )
+        .eq("id", id)
+        .order("position", { referencedTable: "section" })
+        .order("position", { referencedTable: "section.assembly" })
+        .single();
+
+    // split what shall be split here
+    data.method = data.method.split("\n")
+    data.notes = data.notes?.split("\n")
+
+    return { data, error }
+}
+
 
 // ingredient stuff
 
