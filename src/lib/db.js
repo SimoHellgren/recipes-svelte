@@ -1,3 +1,12 @@
+// recipe stuff
+export const getAllRecipes = async (supabase) => {
+    const { data, error } = await supabase.from("recipe").select().order("name");
+
+    return { data, error }
+}
+
+
+// ingredient stuff
 
 export const getOrCreateIngredients = async (supabase, ingredients) => {
     //ingredients shall have names
