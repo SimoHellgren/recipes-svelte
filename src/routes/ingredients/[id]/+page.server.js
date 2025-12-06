@@ -1,16 +1,12 @@
-import { supabase } from "$lib/supabaseClient";
 import { redirect, fail } from "@sveltejs/kit";
 
-export async function load({ params }) {
+export async function load({ params, locals: { supabase } }) {
     const { data, error } = await supabase
         .from("ingredient")
         .select()
         .order("name")
 
-
-
     const currentId = parseInt(params.id)
-
 
     let current = data.find(x => x.id === currentId)
     let others = data.filter(x => x.id !== currentId)

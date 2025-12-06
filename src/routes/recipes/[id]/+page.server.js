@@ -1,6 +1,4 @@
-import { supabase } from "$lib/supabaseClient";
-
-export async function load({ params }) {
+export async function load({ params, locals: { supabase } }) {
     const { data: recipe, error } = await supabase
         .from("recipe")
         .select(
