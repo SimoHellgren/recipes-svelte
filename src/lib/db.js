@@ -33,26 +33,46 @@ export const createRecipe = async (supabase, data) => {
 
 
 // ingredient stuff
-
-export const getOrCreateIngredients = async (supabase, ingredients) => {
-    //ingredients shall have names
-
-    // check which rows exist
-    const { data: dbIngredients } = await supabase
+export const getIngredientsByName = async (supabase, names) => {
+    // names is an array of strings. Should perhaps use typescript
+    const { data, error } = await supabase
         .from("ingredient")
         .select()
-        .in("name", ingredients.map(i => i.name))
+        .in("name", names)
+
+    return { data, error }
+}
+
+export const createIngredients = async (supabase, data) => {
+    // data shall be array of ingredients
+
+    const { data: dbData, error } = await supabase
+        .from("ingredient")
+        .insert(data)
+        .select()
+
+    return { data: dbData, error }
+}
+
+export const getOrCreateIngredients = async (supabase, ingredients) => {
+    // ingredients shall have names, i.e. be "whole" objects like {id: null, name: "foo", ...} 
+
+    // check which rows exist
+    const { data: dbIngredients, getError } = await getIngredientsByName(supabase, ingredients.map(i => i.name))
 
     // create missing ingredients
     const ingredientsToCreate = ingredients.filter(i => !dbIngredients.some(x => x.name === i.name))
 
-    const { data: createdIngredients, error: ingredientError } = await supabase
-        .from("ingredient")
-        .insert(
-            ingredientsToCreate.map(i => ({ name: i.name }))
-        ).select()
+    const { data: createdIngredients, error: createError } = await createIngredients(
+        supabase,
+        ingredientsToCreate.map(i => ({ name: i.name }))
+    )
 
-    const allIngredients = [...dbIngredients, ...createdIngredients]
-
-    return allIngredients
+    return {
+        data: [...dbIngredients, ...createdIngredients],
+        error: {
+            getError,
+            createError
+        }
+    }
 }

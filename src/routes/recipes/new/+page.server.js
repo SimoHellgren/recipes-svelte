@@ -35,7 +35,7 @@ export const actions = {
         })
 
         // add ingredients
-        const allIngredients = await db.getOrCreateIngredients(supabase, form.data.sections.map(s => s.ingredients).flat())
+        const { data: allIngredients } = await db.getOrCreateIngredients(supabase, form.data.sections.map(s => s.ingredients).flat())
 
         // add sections
         const sectionsIn = form.data.sections.map((section, index) => ({
