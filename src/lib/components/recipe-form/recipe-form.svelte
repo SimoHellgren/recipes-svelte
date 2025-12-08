@@ -6,7 +6,7 @@
 	import Input from '$lib/components/ui/input/input.svelte';
 	import Label from '$lib/components/ui/label/label.svelte';
 	import { Description } from 'formsnap';
-	import { recipeSchema } from './schema';
+	import { recipeSchema, defaultIngredient, defaultSection } from './schema';
 	import { superForm } from 'sveltekit-superforms';
 	import { zodClient } from 'sveltekit-superforms/adapters';
 	import Button from '$lib/components/ui/button/button.svelte';
@@ -36,12 +36,8 @@
 	const { form: formData, enhance, submitting, delayed, errors } = form;
 
 	// $inspect($errors);
-
-	const newIngredient = { id: null, name: null, quantity: null, unit: null };
-	const newSection = { id: null, name: null, ingredients: [newIngredient] };
-
 	const addSection = () => {
-		$formData.sections = [...$formData.sections, newSection];
+		$formData.sections = [...$formData.sections, defaultSection];
 	};
 
 	const removeSection = (index) => {
@@ -50,7 +46,7 @@
 
 	const addIngredient = (sectionIndex) => {
 		$formData.sections = $formData.sections.map((s, i) =>
-			i == sectionIndex ? { ...s, ingredients: [...s.ingredients, newIngredient] } : s
+			i == sectionIndex ? { ...s, ingredients: [...s.ingredients, defaultIngredient] } : s
 		);
 	};
 

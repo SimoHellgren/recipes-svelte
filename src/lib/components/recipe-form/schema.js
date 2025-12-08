@@ -1,7 +1,7 @@
 import { optional, z } from 'zod';
 
 // TODO: is there a nicer way to reuse the defaults?
-const defaultIngredient = {
+export const defaultIngredient = {
     id: null,
     name: null,
     quantity: null,
@@ -10,7 +10,7 @@ const defaultIngredient = {
     optional: false,
 }
 
-const defaultSection = {
+export const defaultSection = {
     id: null,
     name: null,
     ingredients: [defaultIngredient]
