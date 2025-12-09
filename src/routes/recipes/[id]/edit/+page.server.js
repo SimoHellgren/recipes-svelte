@@ -1,8 +1,8 @@
 import { superValidate } from "sveltekit-superforms";
 import { recipeSchema } from "$lib/components/recipe-form/schema";
 import { zod } from "sveltekit-superforms/adapters";
-import { getOrCreateIngredients } from "$lib/db";
 import { redirect } from "@sveltejs/kit";
+import * as db from "$lib/db";
 
 export async function load({ params, locals: { supabase } }) {
     const { data, error } = await supabase
@@ -110,7 +110,7 @@ export const actions = {
         const ingredients = form.data.sections.map(s => s.ingredients).flat()
 
         // Get / Create ingredients
-        const allIngredients = await getOrCreateIngredients(supabase, ingredients)
+        const { data: allIngredients } = await db.getOrCreateIngredients(supabase, ingredients)
 
         // delete assembly rows
         const assemblyIds = ingredients.map(i => i.id).filter(i => i) // no nulls
