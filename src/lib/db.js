@@ -139,6 +139,14 @@ export const createAssemblies = async (supabase, data) => {
     return { data: dbData, error }
 }
 
+export const upsertAssemblies = async (supabase, data) => {
+    const { data: dbData, error } = await supabase
+        .from("assembly")
+        .upsert(data)
+        .select()
+
+    return { data: dbData, error }
+}
 
 export const deleteAssemblies = async (supabase, sectionIds, assemblyIds) => {
     // I'm pretty sure sectionIds is here just for extra safety, but no clue really.

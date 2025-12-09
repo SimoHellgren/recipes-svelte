@@ -112,28 +112,25 @@ export const actions = {
         // offset trick for positions because unique index
         const BIG_NUMBER = 1000;
         // stupid, but works because realistically we'll never hit the offset number
-        await supabase
-            .from("assembly")
-            .upsert(assembliesToUpdate.map(a => ({ ...a, position: a.position + BIG_NUMBER })))
+        await db.upsertAssemblies(
+            supabase,
+            assembliesToUpdate.map(a => ({ ...a, position: a.position + BIG_NUMBER }))
+
+        )
 
         // fix the positions
-        const { data: updatedAssemblies, error: updatedAssemblyError } = await supabase
-            .from("assembly")
-            .upsert(assembliesToUpdate)
-            .select()
+        const { data: updatedAssemblies, error: updatedAssemblyError } = await db.upsertAssemblies(supabase, assembliesToUpdate)
 
-
-        const { data: createdAssemblies, error: createdAssemblyError } = await supabase
-            .from("assembly")
-            .insert(assembliesToCreate.map(a => ({ ...a, position: a.position + BIG_NUMBER })))
-            .select()
-
+        const { data: createdAssemblies, error: createdAssemblyError } = await db.createAssemblies(
+            supabase,
+            assembliesToCreate.map(a => ({ ...a, position: a.position + BIG_NUMBER }))
+        )
 
         // fix positions
-        const { data: fixedAssemblies, error: fixedAssemblyError } = await supabase
-            .from("assembly")
-            .upsert(createdAssemblies.map(a => ({ ...a, position: a.position - BIG_NUMBER })))
-            .select()
+        const { data: fixedAssemblies, error: fixedAssemblyError } = await db.upsertAssemblies(
+            supabase,
+            createdAssemblies.map(a => ({ ...a, position: a.position - BIG_NUMBER }))
+        )
 
         throw redirect(303, `/recipes/${event.params.id}`)
     },
