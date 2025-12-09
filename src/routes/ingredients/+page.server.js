@@ -1,15 +1,9 @@
-export async function load({ params, locals: { supabase } }) {
-    const { data: ingredients, error } = await supabase
-        .from("ingredient")
-        .select()
-        .order("name")
+import * as db from '$lib/db'
 
-    const { data, tError } = await supabase
-        .from("recipe")
-        .select(
-            `id, name, section(assembly (ingredient ( id, name )) ) )`
-        )
-        .order("name")
+export async function load({ params, locals: { supabase } }) {
+    const { data: ingredients } = await db.getAllIngredients(supabase);
+
+    const { data } = await db.getAllRecipeDetails(supabase); // technically overfetches but oh well
 
     const recipes = data.map(r => ({
         id: r.id,

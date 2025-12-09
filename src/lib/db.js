@@ -5,6 +5,21 @@ export const getAllRecipes = async (supabase) => {
     return { data, error }
 }
 
+export const getAllRecipeDetails = async (supabase) => {
+    const { data, error } = await supabase
+        .from("recipe")
+        .select(
+            `*,
+         section( *, assembly ( *, ingredient ( * )) ) )
+        `
+        )
+        .order("name")
+        .order("position", { referencedTable: "section" })
+        .order("position", { referencedTable: "section.assembly" })
+
+    return { data, error }
+}
+
 export const getRecipeById = async (supabase, id) => {
     const { data, error } = await supabase
         .from("recipe")
@@ -59,6 +74,15 @@ export const deleteRecipe = async (supabase, id) => {
 }
 
 // ingredient stuff
+export const getAllIngredients = async (supabase) => {
+    const { data, error } = await supabase
+        .from("ingredient")
+        .select()
+        .order("name")
+
+    return { data, error }
+}
+
 export const getIngredientsByName = async (supabase, names) => {
     // names is an array of strings. Should perhaps use typescript
     const { data, error } = await supabase
