@@ -91,12 +91,7 @@ export const actions = {
 
         // delete assembly rows
         const assemblyIds = ingredients.map(i => i.id).filter(i => i) // no nulls
-        const { data: deletedAssemblies } = await supabase
-            .from("assembly")
-            .delete()
-            .in("section_id", sectionIds)
-            .not("id", "in", `(${assemblyIds.join(",")})`)
-            .select()
+        const { data: deletedAssemblies } = await db.deleteAssemblies(supabase, sectionIds, assemblyIds)
 
         // update assembly rows
         const assemblyRecords = form.data.sections.map(section => section.ingredients.map((assembly, index) => ({
