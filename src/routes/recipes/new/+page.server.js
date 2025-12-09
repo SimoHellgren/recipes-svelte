@@ -44,11 +44,8 @@ export const actions = {
             recipe_id: recipe.id
 
         }))
-        const { data: sections, error: sectionError } = await supabase
-            .from("section")
-            .insert(sectionsIn)
-            .select()
 
+        const { data: sections, error: sectionError } = await db.createSections(supabase, sectionsIn)
 
         // add assembly
         const assemblyIn = form.data.sections.map(section => {
@@ -73,10 +70,7 @@ export const actions = {
             return rows
         }).flat()
 
-        const { data: assembly, error: assemblyError } = await supabase
-            .from("assembly")
-            .insert(assemblyIn)
-            .select()
+        const { data: assembly, error: assemblyError } = await db.createAssemblies(supabase, assemblyIn)
 
         throw redirect(303, `/recipes/${recipe.id}`)
     },

@@ -76,3 +76,23 @@ export const getOrCreateIngredients = async (supabase, ingredients) => {
         }
     }
 }
+
+// section stuff
+export const createSections = async (supabase, data) => {
+    const { data: dbData, error } = await supabase
+        .from("section")
+        .insert(data)
+        .select()
+
+    return { data: dbData, error }
+}
+
+// assembly stuff
+export const createAssemblies = async (supabase, data) => {
+    const { data: dbData, error } = await supabase
+        .from("assembly")
+        .insert(data)
+        .select()
+
+    return { data: dbData, error }
+}
