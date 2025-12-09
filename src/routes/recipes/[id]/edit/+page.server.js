@@ -72,16 +72,15 @@ export const actions = {
             sections.filter(s => s.id) // no null ids, i.e. no new sections here
         )
 
-
         // add sections
-        const { data: insertedSections, error: insertError } = await supabase
-            .from("section")
-            .insert(sections.filter(s => s.id === null).map(s => ({
+        const { data: insertedSections, error: insertError } = await db.createSections(
+            supabase,
+            sections.filter(s => s.id === null).map(s => ({
                 name: s.name,
                 position: s.position,
                 recipe_id: s.recipe_id,
-            }))) // only new sections, and ignore ids
-            .select()
+            })) // only new sections, and ignore ids
+        )
 
         const allSections = [...updatedSections, ...insertedSections]
 
