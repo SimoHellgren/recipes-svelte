@@ -103,6 +103,16 @@ export const createSections = async (supabase, data) => {
     return { data: dbData, error }
 }
 
+export const upsertSections = async (supabase, data) => {
+    // upsert over update because that allows updating a list of records 
+    const { data: dbData, error } = await supabase
+        .from("section")
+        .upsert(data)
+        .select()
+
+    return { data: dbData, error }
+}
+
 export const deleteSections = async (supabase, recipe_id, retain_ids) => {
     // deletes sections from a given recipe, as long as they are not
     // present in the array `retain_ids`.

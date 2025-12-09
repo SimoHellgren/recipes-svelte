@@ -67,10 +67,11 @@ export const actions = {
         const { data: deletedSections } = await db.deleteSections(supabase, form.data.id, sectionIds)
 
         // update sections. Upsert since it allows a list as input
-        const { data: updatedSections, error: updateSectionError } = await supabase
-            .from("section")
-            .upsert(sections.filter(s => s.id)) // no nulls, i.e. only existing sections
-            .select()
+        const { data: updatedSections, error: updateSectionError } = await db.upsertSections(
+            supabase,
+            sections.filter(s => s.id) // no null ids, i.e. no new sections here
+        )
+
 
         // add sections
         const { data: insertedSections, error: insertError } = await supabase
