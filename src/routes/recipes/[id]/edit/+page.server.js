@@ -63,11 +63,8 @@ export const actions = {
         const sectionIds = sections.map(s => s.id).filter(s => s) // no nulls
 
         // delete sections (cascades to assembly rows)
-        const { data: deletedSections } = await supabase
-            .from("section")
-            .delete()
-            .eq("recipe_id", form.data.id)
-            .not("id", "in", `(${sectionIds.join(",")})`)
+        // retains the sections that still are present on the form
+        const { data: deletedSections } = await db.deleteSections(supabase, form.data.id, sectionIds)
 
         // update sections. Upsert since it allows a list as input
         const { data: updatedSections, error: updateSectionError } = await supabase
