@@ -141,11 +141,7 @@ export const actions = {
         const recipeId = event.params.id
 
         // delete cascades to sections and assembly
-        const { data, error } = await supabase
-            .from("recipe")
-            .delete()
-            .eq("id", recipeId)
-            .select()
+        const { data, error } = await db.deleteRecipe(supabase, recipeId)
 
         throw redirect(303, "/")
 

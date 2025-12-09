@@ -48,6 +48,16 @@ export const updateRecipe = async (supabase, data) => {
     return { data: dbData, error }
 }
 
+export const deleteRecipe = async (supabase, id) => {
+    const { data, error } = await supabase
+        .from("recipe")
+        .delete()
+        .eq("id", id)
+        .select()
+
+    return { data, error }
+}
+
 // ingredient stuff
 export const getIngredientsByName = async (supabase, names) => {
     // names is an array of strings. Should perhaps use typescript
