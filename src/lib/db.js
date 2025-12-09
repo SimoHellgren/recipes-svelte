@@ -27,6 +27,26 @@ export const createRecipe = async (supabase, data) => {
     return { data: dbData, error }
 }
 
+export const updateRecipe = async (supabase, data) => {
+    const { id, ...dataIn } = data;
+
+    // this function probably should be fed with already-sanitized data,
+    // i.e. a valid "recipe" object
+    const { data: dbData, error } = await supabase
+        .from("recipe")
+        .update({
+            name: dataIn.name,
+            tags: dataIn.tags,
+            source: dataIn.source,
+            method: dataIn.method,
+            notes: dataIn.notes || null,
+            yield_quantity: dataIn.yield.quantity,
+            yield_unit: dataIn.yield.unit,
+        })
+        .eq("id", id)
+
+    return { data: dbData, error }
+}
 
 // ingredient stuff
 export const getIngredientsByName = async (supabase, names) => {

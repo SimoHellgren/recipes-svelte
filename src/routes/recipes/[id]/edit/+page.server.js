@@ -46,18 +46,9 @@ export const actions = {
         }
 
         // update basic stuff 
-        const { data: recipeData, error: recipeError } = await supabase
-            .from("recipe")
-            .update({
-                name: form.data.name,
-                tags: form.data.tags,
-                source: form.data.source,
-                method: form.data.method,
-                notes: form.data.notes || null,
-                yield_quantity: form.data.yield.quantity,
-                yield_unit: form.data.yield.unit,
-            })
-            .eq("id", form.data.id)
+        // we're passing in the whole form here, and currently db.updateRecipe takes care of
+        // picking out the right stuff. This probably should be changed
+        const { data: recipeData, error: recipeError } = await db.updateRecipe(supabase, form.data)
 
         // sections
         // ignore ingredients for now
