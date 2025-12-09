@@ -113,16 +113,16 @@ export const upsertSections = async (supabase, data) => {
     return { data: dbData, error }
 }
 
-export const deleteSections = async (supabase, recipe_id, retain_ids) => {
+export const deleteSections = async (supabase, recipeId, retainIds) => {
     // deletes sections from a given recipe, as long as they are not
-    // present in the array `retain_ids`.
+    // present in the array `retainIds`.
     // This might be more suitable for the service layer, as this is not
     // quite a "primitive"
     const { data, error } = await supabase
         .from("section")
         .delete()
-        .eq("recipe_id", recipe_id)
-        .not("id", "in", `(${retain_ids.join(",")})`)
+        .eq("recipe_id", recipeId)
+        .not("id", "in", `(${retainIds.join(",")})`)
         .select()
 
     return { data, error }
