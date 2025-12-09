@@ -18,10 +18,6 @@ export const getRecipeById = async (supabase, id) => {
         .order("position", { referencedTable: "section.assembly" })
         .single();
 
-    // split what shall be split here
-    data.method = data.method.split("\n")
-    data.notes = data.notes?.split("\n")
-
     return { data, error }
 }
 

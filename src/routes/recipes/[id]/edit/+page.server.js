@@ -5,18 +5,7 @@ import { redirect } from "@sveltejs/kit";
 import * as db from "$lib/db";
 
 export async function load({ params, locals: { supabase } }) {
-    const { data, error } = await supabase
-        .from("recipe")
-        .select(
-            `*,
-         section( *, assembly ( *, ingredient ( * )) ) )
-        `
-        )
-        .eq("id", params.id)
-        .order("position", { referencedTable: "section" })
-        .order("position", { referencedTable: "section.assembly" })
-        .single();
-
+    const { data } = await db.getRecipeById(supabase, params.id)
 
     const recipe = {
         id: data.id,
