@@ -108,7 +108,7 @@ export const getOrCreateIngredients = async (supabase, ingredients) => {
     // ingredients shall have names, i.e. be "whole" objects like {id: null, name: "foo", ...} 
 
     // check which rows exist
-    const { data: dbIngredients, getError } = await getIngredientsByName(supabase, ingredients.map(i => i.name))
+    const { data: dbIngredients, error: getError } = await getIngredientsByName(supabase, ingredients.map(i => i.name))
 
     // create missing ingredients
     const ingredientsToCreate = ingredients.filter(i => !dbIngredients.some(x => x.name === i.name))
