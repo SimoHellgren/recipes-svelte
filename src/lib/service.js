@@ -19,7 +19,7 @@ export const createRecipe = async (supabase, data) => {
     })
 
     // add ingredients
-    const { data: dbIngredients, error: ingredientError } = await db.getOrCreateIngredients(supabase, data.sections.map(s => s.ingredients).flat())
+    const { data: dbIngredients, error: ingredientError } = await getOrCreateIngredients(supabase, data.sections.map(s => s.ingredients).flat())
 
 
     // add sections
@@ -117,7 +117,7 @@ export const updateRecipe = async (supabase, data) => {
     const ingredients = data.sections.map(s => s.ingredients).flat()
 
     // Get / Create ingredients
-    const { data: allIngredients } = await db.getOrCreateIngredients(supabase, ingredients)
+    const { data: allIngredients } = await getOrCreateIngredients(supabase, ingredients)
 
     // delete assembly rows
     const assemblyIds = ingredients.map(i => i.id).filter(i => i) // no nulls
@@ -167,4 +167,29 @@ export const deleteRecipe = async (supabase, recipeId) => {
     const { data, error } = await db.deleteRecipe(supabase, recipeId)
 
     return { data, error }
+}
+
+
+
+export const getOrCreateIngredients = async (supabase, ingredients) => {
+    // ingredients shall have names, i.e. be "whole" objects like {id: null, name: "foo", ...} 
+
+    // check which rows exist
+    const { data: dbIngredients, error: getError } = await db.getIngredientsByName(supabase, ingredients.map(i => i.name))
+
+    // create missing ingredients
+    const ingredientsToCreate = ingredients.filter(i => !dbIngredients.some(x => x.name === i.name))
+
+    const { data: createdIngredients, error: createError } = await db.createIngredients(
+        supabase,
+        ingredientsToCreate.map(i => ({ name: i.name }))
+    )
+
+    return {
+        data: [...dbIngredients, ...createdIngredients],
+        error: {
+            getError,
+            createError
+        }
+    }
 }
