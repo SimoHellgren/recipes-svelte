@@ -162,3 +162,9 @@ export const updateRecipe = async (supabase, data) => {
         createdAssemblies.map(a => ({ ...a, position: a.position - BIG_NUMBER }))
     )
 }
+
+export const deleteRecipe = async (supabase, recipeId) => {
+    const { data, error } = await db.deleteRecipe(supabase, recipeId)
+
+    return { data, error }
+}

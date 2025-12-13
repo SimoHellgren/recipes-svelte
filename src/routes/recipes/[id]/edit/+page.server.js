@@ -59,7 +59,7 @@ export const actions = {
         const recipeId = event.params.id
 
         // delete cascades to sections and assembly
-        const { data, error } = await db.deleteRecipe(supabase, recipeId)
+        const { data, error } = await service.deleteRecipe(supabase, recipeId)
 
         throw redirect(303, "/")
 
