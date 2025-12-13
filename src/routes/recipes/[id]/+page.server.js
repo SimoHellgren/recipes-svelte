@@ -1,17 +1,9 @@
-export async function load({ params, locals: { supabase } }) {
-    const { data: recipe, error } = await supabase
-        .from("recipe")
-        .select(
-            `*,
-         section( *, assembly ( *, ingredient ( * )) ) )
-        `
-        )
-        .eq("id", params.id)
-        .order("position", { referencedTable: "section" })
-        .order("position", { referencedTable: "section.assembly" })
-        .single();
+import * as db from '$lib/db'
 
-    // split what shall be split here
+export async function load({ params, locals: { supabase } }) {
+    const { data: recipe } = await db.getRecipeById(supabase, params.id)
+
+    // split strings to arrays for display purposes
     recipe.method = recipe.method.split("\n")
     recipe.notes = recipe.notes?.split("\n")
 

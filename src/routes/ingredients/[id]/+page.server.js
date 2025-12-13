@@ -1,10 +1,9 @@
 import { redirect, fail } from "@sveltejs/kit";
+import * as db from '$lib/db'
+import * as service from '$lib/service'
 
 export async function load({ params, locals: { supabase } }) {
-    const { data, error } = await supabase
-        .from("ingredient")
-        .select()
-        .order("name")
+    const { data, error } = await db.getAllIngredients(supabase);
 
     const currentId = parseInt(params.id)
 
@@ -20,21 +19,11 @@ export async function load({ params, locals: { supabase } }) {
 
 export const actions = {
     update_ingredient: async (event) => {
-        const data = await event.request.formData();
-
-        const newData = {
-            name: data.get("name"),
-            default_unit: data.get("default_unit")
-        }
+        const data = Object.fromEntries(await event.request.formData());
 
         const { locals: { supabase } } = event;
 
-        const { data: dbData, error } = await supabase
-            .from("ingredient")
-            .update(newData)
-            .eq("id", event.params.id)
-            .select()
-            .single()
+        const { data: dbData, error } = await db.updateIngredient(supabase, data)
 
 
         if (error) return fail(400, { error: error.message })
@@ -44,13 +33,8 @@ export const actions = {
     },
 
     delete_ingredient: async (event) => {
-        const { locals: { supabase } } = event;
-        const { data: deletedIngredient, error } = await supabase
-            .from("ingredient")
-            .delete()
-            .eq("id", event.params.id)
-
-        console.log(error)
+        const { locals: { supabase }, params: { id } } = event;
+        const { data: deletedIngredient, error } = await db.deleteIngredient(supabase, id)
 
         throw redirect(303, `/ingredients`)
     },
@@ -58,23 +42,13 @@ export const actions = {
     merge: async (event) => {
         const data = await event.request.formData();
 
-        const new_id = data.get("target_id")
-        const old_id = event.params.id
+        const newId = data.get("target_id")
+        const oldId = event.params.id
 
         const { locals: { supabase } } = event;
 
-        const { data: dbData } = await supabase
-            .from("assembly")
-            .update({ ingredient_id: new_id })
-            .eq("ingredient_id", old_id)
+        const { data: dbData, error } = await service.mergeIngredients(supabase, newId, oldId)
 
-
-        const { data: deletedIngredient } = await supabase
-            .from("ingredient")
-            .delete()
-            .eq("id", old_id)
-
-
-        throw redirect(303, `/ingredients/${data.get("target_id")}`)
+        throw redirect(303, `/ingredients/${newId}`)
     }
 }

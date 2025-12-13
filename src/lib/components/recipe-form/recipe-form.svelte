@@ -28,7 +28,7 @@
 		onResult: ({ result }) => {
 			// this probably has several corner cases / issues lol
 			if (result.type === 'redirect') {
-				toast.success("Tallenettu'd!");
+				toast.success("Tallennettu'd!");
 			}
 		}
 	});
