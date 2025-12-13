@@ -128,26 +128,6 @@ export const deleteIngredient = async (supabase, id) => {
 }
 
 
-export const mergeIngredients = async (supabase, newId, oldId) => {
-    // this probably belongs in the (yet to be built) service layer.
-    // replaces all instances of oldId with newId and deletes the old ingredient
-    const { data: dbData, error: updateError } = await supabase
-        .from("assembly")
-        .update({ ingredient_id: newId })
-        .eq("ingredient_id", oldId)
-
-
-    const { data: deletedIngredient, error: deleteError } = await deleteIngredient(supabase, oldId)
-
-    return {
-        data: dbData,
-        error: {
-            updateError,
-            deleteError
-        }
-    }
-}
-
 // section stuff
 export const createSections = async (supabase, data) => {
     const { data: dbData, error } = await supabase

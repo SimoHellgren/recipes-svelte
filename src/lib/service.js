@@ -193,3 +193,25 @@ export const getOrCreateIngredients = async (supabase, ingredients) => {
         }
     }
 }
+
+
+export const mergeIngredients = async (supabase, newId, oldId) => {
+    // replaces all instances of oldId with newId and deletes the old ingredient
+
+    // not sure if there should be a "primitive" operation for this
+    const { data: dbData, error: updateError } = await supabase
+        .from("assembly")
+        .update({ ingredient_id: newId })
+        .eq("ingredient_id", oldId)
+
+
+    const { data: deletedIngredient, error: deleteError } = await db.deleteIngredient(supabase, oldId)
+
+    return {
+        data: dbData,
+        error: {
+            updateError,
+            deleteError
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { redirect, fail } from "@sveltejs/kit";
 import * as db from '$lib/db'
+import * as service from '$lib/service'
 
 export async function load({ params, locals: { supabase } }) {
     const { data, error } = await db.getAllIngredients(supabase);
@@ -46,7 +47,7 @@ export const actions = {
 
         const { locals: { supabase } } = event;
 
-        const { data: dbData, error } = await db.mergeIngredients(supabase, newId, oldId)
+        const { data: dbData, error } = await service.mergeIngredients(supabase, newId, oldId)
 
         throw redirect(303, `/ingredients/${newId}`)
     }
