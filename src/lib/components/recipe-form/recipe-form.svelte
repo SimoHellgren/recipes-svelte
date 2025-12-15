@@ -310,7 +310,7 @@
 								}}
 								placeholder="kpl"
 								class="w-32"
-								enterkeyhint="testink"
+								enterkeyhint="enter"
 							/>
 							<Popover.Root>
 								<Popover.Trigger class="ml-2 hover:bg-accent">
