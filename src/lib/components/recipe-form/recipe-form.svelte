@@ -302,10 +302,7 @@
 						{/each}
 
 						<!-- template stuff -->
-						<div
-							class="flex items-center gap-1 opacity-50 focus-within:opacity-100"
-							onsubmit={(e) => handleCommit(e, i)}
-						>
+						<div class="flex items-center gap-1 opacity-50 focus-within:opacity-100">
 							<MoveButtons disabled />
 							<Input
 								bind:ref={refData[i].templateRef}
