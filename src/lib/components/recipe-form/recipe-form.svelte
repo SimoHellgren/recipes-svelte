@@ -277,7 +277,10 @@
 						{/each}
 
 						<!-- template stuff -->
-						<div class="flex items-center gap-1 opacity-50 focus-within:opacity-100">
+						<form
+							class="flex items-center gap-1 opacity-50 focus-within:opacity-100"
+							onsubmit={(e) => handleCommit(e, i)}
+						>
 							<MoveButtons disabled />
 							<Input
 								bind:ref={templateRefs[i]}
@@ -307,6 +310,7 @@
 								}}
 								placeholder="kpl"
 								class="w-32"
+								enterkeyhint="enter"
 							/>
 							<Popover.Root>
 								<Popover.Trigger class="ml-2 hover:bg-accent">
@@ -329,10 +333,8 @@
 									</Label>
 								</Popover.Content>
 							</Popover.Root>
-							<Button size="sm" disabled={!templateIsValid(i)} onclick={(e) => handleCommit(e, i)}
-								>Lisää</Button
-							>
-						</div>
+							<Button size="sm" disabled={!templateIsValid(i)} type="submit">Lisää</Button>
+						</form>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
