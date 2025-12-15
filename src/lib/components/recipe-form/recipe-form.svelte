@@ -36,28 +36,51 @@
 
 	const { form: formData, enhance, submitting, delayed, errors } = form;
 
-	let sectionRefs = $state($formData.sections.map((s) => null));
+	// refs for sections & templates; data for the latter
+	let refData = $state(
+		$formData.sections.map((s) => ({
+			sectionRef: null,
+			templateRef: null,
+			templateData: defaultIngredient
+		}))
+	);
+
+	const sectionUp = (index) => {
+		$formData.sections = arrayMove($formData.sections, index, index - 1);
+		refData = arrayMove(refData, index, index - 1);
+	};
+
+	const sectionDown = (index) => {
+		$formData.sections = arrayMove($formData.sections, index, index + 1);
+		refData = arrayMove(refData, index, index + 1);
+	};
 
 	const addSection = async () => {
-		sectionRefs = [...sectionRefs, null];
 		$formData.sections = [...$formData.sections, defaultSection];
-		templateRefs = [...templateRefs, null];
-		templates = [...templates, defaultIngredient];
+
+		refData = [
+			...refData,
+			{
+				sectionRef: null,
+				templateRef: null,
+				templateData: defaultIngredient
+			}
+		];
 
 		// focus on newest template row
 		await tick();
-		sectionRefs.at(-1).focus();
+		refData.at(-1).sectionRef.focus();
 	};
 
 	const removeSection = (index) => {
-		sectionRefs = sectionRefs.filter((_, i) => i !== index);
+		refData = refData.filter((_, i) => i !== index);
 		$formData.sections = $formData.sections.filter((_, i) => i !== index);
 	};
 
 	const addIngredient = (sectionIndex) => {
 		$formData.sections = $formData.sections.map((s, i) =>
 			i == sectionIndex
-				? { ...s, ingredients: [...s.ingredients, { ...templates[sectionIndex] }] }
+				? { ...s, ingredients: [...s.ingredients, { ...refData[sectionIndex].templateData }] }
 				: s
 		);
 	};
@@ -89,14 +112,11 @@
 	};
 
 	// "automatic" row addition
-	let templateRefs = $state($formData.sections.map((s) => null));
-	let templates = $state($formData.sections.map((s) => defaultIngredient));
-
 	let templateIsValid = (sectionIndex) =>
 		Boolean(
-			templates[sectionIndex].name &&
-				templates[sectionIndex].quantity &&
-				templates[sectionIndex].unit
+			refData[sectionIndex].templateData.name &&
+				refData[sectionIndex].templateData.quantity &&
+				refData[sectionIndex].templateData.unit
 		);
 
 	function handleCommit(event, sectionIndex) {
@@ -109,10 +129,10 @@
 		addIngredient(sectionIndex);
 
 		// reset template and focus
-		templates = templates.map((t, i) => (i == sectionIndex ? defaultIngredient : t));
+		refData[sectionIndex].templateData = defaultIngredient;
 
 		event.preventDefault(); // stops tabbing
-		templateRefs[sectionIndex].focus();
+		refData[sectionIndex].templateRef.focus();
 	}
 
 	// $inspect($formData.sections).with((type, value) => {
@@ -188,7 +208,7 @@
 								bind:value={$formData.sections[i].name}
 								placeholder="(nimetön osio)"
 								class="w-md"
-								bind:ref={sectionRefs[i]}
+								bind:ref={refData[i].sectionRef}
 							/>
 							<RemoveButton removefunc={() => removeSection(i)} />
 						</div>
@@ -282,14 +302,14 @@
 						{/each}
 
 						<!-- template stuff -->
-						<form
+						<div
 							class="flex items-center gap-1 opacity-50 focus-within:opacity-100"
 							onsubmit={(e) => handleCommit(e, i)}
 						>
 							<MoveButtons disabled />
 							<Input
-								bind:ref={templateRefs[i]}
-								bind:value={templates[i].name}
+								bind:ref={refData[i].templateRef}
+								bind:value={refData[i].templateData.name}
 								onkeydown={(e) => {
 									if (e.key == 'Enter') handleCommit(e, i);
 								}}
@@ -298,7 +318,7 @@
 							/>
 
 							<Input
-								bind:value={templates[i].quantity}
+								bind:value={refData[i].templateData.quantity}
 								onkeydown={(e) => {
 									if (e.key == 'Enter') handleCommit(e, i);
 								}}
@@ -309,7 +329,7 @@
 							/>
 
 							<Input
-								bind:value={templates[i].unit}
+								bind:value={refData[i].templateData.unit}
 								onkeydown={(e) => {
 									if (e.key == 'Enter' || (e.key == 'Tab' && !e.shiftKey)) handleCommit(e, i);
 								}}
@@ -319,13 +339,14 @@
 							/>
 							<Popover.Root>
 								<Popover.Trigger class="ml-2 hover:bg-accent">
-									{@const extras = templates[i].optional || templates[i].comment}
+									{@const extras =
+										refData[i].templateData.optional || refData[i].templateData.comment}
 									<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
 								</Popover.Trigger>
 								<Popover.Content class="flex flex-col gap-y-2">
 									<Label>
 										Valinnainen
-										<Checkbox {...props} bind:checked={templates[i].optional} />
+										<Checkbox {...props} bind:checked={refData[i].templateData.optional} />
 									</Label>
 									<Separator />
 									<Label class="flex flex-col items-start text-left">
@@ -333,13 +354,13 @@
 										<Textarea
 											placeholder="kommentti"
 											class="font-normal"
-											bind:value={templates[i].comment}
+											bind:value={refData[i].templateData.comment}
 										/>
 									</Label>
 								</Popover.Content>
 							</Popover.Root>
 							<Button size="sm" disabled={!templateIsValid(i)} type="submit">Lisää</Button>
-						</form>
+						</div>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
