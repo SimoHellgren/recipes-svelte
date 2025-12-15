@@ -13,7 +13,7 @@ export const defaultIngredient = {
 export const defaultSection = {
     id: null,
     name: null,
-    ingredients: [defaultIngredient]
+    ingredients: []
 }
 
 const ingredientSchema = z.object({

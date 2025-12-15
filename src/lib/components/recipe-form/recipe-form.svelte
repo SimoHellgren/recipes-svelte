@@ -19,6 +19,7 @@
 	import Spinner from '../ui/spinner/spinner.svelte';
 	import { toast } from 'svelte-sonner';
 	import MoveButtons from './move-buttons.svelte';
+	import { tick } from 'svelte';
 
 	let { data, action } = $props();
 
@@ -35,9 +36,14 @@
 
 	const { form: formData, enhance, submitting, delayed, errors } = form;
 
-	// $inspect($errors);
-	const addSection = () => {
+	const addSection = async () => {
 		$formData.sections = [...$formData.sections, defaultSection];
+		templateRefs = [...templateRefs, null];
+		templates = [...templates, defaultIngredient];
+
+		// focus on newest template row
+		await tick();
+		templateRefs[templateRefs.length - 1].focus();
 	};
 
 	const removeSection = (index) => {
@@ -46,7 +52,9 @@
 
 	const addIngredient = (sectionIndex) => {
 		$formData.sections = $formData.sections.map((s, i) =>
-			i == sectionIndex ? { ...s, ingredients: [...s.ingredients, defaultIngredient] } : s
+			i == sectionIndex
+				? { ...s, ingredients: [...s.ingredients, { ...templates[sectionIndex] }] }
+				: s
 		);
 	};
 
@@ -56,14 +64,6 @@
 		$formData.sections[sectionIndex].ingredients = $formData.sections[
 			sectionIndex
 		].ingredients.filter((_, i) => i !== ingredientIndex);
-	};
-
-	const sectionUp = (index) => {
-		$formData.sections = arrayMove($formData.sections, index, index - 1);
-	};
-
-	const sectionDown = (index) => {
-		$formData.sections = arrayMove($formData.sections, index, index + 1);
 	};
 
 	const ingredientUp = (sectionIndex, ingredientIndex) => {
@@ -84,16 +84,32 @@
 		);
 	};
 
-	//auto add empty section
-	//would probably be better to conditionally render a placeholder which,
-	//when focused, triggers adding an empty row. This way the actual formData
-	//wouldn't contain empty elements, and can be validated better
-	// $effect(() => {
-	// 	const last = $formData.sections[$formData.sections.length - 1];
-	// 	if (last) {
-	// 		addSection();
-	// 	}
-	// });
+	// "automatic" row addition
+	let templateRefs = $state($formData.sections.map((s) => null));
+	let templates = $state($formData.sections.map((s) => defaultIngredient));
+
+	let templateIsValid = (sectionIndex) =>
+		Boolean(
+			templates[sectionIndex].name &&
+				templates[sectionIndex].quantity &&
+				templates[sectionIndex].unit
+		);
+
+	function handleCommit(event, sectionIndex) {
+		// don't submit on Enter (but Tab behaves normally)
+		if (event.key == 'Enter') event?.preventDefault();
+
+		if (!templateIsValid(sectionIndex)) return;
+
+		// add ingredient to actual data
+		addIngredient(sectionIndex);
+
+		// reset template and focus
+		templates = templates.map((t, i) => (i == sectionIndex ? defaultIngredient : t));
+
+		event.preventDefault(); // stops tabbing
+		templateRefs[sectionIndex].focus();
+	}
 
 	// $inspect($formData.sections).with((type, value) => {
 	// 	console.table(value);
@@ -174,11 +190,11 @@
 
 						{#each section.ingredients as ingredient, j}
 							<input type="hidden" bind:value={$formData.sections[i].ingredients[j].id} />
-							<div class="flex gap-x-2">
+							<div class="flex gap-1">
 								<MoveButtons onUp={() => ingredientUp(i, j)} onDown={() => ingredientDown(i, j)} />
 
 								<Form.Fieldset {form} name="sections[{i}].ingredients[{j}]">
-									<div class="flex">
+									<div class="flex gap-1">
 										<Form.ElementField {form} name="sections[{i}].ingredients[{j}].name">
 											<Form.Control>
 												{#snippet children({ props })}
@@ -186,6 +202,7 @@
 														{...props}
 														bind:value={$formData.sections[i].ingredients[j].name}
 														placeholder="aines"
+														class="w-48"
 													/>
 												{/snippet}
 											</Form.Control>
@@ -258,13 +275,70 @@
 								<RemoveButton class="ml-auto" removefunc={() => removeIngredient(i, j)} />
 							</div>
 						{/each}
-						<Button onclick={() => addIngredient(i)}>Lisää aines</Button>
+
+						<!-- template stuff -->
+						<div class="flex items-center gap-1 opacity-50 focus-within:opacity-100">
+							<MoveButtons disabled />
+							<Input
+								bind:ref={templateRefs[i]}
+								bind:value={templates[i].name}
+								onkeydown={(e) => {
+									if (e.key == 'Enter') handleCommit(e, i);
+								}}
+								placeholder="aines"
+								class="w-48"
+							/>
+
+							<Input
+								bind:value={templates[i].quantity}
+								onkeydown={(e) => {
+									if (e.key == 'Enter') handleCommit(e, i);
+								}}
+								type="number"
+								step="any"
+								placeholder="1"
+								class="w-20"
+							/>
+
+							<Input
+								bind:value={templates[i].unit}
+								onkeydown={(e) => {
+									if (e.key == 'Enter' || (e.key == 'Tab' && !e.shiftKey)) handleCommit(e, i);
+								}}
+								placeholder="kpl"
+								class="w-32"
+							/>
+							<Popover.Root>
+								<Popover.Trigger class="ml-2 hover:bg-accent">
+									{@const extras = templates[i].optional || templates[i].comment}
+									<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
+								</Popover.Trigger>
+								<Popover.Content class="flex flex-col gap-y-2">
+									<Label>
+										Valinnainen
+										<Checkbox {...props} bind:checked={templates[i].optional} />
+									</Label>
+									<Separator />
+									<Label class="flex flex-col items-start text-left">
+										Nuotit
+										<Textarea
+											placeholder="kommentti"
+											class="font-normal"
+											bind:value={templates[i].comment}
+										/>
+									</Label>
+								</Popover.Content>
+							</Popover.Root>
+							<Button size="sm" disabled={!templateIsValid(i)} onclick={(e) => handleCommit(e, i)}
+								>Lisää</Button
+							>
+						</div>
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
 		{/each}
 		<Form.FieldErrors />
-		<Button onclick={addSection}>Lisää osio</Button>
+		<Button onclick={addSection}>Uusi osio</Button>
 	</Form.Fieldset>
 
 	<Form.Field {form} name="method">
