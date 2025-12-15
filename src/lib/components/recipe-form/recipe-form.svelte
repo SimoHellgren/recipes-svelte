@@ -36,17 +36,21 @@
 
 	const { form: formData, enhance, submitting, delayed, errors } = form;
 
+	let sectionRefs = $state($formData.sections.map((s) => null));
+
 	const addSection = async () => {
+		sectionRefs = [...sectionRefs, null];
 		$formData.sections = [...$formData.sections, defaultSection];
 		templateRefs = [...templateRefs, null];
 		templates = [...templates, defaultIngredient];
 
 		// focus on newest template row
 		await tick();
-		templateRefs[templateRefs.length - 1].focus();
+		sectionRefs.at(-1).focus();
 	};
 
 	const removeSection = (index) => {
+		sectionRefs = sectionRefs.filter((_, i) => i !== index);
 		$formData.sections = $formData.sections.filter((_, i) => i !== index);
 	};
 
@@ -184,6 +188,7 @@
 								bind:value={$formData.sections[i].name}
 								placeholder="(nimetön osio)"
 								class="w-md"
+								bind:ref={sectionRefs[i]}
 							/>
 							<RemoveButton removefunc={() => removeSection(i)} />
 						</div>
@@ -338,6 +343,7 @@
 					{/snippet}
 				</Form.Control>
 			</Form.ElementField>
+			<Separator />
 		{/each}
 		<Form.FieldErrors />
 		<Button onclick={addSection}>Uusi osio</Button>
