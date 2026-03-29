@@ -356,7 +356,9 @@
 									</Label>
 								</Popover.Content>
 							</Popover.Root>
-							<Button size="sm" disabled={!templateIsValid(i)} type="submit">Lisää</Button>
+							<Button size="sm" disabled={!templateIsValid(i)} onclick={(e) => handleCommit(e, i)}
+								>Lisää</Button
+							>
 						</div>
 					{/snippet}
 				</Form.Control>
