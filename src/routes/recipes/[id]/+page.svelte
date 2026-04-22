@@ -37,6 +37,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>{data.recipe.name} - Keitot kirja</title>
+</svelte:head>
+
 <header class="flex gap-x-2 text-center align-middle">
 	<h1 class="text-2xl font-bold">{scaledRecipe.name}</h1>
 	{#each scaledRecipe.tags as tag}
