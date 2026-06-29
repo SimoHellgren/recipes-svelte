@@ -98,7 +98,7 @@
 								*
 							{/if}
 							{item.ingredient.name}
-							{item.quantity}
+							{Math.round(item.quantity * 100) / 100}
 							{item.unit}
 
 							{#if item.comment}
