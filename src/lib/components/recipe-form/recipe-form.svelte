@@ -36,51 +36,69 @@
 
 	const { form: formData, enhance, submitting, delayed, errors } = form;
 
+	// synthetic id's for loop-keying purposes
+	let sectionKeys = $state($formData.sections.map(() => crypto.randomUUID()));
+
 	// refs for sections & templates; data for the latter
 	let refData = $state(
-		$formData.sections.map((s) => ({
-			sectionRef: null,
-			templateRef: null,
-			templateData: defaultIngredient
-		}))
+		Object.fromEntries(
+			sectionKeys.map((k) => [
+				k,
+				{
+					sectionRef: null,
+					templateRef: null,
+					templateData: defaultIngredient
+				}
+			])
+		)
 	);
 
 	const sectionUp = (index) => {
 		$formData.sections = arrayMove($formData.sections, index, index - 1);
-		refData = arrayMove(refData, index, index - 1);
+		sectionKeys = arrayMove(sectionKeys, index, index - 1);
 	};
 
 	const sectionDown = (index) => {
 		$formData.sections = arrayMove($formData.sections, index, index + 1);
-		refData = arrayMove(refData, index, index + 1);
+		sectionKeys = arrayMove(sectionKeys, index, index + 1);
 	};
 
 	const addSection = async () => {
+		const newKey = crypto.randomUUID();
+
 		$formData.sections = [...$formData.sections, defaultSection];
 
-		refData = [
+		sectionKeys = [...sectionKeys, newKey];
+
+		refData = {
 			...refData,
-			{
+			[newKey]: {
 				sectionRef: null,
 				templateRef: null,
 				templateData: defaultIngredient
 			}
-		];
+		};
 
 		// focus on newest template row
 		await tick();
-		refData.at(-1).sectionRef.focus();
+		refData[newKey].sectionRef.focus();
 	};
 
 	const removeSection = (index) => {
-		refData = refData.filter((_, i) => i !== index);
+		const key = sectionKeys[index];
+		const { [key]: _, ...rest } = refData;
+		refData = rest;
+		sectionKeys = sectionKeys.filter((_, i) => i !== index);
 		$formData.sections = $formData.sections.filter((_, i) => i !== index);
 	};
 
 	const addIngredient = (sectionIndex) => {
 		$formData.sections = $formData.sections.map((s, i) =>
 			i == sectionIndex
-				? { ...s, ingredients: [...s.ingredients, { ...refData[sectionIndex].templateData }] }
+				? {
+						...s,
+						ingredients: [...s.ingredients, { ...refData[sectionKeys[sectionIndex]].templateData }]
+					}
 				: s
 		);
 	};
@@ -114,9 +132,9 @@
 	// "automatic" row addition
 	let templateIsValid = (sectionIndex) =>
 		Boolean(
-			refData[sectionIndex].templateData.name &&
-				refData[sectionIndex].templateData.quantity &&
-				refData[sectionIndex].templateData.unit
+			refData[sectionKeys[sectionIndex]].templateData.name &&
+				refData[sectionKeys[sectionIndex]].templateData.quantity &&
+				refData[sectionKeys[sectionIndex]].templateData.unit
 		);
 
 	function handleCommit(event, sectionIndex) {
@@ -129,10 +147,10 @@
 		addIngredient(sectionIndex);
 
 		// reset template and focus
-		refData[sectionIndex].templateData = defaultIngredient;
+		refData[sectionKeys[sectionIndex]].templateData = defaultIngredient;
 
 		event.preventDefault(); // stops tabbing
-		refData[sectionIndex].templateRef.focus();
+		refData[sectionKeys[sectionIndex]].templateRef.focus();
 	}
 
 	// $inspect($formData.sections).with((type, value) => {
@@ -194,7 +212,7 @@
 
 	<Form.Fieldset {form} name="sections">
 		<Form.Legend>Osiot & ainehet</Form.Legend>
-		{#each $formData.sections as section, i}
+		{#each $formData.sections as section, i (sectionKeys[i])}
 			<input type="hidden" bind:value={$formData.sections[i].id} />
 			<Form.ElementField {form} name="sections[{i}].name">
 				<Form.Control>
@@ -208,7 +226,7 @@
 								bind:value={$formData.sections[i].name}
 								placeholder="(nimetön osio)"
 								class="w-md"
-								bind:ref={refData[i].sectionRef}
+								bind:ref={refData[sectionKeys[i]].sectionRef}
 							/>
 							<RemoveButton removefunc={() => removeSection(i)} />
 						</div>
@@ -305,8 +323,8 @@
 						<div class="flex items-center gap-1 opacity-50 focus-within:opacity-100">
 							<MoveButtons disabled />
 							<Input
-								bind:ref={refData[i].templateRef}
-								bind:value={refData[i].templateData.name}
+								bind:ref={refData[sectionKeys[i]].templateRef}
+								bind:value={refData[sectionKeys[i]].templateData.name}
 								onkeydown={(e) => {
 									if (e.key == 'Enter') handleCommit(e, i);
 								}}
@@ -315,7 +333,7 @@
 							/>
 
 							<Input
-								bind:value={refData[i].templateData.quantity}
+								bind:value={refData[sectionKeys[i]].templateData.quantity}
 								onkeydown={(e) => {
 									if (e.key == 'Enter') handleCommit(e, i);
 								}}
@@ -326,7 +344,7 @@
 							/>
 
 							<Input
-								bind:value={refData[i].templateData.unit}
+								bind:value={refData[sectionKeys[i]].templateData.unit}
 								onkeydown={(e) => {
 									if (e.key == 'Enter' || (e.key == 'Tab' && !e.shiftKey)) handleCommit(e, i);
 								}}
@@ -337,13 +355,17 @@
 							<Popover.Root>
 								<Popover.Trigger class="ml-2 hover:bg-accent">
 									{@const extras =
-										refData[i].templateData.optional || refData[i].templateData.comment}
+										refData[sectionKeys[i]].templateData.optional ||
+										refData[sectionKeys[i]].templateData.comment}
 									<Ellipsis class={`${extras ? '' : 'text-gray-400'} `} />
 								</Popover.Trigger>
 								<Popover.Content class="flex flex-col gap-y-2">
 									<Label>
 										Valinnainen
-										<Checkbox {...props} bind:checked={refData[i].templateData.optional} />
+										<Checkbox
+											{...props}
+											bind:checked={refData[sectionKeys[i]].templateData.optional}
+										/>
 									</Label>
 									<Separator />
 									<Label class="flex flex-col items-start text-left">
@@ -351,7 +373,7 @@
 										<Textarea
 											placeholder="kommentti"
 											class="font-normal"
-											bind:value={refData[i].templateData.comment}
+											bind:value={refData[sectionKeys[i]].templateData.comment}
 										/>
 									</Label>
 								</Popover.Content>
