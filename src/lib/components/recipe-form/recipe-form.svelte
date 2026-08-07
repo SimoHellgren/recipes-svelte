@@ -39,7 +39,9 @@
 	// synthetic id's for loop-keying purposes
 	let sectionKeys = $state($formData.sections.map(() => crypto.randomUUID()));
 
-	// refs for sections & templates; data for the latter
+	// refs for sections & templates; data for the latter.
+	// Keyed by the synthetic keys, so reordering the sections doesn't
+	// mess things up
 	let refData = $state(
 		Object.fromEntries(
 			sectionKeys.map((k) => [

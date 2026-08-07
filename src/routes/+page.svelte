@@ -26,6 +26,10 @@
 	);
 </script>
 
+<svelte:head>
+	<title>Keitot kirja</title>
+</svelte:head>
+
 <div class="flex flex-wrap">
 	{#each tagStates as tag}
 		<Label class="m-1 rounded-md border-1 border-neutral-900 p-1">
